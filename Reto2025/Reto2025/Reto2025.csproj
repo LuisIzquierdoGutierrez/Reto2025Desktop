@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D3764CBF-3170-46A6-B6B6-3013D686B418}</ProjectGuid>
+    <ProjectGuid>{3057EE2A-1F2B-49DA-B0CE-62A088CBF36B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Reto2025</RootNamespace>
     <AssemblyName>Reto2025</AssemblyName>
