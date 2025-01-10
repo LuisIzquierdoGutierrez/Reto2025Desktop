@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Reto2025.Enums
 {
-    enum TipoActividad
+    enum EstadoActividad
     {
-        extraescolar,
-        complementaria
+        SOLICITADA,
+        DENEGADA,
+        APROBADA,
+        REALIZADA,
+        REALIZANDOSE,
+        CANCELADA
+
     }
 }

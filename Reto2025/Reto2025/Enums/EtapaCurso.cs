@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Reto2025.Enums
 {
-    enum TipoActividad
+    enum EtapaCurso
     {
-        extraescolar,
-        complementaria
+        ESO,
+        BACH,
+        FPGS,
+        FPGM,
+        FPB,
+        FPCE
+
     }
 }
