@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Reto2025.Enums
 {
-    enum TipoActividad
+    enum RolProfesor
     {
-        extraescolar,
-        complementaria
+        ADM,
+        ED,
+        PROF
     }
 }
