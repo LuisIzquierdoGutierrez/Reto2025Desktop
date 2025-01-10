@@ -1,5 +1,4 @@
-# Reto2025Desktop
-
+# Equipo2B
 # Documentación 
 
 ## Realizado por el Equipo 
