@@ -61,11 +61,83 @@
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Models\ProfParticipante.cs" />
     <Compile Include="Models\ProfResponsable.cs" />
-    <Compile Include="Views\Form1.cs">
+    <Compile Include="Views\Actividades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Views\Actividades.Designer.cs">
+      <DependentUpon>Actividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Contrato_transporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Contrato_transporte.Designer.cs">
+      <DependentUpon>Contrato_transporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Cursos.Designer.cs">
+      <DependentUpon>Cursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Departamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Departamentos.Designer.cs">
+      <DependentUpon>Departamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Empresas_transporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Empresas_transporte.Designer.cs">
+      <DependentUpon>Empresas_transporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Foto_actividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Foto_actividades.Designer.cs">
+      <DependentUpon>Foto_actividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Grupos_participantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Grupos_participantes.Designer.cs">
+      <DependentUpon>Grupos_participantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Grupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Grupos.Designer.cs">
+      <DependentUpon>Grupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Profesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Profesores.Designer.cs">
+      <DependentUpon>Profesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Actividad.cs" />
     <Compile Include="Program.cs" />
@@ -79,6 +151,45 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Actividades.resx">
+      <DependentUpon>Actividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Contrato_transporte.resx">
+      <DependentUpon>Contrato_transporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Cursos.resx">
+      <DependentUpon>Cursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Departamentos.resx">
+      <DependentUpon>Departamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Empresas_transporte.resx">
+      <DependentUpon>Empresas_transporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Foto_actividades.resx">
+      <DependentUpon>Foto_actividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Grupos.resx">
+      <DependentUpon>Grupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Grupos_participantes.resx">
+      <DependentUpon>Grupos_participantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Profesores.resx">
+      <DependentUpon>Profesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
