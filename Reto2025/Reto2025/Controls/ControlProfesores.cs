@@ -83,7 +83,7 @@ namespace Reto2025.Controls
                 // Verificar si la respuesta fue exitosa
                 if (response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Alumno guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Profesor guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     return true; // La calificación fue guardada con éxito
                 }
