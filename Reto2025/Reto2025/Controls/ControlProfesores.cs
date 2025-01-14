@@ -67,7 +67,7 @@ namespace Reto2025.Controls
             }
         }
 
-        public async Task<Profesor> GetProfesorId(int id)
+        public async Task<Profesor> GetProfesorMail(String mail)
 
         {
             try
@@ -78,7 +78,7 @@ namespace Reto2025.Controls
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
                 //que se quiere consultar
-                HttpResponseMessage response = await client.GetAsync($"http://localhost:8080/acex/profesores/{id}");
+                HttpResponseMessage response = await client.GetAsync($"http://localhost:8080/acex/profesores/{mail}");
 
                 //Verifica que la respuesta tenga un estado de éxito
                 //Si no es exitosa, lanza una excepción
