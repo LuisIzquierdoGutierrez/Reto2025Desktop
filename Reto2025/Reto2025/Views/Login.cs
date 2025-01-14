@@ -1,4 +1,5 @@
-﻿using Reto2025.Models;
+﻿using Reto2025.Controls;
+using Reto2025.Models;
 using Reto2025.Views;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,9 @@ namespace Reto2025
         public Login()
         {
             InitializeComponent();
+
         }
+
 
         private void btn_inicio_Click(object sender, EventArgs e)
         {
