@@ -35,7 +35,7 @@ namespace Reto2025.Controls
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
                 //que se quiere consultar
-                HttpResponseMessage response = await client.GetAsync("http://localhost:4000/actividades");
+                HttpResponseMessage response = await client.GetAsync("http://localhost:8080/acex/actividades");
 
                 //Verifica que la respuesta tenga un estado de éxito
                 //Si no es exitosa, lanza una excepción
@@ -78,12 +78,12 @@ namespace Reto2025.Controls
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 string id = actividad.id.ToString();
                 // Realizar la solicitud POST a la API
-                HttpResponseMessage response = await client.PutAsync($"http://localhost:4000/alumnos/{id}", content);
+                HttpResponseMessage response = await client.PutAsync($"http://localhost:8080/acex/actividades/{id}", content);
 
                 // Verificar si la respuesta fue exitosa
                 if (response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Alumno guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Actividad guardada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     return true; // La calificación fue guardada con éxito
                 }

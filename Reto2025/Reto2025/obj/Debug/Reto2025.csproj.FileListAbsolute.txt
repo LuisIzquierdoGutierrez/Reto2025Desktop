@@ -20,3 +20,28 @@ D:\Usuarios\DAM221\OneDrive - Educantabria\Escritorio\Reto2025Desktop-main\Reto2
 D:\Usuarios\DAM221\OneDrive - Educantabria\Escritorio\Reto2025Desktop-main\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Profesores.resources
 D:\Usuarios\DAM221\OneDrive - Educantabria\Escritorio\Reto2025Desktop-main\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Departamentos.resources
 D:\Usuarios\DAM221\OneDrive - Educantabria\Escritorio\Reto2025Desktop-main\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Inicio.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\bin\Debug\Reto2025.exe.config
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\bin\Debug\Reto2025.exe
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\bin\Debug\Reto2025.pdb
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\bin\Debug\Newtonsoft.Json.dll
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\bin\Debug\Newtonsoft.Json.xml
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.csproj.AssemblyReference.cache
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Properties.Resources.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Actividades.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Contrato_transporte.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Cursos.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Departamentos.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Empresas_transporte.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Fotos_actividades.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Grupos.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Grupos_Participantes.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Inicio.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Perfil.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Profesores.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.Registro.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Login.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.csproj.GenerateResource.cache
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.csproj.CoreCompileInputs.cache
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.csproj.Up2Date
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.exe
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.pdb
