@@ -50,11 +50,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls\ControlActividades.cs" />
+    <Compile Include="Controls\ControlContratos.cs" />
+    <Compile Include="Controls\ControlCursos.cs" />
+    <Compile Include="Controls\ControlDepartamentos.cs" />
+    <Compile Include="Controls\ControlEmpTransporte.cs" />
+    <Compile Include="Controls\ControlFotos.cs" />
+    <Compile Include="Controls\ControlGrupos.cs" />
+    <Compile Include="Controls\ControlGruposParticipantes.cs" />
+    <Compile Include="Controls\ControlProfesores.cs" />
+    <Compile Include="Controls\ControlProfParticipantes.cs" />
+    <Compile Include="Controls\ControlProfResponsables.cs" />
     <Compile Include="Enums\EstadoActividad.cs" />
     <Compile Include="Enums\EtapaCurso.cs" />
     <Compile Include="Enums\RolProfesor.cs" />
     <Compile Include="Enums\TipoActividad.cs" />
-    <Compile Include="Models\Contratos.cs" />
+    <Compile Include="Models\Contrato.cs" />
     <Compile Include="Models\Curso.cs" />
     <Compile Include="Models\Departamento.cs" />
     <Compile Include="Models\EmpTransporte.cs" />
