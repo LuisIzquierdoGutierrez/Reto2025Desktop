@@ -67,6 +67,51 @@ namespace Reto2025.Controls
             }
         }
 
+        public async Task<Profesor> GetProfesorMail(String mail)
+
+        {
+            try
+            {
+
+                //Hacemos una instancia de Personajes
+                Profesor profesor = new Profesor();
+
+                //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
+                //que se quiere consultar
+                HttpResponseMessage response = await client.GetAsync($"http://localhost:8080/acex/profesores/{mail}");
+
+                //Verifica que la respuesta tenga un estado de éxito
+                //Si no es exitosa, lanza una excepción
+                response.EnsureSuccessStatusCode();
+
+                //String con las respuesta que es el JSON con toda la información
+                //que habíamos visto previamente
+                string responseJson = await response.Content.ReadAsStringAsync();
+
+
+                //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
+                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //biblioteca Newtonsoft.Json
+
+                profesor = JsonConvert.DeserializeObject<Profesor>(responseJson);
+
+                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                return profesor;
+
+            }
+
+            catch (Exception e)
+            {
+
+                //Si ocurre algún error (como problemos de conexión o un JSON no válido),
+                //captura la excepción y devuelve "null" como valor de error
+                MessageBox.Show(e.Message);
+                return null;
+
+            }
+        }
+
+
         public async Task<bool> GuardarProfesor(Profesor profesor)
         {
             try

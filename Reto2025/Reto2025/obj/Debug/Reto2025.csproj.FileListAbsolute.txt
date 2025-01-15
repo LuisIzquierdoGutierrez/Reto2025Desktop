@@ -72,3 +72,5 @@ D:\Usuarios\DAM221\OneDrive - Educantabria\Documentos\GitHub\Reto2025Desktop\Ret
 D:\Usuarios\DAM221\OneDrive - Educantabria\Documentos\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.exe
 D:\Usuarios\DAM221\OneDrive - Educantabria\Documentos\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.pdb
 D:\Usuarios\DAM221\OneDrive - Educantabria\Documentos\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.ControlCalendarioBlanco.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.ControlCalendario.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.ControlCalendarioBlanco.resources

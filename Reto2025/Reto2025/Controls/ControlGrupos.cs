@@ -67,6 +67,50 @@ namespace Reto2025.Controls
             }
         }
 
+        public async Task<Grupo> GetGrupoId(int id)
+
+        {
+            try
+            {
+
+                //Hacemos una instancia de Personajes
+                Grupo grupo = new Grupo();
+
+                //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
+                //que se quiere consultar
+                HttpResponseMessage response = await client.GetAsync($"http://localhost:8080/acex/grupos/{id}");
+
+                //Verifica que la respuesta tenga un estado de éxito
+                //Si no es exitosa, lanza una excepción
+                response.EnsureSuccessStatusCode();
+
+                //String con las respuesta que es el JSON con toda la información
+                //que habíamos visto previamente
+                string responseJson = await response.Content.ReadAsStringAsync();
+
+
+                //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
+                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //biblioteca Newtonsoft.Json
+
+                grupo = JsonConvert.DeserializeObject<Grupo>(responseJson);
+
+                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                return grupo;
+
+            }
+
+            catch (Exception e)
+            {
+
+                //Si ocurre algún error (como problemos de conexión o un JSON no válido),
+                //captura la excepción y devuelve "null" como valor de error
+                MessageBox.Show(e.Message);
+                return null;
+
+            }
+        }
+
         public async Task<bool> GuardarGrupo(Grupo grupo)
         {
             try
