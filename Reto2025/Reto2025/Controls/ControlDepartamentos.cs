@@ -122,7 +122,7 @@ namespace Reto2025.Controls
 
                 // Crear el contenido de la solicitud (POST)
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
-                string id = departamento.id_depar.ToString();
+                string id = departamento.id.ToString();
                 // Realizar la solicitud POST a la API
                 HttpResponseMessage response = await client.PutAsync($"http://localhost:8080/acex/departamentos/{id}", content);
 
