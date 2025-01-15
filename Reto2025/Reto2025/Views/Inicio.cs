@@ -116,14 +116,6 @@ namespace Reto2025.Views
 
         private void dias_de_mierda(int? opMes)
         {
-          
-
-
-
-            
-
-            label7.Text = inicioMES.Month.ToString();
-
 
             switch (opMes)
             {
@@ -138,7 +130,6 @@ namespace Reto2025.Views
                     break;
 
                 default:
-                    MessageBox.Show("error");
                     break;
             }
             
@@ -153,6 +144,10 @@ namespace Reto2025.Views
 
             int dias_semana =Convert.ToInt32(inicioMES.DayOfWeek.ToString("d"));
             daycontainer.Controls.Clear();
+            if (dias_semana==0)
+            {
+                dias_semana = 7;
+            }
 
             label1.Text = dias_semana.ToString();
 

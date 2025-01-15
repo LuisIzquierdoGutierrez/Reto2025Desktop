@@ -74,7 +74,7 @@ namespace Reto2025.Controls
             {
                 MessageBox.Show("patata");
                 //Hacemos una instancia de Personajes
-                Contrato contrato = new Actividad();
+                Contrato contrato = new Contrato();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
                 //que se quiere consultar
@@ -93,7 +93,7 @@ namespace Reto2025.Controls
                 //el JSON recibido en un objeto de tipo "Personajes" utilizando la
                 //biblioteca Newtonsoft.Json
 
-                contrato = JsonConvert.DeserializeObject<Actividad>(responseJson);
+                contrato = JsonConvert.DeserializeObject<Contrato>(responseJson);
 
                 //Devuelve el objeto "personajes" con los datos obtenidos de la API
                 return contrato;
