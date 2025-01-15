@@ -19,7 +19,7 @@ namespace Reto2025.Models
         public bool activo;
         public string urlFoto;
         public bool esJefeDep;
-        public Departamento departamento;
+        public Departamento depart;
 
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btn_volver = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lwCursos = new System.Windows.Forms.ListView();
             this.Codigo_curso = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Titulo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Etapa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -46,32 +46,49 @@
             this.btn_volver.UseVisualStyleBackColor = true;
             this.btn_volver.Click += new System.EventHandler(this.btn_volver_Click);
             // 
-            // listView1
+            // lwCursos
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lwCursos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Codigo_curso,
             this.Titulo,
             this.Etapa,
             this.Nivel});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 12);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(776, 378);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.lwCursos.HideSelection = false;
+            this.lwCursos.Location = new System.Drawing.Point(12, 12);
+            this.lwCursos.Name = "lwCursos";
+            this.lwCursos.Size = new System.Drawing.Size(776, 378);
+            this.lwCursos.TabIndex = 2;
+            this.lwCursos.UseCompatibleStateImageBehavior = false;
+            this.lwCursos.View = System.Windows.Forms.View.Details;
             // 
             // Codigo_curso
             // 
             this.Codigo_curso.Text = "Codigo curso";
+            // 
+            // Titulo
+            // 
+            this.Titulo.Text = "Titulo";
+            this.Titulo.Width = 96;
+            // 
+            // Etapa
+            // 
+            this.Etapa.Text = "Etapa";
+            this.Etapa.Width = 115;
+            // 
+            // Nivel
+            // 
+            this.Nivel.Text = "Nivel";
+            this.Nivel.Width = 483;
             // 
             // frmCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lwCursos);
             this.Controls.Add(this.btn_volver);
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "frmCursos";
             this.Text = "Cursos";
             this.ResumeLayout(false);
@@ -80,7 +97,7 @@
 
         #endregion
         private System.Windows.Forms.Button btn_volver;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lwCursos;
         private System.Windows.Forms.ColumnHeader Codigo_curso;
         private System.Windows.Forms.ColumnHeader Titulo;
         private System.Windows.Forms.ColumnHeader Etapa;
