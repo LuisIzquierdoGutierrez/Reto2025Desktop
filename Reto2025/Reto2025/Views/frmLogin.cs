@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace Reto2025
 {
-    public partial class Login : Form
+    public partial class frmLogin : Form
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -27,7 +27,7 @@ namespace Reto2025
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Inicio inicio = new Inicio();
+                frmInicio inicio = new frmInicio();
                 Application.Run(inicio);
             });
 
@@ -43,7 +43,7 @@ namespace Reto2025
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Registro registro = new Registro();
+                frmRegistro registro = new frmRegistro();
                 Application.Run(registro);
             });
 

@@ -1,6 +1,6 @@
 ﻿namespace Reto2025
 {
-    partial class Login
+    partial class frmLogin
     {
         /// <summary>
         /// Variable del diseñador necesaria.

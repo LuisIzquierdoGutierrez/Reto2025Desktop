@@ -74,95 +74,95 @@
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Models\ProfParticipante.cs" />
     <Compile Include="Models\ProfResponsable.cs" />
-    <Compile Include="Views\Actividades.cs">
+    <Compile Include="Views\frmActividades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Actividades.Designer.cs">
-      <DependentUpon>Actividades.cs</DependentUpon>
+    <Compile Include="Views\frmActividades.Designer.cs">
+      <DependentUpon>frmActividades.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Contrato_transporte.cs">
+    <Compile Include="Views\frmContrato_transporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Contrato_transporte.Designer.cs">
-      <DependentUpon>Contrato_transporte.cs</DependentUpon>
+    <Compile Include="Views\frmContrato_transporte.Designer.cs">
+      <DependentUpon>frmContrato_transporte.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ControlCalendario.cs">
+    <Compile Include="Views\frmControlCalendario.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\ControlCalendario.Designer.cs">
-      <DependentUpon>ControlCalendario.cs</DependentUpon>
+    <Compile Include="Views\frmControlCalendario.Designer.cs">
+      <DependentUpon>frmControlCalendario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\ControlCalendarioBlanco.cs">
+    <Compile Include="Views\frmControlCalendarioBlanco.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\ControlCalendarioBlanco.Designer.cs">
-      <DependentUpon>ControlCalendarioBlanco.cs</DependentUpon>
+    <Compile Include="Views\frmControlCalendarioBlanco.Designer.cs">
+      <DependentUpon>frmControlCalendarioBlanco.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Cursos.cs">
+    <Compile Include="Views\frmCursos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Cursos.Designer.cs">
-      <DependentUpon>Cursos.cs</DependentUpon>
+    <Compile Include="Views\frmCursos.Designer.cs">
+      <DependentUpon>frmCursos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Departamentos.cs">
+    <Compile Include="Views\frmDepartamentos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Departamentos.Designer.cs">
-      <DependentUpon>Departamentos.cs</DependentUpon>
+    <Compile Include="Views\frmDepartamentos.Designer.cs">
+      <DependentUpon>frmDepartamentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Empresas_transporte.cs">
+    <Compile Include="Views\frmEmpresas_transporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Empresas_transporte.Designer.cs">
-      <DependentUpon>Empresas_transporte.cs</DependentUpon>
+    <Compile Include="Views\frmEmpresas_transporte.Designer.cs">
+      <DependentUpon>frmEmpresas_transporte.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Foto_actividades.cs">
+    <Compile Include="Views\frmFoto_actividades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Foto_actividades.Designer.cs">
-      <DependentUpon>Foto_actividades.cs</DependentUpon>
+    <Compile Include="Views\frmFoto_actividades.Designer.cs">
+      <DependentUpon>frmFoto_actividades.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Grupos_participantes.cs">
+    <Compile Include="Views\frmGrupos_participantes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Grupos_participantes.Designer.cs">
-      <DependentUpon>Grupos_participantes.cs</DependentUpon>
+    <Compile Include="Views\frmGrupos_participantes.Designer.cs">
+      <DependentUpon>frmGrupos_participantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Grupos.cs">
+    <Compile Include="Views\frmGrupos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Grupos.Designer.cs">
-      <DependentUpon>Grupos.cs</DependentUpon>
+    <Compile Include="Views\frmGrupos.Designer.cs">
+      <DependentUpon>frmGrupos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Inicio.cs">
+    <Compile Include="Views\frmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Inicio.Designer.cs">
-      <DependentUpon>Inicio.cs</DependentUpon>
+    <Compile Include="Views\frmInicio.Designer.cs">
+      <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Perfil.cs">
+    <Compile Include="Views\frmPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Perfil.Designer.cs">
-      <DependentUpon>Perfil.cs</DependentUpon>
+    <Compile Include="Views\frmPerfil.Designer.cs">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Profesores.cs">
+    <Compile Include="Views\frmProfesores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Profesores.Designer.cs">
-      <DependentUpon>Profesores.cs</DependentUpon>
+    <Compile Include="Views\frmProfesores.Designer.cs">
+      <DependentUpon>frmProfesores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Registro.cs">
+    <Compile Include="Views\frmRegistro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Registro.Designer.cs">
-      <DependentUpon>Registro.cs</DependentUpon>
+    <Compile Include="Views\frmRegistro.Designer.cs">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Login.cs">
+    <Compile Include="Views\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Views\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Actividad.cs" />
     <Compile Include="Program.cs" />
@@ -176,50 +176,50 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\Actividades.resx">
-      <DependentUpon>Actividades.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmActividades.resx">
+      <DependentUpon>frmActividades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Contrato_transporte.resx">
-      <DependentUpon>Contrato_transporte.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmContrato_transporte.resx">
+      <DependentUpon>frmContrato_transporte.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\ControlCalendario.resx">
-      <DependentUpon>ControlCalendario.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmControlCalendario.resx">
+      <DependentUpon>frmControlCalendario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\ControlCalendarioBlanco.resx">
-      <DependentUpon>ControlCalendarioBlanco.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmControlCalendarioBlanco.resx">
+      <DependentUpon>frmControlCalendarioBlanco.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Cursos.resx">
-      <DependentUpon>Cursos.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmCursos.resx">
+      <DependentUpon>frmCursos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Departamentos.resx">
-      <DependentUpon>Departamentos.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmDepartamentos.resx">
+      <DependentUpon>frmDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Empresas_transporte.resx">
-      <DependentUpon>Empresas_transporte.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmEmpresas_transporte.resx">
+      <DependentUpon>frmEmpresas_transporte.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Foto_actividades.resx">
-      <DependentUpon>Foto_actividades.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmFoto_actividades.resx">
+      <DependentUpon>frmFoto_actividades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Grupos.resx">
-      <DependentUpon>Grupos.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmGrupos.resx">
+      <DependentUpon>frmGrupos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Grupos_participantes.resx">
-      <DependentUpon>Grupos_participantes.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmGrupos_participantes.resx">
+      <DependentUpon>frmGrupos_participantes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Inicio.resx">
-      <DependentUpon>Inicio.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmInicio.resx">
+      <DependentUpon>frmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Perfil.resx">
-      <DependentUpon>Perfil.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmPerfil.resx">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Profesores.resx">
-      <DependentUpon>Profesores.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmProfesores.resx">
+      <DependentUpon>frmProfesores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Registro.resx">
-      <DependentUpon>Registro.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmRegistro.resx">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

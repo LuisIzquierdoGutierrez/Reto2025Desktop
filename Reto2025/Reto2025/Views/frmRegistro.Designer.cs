@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class Registro
+    partial class frmRegistro
     {
         /// <summary>
         /// Required designer variable.

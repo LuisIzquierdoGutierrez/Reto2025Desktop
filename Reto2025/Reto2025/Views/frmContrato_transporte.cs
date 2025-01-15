@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class Cursos : Form
+    public partial class frmContrato_transporte : Form
     {
-        public Cursos()
+        public frmContrato_transporte()
         {
             InitializeComponent();
         }
@@ -24,7 +24,22 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Inicio inicio = new Inicio();
+                frmInicio inicio = new frmInicio();
+                Application.Run(inicio);
+            });
+
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+            this.Close();
+        }
+
+        private void btn_crear_Click(object sender, EventArgs e)
+        {
+            Thread thread = new Thread(() =>
+            {
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.EnableVisualStyles();
+                frmInicio inicio = new frmInicio();
                 Application.Run(inicio);
             });
 

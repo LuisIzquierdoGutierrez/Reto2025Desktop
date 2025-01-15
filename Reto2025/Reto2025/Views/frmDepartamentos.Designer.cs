@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class Profesores
+    partial class frmDepartamentos
     {
         /// <summary>
         /// Required designer variable.
@@ -36,14 +36,14 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 27);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 13);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(748, 354);
+            this.dataGridView1.Size = new System.Drawing.Size(767, 365);
             this.dataGridView1.TabIndex = 0;
             // 
             // btn_volver
             // 
-            this.btn_volver.Location = new System.Drawing.Point(698, 409);
+            this.btn_volver.Location = new System.Drawing.Point(691, 412);
             this.btn_volver.Name = "btn_volver";
             this.btn_volver.Size = new System.Drawing.Size(75, 23);
             this.btn_volver.TabIndex = 1;
@@ -51,15 +51,15 @@
             this.btn_volver.UseVisualStyleBackColor = true;
             this.btn_volver.Click += new System.EventHandler(this.btn_volver_Click);
             // 
-            // Profesores
+            // Departamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_volver);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Profesores";
-            this.Text = "Profesores";
+            this.Name = "Departamentos";
+            this.Text = "Departamentos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

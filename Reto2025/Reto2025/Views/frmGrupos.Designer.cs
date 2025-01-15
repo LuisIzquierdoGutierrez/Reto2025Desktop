@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class Grupos
+    partial class frmGrupos
     {
         /// <summary>
         /// Required designer variable.
