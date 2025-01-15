@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Reto2025.Models
 {
-    internal class Departamento
+    public class Departamento
     {
         public int id_depar;
         public string codigo;

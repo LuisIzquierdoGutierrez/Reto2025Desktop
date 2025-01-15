@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Reto2025.Enums
 {
-    enum EtapaCurso
+    public enum EtapaCurso
     {
         ESO,
         BACH,

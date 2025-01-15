@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Reto2025.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,8 +12,10 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
+    
     public partial class frmCursos : Form
     {
+        public List<Curso> cursos = new List<Curso>();
         public frmCursos()
         {
             InitializeComponent();

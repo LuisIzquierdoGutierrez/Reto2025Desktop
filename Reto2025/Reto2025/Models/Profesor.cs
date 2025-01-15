@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Reto2025.Models
 {
-    internal class Profesor
+    public class Profesor
     {
         public string uuid;
         public string dni;

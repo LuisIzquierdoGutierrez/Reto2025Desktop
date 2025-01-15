@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace Reto2025.Models
 {
-    internal class Grupo
+    public class Grupo
     {
         public int id_grupo;
         public Curso curso;

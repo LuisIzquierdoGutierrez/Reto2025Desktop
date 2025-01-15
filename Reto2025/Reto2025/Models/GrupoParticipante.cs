@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Reto2025.Models
 {
-    internal class GrupoParticipante
+    public class GrupoParticipante
     {
         public int id;
         public Actividad actividad;

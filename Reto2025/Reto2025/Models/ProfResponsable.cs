@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Reto2025.Models
 {
-    internal class ProfResponsable
+    public class ProfResponsable
     {
         public int id;
         public Actividad actividad;

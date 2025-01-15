@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Reto2025.Models
 {
-    internal class Curso
+    public class Curso
     {
         public int id_curso;
         public string cod_curso;

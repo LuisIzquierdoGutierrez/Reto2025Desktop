@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Reto2025.Models
 {
-    internal class Foto
+    public class Foto
     {
         public int id;
         public string url_foto;
