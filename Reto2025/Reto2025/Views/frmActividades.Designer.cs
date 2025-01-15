@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class Actividades
+    partial class frmActividades
     {
         /// <summary>
         /// Required designer variable.

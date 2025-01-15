@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class Inicio : Form
+    public partial class frmInicio : Form
     {
       static DateTime inicioMES = DateTime.Now;
-        public Inicio()
+        public frmInicio()
         {
             InitializeComponent();
             
@@ -30,7 +30,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Actividades actividades = new Actividades();
+                frmActividades actividades = new frmActividades();
                 Application.Run(actividades);
             });
 
@@ -45,7 +45,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Cursos cursos = new Cursos();
+                frmCursos cursos = new frmCursos();
                 Application.Run(cursos);
             });
 
@@ -60,7 +60,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Profesores profesores = new Profesores();
+                frmProfesores profesores = new frmProfesores();
                 Application.Run(profesores);
             });
 
@@ -75,7 +75,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Departamentos departamentos = new Departamentos();
+                frmDepartamentos departamentos = new frmDepartamentos();
                 Application.Run(departamentos);
             });
 
@@ -90,7 +90,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Empresas_transporte empresas = new Empresas_transporte();
+                frmEmpresas_transporte empresas = new frmEmpresas_transporte();
                 Application.Run(empresas);
             });
 
@@ -105,7 +105,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Perfil perfil = new Perfil();
+                frmPerfil perfil = new frmPerfil();
                 Application.Run(perfil);
             });
 
@@ -153,18 +153,13 @@ namespace Reto2025.Views
 
             for (int i = 2; i <= dias_semana; i++)
             {
-                ControlCalendarioBlanco controlCalendarioBlanco = new ControlCalendarioBlanco();
+                frmControlCalendarioBlanco controlCalendarioBlanco = new frmControlCalendarioBlanco();
                 controlCalendarioBlanco.Text = i.ToString();  
                 daycontainer.Controls.Add(controlCalendarioBlanco);
             }
-            if (inicioMES.Month == 2)
-            {
-                dias = 28;
-            }
-
             for (int i = 1; i <= dias; i++)
             {
-                ControlCalendario controlCalendario = new ControlCalendario();
+                frmControlCalendario controlCalendario = new frmControlCalendario();
                 controlCalendario.Text = i.ToString();
                 controlCalendario.diaSemana(i);
                 daycontainer.Controls.Add(controlCalendario);

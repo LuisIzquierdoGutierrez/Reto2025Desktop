@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class Contrato_transporte
+    partial class frmContrato_transporte
     {
         /// <summary>
         /// Required designer variable.

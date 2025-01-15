@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class Profesores : Form
+    public partial class frmProfesores : Form
     {
-        public Profesores()
+        public frmProfesores()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Inicio inicio = new Inicio();
+                frmInicio inicio = new frmInicio();
                 Application.Run(inicio);
             });
 

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class Grupos_Participantes : Form
+    public partial class frmGrupos : Form
     {
-        public Grupos_Participantes()
+        public frmGrupos()
         {
             InitializeComponent();
         }
@@ -24,23 +24,8 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Actividades actividades = new Actividades();
-                Application.Run(actividades);
-            });
-
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
-        }
-
-        private void btn_crear_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(() =>
-            {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                Grupos grupos = new Grupos();
-                Application.Run(grupos);
+                Grupos_Participantes grupos_Participantes = new Grupos_Participantes();
+                Application.Run(grupos_Participantes);
             });
 
             thread.SetApartmentState(ApartmentState.STA);

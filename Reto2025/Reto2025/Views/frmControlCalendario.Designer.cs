@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class ControlCalendario
+    partial class frmControlCalendario
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.lbl_dia = new System.Windows.Forms.Label();
+            this.lbl_evento = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_dia
@@ -40,11 +41,21 @@
             this.lbl_dia.TabIndex = 0;
             this.lbl_dia.Text = "00";
             // 
+            // lbl_evento
+            // 
+            this.lbl_evento.AutoSize = true;
+            this.lbl_evento.Location = new System.Drawing.Point(3, 59);
+            this.lbl_evento.Name = "lbl_evento";
+            this.lbl_evento.Size = new System.Drawing.Size(41, 13);
+            this.lbl_evento.TabIndex = 1;
+            this.lbl_evento.Text = "Evento";
+            // 
             // ControlCalendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.lbl_evento);
             this.Controls.Add(this.lbl_dia);
             this.Name = "ControlCalendario";
             this.Size = new System.Drawing.Size(125, 88);
@@ -56,5 +67,6 @@
         #endregion
 
         private System.Windows.Forms.Label lbl_dia;
+        private System.Windows.Forms.Label lbl_evento;
     }
 }

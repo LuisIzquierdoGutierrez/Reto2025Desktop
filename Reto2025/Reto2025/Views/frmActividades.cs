@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class Actividades : Form
+    public partial class frmActividades : Form
     {
-        public Actividades()
+        public frmActividades()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Inicio inicio = new Inicio();
+                frmInicio inicio = new frmInicio();
                 Application.Run(inicio);
             });
 
@@ -39,7 +39,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Inicio inicio = new Inicio();
+                frmInicio inicio = new frmInicio();
                 Application.Run(inicio);
             });
 

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class Departamentos : Form
+    public partial class frmEmpresas_transporte : Form
     {
-        public Departamentos()
+        public frmEmpresas_transporte()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                Inicio inicio = new Inicio();
+                frmInicio inicio = new frmInicio();
                 Application.Run(inicio);
             });
 
