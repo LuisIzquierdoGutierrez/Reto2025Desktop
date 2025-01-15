@@ -157,6 +157,10 @@ namespace Reto2025.Views
                 controlCalendarioBlanco.Text = i.ToString();  
                 daycontainer.Controls.Add(controlCalendarioBlanco);
             }
+                        if (inicioMES.Month == 2)
+            {
+                dias = 28;
+            }
             for (int i = 1; i <= dias; i++)
             {
                 frmControlCalendario controlCalendario = new frmControlCalendario();
