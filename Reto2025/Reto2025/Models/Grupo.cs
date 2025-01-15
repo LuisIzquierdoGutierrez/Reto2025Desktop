@@ -9,10 +9,10 @@ namespace Reto2025.Models
 {
     public class Grupo
     {
-        public int id_grupo;
+        public int id;
         public Curso curso;
-        public string cod_grupo;
-        public int num_alumnos;
+        public string codGrupo;
+        public int numAlumnos;
         public bool activo;
         public Profesor tutor;
 

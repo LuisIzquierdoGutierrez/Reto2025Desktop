@@ -52,6 +52,7 @@ namespace Reto2025.Controls
                 cursos = JsonConvert.DeserializeObject<List<Curso>>(responseJson);
 
                 //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                
                 return cursos;
 
             }
@@ -121,7 +122,7 @@ namespace Reto2025.Controls
 
                 // Crear el contenido de la solicitud (POST)
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
-                string id = curso.id_curso.ToString();
+                string id = curso.id.ToString();
                 // Realizar la solicitud POST a la API
                 HttpResponseMessage response = await client.PutAsync($"http://localhost:8080/acex/cursos/{id}", content);
 

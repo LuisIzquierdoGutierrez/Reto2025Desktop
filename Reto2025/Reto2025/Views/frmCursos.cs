@@ -1,4 +1,5 @@
-﻿using Reto2025.Models;
+﻿using Reto2025.Controls;
+using Reto2025.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,14 +13,28 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    
+
     public partial class frmCursos : Form
     {
-        public List<Curso> cursos = new List<Curso>();
+        public static List<Curso> cursos;
+        private ControlCursos controlCursos = new ControlCursos();
+        
         public frmCursos()
         {
             InitializeComponent();
+            if(cursos == null)
+            {
+                loadCursos();
+                
+            }
+            else
+            {
+                cargarCursos();
+            }
+            
         }
+
+
 
         private void btn_volver_Click(object sender, EventArgs e)
         {
@@ -34,6 +49,23 @@ namespace Reto2025.Views
             thread.SetApartmentState(ApartmentState.STA);
             thread.Start();
             this.Close();
+        }
+
+        private async void loadCursos()
+        {
+            cursos = await controlCursos.GetAllCursos();
+            cargarCursos();
+        }
+        private void cargarCursos()
+        {
+            ListViewItem item;
+            foreach (Curso curso in cursos)
+            {
+                item  = new ListViewItem();
+                string[] row = { curso.codCurso.ToString(), curso.titulo, curso.etapa.ToString(), curso.nivel.ToString() };
+                item = new ListViewItem(row);
+                listView1.Items.Add(item);
+            }
         }
     }
 }

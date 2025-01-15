@@ -9,7 +9,7 @@ namespace Reto2025.Models
     public class Foto
     {
         public int id;
-        public string url_foto;
+        public string urlFoto;
         public string descripcion;
         public Actividad actividad;
     }

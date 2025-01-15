@@ -11,5 +11,9 @@ namespace Reto2025.Models
         public int id;
         public Actividad actividad;
         public EmpTransporte emp_transporte;
+        public bool contratada;
+        public double importe;
+        public string urlPresupuesto;
+        public string urlFactura;
     }
 }

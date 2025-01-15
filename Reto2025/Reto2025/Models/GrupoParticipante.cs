@@ -9,9 +9,9 @@ namespace Reto2025.Models
     public class GrupoParticipante
     {
         public int id;
-        public Actividad actividad;
+        public Actividad actividades;
         public Grupo grupo;
-        public int num_participantes;
+        public int numParticipantes;
         public string comentario;
     }
 }

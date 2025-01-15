@@ -9,10 +9,10 @@ namespace Reto2025.Models
 {
     public class Curso
     {
-        public int id_curso;
-        public string cod_curso;
+        public int id;
+        public string codCurso;
         public string titulo;
-        public EtapaCurso curso;
+        public EtapaCurso etapa;
         public char nivel;
         public bool activo;
     }

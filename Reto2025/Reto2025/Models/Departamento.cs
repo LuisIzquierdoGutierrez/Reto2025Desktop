@@ -8,7 +8,7 @@ namespace Reto2025.Models
 {
     public class Departamento
     {
-        public int id_depar;
+        public int id;
         public string codigo;
         public string nombre;
     }

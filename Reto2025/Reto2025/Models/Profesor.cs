@@ -17,7 +17,8 @@ namespace Reto2025.Models
         public string password;
         public RolProfesor rol;
         public bool activo;
-        public string url_foto;
+        public string urlFoto;
+        public bool esJefeDep;
         public Departamento departamento;
 
     }

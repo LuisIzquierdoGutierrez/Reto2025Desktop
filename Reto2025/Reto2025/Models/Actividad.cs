@@ -18,18 +18,18 @@ namespace Reto2025.Models
         public DateTime ffin;
         public DateTime hini;
         public DateTime hfin;
-        public bool prevista_ini;
-        public bool transporte_req;
-        public string coment_transporte;
-        public bool alojamiento_req;
-        public string coment_alojamiento;
+        public bool previstaIni;
+        public bool transporteReq;
+        public string comentTransporte;
+        public bool alojamientoReq;
+        public string comentAlojamiento;
         public string comentarios;
         public EstadoActividad estado;
-        public string coment_estado;
+        public string comentEstado;
         public string incidencias;
-        public string url_folleto;
+        public string urlFolleto;
         public Profesor solicitante;
-        public float importe_por_alumno;
+        public float importePorAlumno;
 
 
 
