@@ -10,13 +10,14 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Reto2025.Views
 {
 
     public partial class frmCursos : Form
     {
-        public static List<Curso> cursos;
+        private static List<Curso> cursos;
         private ControlCursos controlCursos = new ControlCursos();
         
         public frmCursos()
@@ -29,7 +30,7 @@ namespace Reto2025.Views
             }
             else
             {
-                cargarCursos();
+                putCursos();
             }
             
         }
@@ -54,9 +55,9 @@ namespace Reto2025.Views
         private async void loadCursos()
         {
             cursos = await controlCursos.GetAllCursos();
-            cargarCursos();
+            putCursos();
         }
-        private void cargarCursos()
+        private void putCursos()
         {
             ListViewItem item;
             foreach (Curso curso in cursos)
@@ -64,8 +65,9 @@ namespace Reto2025.Views
                 item  = new ListViewItem();
                 string[] row = { curso.codCurso.ToString(), curso.titulo, curso.etapa.ToString(), curso.nivel.ToString() };
                 item = new ListViewItem(row);
-                listView1.Items.Add(item);
+                lwCursos.Items.Add(item);
             }
+            lwCursos.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
     }
 }

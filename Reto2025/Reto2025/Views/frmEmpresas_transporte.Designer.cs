@@ -28,18 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_volver = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.lwEmpTransporte = new System.Windows.Forms.ListView();
+            this.Nombre = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Contacto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Localidad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Direccion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CP = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.CIF = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 21);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(765, 360);
-            this.dataGridView1.TabIndex = 0;
             // 
             // btn_volver
             // 
@@ -51,23 +48,68 @@
             this.btn_volver.UseVisualStyleBackColor = true;
             this.btn_volver.Click += new System.EventHandler(this.btn_volver_Click);
             // 
-            // Empresas_transporte
+            // lwEmpTransporte
+            // 
+            this.lwEmpTransporte.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Nombre,
+            this.Contacto,
+            this.Localidad,
+            this.Direccion,
+            this.CP,
+            this.CIF});
+            this.lwEmpTransporte.HideSelection = false;
+            this.lwEmpTransporte.Location = new System.Drawing.Point(12, 12);
+            this.lwEmpTransporte.Name = "lwEmpTransporte";
+            this.lwEmpTransporte.Size = new System.Drawing.Size(776, 380);
+            this.lwEmpTransporte.TabIndex = 2;
+            this.lwEmpTransporte.UseCompatibleStateImageBehavior = false;
+            this.lwEmpTransporte.View = System.Windows.Forms.View.Details;
+            // 
+            // Nombre
+            // 
+            this.Nombre.Text = "Nombre";
+            // 
+            // Contacto
+            // 
+            this.Contacto.Text = "Contacto";
+            // 
+            // Localidad
+            // 
+            this.Localidad.Text = "Localidad";
+            // 
+            // Direccion
+            // 
+            this.Direccion.Text = "Direccion";
+            // 
+            // CP
+            // 
+            this.CP.Text = "CP";
+            // 
+            // CIF
+            // 
+            this.CIF.Text = "CIF";
+            // 
+            // frmEmpresas_transporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lwEmpTransporte);
             this.Controls.Add(this.btn_volver);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "Empresas_transporte";
+            this.Name = "frmEmpresas_transporte";
             this.Text = "Empresas de transporte";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_volver;
+        private System.Windows.Forms.ListView lwEmpTransporte;
+        private System.Windows.Forms.ColumnHeader Nombre;
+        private System.Windows.Forms.ColumnHeader Contacto;
+        private System.Windows.Forms.ColumnHeader Localidad;
+        private System.Windows.Forms.ColumnHeader Direccion;
+        private System.Windows.Forms.ColumnHeader CP;
+        private System.Windows.Forms.ColumnHeader CIF;
     }
 }
