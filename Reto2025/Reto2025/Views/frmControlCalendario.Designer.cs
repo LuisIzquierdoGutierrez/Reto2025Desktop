@@ -46,19 +46,19 @@
             this.lbl_evento.AutoSize = true;
             this.lbl_evento.Location = new System.Drawing.Point(3, 59);
             this.lbl_evento.Name = "lbl_evento";
-            this.lbl_evento.Size = new System.Drawing.Size(41, 13);
+            this.lbl_evento.Size = new System.Drawing.Size(0, 13);
             this.lbl_evento.TabIndex = 1;
-            this.lbl_evento.Text = "Evento";
             // 
-            // ControlCalendario
+            // frmControlCalendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lbl_evento);
             this.Controls.Add(this.lbl_dia);
-            this.Name = "ControlCalendario";
+            this.Name = "frmControlCalendario";
             this.Size = new System.Drawing.Size(125, 88);
+            this.Click += new System.EventHandler(this.frmControlCalendario_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
