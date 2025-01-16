@@ -30,6 +30,7 @@
         {
             this.lbl_dia = new System.Windows.Forms.Label();
             this.lbl_evento = new System.Windows.Forms.Label();
+            this.lbl_idsActividades = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_dia
@@ -49,11 +50,22 @@
             this.lbl_evento.Size = new System.Drawing.Size(0, 13);
             this.lbl_evento.TabIndex = 1;
             // 
+            // lbl_idsActividades
+            // 
+            this.lbl_idsActividades.AutoSize = true;
+            this.lbl_idsActividades.Location = new System.Drawing.Point(70, 9);
+            this.lbl_idsActividades.Name = "lbl_idsActividades";
+            this.lbl_idsActividades.Size = new System.Drawing.Size(35, 13);
+            this.lbl_idsActividades.TabIndex = 2;
+            this.lbl_idsActividades.Text = "label1";
+            this.lbl_idsActividades.Visible = false;
+            // 
             // frmControlCalendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.lbl_idsActividades);
             this.Controls.Add(this.lbl_evento);
             this.Controls.Add(this.lbl_dia);
             this.Name = "frmControlCalendario";
@@ -68,5 +80,6 @@
 
         private System.Windows.Forms.Label lbl_dia;
         private System.Windows.Forms.Label lbl_evento;
+        private System.Windows.Forms.Label lbl_idsActividades;
     }
 }

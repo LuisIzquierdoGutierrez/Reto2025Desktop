@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Contracts;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
@@ -20,13 +21,13 @@ namespace Reto2025.Views
 
         public static List<Actividad> actividades;
         static DateTime inicioMES = DateTime.Now;
-       
+
         public frmInicio()
         {
             InitializeComponent();
             inicioMES = new DateTime(inicioMES.Year, inicioMES.Month, 1);
         }
-        private async  void  frmInicio_Load(object sender, EventArgs e)
+        private async void frmInicio_Load(object sender, EventArgs e)
         {
 
             actividades = await controlAct.GetAllActividades();
@@ -130,7 +131,7 @@ namespace Reto2025.Views
 
             switch (opMes)
             {
-                
+
                 case 1:
                     inicioMES = inicioMES.AddMonths(-1);
 
@@ -143,30 +144,27 @@ namespace Reto2025.Views
                 default:
                     break;
             }
-            
+
             String mesletras = DateTimeFormatInfo.CurrentInfo.GetMonthName(inicioMES.Month);
 
             lbl_mes.Text = mesletras + "    " + inicioMES.Year;
 
-            List<Actividad> actividades_mes= new List<Actividad>();
-            if (actividades != null)
-            {
-                foreach (Actividad actividad in actividades)
-                {
+            List<Actividad> actividades_mes = new List<Actividad>();
 
-                    if (actividad.fini.Month == inicioMES.Month)
-                    {
-                        actividades_mes.Add(actividad);
-                    }
+            foreach (Actividad actividad in actividades)
+            {
+
+                if (actividad.fini.Month == inicioMES.Month)
+                {
+                    actividades_mes.Add(actividad);
                 }
             }
-            
-               
+
             int dias = DateTime.DaysInMonth(inicioMES.Year, inicioMES.Month);
 
-            int dias_semana =Convert.ToInt32(inicioMES.DayOfWeek.ToString("d"));
+            int dias_semana = Convert.ToInt32(inicioMES.DayOfWeek.ToString("d"));
             daycontainer.Controls.Clear();
-            if (dias_semana==0)
+            if (dias_semana == 0)
             {
                 dias_semana = 7;
             }
@@ -175,17 +173,18 @@ namespace Reto2025.Views
             for (int i = 2; i <= dias_semana; i++)
             {
                 frmControlCalendarioBlanco controlCalendarioBlanco = new frmControlCalendarioBlanco();
-                controlCalendarioBlanco.Text = i.ToString();  
+                controlCalendarioBlanco.Text = i.ToString();
                 daycontainer.Controls.Add(controlCalendarioBlanco);
             }
             for (int i = 1; i <= dias; i++)
             {
                 frmControlCalendario controlCalendario = new frmControlCalendario();
-                foreach(Actividad actividadMes in actividades_mes)
-                if (i ==actividadMes.fini.Day ) {
+                foreach (Actividad actividadMes in actividades_mes)
+                    if (i == actividadMes.fini.Day)
+                    {
+                        controlCalendario.setNombreActividades(actividadMes);
 
-                    controlCalendario.setNombreActividades(actividadMes);
-                }
+                    }
                 controlCalendario.Text = i.ToString();
                 controlCalendario.diaSemana(i);
                 daycontainer.Controls.Add(controlCalendario);
@@ -207,13 +206,38 @@ namespace Reto2025.Views
         }
 
         private void normativaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+                {
             new frmNormativa().Show();
         }
 
         private void fAQToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+                    {
             new frmFAQ().Show();
+        }
+        public async void mostrarActividades(String idsActividades)
+        {
+            String[] ids = idsActividades.Split(',');
+
+            foreach (String id in ids)
+            {
+                if (id != "")
+                {
+
+                    MessageBox.Show(id);
+                    int idEntero = Int32.Parse(id);
+                    Actividad act = await controlAct.GetActividadId(idEntero);
+                    frmControlActividades controlActividades = new frmControlActividades();
+
+                    if (act != null)
+                    {
+
+                        MessageBox.Show("entro aqui");
+                        controlActividades.setDatos(act);
+                        activityContainer.Controls.Add(controlActividades);
+
+                    }
+                }
+            }
         }
     }
 }

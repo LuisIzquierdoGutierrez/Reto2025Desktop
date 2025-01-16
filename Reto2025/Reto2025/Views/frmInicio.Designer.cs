@@ -54,6 +54,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lbl_mes = new System.Windows.Forms.Label();
+            this.activityContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_actividadesdia = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +72,7 @@
             this.normativaYFAQToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(951, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1197, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -167,14 +170,14 @@
             // normativaToolStripMenuItem
             // 
             this.normativaToolStripMenuItem.Name = "normativaToolStripMenuItem";
-            this.normativaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.normativaToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.normativaToolStripMenuItem.Text = "Normativa";
             this.normativaToolStripMenuItem.Click += new System.EventHandler(this.normativaToolStripMenuItem_Click);
             // 
             // fAQToolStripMenuItem
             // 
             this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
-            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.fAQToolStripMenuItem.Text = "F.A.Q";
             this.fAQToolStripMenuItem.Click += new System.EventHandler(this.fAQToolStripMenuItem_Click);
             // 
@@ -187,7 +190,7 @@
             // 
             // btn_mesSiguiente
             // 
-            this.btn_mesSiguiente.Location = new System.Drawing.Point(777, 595);
+            this.btn_mesSiguiente.Location = new System.Drawing.Point(873, 627);
             this.btn_mesSiguiente.Name = "btn_mesSiguiente";
             this.btn_mesSiguiente.Size = new System.Drawing.Size(75, 23);
             this.btn_mesSiguiente.TabIndex = 2;
@@ -197,7 +200,7 @@
             // 
             // btn_mesAnterior
             // 
-            this.btn_mesAnterior.Location = new System.Drawing.Point(614, 595);
+            this.btn_mesAnterior.Location = new System.Drawing.Point(729, 627);
             this.btn_mesAnterior.Name = "btn_mesAnterior";
             this.btn_mesAnterior.Size = new System.Drawing.Size(75, 23);
             this.btn_mesAnterior.TabIndex = 3;
@@ -278,11 +281,38 @@
             this.lbl_mes.Text = "Mes actual";
             this.lbl_mes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // activityContainer
+            // 
+            this.activityContainer.Location = new System.Drawing.Point(974, 96);
+            this.activityContainer.Name = "activityContainer";
+            this.activityContainer.Size = new System.Drawing.Size(200, 481);
+            this.activityContainer.TabIndex = 12;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(974, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 13;
+            // 
+            // lbl_actividadesdia
+            // 
+            this.lbl_actividadesdia.AutoSize = true;
+            this.lbl_actividadesdia.Location = new System.Drawing.Point(971, 76);
+            this.lbl_actividadesdia.Name = "lbl_actividadesdia";
+            this.lbl_actividadesdia.Size = new System.Drawing.Size(96, 13);
+            this.lbl_actividadesdia.TabIndex = 14;
+            this.lbl_actividadesdia.Text = "Actividades del dia";
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 627);
+            this.ClientSize = new System.Drawing.Size(1197, 662);
+            this.Controls.Add(this.lbl_actividadesdia);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.activityContainer);
             this.Controls.Add(this.lbl_mes);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -334,5 +364,8 @@
         private System.Windows.Forms.ToolStripMenuItem normativaYFAQToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem normativaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fAQToolStripMenuItem;
+        private System.Windows.Forms.FlowLayoutPanel activityContainer;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_actividadesdia;
     }
 }

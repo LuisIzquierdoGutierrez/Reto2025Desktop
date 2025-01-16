@@ -26,7 +26,8 @@ namespace Reto2025.Views
         public void setNombreActividades(Actividad actividad)
         {
             if (actividad != null) { 
-            lbl_evento.Text = actividad.titulo.ToString();
+                lbl_evento.Text = actividad.titulo.ToString();
+                lbl_idsActividades.Text = actividad.id.ToString() + ",";
             }
             else
             {
@@ -35,15 +36,13 @@ namespace Reto2025.Views
         }
         private void frmControlCalendario_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() =>
+            if (lbl_evento.Text != "")
             {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmActividades actividades = new frmActividades();
-                Application.Run(actividades);
-            });
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
+
+                frmInicio inicio = new frmInicio();
+                inicio.mostrarActividades(lbl_idsActividades.Text);
+
+            }
         }
     }
 }
