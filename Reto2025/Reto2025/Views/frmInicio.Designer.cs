@@ -40,6 +40,9 @@
             this.empresasDeTransporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_verEmpresas = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_perfil = new System.Windows.Forms.ToolStripMenuItem();
+            this.normativaYFAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.normativaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_mesSiguiente = new System.Windows.Forms.Button();
             this.btn_mesAnterior = new System.Windows.Forms.Button();
@@ -51,9 +54,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lbl_mes = new System.Windows.Forms.Label();
-            this.normativaYFAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.normativaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -155,6 +155,29 @@
             this.tsmi_perfil.Text = "Perfil";
             this.tsmi_perfil.Click += new System.EventHandler(this.tsmi_perfil_Click);
             // 
+            // normativaYFAQToolStripMenuItem
+            // 
+            this.normativaYFAQToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.normativaToolStripMenuItem,
+            this.fAQToolStripMenuItem});
+            this.normativaYFAQToolStripMenuItem.Name = "normativaYFAQToolStripMenuItem";
+            this.normativaYFAQToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
+            this.normativaYFAQToolStripMenuItem.Text = "Normativa y F.A.Q";
+            // 
+            // normativaToolStripMenuItem
+            // 
+            this.normativaToolStripMenuItem.Name = "normativaToolStripMenuItem";
+            this.normativaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.normativaToolStripMenuItem.Text = "Normativa";
+            this.normativaToolStripMenuItem.Click += new System.EventHandler(this.normativaToolStripMenuItem_Click);
+            // 
+            // fAQToolStripMenuItem
+            // 
+            this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fAQToolStripMenuItem.Text = "F.A.Q";
+            this.fAQToolStripMenuItem.Click += new System.EventHandler(this.fAQToolStripMenuItem_Click);
+            // 
             // daycontainer
             // 
             this.daycontainer.Location = new System.Drawing.Point(5, 96);
@@ -254,28 +277,6 @@
             this.lbl_mes.TabIndex = 11;
             this.lbl_mes.Text = "Mes actual";
             this.lbl_mes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // normativaYFAQToolStripMenuItem
-            // 
-            this.normativaYFAQToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.normativaToolStripMenuItem,
-            this.fAQToolStripMenuItem});
-            this.normativaYFAQToolStripMenuItem.Name = "normativaYFAQToolStripMenuItem";
-            this.normativaYFAQToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
-            this.normativaYFAQToolStripMenuItem.Text = "Normativa y F.A.Q";
-            // 
-            // normativaToolStripMenuItem
-            // 
-            this.normativaToolStripMenuItem.Name = "normativaToolStripMenuItem";
-            this.normativaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.normativaToolStripMenuItem.Text = "Normativa";
-            this.normativaToolStripMenuItem.Click += new System.EventHandler(this.normativaToolStripMenuItem_Click);
-            // 
-            // fAQToolStripMenuItem
-            // 
-            this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
-            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fAQToolStripMenuItem.Text = "F.A.Q";
             // 
             // frmInicio
             // 

@@ -74,6 +74,84 @@
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Models\ProfParticipante.cs" />
     <Compile Include="Models\ProfResponsable.cs" />
+    <Compile Include="Views\FAQ\frmFAQ1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ1.Designer.cs">
+      <DependentUpon>frmFAQ1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ10.Designer.cs">
+      <DependentUpon>frmFAQ10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ11.Designer.cs">
+      <DependentUpon>frmFAQ11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ12.Designer.cs">
+      <DependentUpon>frmFAQ12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ2.Designer.cs">
+      <DependentUpon>frmFAQ2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ3.Designer.cs">
+      <DependentUpon>frmFAQ3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ4.Designer.cs">
+      <DependentUpon>frmFAQ4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ5.Designer.cs">
+      <DependentUpon>frmFAQ5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ6.Designer.cs">
+      <DependentUpon>frmFAQ6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ7.Designer.cs">
+      <DependentUpon>frmFAQ7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ8.Designer.cs">
+      <DependentUpon>frmFAQ8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ9.Designer.cs">
+      <DependentUpon>frmFAQ9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmFAQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmFAQ.Designer.cs">
+      <DependentUpon>frmFAQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmNormativa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +260,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ1.resx">
+      <DependentUpon>frmFAQ1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmActividades.resx">
       <DependentUpon>frmActividades.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmEmpresas_transporte.resx">
       <DependentUpon>frmEmpresas_transporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmFAQ.resx">
+      <DependentUpon>frmFAQ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmFoto_actividades.resx">
       <DependentUpon>frmFoto_actividades.cs</DependentUpon>

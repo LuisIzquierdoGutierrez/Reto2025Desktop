@@ -210,5 +210,10 @@ namespace Reto2025.Views
         {
             new frmNormativa().Show();
         }
+
+        private void fAQToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frmFAQ().Show();
+        }
     }
 }

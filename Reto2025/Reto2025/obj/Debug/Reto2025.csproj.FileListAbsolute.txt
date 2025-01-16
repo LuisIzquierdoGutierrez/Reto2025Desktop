@@ -75,3 +75,5 @@ D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\
 D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.frmRegistro.resources
 D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.frmLogin.resources
 D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.frmNormativa.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ1.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.frmFAQ.resources
