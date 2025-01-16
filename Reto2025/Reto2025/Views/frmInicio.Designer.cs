@@ -40,6 +40,9 @@
             this.empresasDeTransporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_verEmpresas = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_perfil = new System.Windows.Forms.ToolStripMenuItem();
+            this.normativaYFAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.normativaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_mesSiguiente = new System.Windows.Forms.Button();
             this.btn_mesAnterior = new System.Windows.Forms.Button();
@@ -62,7 +65,8 @@
             this.profesoresToolStripMenuItem,
             this.departamentosToolStripMenuItem,
             this.empresasDeTransporteToolStripMenuItem,
-            this.tsmi_perfil});
+            this.tsmi_perfil,
+            this.normativaYFAQToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(951, 24);
@@ -150,6 +154,29 @@
             this.tsmi_perfil.Size = new System.Drawing.Size(46, 20);
             this.tsmi_perfil.Text = "Perfil";
             this.tsmi_perfil.Click += new System.EventHandler(this.tsmi_perfil_Click);
+            // 
+            // normativaYFAQToolStripMenuItem
+            // 
+            this.normativaYFAQToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.normativaToolStripMenuItem,
+            this.fAQToolStripMenuItem});
+            this.normativaYFAQToolStripMenuItem.Name = "normativaYFAQToolStripMenuItem";
+            this.normativaYFAQToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
+            this.normativaYFAQToolStripMenuItem.Text = "Normativa y F.A.Q";
+            // 
+            // normativaToolStripMenuItem
+            // 
+            this.normativaToolStripMenuItem.Name = "normativaToolStripMenuItem";
+            this.normativaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.normativaToolStripMenuItem.Text = "Normativa";
+            this.normativaToolStripMenuItem.Click += new System.EventHandler(this.normativaToolStripMenuItem_Click);
+            // 
+            // fAQToolStripMenuItem
+            // 
+            this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fAQToolStripMenuItem.Text = "F.A.Q";
+            this.fAQToolStripMenuItem.Click += new System.EventHandler(this.fAQToolStripMenuItem_Click);
             // 
             // daycontainer
             // 
@@ -304,5 +331,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbl_mes;
+        private System.Windows.Forms.ToolStripMenuItem normativaYFAQToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem normativaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fAQToolStripMenuItem;
     }
 }
