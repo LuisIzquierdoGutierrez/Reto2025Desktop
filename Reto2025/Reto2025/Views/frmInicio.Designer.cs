@@ -51,6 +51,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lbl_mes = new System.Windows.Forms.Label();
+            this.normativaYFAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.normativaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +65,8 @@
             this.profesoresToolStripMenuItem,
             this.departamentosToolStripMenuItem,
             this.empresasDeTransporteToolStripMenuItem,
-            this.tsmi_perfil});
+            this.tsmi_perfil,
+            this.normativaYFAQToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(951, 24);
@@ -251,6 +255,28 @@
             this.lbl_mes.Text = "Mes actual";
             this.lbl_mes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // normativaYFAQToolStripMenuItem
+            // 
+            this.normativaYFAQToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.normativaToolStripMenuItem,
+            this.fAQToolStripMenuItem});
+            this.normativaYFAQToolStripMenuItem.Name = "normativaYFAQToolStripMenuItem";
+            this.normativaYFAQToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
+            this.normativaYFAQToolStripMenuItem.Text = "Normativa y F.A.Q";
+            // 
+            // normativaToolStripMenuItem
+            // 
+            this.normativaToolStripMenuItem.Name = "normativaToolStripMenuItem";
+            this.normativaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.normativaToolStripMenuItem.Text = "Normativa";
+            this.normativaToolStripMenuItem.Click += new System.EventHandler(this.normativaToolStripMenuItem_Click);
+            // 
+            // fAQToolStripMenuItem
+            // 
+            this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fAQToolStripMenuItem.Text = "F.A.Q";
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,5 +330,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbl_mes;
+        private System.Windows.Forms.ToolStripMenuItem normativaYFAQToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem normativaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fAQToolStripMenuItem;
     }
 }

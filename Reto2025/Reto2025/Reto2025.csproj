@@ -74,6 +74,12 @@
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Models\ProfParticipante.cs" />
     <Compile Include="Models\ProfResponsable.cs" />
+    <Compile Include="Views\frmNormativa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmNormativa.Designer.cs">
+      <DependentUpon>frmNormativa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmActividades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmNormativa.resx">
+      <DependentUpon>frmNormativa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmPerfil.resx">
       <DependentUpon>frmPerfil.cs</DependentUpon>

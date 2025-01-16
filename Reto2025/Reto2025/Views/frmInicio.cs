@@ -149,15 +149,18 @@ namespace Reto2025.Views
             lbl_mes.Text = mesletras + "    " + inicioMES.Year;
 
             List<Actividad> actividades_mes= new List<Actividad>();
-
-            foreach (Actividad actividad in actividades)
+            if (actividades != null)
             {
-
-                if (actividad.fini.Month == inicioMES.Month)
+                foreach (Actividad actividad in actividades)
                 {
-                    actividades_mes.Add(actividad);
+
+                    if (actividad.fini.Month == inicioMES.Month)
+                    {
+                        actividades_mes.Add(actividad);
+                    }
                 }
             }
+            
                
             int dias = DateTime.DaysInMonth(inicioMES.Year, inicioMES.Month);
 
@@ -203,6 +206,9 @@ namespace Reto2025.Views
             dias_de_mierda(2, actividades);
         }
 
-        
+        private void normativaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new frmNormativa().Show();
+        }
     }
 }
