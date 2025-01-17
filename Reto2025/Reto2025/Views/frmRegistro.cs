@@ -76,7 +76,7 @@ namespace Reto2025.Views
 
                 if (string.IsNullOrWhiteSpace(campo))
                 {
-                    errores.Add(nombrecampos.);
+                   // errores.Add(nombrecampos.);
                     num_errores++;
 
 

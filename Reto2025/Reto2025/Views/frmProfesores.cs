@@ -44,8 +44,9 @@ namespace Reto2025.Views
                     item = new ListViewItem(row);
                     lwProfesores.Items.Add(item);
                 }
-                lwProfesores.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+                
             }
+            lwProfesores.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
 
