@@ -27,17 +27,13 @@ namespace Reto2025
         {
             Profesor profesor = await controlProfesores.GetLogin(txt_correo.Text,txt_pass.Text);
             if(profesor != null){
-                Thread thread = new Thread(() =>
-                {
-                    Application.SetCompatibleTextRenderingDefault(false);
-                    Application.EnableVisualStyles();
-                    frmInicio inicio = new frmInicio();
-                    Application.Run(inicio);
-                });
 
-                thread.SetApartmentState(ApartmentState.STA);
-                thread.Start();
-                this.Close();
+                this.Hide();
+                frmInicio inicio = new frmInicio();
+
+                // añade al form inicio que cierre este form cuando se cierre
+                inicio.Closed += (s, args) => this.Close();
+                inicio.Show();
             }
             else
             {
@@ -49,6 +45,7 @@ namespace Reto2025
 
         private void btn_registarse_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("registro no se va ha usar y se tendria que quitar");
             Thread thread = new Thread(() =>
             {
                 Application.SetCompatibleTextRenderingDefault(false);
