@@ -43,7 +43,7 @@
             this.lbl_importe = new System.Windows.Forms.Label();
             this.txt_titulo = new System.Windows.Forms.TextBox();
             this.txt_descripcion = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_cometariosGenerales = new System.Windows.Forms.TextBox();
             this.txt_comentTransp = new System.Windows.Forms.TextBox();
             this.txt_importe = new System.Windows.Forms.TextBox();
             this.txt_comentAloj = new System.Windows.Forms.TextBox();
@@ -52,7 +52,7 @@
             this.dtp_fechaIni = new System.Windows.Forms.DateTimePicker();
             this.dtp_fechafin = new System.Windows.Forms.DateTimePicker();
             this.chck_transporte = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chk_alojamiento = new System.Windows.Forms.CheckBox();
             this.dtp_horaini = new System.Windows.Forms.DateTimePicker();
             this.dtp_horafin = new System.Windows.Forms.DateTimePicker();
             this.cmb_tipo_transporte = new System.Windows.Forms.ComboBox();
@@ -200,13 +200,13 @@
             this.txt_descripcion.Size = new System.Drawing.Size(376, 82);
             this.txt_descripcion.TabIndex = 16;
             // 
-            // textBox3
+            // txt_cometariosGenerales
             // 
-            this.textBox3.Location = new System.Drawing.Point(90, 332);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(282, 93);
-            this.textBox3.TabIndex = 17;
+            this.txt_cometariosGenerales.Location = new System.Drawing.Point(90, 332);
+            this.txt_cometariosGenerales.Multiline = true;
+            this.txt_cometariosGenerales.Name = "txt_cometariosGenerales";
+            this.txt_cometariosGenerales.Size = new System.Drawing.Size(282, 93);
+            this.txt_cometariosGenerales.TabIndex = 17;
             // 
             // txt_comentTransp
             // 
@@ -273,15 +273,15 @@
             this.chck_transporte.Text = "Transporte";
             this.chck_transporte.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chk_alojamiento
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(430, 346);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 26;
-            this.checkBox2.Text = "Alojamiento";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chk_alojamiento.AutoSize = true;
+            this.chk_alojamiento.Location = new System.Drawing.Point(430, 346);
+            this.chk_alojamiento.Name = "chk_alojamiento";
+            this.chk_alojamiento.Size = new System.Drawing.Size(80, 17);
+            this.chk_alojamiento.TabIndex = 26;
+            this.chk_alojamiento.Text = "Alojamiento";
+            this.chk_alojamiento.UseVisualStyleBackColor = true;
             // 
             // dtp_horaini
             // 
@@ -401,7 +401,7 @@
             this.chk_discapacidad.Text = "Discapacidad";
             this.chk_discapacidad.UseVisualStyleBackColor = true;
             // 
-            // Actividades
+            // frmActividades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -419,7 +419,7 @@
             this.Controls.Add(this.cmb_tipo_transporte);
             this.Controls.Add(this.dtp_horafin);
             this.Controls.Add(this.dtp_horaini);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.chk_alojamiento);
             this.Controls.Add(this.chck_transporte);
             this.Controls.Add(this.dtp_fechafin);
             this.Controls.Add(this.dtp_fechaIni);
@@ -428,7 +428,7 @@
             this.Controls.Add(this.txt_comentAloj);
             this.Controls.Add(this.txt_importe);
             this.Controls.Add(this.txt_comentTransp);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_cometariosGenerales);
             this.Controls.Add(this.txt_descripcion);
             this.Controls.Add(this.txt_titulo);
             this.Controls.Add(this.lbl_importe);
@@ -444,7 +444,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbl_tipo);
             this.Controls.Add(this.lbl_titulo);
-            this.Name = "Actividades";
+            this.Name = "frmActividades";
             this.Text = "Actividades";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -468,7 +468,7 @@
         private System.Windows.Forms.Label lbl_importe;
         private System.Windows.Forms.TextBox txt_titulo;
         private System.Windows.Forms.TextBox txt_descripcion;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_cometariosGenerales;
         private System.Windows.Forms.TextBox txt_comentTransp;
         private System.Windows.Forms.TextBox txt_importe;
         private System.Windows.Forms.TextBox txt_comentAloj;
@@ -477,7 +477,7 @@
         private System.Windows.Forms.DateTimePicker dtp_fechaIni;
         private System.Windows.Forms.DateTimePicker dtp_fechafin;
         private System.Windows.Forms.CheckBox chck_transporte;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox chk_alojamiento;
         private System.Windows.Forms.DateTimePicker dtp_horaini;
         private System.Windows.Forms.DateTimePicker dtp_horafin;
         private System.Windows.Forms.ComboBox cmb_tipo_transporte;

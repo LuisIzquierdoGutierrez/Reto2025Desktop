@@ -32,5 +32,33 @@ namespace Reto2025.Views
             thread.Start();
             this.Close();
         }
+        public void validadCampos()
+        {
+            if (string.IsNullOrWhiteSpace(txt_dni.Text))
+            {
+                MessageBox.Show("el campo dni esta vacio");
+            }
+            if (string.IsNullOrWhiteSpace(txt_nombre.Text))
+            {
+                MessageBox.Show("el campo nombre esta vacio");
+            }
+            if (string.IsNullOrWhiteSpace(txt_apellidos.Text))
+            {
+                MessageBox.Show("el campo apellidos esta vacio");
+            }
+            if (string.IsNullOrWhiteSpace(pictureBox1.Text))
+            {
+                MessageBox.Show("el campo imagen esta vacio");
+            }
+            if (string.IsNullOrWhiteSpace(cmb_rol.Text))
+            {
+                MessageBox.Show("el campo rol esta vacio");
+            }
+            if (string.IsNullOrWhiteSpace(txt_contraseña.Text))
+            {
+                MessageBox.Show("el campo contraseña esta vacio");
+            }
+        }
     }
+   
 }
