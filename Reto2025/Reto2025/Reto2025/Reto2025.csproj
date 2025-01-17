@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3052140-F3E0-48D6-B2CB-24AA61C5142D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Reto2025</RootNamespace>
+    <AssemblyName>Reto2025</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ControlActividades.cs" />
+    <Compile Include="Controls\ControlContratos.cs" />
+    <Compile Include="Controls\ControlCursos.cs" />
+    <Compile Include="Controls\ControlDepartamentos.cs" />
+    <Compile Include="Controls\ControlEmpTransporte.cs" />
+    <Compile Include="Controls\ControlFotos.cs" />
+    <Compile Include="Controls\ControlGrupos.cs" />
+    <Compile Include="Controls\ControlGruposParticipantes.cs" />
+    <Compile Include="Controls\ControlProfesores.cs" />
+    <Compile Include="Controls\ControlProfParticipantes.cs" />
+    <Compile Include="Controls\ControlProfResponsables.cs" />
+    <Compile Include="Enums\EstadoActividad.cs" />
+    <Compile Include="Enums\EtapaCurso.cs" />
+    <Compile Include="Enums\RolProfesor.cs" />
+    <Compile Include="Enums\TipoActividad.cs" />
+    <Compile Include="Models\Contrato.cs" />
+    <Compile Include="Models\Curso.cs" />
+    <Compile Include="Models\Departamento.cs" />
+    <Compile Include="Models\EmpTransporte.cs" />
+    <Compile Include="Models\Foto.cs" />
+    <Compile Include="Models\Grupo.cs" />
+    <Compile Include="Models\GrupoParticipante.cs" />
+    <Compile Include="Models\Profesor.cs" />
+    <Compile Include="Models\ProfParticipante.cs" />
+    <Compile Include="Models\ProfResponsable.cs" />
+    <Compile Include="Views\FAQ\frmFAQ1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ1.Designer.cs">
+      <DependentUpon>frmFAQ1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ10.Designer.cs">
+      <DependentUpon>frmFAQ10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ11.Designer.cs">
+      <DependentUpon>frmFAQ11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ12.Designer.cs">
+      <DependentUpon>frmFAQ12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ2.Designer.cs">
+      <DependentUpon>frmFAQ2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ3.Designer.cs">
+      <DependentUpon>frmFAQ3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ4.Designer.cs">
+      <DependentUpon>frmFAQ4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ5.Designer.cs">
+      <DependentUpon>frmFAQ5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ6.Designer.cs">
+      <DependentUpon>frmFAQ6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ7.Designer.cs">
+      <DependentUpon>frmFAQ7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ8.Designer.cs">
+      <DependentUpon>frmFAQ8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FAQ\frmFAQ9.Designer.cs">
+      <DependentUpon>frmFAQ9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmControlActividades.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\frmControlActividades.Designer.cs">
+      <DependentUpon>frmControlActividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmFAQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmFAQ.Designer.cs">
+      <DependentUpon>frmFAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmNormativa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmNormativa.Designer.cs">
+      <DependentUpon>frmNormativa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmActividades.Designer.cs">
+      <DependentUpon>frmActividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmContrato_transporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmContrato_transporte.Designer.cs">
+      <DependentUpon>frmContrato_transporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmControlCalendario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\frmControlCalendario.Designer.cs">
+      <DependentUpon>frmControlCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmControlCalendarioBlanco.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\frmControlCalendarioBlanco.Designer.cs">
+      <DependentUpon>frmControlCalendarioBlanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmCursos.Designer.cs">
+      <DependentUpon>frmCursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmDepartamentos.Designer.cs">
+      <DependentUpon>frmDepartamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmEmpresas_transporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmEmpresas_transporte.Designer.cs">
+      <DependentUpon>frmEmpresas_transporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmFoto_actividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmFoto_actividades.Designer.cs">
+      <DependentUpon>frmFoto_actividades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmGrupos_participantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmGrupos_participantes.Designer.cs">
+      <DependentUpon>frmGrupos_participantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmGrupos.Designer.cs">
+      <DependentUpon>frmGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmInicio.Designer.cs">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPerfil.Designer.cs">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmProfesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmProfesores.Designer.cs">
+      <DependentUpon>frmProfesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmRegistro.Designer.cs">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Actividad.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\frmVerActividades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmVerActividades.Designer.cs">
+      <DependentUpon>frmVerActividades.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ1.resx">
+      <DependentUpon>frmFAQ1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmActividades.resx">
+      <DependentUpon>frmActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmContrato_transporte.resx">
+      <DependentUpon>frmContrato_transporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmControlActividades.resx">
+      <DependentUpon>frmControlActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmControlCalendario.resx">
+      <DependentUpon>frmControlCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmControlCalendarioBlanco.resx">
+      <DependentUpon>frmControlCalendarioBlanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmCursos.resx">
+      <DependentUpon>frmCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmDepartamentos.resx">
+      <DependentUpon>frmDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmEmpresas_transporte.resx">
+      <DependentUpon>frmEmpresas_transporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmFAQ.resx">
+      <DependentUpon>frmFAQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmFoto_actividades.resx">
+      <DependentUpon>frmFoto_actividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmGrupos.resx">
+      <DependentUpon>frmGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmGrupos_participantes.resx">
+      <DependentUpon>frmGrupos_participantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmInicio.resx">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmNormativa.resx">
+      <DependentUpon>frmNormativa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmPerfil.resx">
+      <DependentUpon>frmPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmProfesores.resx">
+      <DependentUpon>frmProfesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmRegistro.resx">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmVerActividades.resx">
+      <DependentUpon>frmVerActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
