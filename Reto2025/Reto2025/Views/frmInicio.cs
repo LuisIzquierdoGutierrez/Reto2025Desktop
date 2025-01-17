@@ -206,12 +206,12 @@ namespace Reto2025.Views
         }
 
         private void normativaToolStripMenuItem_Click(object sender, EventArgs e)
-                {
+        {
             new frmNormativa().Show();
         }
 
         private void fAQToolStripMenuItem_Click(object sender, EventArgs e)
-                    {
+        {
             new frmFAQ().Show();
         }
         public async void mostrarActividades(String idsActividades)
