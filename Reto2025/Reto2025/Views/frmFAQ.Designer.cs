@@ -176,8 +176,8 @@
             this.splitContainer1.Panel1.Controls.Add(this.btn5);
             this.splitContainer1.Panel1.Controls.Add(this.btn8);
             this.splitContainer1.Panel1.Controls.Add(this.btn6);
-            this.splitContainer1.Size = new System.Drawing.Size(763, 466);
-            this.splitContainer1.SplitterDistance = 320;
+            this.splitContainer1.Size = new System.Drawing.Size(818, 477);
+            this.splitContainer1.SplitterDistance = 309;
             this.splitContainer1.TabIndex = 11;
             // 
             // btn4
@@ -194,7 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 466);
+            this.ClientSize = new System.Drawing.Size(818, 477);
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmFAQ";
             this.Text = "Frequently Ask Questions";

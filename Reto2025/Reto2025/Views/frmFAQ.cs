@@ -26,7 +26,7 @@ namespace Reto2025.Views
             frmFAQ1.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(frmFAQ1);
-            MessageBox.Show("test");
+            frmFAQ1.Show();
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace Reto2025.Views
             frmFAQ2.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(frmFAQ2);
-            MessageBox.Show("test");
+            frmFAQ2.Show();
         }
 
         private void btn3_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace Reto2025.Views
             frmFAQ3.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(frmFAQ3);
-            MessageBox.Show("test");
+            frmFAQ3.Show();
         }
 
         private void btn4_Click(object sender, EventArgs e)
@@ -59,7 +59,7 @@ namespace Reto2025.Views
             frmFAQ4.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(frmFAQ4);
-            MessageBox.Show("test");
+            frmFAQ4.Show();
         }
 
         private void btn5_Click(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace Reto2025.Views
             frmFAQ5.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(frmFAQ5);
-            MessageBox.Show("test");
+            frmFAQ5.Show();
         }
 
         private void btn6_Click(object sender, EventArgs e)
@@ -81,7 +81,7 @@ namespace Reto2025.Views
             frmFAQ6.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(frmFAQ6);
-            MessageBox.Show("test");
+            frmFAQ6.Show();
         }
 
         private void btn7_Click(object sender, EventArgs e)
@@ -92,7 +92,7 @@ namespace Reto2025.Views
             frmFAQ7.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(frmFAQ7);
-            MessageBox.Show("test");
+            frmFAQ7.Show();
         }
 
         private void btn8_Click(object sender, EventArgs e)
@@ -103,7 +103,8 @@ namespace Reto2025.Views
             frmFAQ8.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(frmFAQ8);
-            MessageBox.Show("test");
+            frmFAQ8.Show();
+
         }
 
         private void btn9_Click(object sender, EventArgs e)
@@ -114,7 +115,7 @@ namespace Reto2025.Views
             frmFAQ9.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(frmFAQ9);
-            MessageBox.Show("test");
+            frmFAQ9.Show();
         }
 
         private void btn10_Click(object sender, EventArgs e)
@@ -125,7 +126,7 @@ namespace Reto2025.Views
             frmFAQ10.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(frmFAQ10);
-            MessageBox.Show("test");
+            frmFAQ10.Show();
         }
 
         private void btn11_Click(object sender, EventArgs e)
@@ -136,7 +137,7 @@ namespace Reto2025.Views
             frmFAQ11.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(frmFAQ11);
-            MessageBox.Show("test");
+            frmFAQ11.Show();
         }
 
         private void btn12_Click(object sender, EventArgs e)
@@ -147,7 +148,7 @@ namespace Reto2025.Views
             frmFAQ12.Dock = DockStyle.Fill;
             splitContainer1.Panel2.Controls.Clear();
             splitContainer1.Panel2.Controls.Add(frmFAQ12);
-            MessageBox.Show("test");
+            frmFAQ12.Show();
         }
     }
 }

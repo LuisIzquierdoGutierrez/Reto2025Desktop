@@ -81,3 +81,15 @@ D:\Usuarios\DAM221\OneDrive - Educantabria\Documentos\GitHub\Reto2025Desktop\Ret
 D:\Usuarios\DAM221\OneDrive - Educantabria\Documentos\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.frmFAQ.resources
 D:\Usuarios\DAM221\OneDrive - Educantabria\Documentos\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.frmNormativa.resources
 D:\Usuarios\DAM221\OneDrive - Educantabria\Documentos\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.frmControlActividades.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ10.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ11.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ12.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ2.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ3.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ4.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ5.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ6.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ7.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ8.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ9.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.frmControlActividades.resources
