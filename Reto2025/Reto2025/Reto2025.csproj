@@ -146,6 +146,12 @@
     <Compile Include="Views\FAQ\frmFAQ9.Designer.cs">
       <DependentUpon>frmFAQ9.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmAutorizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmAutorizacion.Designer.cs">
+      <DependentUpon>frmAutorizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmControlActividades.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -305,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmActividades.resx">
       <DependentUpon>frmActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmAutorizacion.resx">
+      <DependentUpon>frmAutorizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmContrato_transporte.resx">
       <DependentUpon>frmContrato_transporte.cs</DependentUpon>

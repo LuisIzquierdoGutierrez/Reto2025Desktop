@@ -35,6 +35,7 @@
             this.txt_pass = new System.Windows.Forms.TextBox();
             this.btn_inicio = new System.Windows.Forms.Button();
             this.btn_registarse = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,11 +102,22 @@
             this.btn_registarse.UseVisualStyleBackColor = true;
             this.btn_registarse.Click += new System.EventHandler(this.btn_registarse_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(275, 278);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(364, 326);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_registarse);
             this.Controls.Add(this.btn_inicio);
             this.Controls.Add(this.txt_pass);
@@ -130,6 +142,7 @@
         private System.Windows.Forms.TextBox txt_pass;
         private System.Windows.Forms.Button btn_inicio;
         private System.Windows.Forms.Button btn_registarse;
+        private System.Windows.Forms.Button button1;
     }
 }
 

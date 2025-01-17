@@ -58,5 +58,11 @@ namespace Reto2025
             thread.Start();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmAutorizacion frm = new frmAutorizacion();
+            frm.ShowDialog();
+        }
     }
 }

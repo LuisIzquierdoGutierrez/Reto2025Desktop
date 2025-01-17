@@ -93,3 +93,4 @@ D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\
 D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ8.resources
 D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.FAQ.frmFAQ9.resources
 D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.frmControlActividades.resources
+D:\Usuarios\DAM212\Documents\GitHub\Reto2025Desktop\Reto2025\Reto2025\obj\Debug\Reto2025.Views.frmAutorizacion.resources
