@@ -20,7 +20,9 @@ namespace Reto2025.Views
 
         private void btn_modificar_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() =>
+            validarCampos();
+
+           /* Thread thread = new Thread(() =>
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
@@ -30,7 +32,7 @@ namespace Reto2025.Views
 
             thread.SetApartmentState(ApartmentState.STA);
             thread.Start();
-            this.Close();
+            this.Close();*/
         }
 
         private void btn_volver_Click(object sender, EventArgs e)
@@ -76,6 +78,87 @@ namespace Reto2025.Views
             thread.SetApartmentState(ApartmentState.STA);
             thread.Start();
             this.Close();
+        }
+
+        public void validarCampos()
+        {
+
+            if (chk_alojamiento.Checked)
+            {
+                if (string.IsNullOrWhiteSpace(txt_comentAloj.Text))
+                {
+                    MessageBox.Show("el campo comentario de alojamiento esta vacio");
+                }
+            }
+
+            if (chck_transporte.Checked)
+            {
+                if (string.IsNullOrWhiteSpace(cmb_tipo_transporte.Text))
+                {
+                    MessageBox.Show("el campo tipo de transporte esta vacio");
+                }
+            }
+
+            if (string.IsNullOrWhiteSpace(txt_titulo.Text))
+            { 
+                 MessageBox.Show("el campo titulo esta vacio");
+            }
+
+            if (string.IsNullOrWhiteSpace(txt_descripcion.Text))
+            {
+                MessageBox.Show("el campo descripcion esta vacio");
+            }
+
+            if (string.IsNullOrWhiteSpace(txt_cometariosGenerales.Text))
+            {
+                MessageBox.Show("el campo comentarios generales esta vacio");
+            }
+
+            if (string.IsNullOrWhiteSpace(txt_comentTransp.Text))
+            {
+                MessageBox.Show("el campo comentarios del transporte esta vacio");
+            }
+
+            if (string.IsNullOrWhiteSpace(txt_importe.Text))
+            {
+                MessageBox.Show("el campo importe esta vacio");
+            }
+
+            if (string.IsNullOrWhiteSpace(txt_incidencias.Text))
+            {
+                MessageBox.Show("el campo incidencias esta vacio");
+            }
+
+            if (string.IsNullOrWhiteSpace(cmb_tipos.Text))
+            {
+                MessageBox.Show("el campo tipos esta vacio");
+            }
+
+            if (string.IsNullOrWhiteSpace(dtp_fechaIni.Text))
+            {
+                MessageBox.Show("el campo fecha inicio esta vacio");
+            }
+
+            if (string.IsNullOrWhiteSpace(dtp_fechafin.Text))
+            {
+                MessageBox.Show("el campo fecha fim esta vacio");
+            }
+
+            if (string.IsNullOrWhiteSpace(dtp_horaini.Text))
+            {
+                MessageBox.Show("el campo hora inicio esta vacio");
+            }
+
+            if (string.IsNullOrWhiteSpace(dtp_horafin.Text))
+            {
+                MessageBox.Show("el campo hora fin esta vacio");
+            }
+
+            if (string.IsNullOrWhiteSpace(dtp_fechaProvista.Text))
+            {
+                MessageBox.Show("el campo fecha provista esta vacio");
+            }
+            
         }
     }
 }
