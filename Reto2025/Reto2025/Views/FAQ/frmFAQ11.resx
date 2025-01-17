@@ -117,8 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabla" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabla.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Con al menos 24 horas de antelación y, con el fin de organizar las guardias, el/la profesor/a responsable deberá colgar en la corchera de extraescolares la relación de alumnos de cada grupo que acuden a cada actividad. Asimismo, se deberá dejar una copia en Jefatura de Estudios.
+
+Las listas de alumnado por grupos están disponibles en la sala de profesores para que el profesor/a organizador de la actividad pueda hacer consultarlas.</value>
   </data>
 </root>
