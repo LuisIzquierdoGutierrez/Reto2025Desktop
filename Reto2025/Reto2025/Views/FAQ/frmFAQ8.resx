@@ -117,8 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabla" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabla.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>El profesor responsable recibirá un archivo PDF con los detalles del viaje y el precio del mismo. No obstante, el número de viajeros puede modificarse una vez en la estación.
+
+El/la profesor responsable deberá presentar el PDF y pagar los gastos de transporte en la estación de tren de cercanías de Torrelavega antes del viaje de ida o, en destino, si no hubiera taquilla (por ejemplo: apeadero de Altamira). 
+Si no hubiera taquilla en ninguna de las estaciones de ida y vuelta (por ejemplo, Altamira- Mogro) se puede pagar igualmente en la estación de tren de cercanías de Torrelavega.
+
+Se debe SOLICITAR LA FACTURA en taquilla, que RENFE enviará por E-mail:
+
+
+
+
+
+El profesor responsable debe ENTREGAR en secretaría (Nuria Celis):
+-El ticket.
+-El dinero aportado por el alumnado.
+-Lista de alumnos con la aportación de cada alumno (pues hay alumnos que tienen bono).
+- Rellenar la memoria de justificación de pago (impreso disponible en secretaría) para que se pueda autorizar el reembolso de la cantidad adelantada. Imprescindible escribir el IBAN.</value>
   </data>
 </root>

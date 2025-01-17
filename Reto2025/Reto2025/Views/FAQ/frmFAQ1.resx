@@ -117,4 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>OPCIÓN 1: PROFESORADO USUARIO DE TEAMS (PC/MÓVIL)
+
+El/la profesor/a responsable entrará en el CANAL ACEX del grupo de TEAMS IES MHP CLAUSTRO. En una de las pestañas hay disponible un formulario Microsoft Forms.
+
+Si se enviara el formulario con algún error, se puede enviar otro. Solo el último será tenido en cuenta.
+
+
+
+OPCIÓN 2: PROFESORADO SIN TEAMS EN EL MÓVIL
+
+Escanear QR que dirige al formulario de Microsoft Forms. Si se enviara el formulario con algún error, se puede enviar otro. Solo el último será tenido en cuenta.
+
+Hay que tener en cuenta que la actividad tiene que haber sido previamente reflejada en la Programación Anual del Departamento de ACEX, pues esta ha sido aprobada como parte de la PGA por el Consejo Escolar.</value>
+  </data>
 </root>

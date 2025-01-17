@@ -15,6 +15,8 @@ namespace Reto2025.Views.FAQ
         public frmFAQ6()
         {
             InitializeComponent();
+            pictureBox1.Image = Properties.Resources.tabla;
+            pictureBox1.Show();
         }
     }
 }

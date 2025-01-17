@@ -146,6 +146,12 @@
     <Compile Include="Views\FAQ\frmFAQ9.Designer.cs">
       <DependentUpon>frmFAQ9.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmAutorizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmAutorizacion.Designer.cs">
+      <DependentUpon>frmAutorizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmControlActividades.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -271,12 +277,49 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\FAQ\frmFAQ1.resx">
       <DependentUpon>frmFAQ1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ10.resx">
+      <DependentUpon>frmFAQ10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ11.resx">
+      <DependentUpon>frmFAQ11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ12.resx">
+      <DependentUpon>frmFAQ12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ2.resx">
+      <DependentUpon>frmFAQ2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ3.resx">
+      <DependentUpon>frmFAQ3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ4.resx">
+      <DependentUpon>frmFAQ4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ5.resx">
+      <DependentUpon>frmFAQ5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ6.resx">
+      <DependentUpon>frmFAQ6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ7.resx">
+      <DependentUpon>frmFAQ7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ8.resx">
+      <DependentUpon>frmFAQ8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FAQ\frmFAQ9.resx">
+      <DependentUpon>frmFAQ9.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmActividades.resx">
       <DependentUpon>frmActividades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmAutorizacion.resx">
+      <DependentUpon>frmAutorizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmContrato_transporte.resx">
       <DependentUpon>frmContrato_transporte.cs</DependentUpon>
@@ -345,6 +388,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tabla.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

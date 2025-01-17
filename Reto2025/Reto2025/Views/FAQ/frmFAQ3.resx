@@ -117,8 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabla" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tabla.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Los padres y tutores legales pueden autorizar en el impreso de la matrícula la participación en las ACEX organizadas durante el horario escolar. No obstante, es preciso comprobar si los alumnos han sido autorizados o no previamente.
+Y, no obstante, tal y como se indica en el impreso de matrícula, es obligatorio informar a los progenitores de la actividad con la antelación suficiente. 
+El resto de alumnado menor de edad precisa autorización. En el grupo de TEAMS figura una autorización estándar disponible para todo el profesorado.</value>
   </data>
 </root>

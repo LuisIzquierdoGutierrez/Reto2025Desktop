@@ -1,4 +1,5 @@
-﻿using Reto2025.Models;
+﻿using Reto2025.Controls;
+using Reto2025.Models;
 using Reto2025.Views;
 using System;
 using System.Collections.Generic;
@@ -15,30 +16,36 @@ namespace Reto2025
 {
     public partial class frmLogin : Form
     {
+        private  ControlProfesores controlProfesores;
         public frmLogin()
         {
             InitializeComponent();
+            controlProfesores = new ControlProfesores();
         }
 
-        private void btn_inicio_Click(object sender, EventArgs e)
+        private async void btn_inicio_Click(object sender, EventArgs e)
         {
+            Profesor profesor = await controlProfesores.GetLogin(txt_correo.Text,txt_pass.Text);
+            if(profesor != null){
 
-            Thread thread = new Thread(() =>
-            {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
+                this.Hide();
                 frmInicio inicio = new frmInicio();
-                Application.Run(inicio);
-            });
 
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
+                // añade al form inicio que cierre este form cuando se cierre
+                inicio.Closed += (s, args) => this.Close();
+                inicio.Show();
+            }
+            else
+            {
+                MessageBox.Show("usuario o contraseña incorrectos");
+            }
+            
 
         }
 
         private void btn_registarse_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("registro no se va ha usar y se tendria que quitar");
             Thread thread = new Thread(() =>
             {
                 Application.SetCompatibleTextRenderingDefault(false);
@@ -50,6 +57,12 @@ namespace Reto2025
             thread.SetApartmentState(ApartmentState.STA);
             thread.Start();
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmAutorizacion frm = new frmAutorizacion();
+            frm.ShowDialog();
         }
     }
 }
