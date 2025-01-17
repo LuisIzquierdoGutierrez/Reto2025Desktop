@@ -16,6 +16,7 @@ namespace Reto2025.Views
         public frmFAQ()
         {
             InitializeComponent();
+            MessageBox.Show("patata");
         }
 
         private void btn1_Click(object sender, EventArgs e)

@@ -120,7 +120,7 @@
             // 
             this.btn9.Location = new System.Drawing.Point(12, 320);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(290, 25);
+            this.btn9.Size = new System.Drawing.Size(290, 40);
             this.btn9.TabIndex = 7;
             this.btn9.Text = "¿QUÉ HACER CON EL DINERO RECAUDADO AL ALUMNADO?";
             this.btn9.UseVisualStyleBackColor = true;
@@ -128,7 +128,7 @@
             // 
             // btn10
             // 
-            this.btn10.Location = new System.Drawing.Point(12, 351);
+            this.btn10.Location = new System.Drawing.Point(12, 366);
             this.btn10.Name = "btn10";
             this.btn10.Size = new System.Drawing.Size(290, 25);
             this.btn10.TabIndex = 8;
@@ -138,7 +138,7 @@
             // 
             // btn11
             // 
-            this.btn11.Location = new System.Drawing.Point(12, 382);
+            this.btn11.Location = new System.Drawing.Point(12, 397);
             this.btn11.Name = "btn11";
             this.btn11.Size = new System.Drawing.Size(290, 40);
             this.btn11.TabIndex = 9;
@@ -148,7 +148,7 @@
             // 
             // btn12
             // 
-            this.btn12.Location = new System.Drawing.Point(12, 428);
+            this.btn12.Location = new System.Drawing.Point(12, 443);
             this.btn12.Name = "btn12";
             this.btn12.Size = new System.Drawing.Size(290, 25);
             this.btn12.TabIndex = 10;
