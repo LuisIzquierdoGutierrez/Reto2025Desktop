@@ -130,6 +130,7 @@ namespace Reto2025.Views
 
         private void dias_de_mierda(int? opMes, List<Actividad> actividades)
         {
+           
             switch (opMes)
             {
                 case 1:
@@ -161,13 +162,12 @@ namespace Reto2025.Views
             int dias_semana = Convert.ToInt32(inicioMES.DayOfWeek.ToString("d"));
             daycontainer.Controls.Clear();
 
-            
             if (dias_semana == 0)
             {
                 dias_semana = 7;
             }
 
-         
+          
             for (int i = 2; i <= dias_semana; i++)
             {
                 frmControlCalendarioBlanco controlCalendarioBlanco = new frmControlCalendarioBlanco();
@@ -179,8 +179,9 @@ namespace Reto2025.Views
             for (int i = 1; i <= dias; i++)
             {
                 frmControlCalendario controlCalendario = new frmControlCalendario();
+           
+                controlCalendario.FormularioPadre = this; 
 
-                
                 if (i == DateTime.Today.Day && inicioMES.Month == DateTime.Today.Month && inicioMES.Year == DateTime.Today.Year)
                 {
                     controlCalendario.ResaltarDiaActual(true);
@@ -190,6 +191,7 @@ namespace Reto2025.Views
                     controlCalendario.ResaltarDiaActual(false);
                 }
 
+                
                 foreach (Actividad actividadMes in actividades_mes)
                 {
                     if (i == actividadMes.fini.Day)
@@ -198,12 +200,14 @@ namespace Reto2025.Views
                     }
                 }
 
-               
                 controlCalendario.Text = i.ToString();
                 controlCalendario.diaSemana(i);
+
+              
                 daycontainer.Controls.Add(controlCalendario);
             }
-        }
+        
+    }
 
         private void btn_mesAnterior_Click(object sender, EventArgs e)
         {
@@ -226,29 +230,17 @@ namespace Reto2025.Views
         {
             new frmFAQ().Show();
         }
-        public async void mostrarActividades(String idsActividades)
+        public void mostrarActividades(List<Actividad> actividadesDelDia)
         {
-            String[] ids = idsActividades.Split(',');
+         
+            activityContainer.Controls.Clear();
 
-            foreach (String id in ids)
+           
+            foreach (Actividad actividad in actividadesDelDia)
             {
-                if (id != "")
-                {
-
-                    MessageBox.Show(id);
-                    int idEntero = Int32.Parse(id);
-                    Actividad act = await controlAct.GetActividadId(idEntero);
-                    frmControlActividades controlActividades = new frmControlActividades();
-
-                    if (act != null)
-                    {
-
-                        MessageBox.Show("entro aqui");
-                        controlActividades.setDatos(act);
-                        activityContainer.Controls.Add(controlActividades);
-
-                    }
-                }
+                frmControlActividades controlActividades = new frmControlActividades();
+                controlActividades.setDatos(actividad); 
+                activityContainer.Controls.Add(controlActividades);
             }
         }
 
