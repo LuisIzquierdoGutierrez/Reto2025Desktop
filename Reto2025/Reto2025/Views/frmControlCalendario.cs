@@ -44,5 +44,21 @@ namespace Reto2025.Views
 
             }
         }
-    }
+        public void ResaltarDiaActual(bool esHoy)
+        {
+            if (esHoy)
+            {
+                this.BackColor = Color.LightBlue;
+                lbl_dia.ForeColor = Color.White;
+                lbl_dia.Font = new Font(lbl_dia.Font, FontStyle.Bold); 
+            }
+            else
+            {
+                this.BackColor = Color.White; 
+                lbl_dia.ForeColor = Color.Black;
+                lbl_dia.Font = new Font(lbl_dia.Font, FontStyle.Regular); 
+            }
+        }
+       
+        }
 }

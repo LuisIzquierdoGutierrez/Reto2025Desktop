@@ -26,6 +26,7 @@ namespace Reto2025.Views
         {
             InitializeComponent();
             inicioMES = new DateTime(inicioMES.Year, inicioMES.Month, 1);
+
         }
         private async void frmInicio_Load(object sender, EventArgs e)
         {
@@ -33,6 +34,7 @@ namespace Reto2025.Views
             actividades = await controlAct.GetAllActividades();
 
             dias_de_mierda(null, actividades);
+
         }
 
 
@@ -128,13 +130,10 @@ namespace Reto2025.Views
 
         private void dias_de_mierda(int? opMes, List<Actividad> actividades)
         {
-
             switch (opMes)
             {
-
                 case 1:
                     inicioMES = inicioMES.AddMonths(-1);
-
                     break;
 
                 case 2:
@@ -146,14 +145,12 @@ namespace Reto2025.Views
             }
 
             String mesletras = DateTimeFormatInfo.CurrentInfo.GetMonthName(inicioMES.Month);
-
             lbl_mes.Text = mesletras + "    " + inicioMES.Year;
 
             List<Actividad> actividades_mes = new List<Actividad>();
 
             foreach (Actividad actividad in actividades)
             {
-
                 if (actividad.fini.Month == inicioMES.Month)
                 {
                     actividades_mes.Add(actividad);
@@ -161,36 +158,51 @@ namespace Reto2025.Views
             }
 
             int dias = DateTime.DaysInMonth(inicioMES.Year, inicioMES.Month);
-
             int dias_semana = Convert.ToInt32(inicioMES.DayOfWeek.ToString("d"));
             daycontainer.Controls.Clear();
+
+            
             if (dias_semana == 0)
             {
                 dias_semana = 7;
             }
 
-
+         
             for (int i = 2; i <= dias_semana; i++)
             {
                 frmControlCalendarioBlanco controlCalendarioBlanco = new frmControlCalendarioBlanco();
                 controlCalendarioBlanco.Text = i.ToString();
                 daycontainer.Controls.Add(controlCalendarioBlanco);
             }
+
+           
             for (int i = 1; i <= dias; i++)
             {
                 frmControlCalendario controlCalendario = new frmControlCalendario();
+
+                
+                if (i == DateTime.Today.Day && inicioMES.Month == DateTime.Today.Month && inicioMES.Year == DateTime.Today.Year)
+                {
+                    controlCalendario.ResaltarDiaActual(true);
+                }
+                else
+                {
+                    controlCalendario.ResaltarDiaActual(false);
+                }
+
                 foreach (Actividad actividadMes in actividades_mes)
+                {
                     if (i == actividadMes.fini.Day)
                     {
                         controlCalendario.setNombreActividades(actividadMes);
-
                     }
+                }
+
+               
                 controlCalendario.Text = i.ToString();
                 controlCalendario.diaSemana(i);
                 daycontainer.Controls.Add(controlCalendario);
             }
-
-
         }
 
         private void btn_mesAnterior_Click(object sender, EventArgs e)
@@ -239,5 +251,27 @@ namespace Reto2025.Views
                 }
             }
         }
+
+        private void verActividadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Thread thread = new Thread(() =>
+            {
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.EnableVisualStyles();
+                frmVerActividades Veractividades = new frmVerActividades();
+                Application.Run(Veractividades);
+            });
+
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
+            this.Close();
+        }
+
+      
     }
-}
+        }
+
+   
+
+
