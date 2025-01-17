@@ -32,7 +32,7 @@
             this.lbl_apellidos = new System.Windows.Forms.Label();
             this.lbl_correo = new System.Windows.Forms.Label();
             this.lbl_pass = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_rol = new System.Windows.Forms.Label();
             this.lbl_departamento = new System.Windows.Forms.Label();
             this.lbl_foto = new System.Windows.Forms.Label();
             this.lbl_nombre = new System.Windows.Forms.Label();
@@ -86,14 +86,14 @@
             this.lbl_pass.TabIndex = 3;
             this.lbl_pass.Text = "Contraseña";
             // 
-            // label5
+            // lbl_rol
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(308, 216);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(23, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Rol";
+            this.lbl_rol.AutoSize = true;
+            this.lbl_rol.Location = new System.Drawing.Point(308, 216);
+            this.lbl_rol.Name = "lbl_rol";
+            this.lbl_rol.Size = new System.Drawing.Size(23, 13);
+            this.lbl_rol.TabIndex = 4;
+            this.lbl_rol.Text = "Rol";
             // 
             // lbl_departamento
             // 
@@ -209,7 +209,7 @@
             this.btn_modificar.Text = "Modificar";
             this.btn_modificar.UseVisualStyleBackColor = true;
             // 
-            // Perfil
+            // frmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -228,12 +228,12 @@
             this.Controls.Add(this.lbl_nombre);
             this.Controls.Add(this.lbl_foto);
             this.Controls.Add(this.lbl_departamento);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbl_rol);
             this.Controls.Add(this.lbl_pass);
             this.Controls.Add(this.lbl_correo);
             this.Controls.Add(this.lbl_apellidos);
             this.Controls.Add(this.lbl_dni);
-            this.Name = "Perfil";
+            this.Name = "frmPerfil";
             this.Text = "Perfil";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -247,7 +247,7 @@
         private System.Windows.Forms.Label lbl_apellidos;
         private System.Windows.Forms.Label lbl_correo;
         private System.Windows.Forms.Label lbl_pass;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_rol;
         private System.Windows.Forms.Label lbl_departamento;
         private System.Windows.Forms.Label lbl_foto;
         private System.Windows.Forms.Label lbl_nombre;

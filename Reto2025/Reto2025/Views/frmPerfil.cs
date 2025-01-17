@@ -34,6 +34,69 @@ namespace Reto2025.Views
         }
         public void validadCampos()
         {
+
+            List<String> campos = new List<string>();
+
+            campos.Add(txt_dni.Text);
+            campos.Add(txt_nombre.Text);
+            campos.Add(txt_apellidos.Text);
+            campos.Add(txt_departamento.Text);
+            campos.Add(txt_correo.Text);
+            campos.Add(cmb_rol.Text);
+            campos.Add(txt_contraseña.Text);
+
+
+            List<String> nombrecampos = new List<string>();
+
+            nombrecampos.Add(lbl_dni.Text);
+            nombrecampos.Add(lbl_nombre.Text);
+            nombrecampos.Add(lbl_apellidos.Text);
+            nombrecampos.Add(lbl_departamento.Text);
+            nombrecampos.Add(lbl_correo.Text);
+            nombrecampos.Add(lbl_rol.Text);
+            nombrecampos.Add(lbl_pass.Text);
+
+            String mensaje_error = "";
+            int num_errores = 0;
+
+            List<String> errores = new List<String>();
+
+            for (int i = 0; i < campos.Count; i++)
+            {
+                if (string.IsNullOrWhiteSpace(campos[i]))
+                {
+                    errores.Add(nombrecampos[i]);
+                    num_errores++;
+
+                }
+            }
+
+            if (num_errores == 1)
+            {
+                mensaje_error = "el campo " + errores[0] + " esta vacio";
+            }
+            if (num_errores > 1)
+            {
+                mensaje_error = "Los campos ";
+
+                for (int i = 0; i < errores.Count; i++)
+                {
+                    if (i < errores.Count - 1)
+                    {
+                        mensaje_error += errores[i] + ",";
+                    }
+                    else
+                    {
+                        mensaje_error += errores[i];
+                    }
+                }
+                mensaje_error += " estan vacios";
+            }
+
+            MessageBox.Show(mensaje_error);
+        }
+      /*  public void validadCampos()
+        {
             if (string.IsNullOrWhiteSpace(txt_dni.Text))
             {
                 MessageBox.Show("el campo dni esta vacio");
@@ -46,10 +109,7 @@ namespace Reto2025.Views
             {
                 MessageBox.Show("el campo apellidos esta vacio");
             }
-            if (string.IsNullOrWhiteSpace(pictureBox1.Text))
-            {
-                MessageBox.Show("el campo imagen esta vacio");
-            }
+
             if (string.IsNullOrWhiteSpace(cmb_rol.Text))
             {
                 MessageBox.Show("el campo rol esta vacio");
@@ -58,7 +118,7 @@ namespace Reto2025.Views
             {
                 MessageBox.Show("el campo contraseña esta vacio");
             }
-        }
+        }*/
     }
    
 }
