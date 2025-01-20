@@ -74,6 +74,37 @@ namespace Reto2025
             {
                 MessageBox.Show("usuario o contraseña incorrectos");
             }
+
+
+
+
+
+
+
+            //metodo para iniciar el buscador por defecto con la pagina web señalada
+
+            //string target = "http://www.microsoft.com";
+            ////Use no more than one assignment when you test this code.
+            ////string target = "ftp://ftp.microsoft.com";
+            ////string target = "C:\\Program Files\\Microsoft Visual Studio\\INSTALL.HTM";
+            //try
+            //{
+            //    System.Diagnostics.Process.Start(target);
+            //}
+            //catch (System.ComponentModel.Win32Exception noBrowser)
+            //{
+            //    if (noBrowser.ErrorCode == -2147467259)
+            //        MessageBox.Show(noBrowser.Message);
+            //}
+            //catch (System.Exception other)
+            //{
+            //    MessageBox.Show(other.Message);
+            //}
+
+
+
+
+
         }
     }
 }
