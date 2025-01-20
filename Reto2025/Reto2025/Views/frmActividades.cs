@@ -70,6 +70,10 @@ namespace Reto2025.Views
         public void validadCampos()
         {
 
+      
+
+
+
             List<String> campos = new List<string>();
             campos.Add(txt_titulo.Text);
             campos.Add(cmb_tipos.Text);
@@ -79,10 +83,6 @@ namespace Reto2025.Views
             campos.Add(dtp_horaini.Text);
             campos.Add(dtp_horafin.Text);
             campos.Add(dtp_fechaProvista.Text);
-            campos.Add(txt_cometariosGenerales.Text);
-            campos.Add(txt_comentTransp.Text);
-            campos.Add(txt_comentAloj.Text);
-            campos.Add(txt_incidencias.Text);
             campos.Add(txt_importe.Text);
             
 
@@ -95,10 +95,6 @@ namespace Reto2025.Views
             nombrecampos.Add(lblHoraini.Text);
             nombrecampos.Add(lblHorafin.Text);
             nombrecampos.Add(lbl_fechaProv.Text);
-            nombrecampos.Add(lbl_comentGen.Text);
-            nombrecampos.Add(lbl_comentTransp.Text);
-            nombrecampos.Add(lbl_comentAloj.Text);
-            nombrecampos.Add(lbl_incidencias.Text);
             nombrecampos.Add(lbl_importe.Text);
 
             String mensaje_error = "";
@@ -111,16 +107,8 @@ namespace Reto2025.Views
 
                 if (string.IsNullOrWhiteSpace(campos[i]))
                 {
-                    if (!chck_transporte.Checked && string.IsNullOrWhiteSpace(cmb_tipo_transporte.Text) && string.IsNullOrWhiteSpace(txt_comentTransp.Text))
-                    {
-
-                    }
-                    else
-                    {
-                        errores.Add(nombrecampos[i]);
-                        num_errores++;
-                    }
-
+                    errores.Add(nombrecampos[i]);
+                    num_errores++;
                 }
             }
 
@@ -149,86 +137,5 @@ namespace Reto2025.Views
             MessageBox.Show(mensaje_error);
         }
 
-
-        public void validarCampos()
-        {
-
-            if (chk_alojamiento.Checked)
-            {
-                if (string.IsNullOrWhiteSpace(txt_comentAloj.Text))
-                {
-                    MessageBox.Show("el campo comentario de alojamiento esta vacio");
-                }
-            }
-
-            if (chck_transporte.Checked)
-            {
-                if (string.IsNullOrWhiteSpace(cmb_tipo_transporte.Text))
-                {
-                    MessageBox.Show("el campo tipo de transporte esta vacio");
-                }
-            }
-
-            if (string.IsNullOrWhiteSpace(txt_titulo.Text))
-            { 
-                 MessageBox.Show("el campo titulo esta vacio");
-            }
-
-            if (string.IsNullOrWhiteSpace(txt_descripcion.Text))
-            {
-                MessageBox.Show("el campo descripcion esta vacio");
-            }
-
-            if (string.IsNullOrWhiteSpace(txt_cometariosGenerales.Text))
-            {
-                MessageBox.Show("el campo comentarios generales esta vacio");
-            }
-
-            if (string.IsNullOrWhiteSpace(txt_comentTransp.Text))
-            {
-                MessageBox.Show("el campo comentarios del transporte esta vacio");
-            }
-
-            if (string.IsNullOrWhiteSpace(txt_importe.Text))
-            {
-                MessageBox.Show("el campo importe esta vacio");
-            }
-
-            if (string.IsNullOrWhiteSpace(txt_incidencias.Text))
-            {
-                MessageBox.Show("el campo incidencias esta vacio");
-            }
-
-            if (string.IsNullOrWhiteSpace(cmb_tipos.Text))
-            {
-                MessageBox.Show("el campo tipos esta vacio");
-            }
-
-            if (string.IsNullOrWhiteSpace(dtp_fechaIni.Text))
-            {
-                MessageBox.Show("el campo fecha inicio esta vacio");
-            }
-
-            if (string.IsNullOrWhiteSpace(dtp_fechafin.Text))
-            {
-                MessageBox.Show("el campo fecha fim esta vacio");
-            }
-
-            if (string.IsNullOrWhiteSpace(dtp_horaini.Text))
-            {
-                MessageBox.Show("el campo hora inicio esta vacio");
-            }
-
-            if (string.IsNullOrWhiteSpace(dtp_horafin.Text))
-            {
-                MessageBox.Show("el campo hora fin esta vacio");
-            }
-
-            if (string.IsNullOrWhiteSpace(dtp_fechaProvista.Text))
-            {
-                MessageBox.Show("el campo fecha provista esta vacio");
-            }
-            
-        }
     }
 }

@@ -45,7 +45,6 @@
             this.txt_descripcion = new System.Windows.Forms.TextBox();
             this.txt_cometariosGenerales = new System.Windows.Forms.TextBox();
             this.txt_comentTransp = new System.Windows.Forms.TextBox();
-            this.txt_importe = new System.Windows.Forms.TextBox();
             this.txt_comentAloj = new System.Windows.Forms.TextBox();
             this.txt_incidencias = new System.Windows.Forms.TextBox();
             this.cmb_tipos = new System.Windows.Forms.ComboBox();
@@ -65,6 +64,8 @@
             this.btn_rechazar = new System.Windows.Forms.Button();
             this.btn_verGrupos = new System.Windows.Forms.Button();
             this.chk_discapacidad = new System.Windows.Forms.CheckBox();
+            this.txt_importe = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_importe)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_titulo
@@ -214,13 +215,6 @@
             this.txt_comentTransp.Name = "txt_comentTransp";
             this.txt_comentTransp.Size = new System.Drawing.Size(376, 79);
             this.txt_comentTransp.TabIndex = 18;
-            // 
-            // txt_importe
-            // 
-            this.txt_importe.Location = new System.Drawing.Point(163, 458);
-            this.txt_importe.Name = "txt_importe";
-            this.txt_importe.Size = new System.Drawing.Size(152, 20);
-            this.txt_importe.TabIndex = 19;
             // 
             // txt_comentAloj
             // 
@@ -390,11 +384,20 @@
             this.chk_discapacidad.Text = "Discapacidad";
             this.chk_discapacidad.UseVisualStyleBackColor = true;
             // 
+            // txt_importe
+            // 
+            this.txt_importe.DecimalPlaces = 2;
+            this.txt_importe.Location = new System.Drawing.Point(163, 461);
+            this.txt_importe.Name = "txt_importe";
+            this.txt_importe.Size = new System.Drawing.Size(120, 20);
+            this.txt_importe.TabIndex = 40;
+            // 
             // FrmActividades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(881, 639);
+            this.Controls.Add(this.txt_importe);
             this.Controls.Add(this.chk_discapacidad);
             this.Controls.Add(this.btn_verGrupos);
             this.Controls.Add(this.btn_rechazar);
@@ -414,7 +417,6 @@
             this.Controls.Add(this.cmb_tipos);
             this.Controls.Add(this.txt_incidencias);
             this.Controls.Add(this.txt_comentAloj);
-            this.Controls.Add(this.txt_importe);
             this.Controls.Add(this.txt_comentTransp);
             this.Controls.Add(this.txt_cometariosGenerales);
             this.Controls.Add(this.txt_descripcion);
@@ -434,6 +436,7 @@
             this.Controls.Add(this.lbl_titulo);
             this.Name = "FrmActividades";
             this.Text = "Actividades";
+            ((System.ComponentModel.ISupportInitialize)(this.txt_importe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -458,7 +461,6 @@
         private System.Windows.Forms.TextBox txt_descripcion;
         private System.Windows.Forms.TextBox txt_cometariosGenerales;
         private System.Windows.Forms.TextBox txt_comentTransp;
-        private System.Windows.Forms.TextBox txt_importe;
         private System.Windows.Forms.TextBox txt_comentAloj;
         private System.Windows.Forms.TextBox txt_incidencias;
         private System.Windows.Forms.ComboBox cmb_tipos;
@@ -478,5 +480,6 @@
         private System.Windows.Forms.Button btn_rechazar;
         private System.Windows.Forms.Button btn_verGrupos;
         private System.Windows.Forms.CheckBox chk_discapacidad;
+        private System.Windows.Forms.NumericUpDown txt_importe;
     }
 }
