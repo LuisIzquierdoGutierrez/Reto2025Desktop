@@ -13,11 +13,11 @@ using Reto2025.Models;
 
 namespace Reto2025.Views
 {
-    public partial class frmVerActividades : Form
+    public partial class FrmVerActividades : Form
     {
         private static List<Actividad> actividades;
-        private ControlActividades controlActividades=new ControlActividades();
-        public frmVerActividades()
+        private ControlActividades controlActividades = new ControlActividades();
+        public FrmVerActividades()
         {
             InitializeComponent();
             if (actividades == null)
@@ -29,37 +29,23 @@ namespace Reto2025.Views
                 putActividades();
             }
         }
-    private async void loadActividades()
-    {
-        actividades = await controlActividades.GetAllActividades();
+        private void loadActividades()
+        {
+            actividades = FrmInicio.actividades;
             putActividades();
-    }
-    private void putActividades()
-    {
-        ListViewItem item;
-        foreach (Actividad actividad in actividades)
-        {
-            item = new ListViewItem();
-                string[] row = { actividad.titulo, actividad.tipo.ToString(), actividad.descripcion, actividad.fini.ToString(), actividad.ffin.ToString(), actividad.hini.ToString(), actividad.hfin.ToString(), actividad.previstaIni.ToString(),actividad.transporteReq.ToString(),actividad.comentTransporte,actividad.alojamientoReq.ToString(),actividad.comentAlojamiento,actividad.comentarios,actividad.estado.ToString(),actividad.comentEstado,actividad.incidencias,actividad.urlFolleto,actividad.solicitante.uuid.ToString(),actividad.importePorAlumno.ToString()};
-            item = new ListViewItem(row);
-            lwActividades.Items.Add(item);
         }
-        lwActividades.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-    }
-
-        private void btnVolver_Click(object sender, EventArgs e)
+        private void putActividades()
         {
-            Thread thread = new Thread(() =>
+            ListViewItem item;
+            foreach (Actividad actividad in actividades)
             {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmInicio inicio = new frmInicio();
-                Application.Run(inicio);
-            });
-
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
+                item = new ListViewItem();
+                string[] row = { actividad.titulo, actividad.tipo.ToString(), actividad.descripcion, actividad.fini.ToString(), actividad.ffin.ToString(), actividad.hini.ToString(), actividad.hfin.ToString(), actividad.previstaIni.ToString(), actividad.transporteReq.ToString(), actividad.comentTransporte, actividad.alojamientoReq.ToString(), actividad.comentAlojamiento, actividad.comentarios, actividad.estado.ToString(), actividad.comentEstado, actividad.incidencias, actividad.urlFolleto, actividad.solicitante.uuid.ToString(), actividad.importePorAlumno.ToString() };
+                item = new ListViewItem(row);
+                lwActividades.Items.Add(item);
+            }
+            lwActividades.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
+
     }
 }

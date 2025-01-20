@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views.FAQ
 {
-    public partial class frmFAQ6 : Form
+    public partial class FrmFAQ6 : Form
     {
-        public frmFAQ6()
+        public FrmFAQ6()
         {
             InitializeComponent();
             pictureBox1.Image = Properties.Resources.tabla;

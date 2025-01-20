@@ -74,200 +74,194 @@
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Models\ProfParticipante.cs" />
     <Compile Include="Models\ProfResponsable.cs" />
-    <Compile Include="Views\FAQ\frmFAQ1.cs">
+    <Compile Include="Views\FAQ\FrmFAQ1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ1.Designer.cs">
-      <DependentUpon>frmFAQ1.cs</DependentUpon>
+    <Compile Include="Views\FAQ\FrmFAQ1.Designer.cs">
+      <DependentUpon>FrmFAQ1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ10.cs">
+    <Compile Include="Views\FAQ\FrmFAQ10.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ10.Designer.cs">
-      <DependentUpon>frmFAQ10.cs</DependentUpon>
+    <Compile Include="Views\FAQ\FrmFAQ10.Designer.cs">
+      <DependentUpon>FrmFAQ10.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ11.cs">
+    <Compile Include="Views\FAQ\FrmFAQ11.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ11.Designer.cs">
-      <DependentUpon>frmFAQ11.cs</DependentUpon>
+    <Compile Include="Views\FAQ\FrmFAQ11.Designer.cs">
+      <DependentUpon>FrmFAQ11.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ12.cs">
+    <Compile Include="Views\FAQ\FrmFAQ12.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ12.Designer.cs">
-      <DependentUpon>frmFAQ12.cs</DependentUpon>
+    <Compile Include="Views\FAQ\FrmFAQ12.Designer.cs">
+      <DependentUpon>FrmFAQ12.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ2.cs">
+    <Compile Include="Views\FAQ\FrmFAQ2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ2.Designer.cs">
-      <DependentUpon>frmFAQ2.cs</DependentUpon>
+    <Compile Include="Views\FAQ\FrmFAQ2.Designer.cs">
+      <DependentUpon>FrmFAQ2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ3.cs">
+    <Compile Include="Views\FAQ\FrmFAQ3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ3.Designer.cs">
-      <DependentUpon>frmFAQ3.cs</DependentUpon>
+    <Compile Include="Views\FAQ\FrmFAQ3.Designer.cs">
+      <DependentUpon>FrmFAQ3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ4.cs">
+    <Compile Include="Views\FAQ\FrmFAQ4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ4.Designer.cs">
-      <DependentUpon>frmFAQ4.cs</DependentUpon>
+    <Compile Include="Views\FAQ\FrmFAQ4.Designer.cs">
+      <DependentUpon>FrmFAQ4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ5.cs">
+    <Compile Include="Views\FAQ\FrmFAQ5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ5.Designer.cs">
-      <DependentUpon>frmFAQ5.cs</DependentUpon>
+    <Compile Include="Views\FAQ\FrmFAQ5.Designer.cs">
+      <DependentUpon>FrmFAQ5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ6.cs">
+    <Compile Include="Views\FAQ\FrmFAQ6.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ6.Designer.cs">
-      <DependentUpon>frmFAQ6.cs</DependentUpon>
+    <Compile Include="Views\FAQ\FrmFAQ6.Designer.cs">
+      <DependentUpon>FrmFAQ6.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ7.cs">
+    <Compile Include="Views\FAQ\FrmFAQ7.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ7.Designer.cs">
-      <DependentUpon>frmFAQ7.cs</DependentUpon>
+    <Compile Include="Views\FAQ\FrmFAQ7.Designer.cs">
+      <DependentUpon>FrmFAQ7.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ8.cs">
+    <Compile Include="Views\FAQ\FrmFAQ8.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ8.Designer.cs">
-      <DependentUpon>frmFAQ8.cs</DependentUpon>
+    <Compile Include="Views\FAQ\FrmFAQ8.Designer.cs">
+      <DependentUpon>FrmFAQ8.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ9.cs">
+    <Compile Include="Views\FAQ\FrmFAQ9.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FAQ\frmFAQ9.Designer.cs">
-      <DependentUpon>frmFAQ9.cs</DependentUpon>
+    <Compile Include="Views\FAQ\FrmFAQ9.Designer.cs">
+      <DependentUpon>FrmFAQ9.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmAutorizacion.cs">
+    <Compile Include="Views\FrmAutorizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmAutorizacion.Designer.cs">
-      <DependentUpon>frmAutorizacion.cs</DependentUpon>
+    <Compile Include="Views\FrmAutorizacion.Designer.cs">
+      <DependentUpon>FrmAutorizacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmControlActividades.cs">
+    <Compile Include="Views\FrmControlActividades.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\frmControlActividades.Designer.cs">
-      <DependentUpon>frmControlActividades.cs</DependentUpon>
+    <Compile Include="Views\FrmControlActividades.Designer.cs">
+      <DependentUpon>FrmControlActividades.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmFAQ.cs">
+    <Compile Include="Views\FrmFAQ.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmFAQ.Designer.cs">
-      <DependentUpon>frmFAQ.cs</DependentUpon>
+    <Compile Include="Views\FrmFAQ.Designer.cs">
+      <DependentUpon>FrmFAQ.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmNormativa.cs">
+    <Compile Include="Views\FrmNormativa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmNormativa.Designer.cs">
-      <DependentUpon>frmNormativa.cs</DependentUpon>
+    <Compile Include="Views\FrmNormativa.Designer.cs">
+      <DependentUpon>FrmNormativa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmActividades.cs">
+    <Compile Include="Views\FrmActividades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmActividades.Designer.cs">
-      <DependentUpon>frmActividades.cs</DependentUpon>
+    <Compile Include="Views\FrmActividades.Designer.cs">
+      <DependentUpon>FrmActividades.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmContrato_transporte.cs">
+    <Compile Include="Views\FrmContrato_transporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmContrato_transporte.Designer.cs">
-      <DependentUpon>frmContrato_transporte.cs</DependentUpon>
+    <Compile Include="Views\FrmContrato_transporte.Designer.cs">
+      <DependentUpon>FrmContrato_transporte.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmControlCalendario.cs">
+    <Compile Include="Views\FrmControlCalendario.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\frmControlCalendario.Designer.cs">
-      <DependentUpon>frmControlCalendario.cs</DependentUpon>
+    <Compile Include="Views\FrmControlCalendario.Designer.cs">
+      <DependentUpon>FrmControlCalendario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmControlCalendarioBlanco.cs">
+    <Compile Include="Views\FrmControlCalendarioBlanco.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\frmControlCalendarioBlanco.Designer.cs">
-      <DependentUpon>frmControlCalendarioBlanco.cs</DependentUpon>
+    <Compile Include="Views\FrmControlCalendarioBlanco.Designer.cs">
+      <DependentUpon>FrmControlCalendarioBlanco.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmCursos.cs">
+    <Compile Include="Views\FrmCursos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmCursos.Designer.cs">
-      <DependentUpon>frmCursos.cs</DependentUpon>
+    <Compile Include="Views\FrmCursos.Designer.cs">
+      <DependentUpon>FrmCursos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmDepartamentos.cs">
+    <Compile Include="Views\FrmDepartamentos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmDepartamentos.Designer.cs">
-      <DependentUpon>frmDepartamentos.cs</DependentUpon>
+    <Compile Include="Views\FrmDepartamentos.Designer.cs">
+      <DependentUpon>FrmDepartamentos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmEmpresas_transporte.cs">
+    <Compile Include="Views\FrmEmpresasTransporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmEmpresas_transporte.Designer.cs">
-      <DependentUpon>frmEmpresas_transporte.cs</DependentUpon>
+    <Compile Include="Views\FrmEmpresasTransporte.Designer.cs">
+      <DependentUpon>FrmEmpresasTransporte.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmFoto_actividades.cs">
+    <Compile Include="Views\FrmFotoActividades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmFoto_actividades.Designer.cs">
-      <DependentUpon>frmFoto_actividades.cs</DependentUpon>
+    <Compile Include="Views\FrmFotoActividades.Designer.cs">
+      <DependentUpon>FrmFotoActividades.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmGrupos_participantes.cs">
+    <Compile Include="Views\FrmGruposParticipantes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmGrupos_participantes.Designer.cs">
-      <DependentUpon>frmGrupos_participantes.cs</DependentUpon>
+    <Compile Include="Views\FrmGruposParticipantes.Designer.cs">
+      <DependentUpon>FrmGruposParticipantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmGrupos.cs">
+    <Compile Include="Views\FrmGrupos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmGrupos.Designer.cs">
-      <DependentUpon>frmGrupos.cs</DependentUpon>
+    <Compile Include="Views\FrmGrupos.Designer.cs">
+      <DependentUpon>FrmGrupos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmInicio.cs">
+    <Compile Include="Views\FrmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmInicio.Designer.cs">
-      <DependentUpon>frmInicio.cs</DependentUpon>
+    <Compile Include="Views\FrmInicio.Designer.cs">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmPerfil.cs">
+    <Compile Include="Views\FrmPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmPerfil.Designer.cs">
-      <DependentUpon>frmPerfil.cs</DependentUpon>
+    <Compile Include="Views\FrmPerfil.Designer.cs">
+      <DependentUpon>FrmPerfil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmProfesores.cs">
+    <Compile Include="Views\FrmProfesores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmProfesores.Designer.cs">
-      <DependentUpon>frmProfesores.cs</DependentUpon>
+    <Compile Include="Views\FrmProfesores.Designer.cs">
+      <DependentUpon>FrmProfesores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\frmRegistro.cs">
+    <Compile Include="Views\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmRegistro.Designer.cs">
-      <DependentUpon>frmRegistro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\frmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="Views\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Actividad.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\frmVerActividades.cs">
+    <Compile Include="Views\FrmVerActividades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmVerActividades.Designer.cs">
-      <DependentUpon>frmVerActividades.cs</DependentUpon>
+    <Compile Include="Views\FrmVerActividades.Designer.cs">
+      <DependentUpon>FrmVerActividades.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -279,101 +273,98 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Views\FAQ\frmFAQ1.resx">
-      <DependentUpon>frmFAQ1.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FAQ\FrmFAQ1.resx">
+      <DependentUpon>FrmFAQ1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FAQ\frmFAQ10.resx">
-      <DependentUpon>frmFAQ10.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FAQ\FrmFAQ10.resx">
+      <DependentUpon>FrmFAQ10.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FAQ\frmFAQ11.resx">
-      <DependentUpon>frmFAQ11.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FAQ\FrmFAQ11.resx">
+      <DependentUpon>FrmFAQ11.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FAQ\frmFAQ12.resx">
-      <DependentUpon>frmFAQ12.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FAQ\FrmFAQ12.resx">
+      <DependentUpon>FrmFAQ12.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FAQ\frmFAQ2.resx">
-      <DependentUpon>frmFAQ2.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FAQ\FrmFAQ2.resx">
+      <DependentUpon>FrmFAQ2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FAQ\frmFAQ3.resx">
-      <DependentUpon>frmFAQ3.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FAQ\FrmFAQ3.resx">
+      <DependentUpon>FrmFAQ3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FAQ\frmFAQ4.resx">
-      <DependentUpon>frmFAQ4.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FAQ\FrmFAQ4.resx">
+      <DependentUpon>FrmFAQ4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FAQ\frmFAQ5.resx">
-      <DependentUpon>frmFAQ5.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FAQ\FrmFAQ5.resx">
+      <DependentUpon>FrmFAQ5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FAQ\frmFAQ6.resx">
-      <DependentUpon>frmFAQ6.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FAQ\FrmFAQ6.resx">
+      <DependentUpon>FrmFAQ6.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FAQ\frmFAQ7.resx">
-      <DependentUpon>frmFAQ7.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FAQ\FrmFAQ7.resx">
+      <DependentUpon>FrmFAQ7.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FAQ\frmFAQ8.resx">
-      <DependentUpon>frmFAQ8.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FAQ\FrmFAQ8.resx">
+      <DependentUpon>FrmFAQ8.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FAQ\frmFAQ9.resx">
-      <DependentUpon>frmFAQ9.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FAQ\FrmFAQ9.resx">
+      <DependentUpon>FrmFAQ9.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmActividades.resx">
-      <DependentUpon>frmActividades.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmActividades.resx">
+      <DependentUpon>FrmActividades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmAutorizacion.resx">
-      <DependentUpon>frmAutorizacion.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmAutorizacion.resx">
+      <DependentUpon>FrmAutorizacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmContrato_transporte.resx">
-      <DependentUpon>frmContrato_transporte.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmContrato_transporte.resx">
+      <DependentUpon>FrmContrato_transporte.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmControlActividades.resx">
-      <DependentUpon>frmControlActividades.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmControlActividades.resx">
+      <DependentUpon>FrmControlActividades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmControlCalendario.resx">
-      <DependentUpon>frmControlCalendario.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmControlCalendario.resx">
+      <DependentUpon>FrmControlCalendario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmControlCalendarioBlanco.resx">
-      <DependentUpon>frmControlCalendarioBlanco.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmControlCalendarioBlanco.resx">
+      <DependentUpon>FrmControlCalendarioBlanco.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmCursos.resx">
-      <DependentUpon>frmCursos.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmCursos.resx">
+      <DependentUpon>FrmCursos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmDepartamentos.resx">
-      <DependentUpon>frmDepartamentos.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmDepartamentos.resx">
+      <DependentUpon>FrmDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmEmpresas_transporte.resx">
-      <DependentUpon>frmEmpresas_transporte.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmEmpresasTransporte.resx">
+      <DependentUpon>FrmEmpresasTransporte.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmFAQ.resx">
-      <DependentUpon>frmFAQ.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmFAQ.resx">
+      <DependentUpon>FrmFAQ.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmFoto_actividades.resx">
-      <DependentUpon>frmFoto_actividades.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmFotoActividades.resx">
+      <DependentUpon>FrmFotoActividades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmGrupos.resx">
-      <DependentUpon>frmGrupos.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmGrupos.resx">
+      <DependentUpon>FrmGrupos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmGrupos_participantes.resx">
-      <DependentUpon>frmGrupos_participantes.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmGruposParticipantes.resx">
+      <DependentUpon>FrmGruposParticipantes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmInicio.resx">
-      <DependentUpon>frmInicio.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmInicio.resx">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmNormativa.resx">
-      <DependentUpon>frmNormativa.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmNormativa.resx">
+      <DependentUpon>FrmNormativa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmPerfil.resx">
-      <DependentUpon>frmPerfil.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmPerfil.resx">
+      <DependentUpon>FrmPerfil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmProfesores.resx">
-      <DependentUpon>frmProfesores.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmProfesores.resx">
+      <DependentUpon>FrmProfesores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmRegistro.resx">
-      <DependentUpon>frmRegistro.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmVerActividades.resx">
-      <DependentUpon>frmVerActividades.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmVerActividades.resx">
+      <DependentUpon>FrmVerActividades.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

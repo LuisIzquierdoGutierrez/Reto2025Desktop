@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class frmInicio
+    partial class FrmInicio
     {
         /// <summary>
         /// Required designer variable.
@@ -74,7 +74,8 @@
             this.normativaYFAQToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1596, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1184, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -84,20 +85,20 @@
             this.tsmi_crearActividades,
             this.verActividadesToolStripMenuItem});
             this.actividadesToolStripMenuItem.Name = "actividadesToolStripMenuItem";
-            this.actividadesToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
+            this.actividadesToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
             this.actividadesToolStripMenuItem.Text = "Actividades";
             // 
             // tsmi_crearActividades
             // 
             this.tsmi_crearActividades.Name = "tsmi_crearActividades";
-            this.tsmi_crearActividades.Size = new System.Drawing.Size(224, 26);
+            this.tsmi_crearActividades.Size = new System.Drawing.Size(166, 22);
             this.tsmi_crearActividades.Text = "Crear Actividades";
             this.tsmi_crearActividades.Click += new System.EventHandler(this.tsmi_crearActividades_Click);
             // 
             // verActividadesToolStripMenuItem
             // 
             this.verActividadesToolStripMenuItem.Name = "verActividadesToolStripMenuItem";
-            this.verActividadesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.verActividadesToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.verActividadesToolStripMenuItem.Text = "Ver Actividades";
             this.verActividadesToolStripMenuItem.Click += new System.EventHandler(this.verActividadesToolStripMenuItem_Click);
             // 
@@ -106,13 +107,13 @@
             this.cursosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmi_verCursos});
             this.cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
-            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.cursosToolStripMenuItem.Text = "Cursos";
             // 
             // tsmi_verCursos
             // 
             this.tsmi_verCursos.Name = "tsmi_verCursos";
-            this.tsmi_verCursos.Size = new System.Drawing.Size(224, 26);
+            this.tsmi_verCursos.Size = new System.Drawing.Size(129, 22);
             this.tsmi_verCursos.Text = "Ver Cursos";
             this.tsmi_verCursos.Click += new System.EventHandler(this.tsmi_verCursos_Click);
             // 
@@ -121,13 +122,13 @@
             this.profesoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmi_verProfesores});
             this.profesoresToolStripMenuItem.Name = "profesoresToolStripMenuItem";
-            this.profesoresToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
+            this.profesoresToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.profesoresToolStripMenuItem.Text = "Profesores";
             // 
             // tsmi_verProfesores
             // 
             this.tsmi_verProfesores.Name = "tsmi_verProfesores";
-            this.tsmi_verProfesores.Size = new System.Drawing.Size(187, 26);
+            this.tsmi_verProfesores.Size = new System.Drawing.Size(148, 22);
             this.tsmi_verProfesores.Text = "Ver profesores";
             this.tsmi_verProfesores.Click += new System.EventHandler(this.tsmi_verProfesores_Click);
             // 
@@ -136,13 +137,13 @@
             this.departamentosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmi_verDepartamentos});
             this.departamentosToolStripMenuItem.Name = "departamentosToolStripMenuItem";
-            this.departamentosToolStripMenuItem.Size = new System.Drawing.Size(126, 24);
+            this.departamentosToolStripMenuItem.Size = new System.Drawing.Size(100, 20);
             this.departamentosToolStripMenuItem.Text = "Departamentos";
             // 
             // tsmi_verDepartamentos
             // 
             this.tsmi_verDepartamentos.Name = "tsmi_verDepartamentos";
-            this.tsmi_verDepartamentos.Size = new System.Drawing.Size(220, 26);
+            this.tsmi_verDepartamentos.Size = new System.Drawing.Size(174, 22);
             this.tsmi_verDepartamentos.Text = "Ver Departamentos";
             this.tsmi_verDepartamentos.Click += new System.EventHandler(this.tsmi_verDepartamentos_Click);
             // 
@@ -151,20 +152,20 @@
             this.empresasDeTransporteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmi_verEmpresas});
             this.empresasDeTransporteToolStripMenuItem.Name = "empresasDeTransporteToolStripMenuItem";
-            this.empresasDeTransporteToolStripMenuItem.Size = new System.Drawing.Size(179, 24);
+            this.empresasDeTransporteToolStripMenuItem.Size = new System.Drawing.Size(142, 20);
             this.empresasDeTransporteToolStripMenuItem.Text = "Empresas de transporte";
             // 
             // tsmi_verEmpresas
             // 
             this.tsmi_verEmpresas.Name = "tsmi_verEmpresas";
-            this.tsmi_verEmpresas.Size = new System.Drawing.Size(180, 26);
+            this.tsmi_verEmpresas.Size = new System.Drawing.Size(143, 22);
             this.tsmi_verEmpresas.Text = "Ver Empresas";
             this.tsmi_verEmpresas.Click += new System.EventHandler(this.tsmi_verEmpresas_Click);
             // 
             // tsmi_perfil
             // 
             this.tsmi_perfil.Name = "tsmi_perfil";
-            this.tsmi_perfil.Size = new System.Drawing.Size(56, 24);
+            this.tsmi_perfil.Size = new System.Drawing.Size(46, 20);
             this.tsmi_perfil.Text = "Perfil";
             this.tsmi_perfil.Click += new System.EventHandler(this.tsmi_perfil_Click);
             // 
@@ -174,37 +175,35 @@
             this.normativaToolStripMenuItem,
             this.fAQToolStripMenuItem});
             this.normativaYFAQToolStripMenuItem.Name = "normativaYFAQToolStripMenuItem";
-            this.normativaYFAQToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
+            this.normativaYFAQToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
             this.normativaYFAQToolStripMenuItem.Text = "Normativa y F.A.Q";
             // 
             // normativaToolStripMenuItem
             // 
             this.normativaToolStripMenuItem.Name = "normativaToolStripMenuItem";
-            this.normativaToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
+            this.normativaToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.normativaToolStripMenuItem.Text = "Normativa";
             this.normativaToolStripMenuItem.Click += new System.EventHandler(this.normativaToolStripMenuItem_Click);
             // 
             // fAQToolStripMenuItem
             // 
             this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
-            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(162, 26);
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.fAQToolStripMenuItem.Text = "F.A.Q";
             this.fAQToolStripMenuItem.Click += new System.EventHandler(this.fAQToolStripMenuItem_Click);
             // 
             // daycontainer
             // 
-            this.daycontainer.Location = new System.Drawing.Point(7, 118);
-            this.daycontainer.Margin = new System.Windows.Forms.Padding(4);
+            this.daycontainer.Location = new System.Drawing.Point(5, 96);
             this.daycontainer.Name = "daycontainer";
-            this.daycontainer.Size = new System.Drawing.Size(1257, 592);
+            this.daycontainer.Size = new System.Drawing.Size(943, 575);
             this.daycontainer.TabIndex = 1;
             // 
             // btn_mesSiguiente
             // 
-            this.btn_mesSiguiente.Location = new System.Drawing.Point(1164, 772);
-            this.btn_mesSiguiente.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_mesSiguiente.Location = new System.Drawing.Point(806, 676);
             this.btn_mesSiguiente.Name = "btn_mesSiguiente";
-            this.btn_mesSiguiente.Size = new System.Drawing.Size(100, 28);
+            this.btn_mesSiguiente.Size = new System.Drawing.Size(75, 23);
             this.btn_mesSiguiente.TabIndex = 2;
             this.btn_mesSiguiente.Text = "Siguiente";
             this.btn_mesSiguiente.UseVisualStyleBackColor = true;
@@ -212,10 +211,9 @@
             // 
             // btn_mesAnterior
             // 
-            this.btn_mesAnterior.Location = new System.Drawing.Point(972, 772);
-            this.btn_mesAnterior.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_mesAnterior.Location = new System.Drawing.Point(662, 676);
             this.btn_mesAnterior.Name = "btn_mesAnterior";
-            this.btn_mesAnterior.Size = new System.Drawing.Size(100, 28);
+            this.btn_mesAnterior.Size = new System.Drawing.Size(75, 23);
             this.btn_mesAnterior.TabIndex = 3;
             this.btn_mesAnterior.Text = "Anterior";
             this.btn_mesAnterior.UseVisualStyleBackColor = true;
@@ -224,116 +222,105 @@
             // lbl_lunes
             // 
             this.lbl_lunes.AutoSize = true;
-            this.lbl_lunes.Location = new System.Drawing.Point(7, 95);
-            this.lbl_lunes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_lunes.Location = new System.Drawing.Point(5, 77);
             this.lbl_lunes.Name = "lbl_lunes";
-            this.lbl_lunes.Size = new System.Drawing.Size(43, 16);
+            this.lbl_lunes.Size = new System.Drawing.Size(36, 13);
             this.lbl_lunes.TabIndex = 4;
             this.lbl_lunes.Text = "Lunes";
             // 
             // lbl_martes
             // 
             this.lbl_martes.AutoSize = true;
-            this.lbl_martes.Location = new System.Drawing.Point(184, 95);
-            this.lbl_martes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_martes.Location = new System.Drawing.Point(138, 77);
             this.lbl_martes.Name = "lbl_martes";
-            this.lbl_martes.Size = new System.Drawing.Size(48, 16);
+            this.lbl_martes.Size = new System.Drawing.Size(39, 13);
             this.lbl_martes.TabIndex = 5;
             this.lbl_martes.Text = "Martes";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(361, 95);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(271, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 16);
+            this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Miercoles";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(539, 95);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(404, 77);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 16);
+            this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Jueves";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(716, 95);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(537, 77);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 16);
+            this.label4.Size = new System.Drawing.Size(42, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Viernes";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(893, 95);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(670, 77);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 16);
+            this.label5.Size = new System.Drawing.Size(44, 13);
             this.label5.TabIndex = 9;
             this.label5.Text = "Sabado";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1071, 95);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(803, 77);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 16);
+            this.label6.Size = new System.Drawing.Size(49, 13);
             this.label6.TabIndex = 10;
             this.label6.Text = "Domingo";
             // 
             // lbl_mes
             // 
             this.lbl_mes.AutoSize = true;
-            this.lbl_mes.Location = new System.Drawing.Point(560, 47);
-            this.lbl_mes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_mes.Location = new System.Drawing.Point(420, 38);
             this.lbl_mes.Name = "lbl_mes";
-            this.lbl_mes.Size = new System.Drawing.Size(72, 16);
+            this.lbl_mes.Size = new System.Drawing.Size(59, 13);
             this.lbl_mes.TabIndex = 11;
             this.lbl_mes.Text = "Mes actual";
             this.lbl_mes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // activityContainer
             // 
-            this.activityContainer.Location = new System.Drawing.Point(1299, 118);
-            this.activityContainer.Margin = new System.Windows.Forms.Padding(4);
+            this.activityContainer.Location = new System.Drawing.Point(974, 96);
             this.activityContainer.Name = "activityContainer";
-            this.activityContainer.Size = new System.Drawing.Size(267, 592);
+            this.activityContainer.Size = new System.Drawing.Size(200, 481);
             this.activityContainer.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(1299, 94);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(974, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 16);
+            this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 13;
             // 
             // lbl_actividadesdia
             // 
             this.lbl_actividadesdia.AutoSize = true;
-            this.lbl_actividadesdia.Location = new System.Drawing.Point(1295, 94);
-            this.lbl_actividadesdia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_actividadesdia.Location = new System.Drawing.Point(971, 76);
             this.lbl_actividadesdia.Name = "lbl_actividadesdia";
-            this.lbl_actividadesdia.Size = new System.Drawing.Size(122, 16);
+            this.lbl_actividadesdia.Size = new System.Drawing.Size(96, 13);
             this.lbl_actividadesdia.TabIndex = 14;
             this.lbl_actividadesdia.Text = "Actividades del dia";
             // 
-            // frmInicio
+            // FrmInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1596, 815);
+            this.ClientSize = new System.Drawing.Size(1184, 711);
             this.Controls.Add(this.lbl_actividadesdia);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.activityContainer);
@@ -350,8 +337,9 @@
             this.Controls.Add(this.daycontainer);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmInicio";
+            this.MaximumSize = new System.Drawing.Size(1200, 750);
+            this.MinimumSize = new System.Drawing.Size(1200, 750);
+            this.Name = "FrmInicio";
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.frmInicio_Load);
             this.menuStrip1.ResumeLayout(false);

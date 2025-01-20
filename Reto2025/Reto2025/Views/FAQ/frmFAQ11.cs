@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views.FAQ
 {
-    public partial class frmFAQ11 : Form
+    public partial class FrmFAQ11 : Form
     {
-        public frmFAQ11()
+        public FrmFAQ11()
         {
             InitializeComponent();
         }

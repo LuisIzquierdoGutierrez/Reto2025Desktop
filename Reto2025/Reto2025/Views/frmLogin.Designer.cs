@@ -1,6 +1,6 @@
 ﻿namespace Reto2025
 {
-    partial class frmLogin
+    partial class FrmLogin
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -34,7 +34,6 @@
             this.txt_correo = new System.Windows.Forms.TextBox();
             this.txt_pass = new System.Windows.Forms.TextBox();
             this.btn_inicio = new System.Windows.Forms.Button();
-            this.btn_registarse = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -92,16 +91,6 @@
             this.btn_inicio.UseVisualStyleBackColor = true;
             this.btn_inicio.Click += new System.EventHandler(this.btn_inicio_Click);
             // 
-            // btn_registarse
-            // 
-            this.btn_registarse.Location = new System.Drawing.Point(140, 279);
-            this.btn_registarse.Name = "btn_registarse";
-            this.btn_registarse.Size = new System.Drawing.Size(89, 23);
-            this.btn_registarse.TabIndex = 6;
-            this.btn_registarse.Text = "Registrarse";
-            this.btn_registarse.UseVisualStyleBackColor = true;
-            this.btn_registarse.Click += new System.EventHandler(this.btn_registarse_Click);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(275, 278);
@@ -112,20 +101,19 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // frmLogin
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(364, 326);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btn_registarse);
             this.Controls.Add(this.btn_inicio);
             this.Controls.Add(this.txt_pass);
             this.Controls.Add(this.txt_correo);
             this.Controls.Add(this.lbl_pass);
             this.Controls.Add(this.lbl_Correo);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "frmLogin";
+            this.Name = "FrmLogin";
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -141,7 +129,6 @@
         private System.Windows.Forms.TextBox txt_correo;
         private System.Windows.Forms.TextBox txt_pass;
         private System.Windows.Forms.Button btn_inicio;
-        private System.Windows.Forms.Button btn_registarse;
         private System.Windows.Forms.Button button1;
     }
 }

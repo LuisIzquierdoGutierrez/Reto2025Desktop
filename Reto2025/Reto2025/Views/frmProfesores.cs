@@ -13,11 +13,11 @@ using Reto2025.Models;
 
 namespace Reto2025.Views
 {
-    public partial class frmProfesores : Form
+    public partial class FrmProfesores : Form
     {
         private static List<Profesor> profesores;
         private ControlProfesores controlProfesores = new ControlProfesores();
-        public frmProfesores()
+        public FrmProfesores()
         {
             InitializeComponent();
             if (profesores == null)
@@ -37,32 +37,18 @@ namespace Reto2025.Views
         private void putProfesores()
         {
             ListViewItem item;
-            foreach (Profesor profesor in profesores) {
+            foreach (Profesor profesor in profesores)
+            {
+                if (profesor.activo)
                 {
                     item = new ListViewItem();
-                    string[] row = {profesor.dni,profesor.nombre,profesor.apellidos,profesor.correo,profesor.password,profesor.rol.ToString(),profesor.activo.ToString(),profesor.urlFoto,profesor.esJefeDep.ToString(),profesor.depart.id.ToString()};
+                    string[] row = { profesor.nombre, profesor.apellidos, profesor.correo, profesor.rol.ToString(), profesor.esJefeDep ? "si" : "no", profesor.depart.nombre };
                     item = new ListViewItem(row);
                     lwProfesores.Items.Add(item);
                 }
-                
+
             }
             lwProfesores.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-        }
-
-
-        private void btn_volver_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(() =>
-            {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmInicio inicio = new frmInicio();
-                Application.Run(inicio);
-            });
-
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
         }
     }
 }

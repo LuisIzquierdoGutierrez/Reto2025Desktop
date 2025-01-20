@@ -15,16 +15,26 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class frmInicio : Form
+    public partial class FrmInicio : Form
     {
         private readonly ControlActividades controlAct = new ControlActividades();
 
         public static List<Actividad> actividades;
         static DateTime inicioMES = DateTime.Now;
 
-        public frmInicio()
+        private Profesor user;
+
+        private FrmActividades frmActividades;
+        private FrmVerActividades frmVerActividades;
+        private FrmCursos frmCursos;
+        private FrmProfesores frmProfesores;
+        private FrmDepartamentos frmDepartamentos;
+        private FrmEmpresasTransporte frmEmpresasTransporte;
+        private FrmPerfil frmPerfil;
+        public FrmInicio(Profesor profesor)
         {
             InitializeComponent();
+            user = profesor;
             inicioMES = new DateTime(inicioMES.Year, inicioMES.Month, 1);
 
         }
@@ -40,97 +50,73 @@ namespace Reto2025.Views
 
         private void tsmi_crearActividades_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() =>
+            if (frmActividades != null)
             {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmActividades actividades = new frmActividades();
-                Application.Run(actividades);
-            });
+                frmActividades.Close();
+            }
 
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
+            frmActividades = new FrmActividades();
+            frmActividades.Show();
+
         }
 
         private void tsmi_verCursos_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() =>
+            
+            if(frmCursos != null)
             {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmCursos cursos = new frmCursos();
-                Application.Run(cursos);
-            });
-
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
+                frmCursos.Close();
+            }
+            frmCursos = new FrmCursos();
+            frmCursos.Show();
         }
 
         private void tsmi_verProfesores_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() =>
+            
+            if(frmProfesores != null)
             {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmProfesores profesores = new frmProfesores();
-                Application.Run(profesores);
-            });
-
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
+                frmProfesores.Close();
+            }
+            frmProfesores = new FrmProfesores();
+            frmProfesores.Show();
         }
 
         private void tsmi_verDepartamentos_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() =>
+            
+            if( frmDepartamentos != null)
             {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmDepartamentos departamentos = new frmDepartamentos();
-                Application.Run(departamentos);
-            });
-
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
+                frmDepartamentos.Close();
+            }
+            frmDepartamentos = new FrmDepartamentos();
+            frmDepartamentos.Show();
         }
 
         private void tsmi_verEmpresas_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() =>
+            
+            if(frmEmpresasTransporte != null)
             {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmEmpresas_transporte empresas = new frmEmpresas_transporte();
-                Application.Run(empresas);
-            });
-
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
+                frmEmpresasTransporte.Close();
+            }
+            frmEmpresasTransporte = new FrmEmpresasTransporte();
+            frmEmpresasTransporte.Show();
         }
 
         private void tsmi_perfil_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() =>
+            if (frmPerfil != null)
             {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmPerfil perfil = new frmPerfil();
-                Application.Run(perfil);
-            });
-
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
+                frmPerfil.Close();
+            }
+            frmPerfil = new FrmPerfil(user);
+          frmPerfil.Show();
         }
 
         private void dias_de_mierda(int? opMes, List<Actividad> actividades)
         {
-           
+
             switch (opMes)
             {
                 case 1:
@@ -167,20 +153,20 @@ namespace Reto2025.Views
                 dias_semana = 7;
             }
 
-          
+
             for (int i = 2; i <= dias_semana; i++)
             {
-                frmControlCalendarioBlanco controlCalendarioBlanco = new frmControlCalendarioBlanco();
+                FrmControlCalendarioBlanco controlCalendarioBlanco = new FrmControlCalendarioBlanco();
                 controlCalendarioBlanco.Text = i.ToString();
                 daycontainer.Controls.Add(controlCalendarioBlanco);
             }
 
-           
+
             for (int i = 1; i <= dias; i++)
             {
-                frmControlCalendario controlCalendario = new frmControlCalendario();
-           
-                controlCalendario.FormularioPadre = this; 
+                FrmControlCalendario controlCalendario = new FrmControlCalendario();
+
+                controlCalendario.FormularioPadre = this;
 
                 if (i == DateTime.Today.Day && inicioMES.Month == DateTime.Today.Month && inicioMES.Year == DateTime.Today.Year)
                 {
@@ -191,7 +177,7 @@ namespace Reto2025.Views
                     controlCalendario.ResaltarDiaActual(false);
                 }
 
-                
+
                 foreach (Actividad actividadMes in actividades_mes)
                 {
                     if (i == actividadMes.fini.Day)
@@ -203,11 +189,11 @@ namespace Reto2025.Views
                 controlCalendario.Text = i.ToString();
                 controlCalendario.diaSemana(i);
 
-              
+
                 daycontainer.Controls.Add(controlCalendario);
             }
-        
-    }
+
+        }
 
         private void btn_mesAnterior_Click(object sender, EventArgs e)
         {
@@ -223,23 +209,23 @@ namespace Reto2025.Views
 
         private void normativaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new frmNormativa().Show();
+            new FrmNormativa().Show();
         }
 
         private void fAQToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new frmFAQ().Show();
+            new FrmFAQ().Show();
         }
         public void mostrarActividades(List<Actividad> actividadesDelDia)
         {
-         
+
             activityContainer.Controls.Clear();
 
-           
+
             foreach (Actividad actividad in actividadesDelDia)
             {
-                frmControlActividades controlActividades = new frmControlActividades();
-                controlActividades.setDatos(actividad); 
+                FrmControlActividades controlActividades = new FrmControlActividades();
+                controlActividades.setDatos(actividad);
                 activityContainer.Controls.Add(controlActividades);
             }
         }
@@ -247,23 +233,18 @@ namespace Reto2025.Views
         private void verActividadesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            Thread thread = new Thread(() =>
+            if (frmVerActividades != null)
             {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmVerActividades Veractividades = new frmVerActividades();
-                Application.Run(Veractividades);
-            });
-
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
+                frmVerActividades.Close();
+            }
+            frmVerActividades = new FrmVerActividades();
+            frmVerActividades.Show();
         }
 
-      
+
     }
-        }
+}
 
-   
+
 
 

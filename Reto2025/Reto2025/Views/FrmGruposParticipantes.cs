@@ -24,7 +24,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                frmActividades actividades = new frmActividades();
+                FrmActividades actividades = new FrmActividades();
                 Application.Run(actividades);
             });
 
@@ -39,7 +39,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                frmGrupos grupos = new frmGrupos();
+                FrmGrupos grupos = new FrmGrupos();
                 Application.Run(grupos);
             });
 

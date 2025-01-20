@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class frmContrato_transporte
+    partial class FrmContrato_transporte
     {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.lnklbl_presupuesto = new System.Windows.Forms.LinkLabel();
             this.lnklbl_factura = new System.Windows.Forms.LinkLabel();
-            this.btn_volver = new System.Windows.Forms.Button();
             this.btn_crear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -108,16 +107,6 @@
             this.lnklbl_factura.TabStop = true;
             this.lnklbl_factura.Text = "Ver Factura";
             // 
-            // btn_volver
-            // 
-            this.btn_volver.Location = new System.Drawing.Point(410, 208);
-            this.btn_volver.Name = "btn_volver";
-            this.btn_volver.Size = new System.Drawing.Size(75, 23);
-            this.btn_volver.TabIndex = 19;
-            this.btn_volver.Text = "Volver";
-            this.btn_volver.UseVisualStyleBackColor = true;
-            this.btn_volver.Click += new System.EventHandler(this.btn_volver_Click);
-            // 
             // btn_crear
             // 
             this.btn_crear.Location = new System.Drawing.Point(291, 208);
@@ -128,13 +117,12 @@
             this.btn_crear.UseVisualStyleBackColor = true;
             this.btn_crear.Click += new System.EventHandler(this.btn_crear_Click);
             // 
-            // Contrato_transporte
+            // FrmContrato_transporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(540, 266);
             this.Controls.Add(this.btn_crear);
-            this.Controls.Add(this.btn_volver);
             this.Controls.Add(this.lnklbl_factura);
             this.Controls.Add(this.lnklbl_presupuesto);
             this.Controls.Add(this.textBox3);
@@ -143,7 +131,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lbl_actividad);
-            this.Name = "Contrato_transporte";
+            this.Name = "FrmContrato_transporte";
             this.Text = "Contrato_transporte";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -160,7 +148,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.LinkLabel lnklbl_presupuesto;
         private System.Windows.Forms.LinkLabel lnklbl_factura;
-        private System.Windows.Forms.Button btn_volver;
         private System.Windows.Forms.Button btn_crear;
     }
 }

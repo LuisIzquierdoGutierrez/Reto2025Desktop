@@ -15,12 +15,12 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 namespace Reto2025.Views
 {
 
-    public partial class frmCursos : Form
+    public partial class FrmCursos : Form
     {
         private static List<Curso> cursos;
         private ControlCursos controlCursos = new ControlCursos();
         
-        public frmCursos()
+        public FrmCursos()
         {
             InitializeComponent();
             if(cursos == null)
@@ -33,23 +33,6 @@ namespace Reto2025.Views
                 putCursos();
             }
             
-        }
-
-
-
-        private void btn_volver_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(() =>
-            {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmInicio inicio = new frmInicio();
-                Application.Run(inicio);
-            });
-
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
         }
 
         private async void loadCursos()

@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class frmControlCalendarioBlanco
+    partial class FrmControlCalendarioBlanco
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
