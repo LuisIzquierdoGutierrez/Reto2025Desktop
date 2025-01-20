@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Reto2025.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +21,7 @@ namespace Reto2025.Views
 
         private void btn_modificar_Click(object sender, EventArgs e)
         {
-            validarCampos();
+            validadCampos();
 
            /* Thread thread = new Thread(() =>
             {
@@ -65,6 +66,89 @@ namespace Reto2025.Views
             thread.Start();
             this.Close();
         }
+
+        public void validadCampos()
+        {
+
+            List<String> campos = new List<string>();
+            campos.Add(txt_titulo.Text);
+            campos.Add(cmb_tipos.Text);
+            campos.Add(txt_descripcion.Text);
+            campos.Add(dtp_fechaIni.Text);
+            campos.Add(dtp_fechafin.Text);
+            campos.Add(dtp_horaini.Text);
+            campos.Add(dtp_horafin.Text);
+            campos.Add(dtp_fechaProvista.Text);
+            campos.Add(txt_cometariosGenerales.Text);
+            campos.Add(txt_comentTransp.Text);
+            campos.Add(txt_comentAloj.Text);
+            campos.Add(txt_incidencias.Text);
+            campos.Add(txt_importe.Text);
+            
+
+            List<String> nombrecampos = new List<string>();
+            nombrecampos.Add(lbl_titulo.Text);
+            nombrecampos.Add(lbl_tipo.Text);
+            nombrecampos.Add(lblDescripcion.Text);
+            nombrecampos.Add(lblFechaini.Text);
+            nombrecampos.Add(lblFechafin.Text);
+            nombrecampos.Add(lblHoraini.Text);
+            nombrecampos.Add(lblHorafin.Text);
+            nombrecampos.Add(lbl_fechaProv.Text);
+            nombrecampos.Add(lbl_comentGen.Text);
+            nombrecampos.Add(lbl_comentTransp.Text);
+            nombrecampos.Add(lbl_comentAloj.Text);
+            nombrecampos.Add(lbl_incidencias.Text);
+            nombrecampos.Add(lbl_importe.Text);
+
+            String mensaje_error = "";
+            int num_errores = 0;
+
+            List<String> errores = new List<String>();
+
+            for (int i = 0; i < campos.Count; i++)
+            {
+
+                if (string.IsNullOrWhiteSpace(campos[i]))
+                {
+                    if (!chck_transporte.Checked && string.IsNullOrWhiteSpace(cmb_tipo_transporte.Text) && string.IsNullOrWhiteSpace(txt_comentTransp.Text))
+                    {
+
+                    }
+                    else
+                    {
+                        errores.Add(nombrecampos[i]);
+                        num_errores++;
+                    }
+
+                }
+            }
+
+            if (num_errores == 1)
+            {
+                mensaje_error = "el campo " + errores[0] + " esta vacio";
+            }
+            if (num_errores > 1)
+            {
+                mensaje_error = "Los campos ";
+
+                for (int i = 0; i < errores.Count; i++)
+                {
+                    if (i < errores.Count - 1)
+                    {
+                        mensaje_error += errores[i] + ",";
+                    }
+                    else
+                    {
+                        mensaje_error += errores[i];
+                    }
+                }
+                mensaje_error += " estan vacios";
+            }
+
+            MessageBox.Show(mensaje_error);
+        }
+
 
         public void validarCampos()
         {

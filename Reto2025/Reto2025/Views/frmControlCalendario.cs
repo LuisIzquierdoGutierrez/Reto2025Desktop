@@ -31,7 +31,8 @@ namespace Reto2025.Views
         {
             if (actividad != null)
             {
-                lbl_evento.Text = actividad.titulo;
+                lbl_evento.Text = actividad.titulo.ToString();
+                lbl_idsActividades.Text = actividad.id.ToString() + ",";
                 ActividadesDelDia.Add(actividad); 
             }
             else
@@ -42,10 +43,10 @@ namespace Reto2025.Views
 
         private void frmControlCalendario_Click(object sender, EventArgs e)
         {
-            
+
             if (ActividadesDelDia.Count > 0)
             {
-                
+               
                 FormularioPadre.mostrarActividades(ActividadesDelDia);
             }
         }
