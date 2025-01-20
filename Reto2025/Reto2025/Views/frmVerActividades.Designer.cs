@@ -48,10 +48,22 @@
             this.Url_Folleto = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Id_Solicitante = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Importe_Por_Alumno = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblFiltros = new System.Windows.Forms.Label();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.lblParticipacion = new System.Windows.Forms.Label();
+            this.lblCurso = new System.Windows.Forms.Label();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.cmbParticipacion = new System.Windows.Forms.ComboBox();
+            this.cmbCurso = new System.Windows.Forms.ComboBox();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lwActividades
             // 
+            this.lwActividades.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lwActividades.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Titulo_Actividad,
             this.Tipo,
@@ -72,12 +84,11 @@
             this.Url_Folleto,
             this.Id_Solicitante,
             this.Importe_Por_Alumno});
-            this.lwActividades.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lwActividades.HideSelection = false;
-            this.lwActividades.Location = new System.Drawing.Point(0, 0);
+            this.lwActividades.Location = new System.Drawing.Point(232, 2);
             this.lwActividades.Margin = new System.Windows.Forms.Padding(2);
             this.lwActividades.Name = "lwActividades";
-            this.lwActividades.Size = new System.Drawing.Size(798, 442);
+            this.lwActividades.Size = new System.Drawing.Size(512, 442);
             this.lwActividades.TabIndex = 5;
             this.lwActividades.UseCompatibleStateImageBehavior = false;
             this.lwActividades.View = System.Windows.Forms.View.Details;
@@ -158,16 +169,155 @@
             // 
             this.Importe_Por_Alumno.Text = "Importe Por Alumno";
             // 
+            // lblFiltros
+            // 
+            this.lblFiltros.AutoSize = true;
+            this.lblFiltros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblFiltros.Location = new System.Drawing.Point(55, 33);
+            this.lblFiltros.Name = "lblFiltros";
+            this.lblFiltros.Size = new System.Drawing.Size(46, 17);
+            this.lblFiltros.TabIndex = 6;
+            this.lblFiltros.Text = "Filtros";
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(26, 82);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(43, 13);
+            this.lblEstado.TabIndex = 7;
+            this.lblEstado.Text = "Estado:";
+            // 
+            // lblParticipacion
+            // 
+            this.lblParticipacion.AutoSize = true;
+            this.lblParticipacion.Location = new System.Drawing.Point(26, 152);
+            this.lblParticipacion.Name = "lblParticipacion";
+            this.lblParticipacion.Size = new System.Drawing.Size(71, 13);
+            this.lblParticipacion.TabIndex = 8;
+            this.lblParticipacion.Text = "Participacion:";
+            // 
+            // lblCurso
+            // 
+            this.lblCurso.AutoSize = true;
+            this.lblCurso.Location = new System.Drawing.Point(26, 224);
+            this.lblCurso.Name = "lblCurso";
+            this.lblCurso.Size = new System.Drawing.Size(37, 13);
+            this.lblCurso.TabIndex = 9;
+            this.lblCurso.Text = "Curso:";
+            // 
+            // cmbEstado
+            // 
+            this.cmbEstado.FormattingEnabled = true;
+            this.cmbEstado.Items.AddRange(new object[] {
+            "Cualquiera",
+            "Aprobada",
+            "Cancelada",
+            "Realizada"});
+            this.cmbEstado.Location = new System.Drawing.Point(29, 98);
+            this.cmbEstado.Name = "cmbEstado";
+            this.cmbEstado.Size = new System.Drawing.Size(121, 21);
+            this.cmbEstado.TabIndex = 10;
+            this.cmbEstado.Text = "Cualquiera";
+            this.cmbEstado.SelectedIndexChanged += new System.EventHandler(this.filtrado);
+            // 
+            // cmbParticipacion
+            // 
+            this.cmbParticipacion.FormattingEnabled = true;
+            this.cmbParticipacion.Items.AddRange(new object[] {
+            "Cualquiera",
+            "Participante",
+            "Responsable"});
+            this.cmbParticipacion.Location = new System.Drawing.Point(29, 168);
+            this.cmbParticipacion.Name = "cmbParticipacion";
+            this.cmbParticipacion.Size = new System.Drawing.Size(121, 21);
+            this.cmbParticipacion.TabIndex = 11;
+            this.cmbParticipacion.Text = "Cualquiera";
+            this.cmbParticipacion.SelectedIndexChanged += new System.EventHandler(this.filtrado);
+            // 
+            // cmbCurso
+            // 
+            this.cmbCurso.FormattingEnabled = true;
+            this.cmbCurso.Items.AddRange(new object[] {
+            "Cualquiera",
+            "ESO1",
+            "ESO2",
+            "ESO3",
+            "ESO4",
+            "BACH1",
+            "BACH2",
+            "FPBIC1",
+            "FPBFM1",
+            "FPBIC2",
+            "FPBFM2",
+            "SMR1",
+            "SMR2",
+            "MEC1",
+            "MEC2",
+            "GAD1",
+            "GAD2",
+            "DAM1",
+            "DAM2",
+            "PPFM1",
+            "PPFM2",
+            "AYF1",
+            "AYF2",
+            "DPFM1",
+            "DPFM2",
+            "DAW1",
+            "DAW2",
+            "ASIR1",
+            "ASIR2"});
+            this.cmbCurso.Location = new System.Drawing.Point(29, 240);
+            this.cmbCurso.Name = "cmbCurso";
+            this.cmbCurso.Size = new System.Drawing.Size(121, 21);
+            this.cmbCurso.TabIndex = 12;
+            this.cmbCurso.Text = "Cualquiera";
+            this.cmbCurso.SelectedIndexChanged += new System.EventHandler(this.filtrado);
+            // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Location = new System.Drawing.Point(26, 300);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(31, 13);
+            this.lblTipo.TabIndex = 13;
+            this.lblTipo.Text = "Tipo:";
+            // 
+            // cmbTipo
+            // 
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Cualquiera",
+            "Complementaria",
+            "Extraescolar"});
+            this.cmbTipo.Location = new System.Drawing.Point(29, 316);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipo.TabIndex = 14;
+            this.cmbTipo.Text = "Cualquiera";
+            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.filtrado);
+            // 
             // FrmVerActividades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 442);
+            this.ClientSize = new System.Drawing.Size(746, 442);
+            this.Controls.Add(this.cmbTipo);
+            this.Controls.Add(this.lblTipo);
+            this.Controls.Add(this.cmbCurso);
+            this.Controls.Add(this.cmbParticipacion);
+            this.Controls.Add(this.cmbEstado);
+            this.Controls.Add(this.lblCurso);
+            this.Controls.Add(this.lblParticipacion);
+            this.Controls.Add(this.lblEstado);
+            this.Controls.Add(this.lblFiltros);
             this.Controls.Add(this.lwActividades);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmVerActividades";
-            this.Text = "frmVerActividades";
+            this.Text = "Actividades";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -192,5 +342,14 @@
         private System.Windows.Forms.ColumnHeader Url_Folleto;
         private System.Windows.Forms.ColumnHeader Id_Solicitante;
         private System.Windows.Forms.ColumnHeader Importe_Por_Alumno;
+        private System.Windows.Forms.Label lblFiltros;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.Label lblParticipacion;
+        private System.Windows.Forms.Label lblCurso;
+        private System.Windows.Forms.ComboBox cmbEstado;
+        private System.Windows.Forms.ComboBox cmbParticipacion;
+        private System.Windows.Forms.ComboBox cmbCurso;
+        private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.ComboBox cmbTipo;
     }
 }

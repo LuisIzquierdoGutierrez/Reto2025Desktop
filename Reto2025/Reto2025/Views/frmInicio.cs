@@ -237,7 +237,7 @@ namespace Reto2025.Views
             {
                 frmVerActividades.Close();
             }
-            frmVerActividades = new FrmVerActividades();
+            frmVerActividades = new FrmVerActividades(user);
             frmVerActividades.Show();
         }
 

@@ -50,10 +50,30 @@ namespace Reto2025
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_ClickAsync(object sender, EventArgs e)
         {
-            FrmAutorizacion frm = new FrmAutorizacion();
-            frm.ShowDialog();
+            Profesor profesor = await controlProfesores.GetLogin("alicia.fernandez@educantabria.es", "1234");
+            if (profesor != null)
+            {
+                if (profesor.activo)
+                {
+                    this.Hide();
+                    FrmInicio inicio = new FrmInicio(profesor);
+
+                    // añade al form inicio que cierre este form cuando se cierre
+                    inicio.Closed += (s, args) => this.Close();
+                    inicio.Show();
+                }
+                else
+                {
+                    MessageBox.Show("usuario no activo");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("usuario o contraseña incorrectos");
+            }
         }
     }
 }
