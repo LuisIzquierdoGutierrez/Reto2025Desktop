@@ -35,5 +35,11 @@ namespace Reto2025.Models
 
 
         public Actividad() { }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Actividad actividad &&
+                   id == actividad.id;
+        }
     }
 }

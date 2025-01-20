@@ -26,7 +26,6 @@ namespace Reto2025.Controls
 
         //Creamos nuestra petición,
         public async Task<List<GrupoParticipante>> GetAllGruposParticipantes()
-
         {
             try
             {
