@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class frmGrupos : Form
+    public partial class FrmGrupos : Form
     {
-        public frmGrupos()
+        public FrmGrupos()
         {
             InitializeComponent();
         }

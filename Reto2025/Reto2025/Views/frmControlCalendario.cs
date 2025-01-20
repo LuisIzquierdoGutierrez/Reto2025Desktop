@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class frmControlCalendario : UserControl
+    public partial class FrmControlCalendario : UserControl
     {
-        public frmInicio FormularioPadre { get; set; }
+        public FrmInicio FormularioPadre { get; set; }
         public List<Actividad> ActividadesDelDia { get; set; } = new List<Actividad>();
 
-        public frmControlCalendario()
+        public FrmControlCalendario()
         {
             InitializeComponent();
         }

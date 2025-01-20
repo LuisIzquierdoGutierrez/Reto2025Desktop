@@ -24,7 +24,7 @@ namespace Reto2025.Views
             {
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.EnableVisualStyles();
-                frmActividades actividades = new frmActividades();
+                FrmActividades actividades = new FrmActividades();
                 Application.Run(actividades);
             });
 

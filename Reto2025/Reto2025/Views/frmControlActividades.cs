@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class frmControlActividades : UserControl
+    public partial class FrmControlActividades : UserControl
     {
-        public frmControlActividades()
+        public FrmControlActividades()
         {
             InitializeComponent();
         }

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class frmActividades : Form
+    public partial class FrmActividades : Form
     {
-        public frmActividades()
+        public FrmActividades()
         {
             InitializeComponent();
         }
@@ -35,20 +35,6 @@ namespace Reto2025.Views
             this.Close();*/
         }
 
-        private void btn_volver_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(() =>
-            {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmInicio inicio = new frmInicio();
-                Application.Run(inicio);
-            });
-
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
-        }
 
         private void btn_verGrupos_Click(object sender, EventArgs e)
         {

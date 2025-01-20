@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class frmActividades
+    partial class FrmActividades
     {
         /// <summary>
         /// Required designer variable.
@@ -60,7 +60,6 @@
             this.dtp_fechaProvista = new System.Windows.Forms.DateTimePicker();
             this.btn_borrar = new System.Windows.Forms.Button();
             this.btn_modificar = new System.Windows.Forms.Button();
-            this.btn_volver = new System.Windows.Forms.Button();
             this.btn_fotos = new System.Windows.Forms.Button();
             this.btn_aprobar = new System.Windows.Forms.Button();
             this.btn_rechazar = new System.Windows.Forms.Button();
@@ -343,16 +342,6 @@
             this.btn_modificar.UseVisualStyleBackColor = true;
             this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
-            // btn_volver
-            // 
-            this.btn_volver.Location = new System.Drawing.Point(717, 604);
-            this.btn_volver.Name = "btn_volver";
-            this.btn_volver.Size = new System.Drawing.Size(75, 23);
-            this.btn_volver.TabIndex = 34;
-            this.btn_volver.Text = "Volver";
-            this.btn_volver.UseVisualStyleBackColor = true;
-            this.btn_volver.Click += new System.EventHandler(this.btn_volver_Click);
-            // 
             // btn_fotos
             // 
             this.btn_fotos.Location = new System.Drawing.Point(90, 537);
@@ -401,7 +390,7 @@
             this.chk_discapacidad.Text = "Discapacidad";
             this.chk_discapacidad.UseVisualStyleBackColor = true;
             // 
-            // frmActividades
+            // FrmActividades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -411,7 +400,6 @@
             this.Controls.Add(this.btn_rechazar);
             this.Controls.Add(this.btn_aprobar);
             this.Controls.Add(this.btn_fotos);
-            this.Controls.Add(this.btn_volver);
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.btn_borrar);
             this.Controls.Add(this.dtp_fechaProvista);
@@ -444,7 +432,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbl_tipo);
             this.Controls.Add(this.lbl_titulo);
-            this.Name = "frmActividades";
+            this.Name = "FrmActividades";
             this.Text = "Actividades";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -485,7 +473,6 @@
         private System.Windows.Forms.DateTimePicker dtp_fechaProvista;
         private System.Windows.Forms.Button btn_borrar;
         private System.Windows.Forms.Button btn_modificar;
-        private System.Windows.Forms.Button btn_volver;
         private System.Windows.Forms.Button btn_fotos;
         private System.Windows.Forms.Button btn_aprobar;
         private System.Windows.Forms.Button btn_rechazar;

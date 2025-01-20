@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class frmVerActividades
+    partial class FrmVerActividades
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnVolver = new System.Windows.Forms.Button();
             this.lwActividades = new System.Windows.Forms.ListView();
             this.Titulo_Actividad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Tipo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,16 +49,6 @@
             this.Id_Solicitante = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Importe_Por_Alumno = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.Location = new System.Drawing.Point(927, 505);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(86, 29);
-            this.btnVolver.TabIndex = 4;
-            this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = true;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // lwActividades
             // 
@@ -83,10 +72,12 @@
             this.Url_Folleto,
             this.Id_Solicitante,
             this.Importe_Por_Alumno});
+            this.lwActividades.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lwActividades.HideSelection = false;
-            this.lwActividades.Location = new System.Drawing.Point(12, 23);
+            this.lwActividades.Location = new System.Drawing.Point(0, 0);
+            this.lwActividades.Margin = new System.Windows.Forms.Padding(2);
             this.lwActividades.Name = "lwActividades";
-            this.lwActividades.Size = new System.Drawing.Size(1033, 464);
+            this.lwActividades.Size = new System.Drawing.Size(798, 442);
             this.lwActividades.TabIndex = 5;
             this.lwActividades.UseCompatibleStateImageBehavior = false;
             this.lwActividades.View = System.Windows.Forms.View.Details;
@@ -167,21 +158,20 @@
             // 
             this.Importe_Por_Alumno.Text = "Importe Por Alumno";
             // 
-            // frmVerActividades
+            // FrmVerActividades
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 544);
+            this.ClientSize = new System.Drawing.Size(798, 442);
             this.Controls.Add(this.lwActividades);
-            this.Controls.Add(this.btnVolver);
-            this.Name = "frmVerActividades";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "FrmVerActividades";
             this.Text = "frmVerActividades";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.ListView lwActividades;
         private System.Windows.Forms.ColumnHeader Titulo_Actividad;
         private System.Windows.Forms.ColumnHeader Tipo;

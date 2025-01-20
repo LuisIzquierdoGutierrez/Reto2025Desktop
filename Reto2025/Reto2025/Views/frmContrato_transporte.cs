@@ -11,40 +11,19 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class frmContrato_transporte : Form
+    public partial class FrmContrato_transporte : Form
     {
-        public frmContrato_transporte()
+        public FrmContrato_transporte()
         {
             InitializeComponent();
         }
 
-        private void btn_volver_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(() =>
-            {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmInicio inicio = new frmInicio();
-                Application.Run(inicio);
-            });
 
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
-        }
 
         private void btn_crear_Click(object sender, EventArgs e)
         {
-            Thread thread = new Thread(() =>
-            {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmInicio inicio = new frmInicio();
-                Application.Run(inicio);
-            });
+            MessageBox.Show("falta desarrollar este boton");
 
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
             this.Close();
         }
     }

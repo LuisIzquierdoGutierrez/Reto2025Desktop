@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class frmCursos
+    partial class FrmCursos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_volver = new System.Windows.Forms.Button();
             this.lwCursos = new System.Windows.Forms.ListView();
             this.Codigo_curso = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Titulo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Etapa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Nivel = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
-            // 
-            // btn_volver
-            // 
-            this.btn_volver.Location = new System.Drawing.Point(657, 410);
-            this.btn_volver.Name = "btn_volver";
-            this.btn_volver.Size = new System.Drawing.Size(75, 23);
-            this.btn_volver.TabIndex = 1;
-            this.btn_volver.Text = "Volver";
-            this.btn_volver.UseVisualStyleBackColor = true;
-            this.btn_volver.Click += new System.EventHandler(this.btn_volver_Click);
             // 
             // lwCursos
             // 
             this.lwCursos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Codigo_curso,
             this.Titulo,
-            this.Etapa,
-            this.Nivel});
+            this.Etapa});
+            this.lwCursos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lwCursos.HideSelection = false;
-            this.lwCursos.Location = new System.Drawing.Point(12, 12);
+            this.lwCursos.Location = new System.Drawing.Point(0, 0);
             this.lwCursos.Name = "lwCursos";
-            this.lwCursos.Size = new System.Drawing.Size(776, 378);
+            this.lwCursos.Size = new System.Drawing.Size(584, 461);
             this.lwCursos.TabIndex = 2;
             this.lwCursos.UseCompatibleStateImageBehavior = false;
             this.lwCursos.View = System.Windows.Forms.View.Details;
@@ -75,32 +63,26 @@
             this.Etapa.Text = "Etapa";
             this.Etapa.Width = 115;
             // 
-            // Nivel
-            // 
-            this.Nivel.Text = "Nivel";
-            this.Nivel.Width = 483;
-            // 
-            // frmCursos
+            // FrmCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.lwCursos);
-            this.Controls.Add(this.btn_volver);
-            this.MaximumSize = new System.Drawing.Size(816, 489);
-            this.MinimumSize = new System.Drawing.Size(816, 489);
-            this.Name = "frmCursos";
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(600, 500);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(600, 500);
+            this.Name = "FrmCursos";
             this.Text = "Cursos";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btn_volver;
         private System.Windows.Forms.ListView lwCursos;
         private System.Windows.Forms.ColumnHeader Codigo_curso;
         private System.Windows.Forms.ColumnHeader Titulo;
         private System.Windows.Forms.ColumnHeader Etapa;
-        private System.Windows.Forms.ColumnHeader Nivel;
     }
 }

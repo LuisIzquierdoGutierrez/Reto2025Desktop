@@ -14,11 +14,11 @@ using System.Windows.Forms;
 namespace Reto2025.Views
 {
 
-    public partial class frmEmpresas_transporte : Form
+    public partial class FrmEmpresasTransporte : Form
     {
         public static List<EmpTransporte> empTransportes;
         private ControlEmpTransporte controlEmpTransporte = new ControlEmpTransporte();
-        public frmEmpresas_transporte()
+        public FrmEmpresasTransporte()
         {
             InitializeComponent();
             if (empTransportes == null)
@@ -50,19 +50,5 @@ namespace Reto2025.Views
             putEmpTransportes();
         }
 
-        private void btn_volver_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(() =>
-            {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmInicio inicio = new frmInicio();
-                Application.Run(inicio);
-            });
-
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
-        }
     }
 }

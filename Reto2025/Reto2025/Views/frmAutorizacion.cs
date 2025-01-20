@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class frmAutorizacion : Form
+    public partial class FrmAutorizacion : Form
     {
-        public frmAutorizacion()
+        public FrmAutorizacion()
         {
             InitializeComponent();
         }

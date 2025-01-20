@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class frmControlCalendarioBlanco : UserControl
+    public partial class FrmControlCalendarioBlanco : UserControl
     {
-        public frmControlCalendarioBlanco()
+        public FrmControlCalendarioBlanco()
         {
             InitializeComponent();
         }

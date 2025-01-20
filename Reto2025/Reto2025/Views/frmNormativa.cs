@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class frmNormativa : Form
+    public partial class FrmNormativa : Form
     {
-        public frmNormativa()
+        public FrmNormativa()
         {
             InitializeComponent();
         }

@@ -13,11 +13,11 @@ using System.Windows.Forms;
 
 namespace Reto2025.Views
 {
-    public partial class frmDepartamentos : Form
+    public partial class FrmDepartamentos : Form
     {
         public static List<Departamento> departamentos;
         private ControlDepartamentos controlDepartamentos = new ControlDepartamentos();
-        public frmDepartamentos()
+        public FrmDepartamentos()
         {
             InitializeComponent();
 
@@ -50,19 +50,6 @@ namespace Reto2025.Views
             lwDepartamentos.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
-        private void btn_volver_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(() =>
-            {
-                Application.SetCompatibleTextRenderingDefault(false);
-                Application.EnableVisualStyles();
-                frmInicio inicio = new frmInicio();
-                Application.Run(inicio);
-            });
 
-            thread.SetApartmentState(ApartmentState.STA);
-            thread.Start();
-            this.Close();
-        }
     }
 }

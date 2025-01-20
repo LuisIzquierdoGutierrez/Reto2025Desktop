@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views.FAQ
 {
-    partial class frmFAQ9
+    partial class FrmFAQ9
     {
         /// <summary>
         /// Required designer variable.
