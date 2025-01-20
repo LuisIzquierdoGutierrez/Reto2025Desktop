@@ -168,7 +168,7 @@ namespace Reto2025.Views
 
                 controlCalendario.FormularioPadre = this;
 
-                if (i == DateTime.Today.Day && inicioMES.Month == DateTime.Today.Month && inicioMES.Year == DateTime.Today.Year)
+               if (i == DateTime.Today.Day && inicioMES.Month == DateTime.Today.Month && inicioMES.Year == DateTime.Today.Year)
                 {
                     controlCalendario.ResaltarDiaActual(true);
                 }
@@ -181,7 +181,7 @@ namespace Reto2025.Views
                 foreach (Actividad actividadMes in actividades_mes)
                 {
                     if (i == actividadMes.fini.Day)
-                    {
+                    {                       
                         controlCalendario.setNombreActividades(actividadMes);
                     }
                 }

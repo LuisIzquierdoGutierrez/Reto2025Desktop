@@ -72,7 +72,6 @@ namespace Reto2025.Controls
         {
             try
             {
-                MessageBox.Show("patata");
                 //Hacemos una instancia de Personajes
                 Actividad actividad = new Actividad();
 

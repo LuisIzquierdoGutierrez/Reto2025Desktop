@@ -30,11 +30,11 @@
         {
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.lbl_tipo = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbl_hfin = new System.Windows.Forms.Label();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.lblFechaini = new System.Windows.Forms.Label();
+            this.lblFechafin = new System.Windows.Forms.Label();
+            this.lblHoraini = new System.Windows.Forms.Label();
+            this.lblHorafin = new System.Windows.Forms.Label();
             this.lbl_fechaProv = new System.Windows.Forms.Label();
             this.lbl_comentTransp = new System.Windows.Forms.Label();
             this.lbl_comentAloj = new System.Windows.Forms.Label();
@@ -85,50 +85,50 @@
             this.lbl_tipo.TabIndex = 1;
             this.lbl_tipo.Text = "Tipo de la actividad";
             // 
-            // label3
+            // lblDescripcion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(413, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Descripcion";
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Location = new System.Drawing.Point(413, 46);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(63, 13);
+            this.lblDescripcion.TabIndex = 2;
+            this.lblDescripcion.Text = "Descripcion";
             // 
-            // label4
+            // lblFechaini
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(91, 102);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Fecha inicio";
+            this.lblFechaini.AutoSize = true;
+            this.lblFechaini.Location = new System.Drawing.Point(91, 102);
+            this.lblFechaini.Name = "lblFechaini";
+            this.lblFechaini.Size = new System.Drawing.Size(64, 13);
+            this.lblFechaini.TabIndex = 3;
+            this.lblFechaini.Text = "Fecha inicio";
             // 
-            // label5
+            // lblFechafin
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(91, 140);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Fecha fin";
+            this.lblFechafin.AutoSize = true;
+            this.lblFechafin.Location = new System.Drawing.Point(91, 140);
+            this.lblFechafin.Name = "lblFechafin";
+            this.lblFechafin.Size = new System.Drawing.Size(51, 13);
+            this.lblFechafin.TabIndex = 4;
+            this.lblFechafin.Text = "Fecha fin";
             // 
-            // label6
+            // lblHoraini
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(91, 175);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Hora inicio";
+            this.lblHoraini.AutoSize = true;
+            this.lblHoraini.Location = new System.Drawing.Point(91, 175);
+            this.lblHoraini.Name = "lblHoraini";
+            this.lblHoraini.Size = new System.Drawing.Size(57, 13);
+            this.lblHoraini.TabIndex = 5;
+            this.lblHoraini.Text = "Hora inicio";
             // 
-            // lbl_hfin
+            // lblHorafin
             // 
-            this.lbl_hfin.AutoSize = true;
-            this.lbl_hfin.Location = new System.Drawing.Point(91, 215);
-            this.lbl_hfin.Name = "lbl_hfin";
-            this.lbl_hfin.Size = new System.Drawing.Size(44, 13);
-            this.lbl_hfin.TabIndex = 6;
-            this.lbl_hfin.Text = "Hora fin";
+            this.lblHorafin.AutoSize = true;
+            this.lblHorafin.Location = new System.Drawing.Point(91, 215);
+            this.lblHorafin.Name = "lblHorafin";
+            this.lblHorafin.Size = new System.Drawing.Size(44, 13);
+            this.lblHorafin.TabIndex = 6;
+            this.lblHorafin.Text = "Hora fin";
             // 
             // lbl_fechaProv
             // 
@@ -425,11 +425,11 @@
             this.Controls.Add(this.lbl_comentAloj);
             this.Controls.Add(this.lbl_comentTransp);
             this.Controls.Add(this.lbl_fechaProv);
-            this.Controls.Add(this.lbl_hfin);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblHorafin);
+            this.Controls.Add(this.lblHoraini);
+            this.Controls.Add(this.lblFechafin);
+            this.Controls.Add(this.lblFechaini);
+            this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lbl_tipo);
             this.Controls.Add(this.lbl_titulo);
             this.Name = "FrmActividades";
@@ -443,11 +443,11 @@
 
         private System.Windows.Forms.Label lbl_titulo;
         private System.Windows.Forms.Label lbl_tipo;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lbl_hfin;
+        private System.Windows.Forms.Label lblDescripcion;
+        private System.Windows.Forms.Label lblFechaini;
+        private System.Windows.Forms.Label lblFechafin;
+        private System.Windows.Forms.Label lblHoraini;
+        private System.Windows.Forms.Label lblHorafin;
         private System.Windows.Forms.Label lbl_fechaProv;
         private System.Windows.Forms.Label lbl_comentTransp;
         private System.Windows.Forms.Label lbl_comentAloj;
