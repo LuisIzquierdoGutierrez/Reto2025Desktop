@@ -8,7 +8,7 @@ namespace Reto2025.Enums
 {
     public enum TipoActividad
     {
-        extraescolar,
-        complementaria
+        EXTRAESCOLAR,
+        COMPLEMENTARIA
     }
 }

@@ -24,7 +24,7 @@ namespace Reto2025.Views
 
         public static Profesor user;
 
-        private FrmActividades frmActividades;
+        private FrmCrearActividad frmActividades;
         private FrmVerActividades frmVerActividades;
         private FrmCursos frmCursos;
         private FrmProfesores frmProfesores;
@@ -55,7 +55,7 @@ namespace Reto2025.Views
                 frmActividades.Close();
             }
 
-            frmActividades = new FrmActividades();
+            frmActividades = new FrmCrearActividad();
             frmActividades.Show();
 
         }
@@ -138,7 +138,7 @@ namespace Reto2025.Views
 
             foreach (Actividad actividad in actividades)
             {
-                if (actividad.fini.Month == inicioMES.Month)
+                if (DateTime.Parse(actividad.fini).Month == inicioMES.Month)
                 {
                     actividades_mes.Add(actividad);
                 }
@@ -180,7 +180,7 @@ namespace Reto2025.Views
 
                 foreach (Actividad actividadMes in actividades_mes)
                 {
-                    if (i == actividadMes.fini.Day)
+                    if (i == DateTime.Parse(actividadMes.fini).Day)
                     {                       
                         controlCalendario.setNombreActividades(actividadMes);
                     }

@@ -211,9 +211,12 @@
             this.cmbEstado.FormattingEnabled = true;
             this.cmbEstado.Items.AddRange(new object[] {
             "Cualquiera",
+            "Solicitada",
+            "Denegada",
             "Aprobada",
-            "Cancelada",
-            "Realizada"});
+            "Realizada",
+            "Realizandose",
+            "Cancelada"});
             this.cmbEstado.Location = new System.Drawing.Point(29, 98);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(121, 21);

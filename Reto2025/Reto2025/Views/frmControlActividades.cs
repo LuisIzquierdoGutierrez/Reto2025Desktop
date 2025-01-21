@@ -23,5 +23,13 @@ namespace Reto2025.Views
             lbl_fechainicio.Text += actividad.fini + " " + actividad.hini;
             lbl_fechafin.Text += actividad.ffin + " " + actividad.hfin;
         }
+
+
+
+        private void FrmControlActividades_Click(object sender, MouseEventArgs e)
+        {
+            FrmCursos cursos = new FrmCursos();
+            cursos.Show();
+        }
     }
 }

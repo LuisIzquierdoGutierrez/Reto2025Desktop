@@ -60,15 +60,16 @@
             this.lbl_fechafin.TabIndex = 2;
             this.lbl_fechafin.Text = "Fecha Fin:";
             // 
-            // frmControlActividades
+            // FrmControlActividades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lbl_fechafin);
             this.Controls.Add(this.lbl_fechainicio);
             this.Controls.Add(this.lbl_titulo);
-            this.Name = "frmControlActividades";
+            this.Name = "FrmControlActividades";
             this.Size = new System.Drawing.Size(200, 103);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FrmControlActividades_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 

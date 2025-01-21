@@ -10,14 +10,14 @@ namespace Reto2025.Models
     public class Actividad
     {
         
-        public int id;
+        public Nullable<int> id;
         public string titulo;
         public TipoActividad tipo;
         public string descripcion;
-        public DateTime fini;
-        public DateTime ffin;
-        public DateTime hini;
-        public DateTime hfin;
+        public string fini;
+        public string ffin;
+        public string hini;
+        public string hfin;
         public bool previstaIni;
         public bool transporteReq;
         public string comentTransporte;
