@@ -14,10 +14,10 @@ namespace Reto2025.Views
 {
     public partial class FrmPerfil : Form
     {
-        public FrmPerfil(Profesor profesor)
+        public FrmPerfil()
         {
             InitializeComponent();
-            CargarDatos(profesor);
+            CargarDatos(FrmInicio.user);
         }
 
         private void CargarDatos(Profesor profesor)

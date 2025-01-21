@@ -80,7 +80,7 @@
             // lbl_tipo
             // 
             this.lbl_tipo.AutoSize = true;
-            this.lbl_tipo.Location = new System.Drawing.Point(91, 55);
+            this.lbl_tipo.Location = new System.Drawing.Point(45, 63);
             this.lbl_tipo.Name = "lbl_tipo";
             this.lbl_tipo.Size = new System.Drawing.Size(100, 13);
             this.lbl_tipo.TabIndex = 1;
@@ -98,7 +98,7 @@
             // lblFechaini
             // 
             this.lblFechaini.AutoSize = true;
-            this.lblFechaini.Location = new System.Drawing.Point(91, 102);
+            this.lblFechaini.Location = new System.Drawing.Point(45, 96);
             this.lblFechaini.Name = "lblFechaini";
             this.lblFechaini.Size = new System.Drawing.Size(64, 13);
             this.lblFechaini.TabIndex = 3;
@@ -235,7 +235,7 @@
             // cmb_tipos
             // 
             this.cmb_tipos.FormattingEnabled = true;
-            this.cmb_tipos.Location = new System.Drawing.Point(220, 55);
+            this.cmb_tipos.Location = new System.Drawing.Point(163, 60);
             this.cmb_tipos.Name = "cmb_tipos";
             this.cmb_tipos.Size = new System.Drawing.Size(121, 21);
             this.cmb_tipos.TabIndex = 22;
@@ -243,15 +243,15 @@
             // dtp_fechaIni
             // 
             this.dtp_fechaIni.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_fechaIni.Location = new System.Drawing.Point(220, 96);
+            this.dtp_fechaIni.Location = new System.Drawing.Point(175, 87);
             this.dtp_fechaIni.Name = "dtp_fechaIni";
-            this.dtp_fechaIni.Size = new System.Drawing.Size(95, 20);
+            this.dtp_fechaIni.Size = new System.Drawing.Size(97, 20);
             this.dtp_fechaIni.TabIndex = 23;
             // 
             // dtp_fechafin
             // 
             this.dtp_fechafin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtp_fechafin.Location = new System.Drawing.Point(220, 140);
+            this.dtp_fechafin.Location = new System.Drawing.Point(177, 113);
             this.dtp_fechafin.Name = "dtp_fechafin";
             this.dtp_fechafin.Size = new System.Drawing.Size(95, 20);
             this.dtp_fechafin.TabIndex = 24;

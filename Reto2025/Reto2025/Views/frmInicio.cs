@@ -22,7 +22,7 @@ namespace Reto2025.Views
         public static List<Actividad> actividades;
         static DateTime inicioMES = DateTime.Now;
 
-        private Profesor user;
+        public static Profesor user;
 
         private FrmActividades frmActividades;
         private FrmVerActividades frmVerActividades;
@@ -110,7 +110,7 @@ namespace Reto2025.Views
             {
                 frmPerfil.Close();
             }
-            frmPerfil = new FrmPerfil(user);
+            frmPerfil = new FrmPerfil();
           frmPerfil.Show();
         }
 
