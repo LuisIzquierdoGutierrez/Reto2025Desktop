@@ -16,7 +16,8 @@ namespace Reto2025.Views
     {
         public FrmInicio FormularioPadre { get; set; }
         public List<Actividad> ActividadesDelDia { get; set; } = new List<Actividad>();
-
+        private FrmControlCalendario diaSeleccionado;
+        public static FrmControlCalendario controlCalendario = null;
         public FrmControlCalendario()
         {
             InitializeComponent();
@@ -31,31 +32,42 @@ namespace Reto2025.Views
         {
             if (actividad != null)
             {
-                lbl_evento.Text = actividad.titulo.ToString();
+                rtxActividad.Text += actividad.titulo.ToString()+"\n";
                 lbl_idsActividades.Text = actividad.id.ToString() + ",";
                 ActividadesDelDia.Add(actividad); 
             }
             else
             {
-                lbl_evento.Text = "";
+                rtxActividad.Text = "";
             }
         }
 
         private void frmControlCalendario_Click(object sender, EventArgs e)
         {
+       
 
-            if (ActividadesDelDia.Count > 0)
+            FrmControlCalendario diaActual = this;
+            if (diaActual != null && diaActual.ActividadesDelDia.Count > 0)
             {
-               
-                FormularioPadre.mostrarActividades(ActividadesDelDia);
+
+                if (controlCalendario != null)
+                {
+                    controlCalendario.BackColor = Color.White;
+                }
+                controlCalendario = diaActual;
+                controlCalendario.BackColor = Color.LightCoral;
+
+
+
+
+                FormularioPadre.mostrarActividades(diaActual.ActividadesDelDia);
             }
         }
-
         public void ResaltarDiaActual(bool esHoy)
         {
             if (esHoy)
             {
-                this.BackColor = Color.LightBlue;
+                this.BackColor = Color.LightGray;
                 lbl_dia.ForeColor = Color.White;
                 lbl_dia.Font = new Font(lbl_dia.Font, FontStyle.Bold);
             }
