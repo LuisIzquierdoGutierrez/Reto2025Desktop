@@ -254,9 +254,9 @@
             this.chkTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.chkTransporte.Location = new System.Drawing.Point(48, 300);
             this.chkTransporte.Name = "chkTransporte";
-            this.chkTransporte.Size = new System.Drawing.Size(97, 21);
+            this.chkTransporte.Size = new System.Drawing.Size(159, 21);
             this.chkTransporte.TabIndex = 25;
-            this.chkTransporte.Text = "Transporte";
+            this.chkTransporte.Text = "Requiere Transporte";
             this.chkTransporte.UseVisualStyleBackColor = true;
             this.chkTransporte.CheckedChanged += new System.EventHandler(this.chck_transporte_CheckedChanged);
             // 
@@ -266,9 +266,9 @@
             this.chkAlojamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.chkAlojamiento.Location = new System.Drawing.Point(48, 333);
             this.chkAlojamiento.Name = "chkAlojamiento";
-            this.chkAlojamiento.Size = new System.Drawing.Size(100, 21);
+            this.chkAlojamiento.Size = new System.Drawing.Size(162, 21);
             this.chkAlojamiento.TabIndex = 26;
-            this.chkAlojamiento.Text = "Alojamiento";
+            this.chkAlojamiento.Text = "Requiere Alojamiento";
             this.chkAlojamiento.UseVisualStyleBackColor = true;
             this.chkAlojamiento.CheckedChanged += new System.EventHandler(this.chkAlojamiento_CheckedChanged);
             // 
@@ -307,9 +307,9 @@
             this.chkInicioPrevisto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.chkInicioPrevisto.Location = new System.Drawing.Point(48, 268);
             this.chkInicioPrevisto.Name = "chkInicioPrevisto";
-            this.chkInicioPrevisto.Size = new System.Drawing.Size(114, 21);
+            this.chkInicioPrevisto.Size = new System.Drawing.Size(204, 21);
             this.chkInicioPrevisto.TabIndex = 41;
-            this.chkInicioPrevisto.Text = "Inicio Previsto";
+            this.chkInicioPrevisto.Text = "Prevista en la programacion";
             this.chkInicioPrevisto.UseVisualStyleBackColor = true;
             // 
             // btnCrear

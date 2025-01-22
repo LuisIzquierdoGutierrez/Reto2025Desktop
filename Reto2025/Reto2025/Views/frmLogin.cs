@@ -81,12 +81,9 @@ namespace Reto2025
 
 
 
-            //metodo para iniciar el buscador por defecto con la pagina web señalada
+            ////metodo para iniciar el buscador por defecto con la pagina web señalada
 
-            //string target = "http://www.microsoft.com";
-            ////Use no more than one assignment when you test this code.
-            ////string target = "ftp://ftp.microsoft.com";
-            ////string target = "C:\\Program Files\\Microsoft Visual Studio\\INSTALL.HTM";
+            //string target = "http://localhost:8080/acex/actividades/excel?actividad=11";
             //try
             //{
             //    System.Diagnostics.Process.Start(target);
