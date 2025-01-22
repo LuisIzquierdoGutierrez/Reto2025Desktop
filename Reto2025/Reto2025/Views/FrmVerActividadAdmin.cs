@@ -52,6 +52,8 @@ namespace Reto2025.Views
 
             cmbEstado.Text = actividad.estado.ToString().ToLower();
             rtxEstado.Text = actividad.comentEstado;
+            rtxIncidencias.Text = actividad.incidencias;
+
 
             dtpFini.Value = DateTime.Parse(actividad.fini);
             dtpFfin.Value = DateTime.Parse(actividad.ffin);
@@ -126,6 +128,7 @@ namespace Reto2025.Views
             actividad.comentarios = rtxComentarios.Text;
             actividad.descripcion = rtxDescripcion.Text;
             actividad.importePorAlumno = (float)nudImporte.Value;
+            actividad.incidencias = rtxIncidencias.Text;
 
             Enum.TryParse(cmbEstado.Text, true, out EstadoActividad estado);
             actividad.estado = estado;

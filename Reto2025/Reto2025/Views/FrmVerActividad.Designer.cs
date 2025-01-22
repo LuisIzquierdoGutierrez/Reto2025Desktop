@@ -48,9 +48,11 @@
             this.lblAlojamiento = new System.Windows.Forms.Label();
             this.lblTransporte = new System.Windows.Forms.Label();
             this.rtxTransporte = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.lblIncidencias = new System.Windows.Forms.Label();
             this.rtxIncidencias = new System.Windows.Forms.RichTextBox();
+            this.nudImporte = new System.Windows.Forms.NumericUpDown();
+            this.lblImporte = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.nudImporte)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -81,7 +83,7 @@
             this.rtxDescripcion.Location = new System.Drawing.Point(30, 149);
             this.rtxDescripcion.Name = "rtxDescripcion";
             this.rtxDescripcion.ReadOnly = true;
-            this.rtxDescripcion.Size = new System.Drawing.Size(231, 140);
+            this.rtxDescripcion.Size = new System.Drawing.Size(230, 140);
             this.rtxDescripcion.TabIndex = 2;
             this.rtxDescripcion.Text = "Descripcion";
             // 
@@ -153,7 +155,7 @@
             this.rtxComentarios.Location = new System.Drawing.Point(30, 348);
             this.rtxComentarios.Name = "rtxComentarios";
             this.rtxComentarios.ReadOnly = true;
-            this.rtxComentarios.Size = new System.Drawing.Size(231, 140);
+            this.rtxComentarios.Size = new System.Drawing.Size(230, 140);
             this.rtxComentarios.TabIndex = 8;
             this.rtxComentarios.Text = "Comentarios";
             // 
@@ -175,7 +177,7 @@
             this.rtxEstado.Location = new System.Drawing.Point(307, 149);
             this.rtxEstado.Name = "rtxEstado";
             this.rtxEstado.ReadOnly = true;
-            this.rtxEstado.Size = new System.Drawing.Size(231, 140);
+            this.rtxEstado.Size = new System.Drawing.Size(230, 140);
             this.rtxEstado.TabIndex = 11;
             this.rtxEstado.Text = "Comentario estado";
             // 
@@ -216,7 +218,7 @@
             this.lvwGeneral.HideSelection = false;
             this.lvwGeneral.Location = new System.Drawing.Point(584, 149);
             this.lvwGeneral.Name = "lvwGeneral";
-            this.lvwGeneral.Size = new System.Drawing.Size(231, 140);
+            this.lvwGeneral.Size = new System.Drawing.Size(300, 140);
             this.lvwGeneral.TabIndex = 15;
             this.lvwGeneral.UseCompatibleStateImageBehavior = false;
             this.lvwGeneral.View = System.Windows.Forms.View.Details;
@@ -229,7 +231,7 @@
             this.rtxAlojamiento.Location = new System.Drawing.Point(307, 547);
             this.rtxAlojamiento.Name = "rtxAlojamiento";
             this.rtxAlojamiento.ReadOnly = true;
-            this.rtxAlojamiento.Size = new System.Drawing.Size(231, 140);
+            this.rtxAlojamiento.Size = new System.Drawing.Size(230, 140);
             this.rtxAlojamiento.TabIndex = 19;
             this.rtxAlojamiento.Text = "Alojamiento no requerido";
             // 
@@ -261,19 +263,9 @@
             this.rtxTransporte.Location = new System.Drawing.Point(30, 547);
             this.rtxTransporte.Name = "rtxTransporte";
             this.rtxTransporte.ReadOnly = true;
-            this.rtxTransporte.Size = new System.Drawing.Size(231, 140);
+            this.rtxTransporte.Size = new System.Drawing.Size(230, 140);
             this.rtxTransporte.TabIndex = 16;
             this.rtxTransporte.Text = "Transporte no requerido";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(544, 201);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(34, 30);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Grupos";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // lblIncidencias
             // 
@@ -293,18 +285,38 @@
             this.rtxIncidencias.Location = new System.Drawing.Point(307, 348);
             this.rtxIncidencias.Name = "rtxIncidencias";
             this.rtxIncidencias.ReadOnly = true;
-            this.rtxIncidencias.Size = new System.Drawing.Size(231, 140);
+            this.rtxIncidencias.Size = new System.Drawing.Size(230, 140);
             this.rtxIncidencias.TabIndex = 23;
             this.rtxIncidencias.Text = "Incidencias";
+            // 
+            // nudImporte
+            // 
+            this.nudImporte.DecimalPlaces = 2;
+            this.nudImporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.nudImporte.Location = new System.Drawing.Point(190, 705);
+            this.nudImporte.Name = "nudImporte";
+            this.nudImporte.Size = new System.Drawing.Size(71, 23);
+            this.nudImporte.TabIndex = 55;
+            // 
+            // lblImporte
+            // 
+            this.lblImporte.AutoSize = true;
+            this.lblImporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblImporte.Location = new System.Drawing.Point(27, 707);
+            this.lblImporte.Name = "lblImporte";
+            this.lblImporte.Size = new System.Drawing.Size(130, 17);
+            this.lblImporte.TabIndex = 54;
+            this.lblImporte.Text = "Importe por alumno";
             // 
             // FrmVerActividad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 711);
+            this.ClientSize = new System.Drawing.Size(899, 761);
+            this.Controls.Add(this.nudImporte);
+            this.Controls.Add(this.lblImporte);
             this.Controls.Add(this.rtxIncidencias);
             this.Controls.Add(this.lblIncidencias);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.rtxAlojamiento);
             this.Controls.Add(this.lblAlojamiento);
             this.Controls.Add(this.lblTransporte);
@@ -327,6 +339,7 @@
             this.Controls.Add(this.lblTitulo);
             this.Name = "FrmVerActividad";
             this.Text = "Actividad";
+            ((System.ComponentModel.ISupportInitialize)(this.nudImporte)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,8 +367,9 @@
         private System.Windows.Forms.Label lblAlojamiento;
         private System.Windows.Forms.Label lblTransporte;
         private System.Windows.Forms.RichTextBox rtxTransporte;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblIncidencias;
         private System.Windows.Forms.RichTextBox rtxIncidencias;
+        private System.Windows.Forms.NumericUpDown nudImporte;
+        private System.Windows.Forms.Label lblImporte;
     }
 }

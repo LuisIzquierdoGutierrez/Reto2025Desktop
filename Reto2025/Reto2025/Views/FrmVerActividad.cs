@@ -51,6 +51,7 @@ namespace Reto2025.Views
 
             rtxDescripcion.Text = actividad.descripcion;
             rtxComentarios.Text = actividad.comentarios;
+            rtxIncidencias.Text = actividad.incidencias;
 
             lblEstado.Text = "Estado: " + actividad.estado.ToString().ToLower();
             rtxEstado.Text = actividad.comentEstado;

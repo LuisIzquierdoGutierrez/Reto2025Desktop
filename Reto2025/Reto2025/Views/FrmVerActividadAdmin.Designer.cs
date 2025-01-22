@@ -57,6 +57,9 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.nudImporte = new System.Windows.Forms.NumericUpDown();
             this.lblImporte = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.rtxIncidencias = new System.Windows.Forms.RichTextBox();
+            this.lblIncidencias = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudImporte)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,9 +68,9 @@
             this.rtxAlojamiento.BackColor = System.Drawing.SystemColors.Control;
             this.rtxAlojamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxAlojamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.rtxAlojamiento.Location = new System.Drawing.Point(390, 562);
+            this.rtxAlojamiento.Location = new System.Drawing.Point(307, 562);
             this.rtxAlojamiento.Name = "rtxAlojamiento";
-            this.rtxAlojamiento.Size = new System.Drawing.Size(280, 140);
+            this.rtxAlojamiento.Size = new System.Drawing.Size(230, 140);
             this.rtxAlojamiento.TabIndex = 39;
             this.rtxAlojamiento.Text = "";
             // 
@@ -78,16 +81,16 @@
             this.rtxTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxTransporte.Location = new System.Drawing.Point(30, 562);
             this.rtxTransporte.Name = "rtxTransporte";
-            this.rtxTransporte.Size = new System.Drawing.Size(280, 140);
+            this.rtxTransporte.Size = new System.Drawing.Size(230, 140);
             this.rtxTransporte.TabIndex = 36;
             this.rtxTransporte.Text = "";
             // 
             // lvwGeneral
             // 
             this.lvwGeneral.HideSelection = false;
-            this.lvwGeneral.Location = new System.Drawing.Point(390, 363);
+            this.lvwGeneral.Location = new System.Drawing.Point(584, 149);
             this.lvwGeneral.Name = "lvwGeneral";
-            this.lvwGeneral.Size = new System.Drawing.Size(280, 140);
+            this.lvwGeneral.Size = new System.Drawing.Size(300, 140);
             this.lvwGeneral.TabIndex = 35;
             this.lvwGeneral.UseCompatibleStateImageBehavior = false;
             this.lvwGeneral.View = System.Windows.Forms.View.Details;
@@ -95,7 +98,7 @@
             // btnProfesores
             // 
             this.btnProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnProfesores.Location = new System.Drawing.Point(584, 327);
+            this.btnProfesores.Location = new System.Drawing.Point(778, 321);
             this.btnProfesores.Name = "btnProfesores";
             this.btnProfesores.Size = new System.Drawing.Size(86, 30);
             this.btnProfesores.TabIndex = 34;
@@ -105,7 +108,7 @@
             // btnGrupos
             // 
             this.btnGrupos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnGrupos.Location = new System.Drawing.Point(390, 327);
+            this.btnGrupos.Location = new System.Drawing.Point(584, 321);
             this.btnGrupos.Name = "btnGrupos";
             this.btnGrupos.Size = new System.Drawing.Size(86, 30);
             this.btnGrupos.TabIndex = 33;
@@ -128,9 +131,9 @@
             this.rtxEstado.BackColor = System.Drawing.SystemColors.Control;
             this.rtxEstado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.rtxEstado.Location = new System.Drawing.Point(390, 164);
+            this.rtxEstado.Location = new System.Drawing.Point(307, 164);
             this.rtxEstado.Name = "rtxEstado";
-            this.rtxEstado.Size = new System.Drawing.Size(280, 140);
+            this.rtxEstado.Size = new System.Drawing.Size(230, 140);
             this.rtxEstado.TabIndex = 31;
             this.rtxEstado.Text = "Comentario estado";
             // 
@@ -138,7 +141,7 @@
             // 
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblEstado.Location = new System.Drawing.Point(387, 140);
+            this.lblEstado.Location = new System.Drawing.Point(304, 140);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(56, 17);
             this.lblEstado.TabIndex = 30;
@@ -161,7 +164,7 @@
             this.rtxComentarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxComentarios.Location = new System.Drawing.Point(30, 363);
             this.rtxComentarios.Name = "rtxComentarios";
-            this.rtxComentarios.Size = new System.Drawing.Size(280, 140);
+            this.rtxComentarios.Size = new System.Drawing.Size(230, 140);
             this.rtxComentarios.TabIndex = 28;
             this.rtxComentarios.Text = "Comentarios";
             // 
@@ -169,7 +172,7 @@
             // 
             this.lblFfni.AutoSize = true;
             this.lblFfni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblFfni.Location = new System.Drawing.Point(492, 81);
+            this.lblFfni.Location = new System.Drawing.Point(730, 82);
             this.lblFfni.Name = "lblFfni";
             this.lblFfni.Size = new System.Drawing.Size(74, 17);
             this.lblFfni.TabIndex = 25;
@@ -179,7 +182,7 @@
             // 
             this.lblFini.AutoSize = true;
             this.lblFini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblFini.Location = new System.Drawing.Point(479, 19);
+            this.lblFini.Location = new System.Drawing.Point(717, 20);
             this.lblFini.Name = "lblFini";
             this.lblFini.Size = new System.Drawing.Size(87, 17);
             this.lblFini.TabIndex = 24;
@@ -202,7 +205,7 @@
             this.rtxDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxDescripcion.Location = new System.Drawing.Point(30, 164);
             this.rtxDescripcion.Name = "rtxDescripcion";
-            this.rtxDescripcion.Size = new System.Drawing.Size(280, 140);
+            this.rtxDescripcion.Size = new System.Drawing.Size(230, 140);
             this.rtxDescripcion.TabIndex = 22;
             this.rtxDescripcion.Text = "Descripcion";
             // 
@@ -232,7 +235,7 @@
             // 
             this.chkAlojamiento.AutoSize = true;
             this.chkAlojamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.chkAlojamiento.Location = new System.Drawing.Point(390, 535);
+            this.chkAlojamiento.Location = new System.Drawing.Point(307, 535);
             this.chkAlojamiento.Name = "chkAlojamiento";
             this.chkAlojamiento.Size = new System.Drawing.Size(100, 21);
             this.chkAlojamiento.TabIndex = 41;
@@ -258,7 +261,7 @@
             this.rtxTransporteFalso.Location = new System.Drawing.Point(30, 562);
             this.rtxTransporteFalso.Name = "rtxTransporteFalso";
             this.rtxTransporteFalso.ReadOnly = true;
-            this.rtxTransporteFalso.Size = new System.Drawing.Size(280, 140);
+            this.rtxTransporteFalso.Size = new System.Drawing.Size(230, 140);
             this.rtxTransporteFalso.TabIndex = 43;
             this.rtxTransporteFalso.Text = "Transporte no requerido";
             // 
@@ -268,10 +271,10 @@
             this.rtxAlojamientoFalso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxAlojamientoFalso.Enabled = false;
             this.rtxAlojamientoFalso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.rtxAlojamientoFalso.Location = new System.Drawing.Point(390, 562);
+            this.rtxAlojamientoFalso.Location = new System.Drawing.Point(307, 562);
             this.rtxAlojamientoFalso.Name = "rtxAlojamientoFalso";
             this.rtxAlojamientoFalso.ReadOnly = true;
-            this.rtxAlojamientoFalso.Size = new System.Drawing.Size(280, 140);
+            this.rtxAlojamientoFalso.Size = new System.Drawing.Size(230, 140);
             this.rtxAlojamientoFalso.TabIndex = 44;
             this.rtxAlojamientoFalso.Text = "Alojamiento no requerido";
             // 
@@ -287,7 +290,7 @@
             "realizada",
             "realizandose",
             "cancelada"});
-            this.cmbEstado.Location = new System.Drawing.Point(445, 137);
+            this.cmbEstado.Location = new System.Drawing.Point(362, 137);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(121, 24);
             this.cmbEstado.TabIndex = 45;
@@ -297,7 +300,7 @@
             this.dtpFini.CustomFormat = "dd/MM/yy";
             this.dtpFini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtpFini.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFini.Location = new System.Drawing.Point(572, 18);
+            this.dtpFini.Location = new System.Drawing.Point(810, 19);
             this.dtpFini.Name = "dtpFini";
             this.dtpFini.Size = new System.Drawing.Size(74, 23);
             this.dtpFini.TabIndex = 46;
@@ -307,7 +310,7 @@
             this.dtpHini.CustomFormat = "HH:mm";
             this.dtpHini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtpHini.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpHini.Location = new System.Drawing.Point(584, 47);
+            this.dtpHini.Location = new System.Drawing.Point(822, 48);
             this.dtpHini.Name = "dtpHini";
             this.dtpHini.ShowUpDown = true;
             this.dtpHini.Size = new System.Drawing.Size(62, 23);
@@ -318,7 +321,7 @@
             this.dtpHfin.CustomFormat = "HH:mm";
             this.dtpHfin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtpHfin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpHfin.Location = new System.Drawing.Point(584, 109);
+            this.dtpHfin.Location = new System.Drawing.Point(822, 110);
             this.dtpHfin.Name = "dtpHfin";
             this.dtpHfin.ShowUpDown = true;
             this.dtpHfin.Size = new System.Drawing.Size(62, 23);
@@ -329,7 +332,7 @@
             this.dtpFfin.CustomFormat = "dd/MM/yy";
             this.dtpFfin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtpFfin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFfin.Location = new System.Drawing.Point(572, 80);
+            this.dtpFfin.Location = new System.Drawing.Point(810, 81);
             this.dtpFfin.Name = "dtpFfin";
             this.dtpFfin.Size = new System.Drawing.Size(74, 23);
             this.dtpFfin.TabIndex = 48;
@@ -377,11 +380,46 @@
             this.lblImporte.TabIndex = 52;
             this.lblImporte.Text = "Importe por alumno";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button1.Location = new System.Drawing.Point(266, 209);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(35, 30);
+            this.button1.TabIndex = 57;
+            this.button1.Text = "Grupos";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // rtxIncidencias
+            // 
+            this.rtxIncidencias.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxIncidencias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtxIncidencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.rtxIncidencias.Location = new System.Drawing.Point(307, 363);
+            this.rtxIncidencias.Name = "rtxIncidencias";
+            this.rtxIncidencias.ReadOnly = true;
+            this.rtxIncidencias.Size = new System.Drawing.Size(230, 140);
+            this.rtxIncidencias.TabIndex = 59;
+            this.rtxIncidencias.Text = "Incidencias";
+            // 
+            // lblIncidencias
+            // 
+            this.lblIncidencias.AutoSize = true;
+            this.lblIncidencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblIncidencias.Location = new System.Drawing.Point(304, 343);
+            this.lblIncidencias.Name = "lblIncidencias";
+            this.lblIncidencias.Size = new System.Drawing.Size(78, 17);
+            this.lblIncidencias.TabIndex = 58;
+            this.lblIncidencias.Text = "Incidencias";
+            // 
             // FrmVerActividadAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 814);
+            this.ClientSize = new System.Drawing.Size(899, 761);
+            this.Controls.Add(this.rtxIncidencias);
+            this.Controls.Add(this.lblIncidencias);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.nudImporte);
             this.Controls.Add(this.lblImporte);
             this.Controls.Add(this.btnActualizar);
@@ -450,5 +488,8 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.NumericUpDown nudImporte;
         private System.Windows.Forms.Label lblImporte;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox rtxIncidencias;
+        private System.Windows.Forms.Label lblIncidencias;
     }
 }
