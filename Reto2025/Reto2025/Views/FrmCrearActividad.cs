@@ -41,23 +41,21 @@ namespace Reto2025.Views
 
             if (txtTitulo.Text.Length > 0)
             {
-                Actividad actividad = new Actividad();
+                Models.Actividad actividad = new Models.Actividad();
                 actividad.id = null;
                 actividad.solicitante = FrmInicio.user;
                 actividad.titulo = txtTitulo.Text;
 
-                Enum.TryParse(cmbTipos.Text.ToUpper(), true, out TipoActividad result);
-                MessageBox.Show(cmbTipos.Text);
-                MessageBox.Show(result.ToString());
+                Enum.TryParse(cmbTipo.Text.ToUpper(), true, out TipoActividad result);
                 actividad.tipo = result;
                 MessageBox.Show(actividad.tipo.ToString());
                 actividad.previstaIni = chkInicioPrevisto.Checked;
-                actividad.fini = dtpFechaIni.Value.ToString("yyyy-MM-dd");
-    
-                actividad.ffin = dtpFechaFin.Value.ToString("yyyy-MM-dd");
-                actividad.hini = dtpHoraIni.Text;
+                
+                actividad.fini = dtpFini.Value.ToString("yyyy-MM-dd");
+                actividad.ffin = dtpFfin.Value.ToString("yyyy-MM-dd");
+                actividad.hini = dtpHini.Text;
+                actividad.hfin = dtpHfin.Text;
 
-                actividad.hfin = dtpHoraFin.Text;
                 actividad.comentarios = txtCometariosGenerales.Text;
                 actividad.descripcion = txtDescripcion.Text;
                 actividad.importePorAlumno = (float)nudImporte.Value;

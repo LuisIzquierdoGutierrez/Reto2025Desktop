@@ -114,7 +114,7 @@ namespace Reto2025.Controls
         }
 
 
-        public async Task<bool> GuardarFoto(Foto foto)
+        public async Task<bool> ActualizarFoto(Foto foto)
         {
             try
             {

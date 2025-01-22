@@ -113,7 +113,7 @@ namespace Reto2025.Controls
 
 
 
-        public async Task<bool> GuardarDepartamento(Departamento departamento)
+        public async Task<bool> ActualizarDepartamento(Departamento departamento)
         {
             try
             {

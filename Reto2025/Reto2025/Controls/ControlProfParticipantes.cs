@@ -111,7 +111,7 @@ namespace Reto2025.Controls
             }
         }
 
-        public async Task<bool> GuardarProfParticipante(ProfParticipante profParticipante)
+        public async Task<bool> ActualizarProfParticipante(ProfParticipante profParticipante)
         {
             try
             {

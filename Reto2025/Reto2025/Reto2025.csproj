@@ -257,6 +257,18 @@
     <Compile Include="Models\Actividad.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\FrmVerActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmVerActividad.Designer.cs">
+      <DependentUpon>FrmVerActividad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmVerActividadAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmVerActividadAdmin.Designer.cs">
+      <DependentUpon>FrmVerActividadAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmVerActividades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,6 +374,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmVerActividad.resx">
+      <DependentUpon>FrmVerActividad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmVerActividadAdmin.resx">
+      <DependentUpon>FrmVerActividadAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmVerActividades.resx">
       <DependentUpon>FrmVerActividades.cs</DependentUpon>

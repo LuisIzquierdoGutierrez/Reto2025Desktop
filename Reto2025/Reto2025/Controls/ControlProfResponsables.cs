@@ -112,7 +112,7 @@ namespace Reto2025.Controls
         }
 
 
-        public async Task<bool> GuardarProfResponsable(ProfResponsable profResponsable)
+        public async Task<bool> ActualizarProfResponsable(ProfResponsable profResponsable)
         {
             try
             {

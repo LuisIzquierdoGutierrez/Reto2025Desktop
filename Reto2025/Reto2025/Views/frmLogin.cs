@@ -52,28 +52,35 @@ namespace Reto2025
 
         private async void button1_ClickAsync(object sender, EventArgs e)
         {
-            Profesor profesor = await controlProfesores.GetLogin("alicia.fernandez@educantabria.es", "1234");
-            if (profesor != null)
-            {
-                if (profesor.activo)
-                {
-                    this.Hide();
-                    FrmInicio inicio = new FrmInicio(profesor);
+            //Profesor profesor = await controlProfesores.GetLogin("alicia.fernandez@educantabria.es", "1234");
+            //if (profesor != null)
+            //{
+            //    if (profesor.activo)
+            //    {
+            //        this.Hide();
+            //        FrmInicio inicio = new FrmInicio(profesor);
 
-                    // añade al form inicio que cierre este form cuando se cierre
-                    inicio.Closed += (s, args) => this.Close();
-                    inicio.Show();
-                }
-                else
-                {
-                    MessageBox.Show("usuario no activo");
-                }
+            //        // añade al form inicio que cierre este form cuando se cierre
+            //        inicio.Closed += (s, args) => this.Close();
+            //        inicio.Show();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("usuario no activo");
+            //    }
 
-            }
-            else
-            {
-                MessageBox.Show("usuario o contraseña incorrectos");
-            }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("usuario o contraseña incorrectos");
+            //}
+
+
+
+            FrmVerActividad frmVerActividad = new FrmVerActividad(await new ControlActividades().GetActividadId(38));
+            frmVerActividad.ShowDialog();
+
+
 
 
 

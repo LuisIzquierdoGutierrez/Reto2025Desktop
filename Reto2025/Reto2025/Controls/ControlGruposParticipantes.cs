@@ -110,7 +110,7 @@ namespace Reto2025.Controls
             }
         }
 
-        public async Task<bool> GuardarGruposParticipantes(GrupoParticipante grupoParticipante)
+        public async Task<bool> ActualizarGruposParticipantes(GrupoParticipante grupoParticipante)
         {
             try
             {

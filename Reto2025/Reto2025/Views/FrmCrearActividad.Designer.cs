@@ -44,13 +44,13 @@
             this.txtCometariosGenerales = new System.Windows.Forms.TextBox();
             this.txtComentTransp = new System.Windows.Forms.TextBox();
             this.txtComentAloj = new System.Windows.Forms.TextBox();
-            this.cmbTipos = new System.Windows.Forms.ComboBox();
-            this.dtpFechaIni = new System.Windows.Forms.DateTimePicker();
-            this.dtpFechaFin = new System.Windows.Forms.DateTimePicker();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.dtpFini = new System.Windows.Forms.DateTimePicker();
+            this.dtpFfin = new System.Windows.Forms.DateTimePicker();
             this.chkTransporte = new System.Windows.Forms.CheckBox();
             this.chkAlojamiento = new System.Windows.Forms.CheckBox();
-            this.dtpHoraIni = new System.Windows.Forms.DateTimePicker();
-            this.dtpHoraFin = new System.Windows.Forms.DateTimePicker();
+            this.dtpHini = new System.Windows.Forms.DateTimePicker();
+            this.dtpHfin = new System.Windows.Forms.DateTimePicker();
             this.nudImporte = new System.Windows.Forms.NumericUpDown();
             this.chkInicioPrevisto = new System.Windows.Forms.CheckBox();
             this.btnCrear = new System.Windows.Forms.Button();
@@ -215,38 +215,38 @@
             this.txtComentAloj.Size = new System.Drawing.Size(330, 130);
             this.txtComentAloj.TabIndex = 20;
             // 
-            // cmbTipos
+            // cmbTipo
             // 
-            this.cmbTipos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cmbTipos.FormattingEnabled = true;
-            this.cmbTipos.Items.AddRange(new object[] {
+            this.cmbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
             "Extraescolar",
             "Complementaria"});
-            this.cmbTipos.Location = new System.Drawing.Point(182, 93);
-            this.cmbTipos.Name = "cmbTipos";
-            this.cmbTipos.Size = new System.Drawing.Size(121, 24);
-            this.cmbTipos.TabIndex = 22;
-            this.cmbTipos.Text = "Extraescolar";
+            this.cmbTipo.Location = new System.Drawing.Point(182, 93);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(121, 24);
+            this.cmbTipo.TabIndex = 22;
+            this.cmbTipo.Text = "Extraescolar";
             // 
-            // dtpFechaIni
+            // dtpFini
             // 
-            this.dtpFechaIni.CustomFormat = "dd-mm-yyyy";
-            this.dtpFechaIni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.dtpFechaIni.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaIni.Location = new System.Drawing.Point(171, 146);
-            this.dtpFechaIni.Name = "dtpFechaIni";
-            this.dtpFechaIni.Size = new System.Drawing.Size(95, 23);
-            this.dtpFechaIni.TabIndex = 23;
+            this.dtpFini.CustomFormat = "dd-mm-yyyy";
+            this.dtpFini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.dtpFini.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFini.Location = new System.Drawing.Point(171, 146);
+            this.dtpFini.Name = "dtpFini";
+            this.dtpFini.Size = new System.Drawing.Size(95, 23);
+            this.dtpFini.TabIndex = 23;
             // 
-            // dtpFechaFin
+            // dtpFfin
             // 
-            this.dtpFechaFin.CustomFormat = "dd-mm-yyyy";
-            this.dtpFechaFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.dtpFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaFin.Location = new System.Drawing.Point(171, 175);
-            this.dtpFechaFin.Name = "dtpFechaFin";
-            this.dtpFechaFin.Size = new System.Drawing.Size(95, 23);
-            this.dtpFechaFin.TabIndex = 24;
+            this.dtpFfin.CustomFormat = "dd-mm-yyyy";
+            this.dtpFfin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.dtpFfin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFfin.Location = new System.Drawing.Point(171, 175);
+            this.dtpFfin.Name = "dtpFfin";
+            this.dtpFfin.Size = new System.Drawing.Size(95, 23);
+            this.dtpFfin.TabIndex = 24;
             // 
             // chkTransporte
             // 
@@ -272,25 +272,25 @@
             this.chkAlojamiento.UseVisualStyleBackColor = true;
             this.chkAlojamiento.CheckedChanged += new System.EventHandler(this.chkAlojamiento_CheckedChanged);
             // 
-            // dtpHoraIni
+            // dtpHini
             // 
-            this.dtpHoraIni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.dtpHoraIni.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpHoraIni.Location = new System.Drawing.Point(171, 204);
-            this.dtpHoraIni.Name = "dtpHoraIni";
-            this.dtpHoraIni.ShowUpDown = true;
-            this.dtpHoraIni.Size = new System.Drawing.Size(95, 23);
-            this.dtpHoraIni.TabIndex = 27;
+            this.dtpHini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.dtpHini.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHini.Location = new System.Drawing.Point(171, 204);
+            this.dtpHini.Name = "dtpHini";
+            this.dtpHini.ShowUpDown = true;
+            this.dtpHini.Size = new System.Drawing.Size(95, 23);
+            this.dtpHini.TabIndex = 27;
             // 
-            // dtpHoraFin
+            // dtpHfin
             // 
-            this.dtpHoraFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.dtpHoraFin.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpHoraFin.Location = new System.Drawing.Point(171, 233);
-            this.dtpHoraFin.Name = "dtpHoraFin";
-            this.dtpHoraFin.ShowUpDown = true;
-            this.dtpHoraFin.Size = new System.Drawing.Size(95, 23);
-            this.dtpHoraFin.TabIndex = 28;
+            this.dtpHfin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.dtpHfin.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHfin.Location = new System.Drawing.Point(171, 233);
+            this.dtpHfin.Name = "dtpHfin";
+            this.dtpHfin.ShowUpDown = true;
+            this.dtpHfin.Size = new System.Drawing.Size(95, 23);
+            this.dtpHfin.TabIndex = 28;
             // 
             // nudImporte
             // 
@@ -331,13 +331,13 @@
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.chkInicioPrevisto);
             this.Controls.Add(this.nudImporte);
-            this.Controls.Add(this.dtpHoraFin);
-            this.Controls.Add(this.dtpHoraIni);
+            this.Controls.Add(this.dtpHfin);
+            this.Controls.Add(this.dtpHini);
             this.Controls.Add(this.chkAlojamiento);
             this.Controls.Add(this.chkTransporte);
-            this.Controls.Add(this.dtpFechaFin);
-            this.Controls.Add(this.dtpFechaIni);
-            this.Controls.Add(this.cmbTipos);
+            this.Controls.Add(this.dtpFfin);
+            this.Controls.Add(this.dtpFini);
+            this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.txtComentAloj);
             this.Controls.Add(this.txtComentTransp);
             this.Controls.Add(this.txtCometariosGenerales);
@@ -380,15 +380,15 @@
         private System.Windows.Forms.TextBox txtCometariosGenerales;
         private System.Windows.Forms.TextBox txtComentTransp;
         private System.Windows.Forms.TextBox txtComentAloj;
-        private System.Windows.Forms.ComboBox cmbTipos;
-        private System.Windows.Forms.DateTimePicker dtpFechaIni;
-        private System.Windows.Forms.DateTimePicker dtpFechaFin;
+        private System.Windows.Forms.ComboBox cmbTipo;
+        private System.Windows.Forms.DateTimePicker dtpFini;
+        private System.Windows.Forms.DateTimePicker dtpFfin;
         private System.Windows.Forms.CheckBox chkTransporte;
         private System.Windows.Forms.CheckBox chkAlojamiento;
-        private System.Windows.Forms.DateTimePicker dtpHoraFin;
+        private System.Windows.Forms.DateTimePicker dtpHfin;
         private System.Windows.Forms.NumericUpDown nudImporte;
         private System.Windows.Forms.CheckBox chkInicioPrevisto;
-        private System.Windows.Forms.DateTimePicker dtpHoraIni;
+        private System.Windows.Forms.DateTimePicker dtpHini;
         private System.Windows.Forms.Button btnCrear;
     }
 }

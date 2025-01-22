@@ -111,7 +111,7 @@ namespace Reto2025.Controls
             }
         }
 
-        public async Task<bool> GuardarContrato(Contrato contrato)
+        public async Task<bool> ActualizarContrato(Contrato contrato)
         {
             try
             {

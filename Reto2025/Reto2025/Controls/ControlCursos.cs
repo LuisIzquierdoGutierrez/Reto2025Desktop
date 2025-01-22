@@ -113,7 +113,7 @@ namespace Reto2025.Controls
         }
 
 
-        public async Task<bool> GuardarCurso(Curso curso)
+        public async Task<bool> ActualizarCurso(Curso curso)
         {
             try
             {

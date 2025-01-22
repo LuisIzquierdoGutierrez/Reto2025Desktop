@@ -111,7 +111,7 @@ namespace Reto2025.Controls
             }
         }
 
-        public async Task<bool> GuardarEmpTransporte(EmpTransporte empTransporte)
+        public async Task<bool> ActualizarEmpTransporte(EmpTransporte empTransporte)
         {
             try
             {
