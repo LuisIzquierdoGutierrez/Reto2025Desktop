@@ -8,6 +8,7 @@ using System.Diagnostics.Contracts;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -31,11 +32,14 @@ namespace Reto2025.Views
         private FrmDepartamentos frmDepartamentos;
         private FrmEmpresasTransporte frmEmpresasTransporte;
         private FrmPerfil frmPerfil;
+
         public FrmInicio(Profesor profesor)
         {
+            this.BackColor = Color.FromArgb(0xFF, 0x9F, 0xD3, 0x56);
             InitializeComponent();
             user = profesor;
             inicioMES = new DateTime(inicioMES.Year, inicioMES.Month, 1);
+            
 
         }
         private async void frmInicio_Load(object sender, EventArgs e)

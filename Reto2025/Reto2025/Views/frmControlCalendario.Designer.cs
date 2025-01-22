@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.lbl_dia = new System.Windows.Forms.Label();
-            this.lbl_evento = new System.Windows.Forms.Label();
             this.lbl_idsActividades = new System.Windows.Forms.Label();
+            this.rtxActividad = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // lbl_dia
@@ -42,15 +42,6 @@
             this.lbl_dia.TabIndex = 0;
             this.lbl_dia.Text = "00";
             // 
-            // lbl_evento
-            // 
-            this.lbl_evento.AutoSize = true;
-            this.lbl_evento.Location = new System.Drawing.Point(3, 59);
-            this.lbl_evento.Name = "lbl_evento";
-            this.lbl_evento.Size = new System.Drawing.Size(0, 16);
-            this.lbl_evento.TabIndex = 1;
-            this.lbl_evento.UseCompatibleTextRendering = true;
-            // 
             // lbl_idsActividades
             // 
             this.lbl_idsActividades.AutoSize = true;
@@ -61,13 +52,21 @@
             this.lbl_idsActividades.Text = "label1";
             this.lbl_idsActividades.Visible = false;
             // 
+            // rtxActividad
+            // 
+            this.rtxActividad.Location = new System.Drawing.Point(3, 25);
+            this.rtxActividad.Name = "rtxActividad";
+            this.rtxActividad.Size = new System.Drawing.Size(119, 60);
+            this.rtxActividad.TabIndex = 3;
+            this.rtxActividad.Text = "";
+            // 
             // FrmControlCalendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.rtxActividad);
             this.Controls.Add(this.lbl_idsActividades);
-            this.Controls.Add(this.lbl_evento);
             this.Controls.Add(this.lbl_dia);
             this.Name = "FrmControlCalendario";
             this.Size = new System.Drawing.Size(125, 88);
@@ -80,7 +79,7 @@
         #endregion
 
         private System.Windows.Forms.Label lbl_dia;
-        private System.Windows.Forms.Label lbl_evento;
         private System.Windows.Forms.Label lbl_idsActividades;
+        private System.Windows.Forms.RichTextBox rtxActividad;
     }
 }
