@@ -30,7 +30,7 @@
         {
             this.lbl_dia = new System.Windows.Forms.Label();
             this.lbl_idsActividades = new System.Windows.Forms.Label();
-            this.rtxActividad = new System.Windows.Forms.RichTextBox();
+            this.lblActividad = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_dia
@@ -52,20 +52,21 @@
             this.lbl_idsActividades.Text = "label1";
             this.lbl_idsActividades.Visible = false;
             // 
-            // rtxActividad
+            // lblActividad
             // 
-            this.rtxActividad.Location = new System.Drawing.Point(3, 25);
-            this.rtxActividad.Name = "rtxActividad";
-            this.rtxActividad.Size = new System.Drawing.Size(119, 60);
-            this.rtxActividad.TabIndex = 3;
-            this.rtxActividad.Text = "";
+            this.lblActividad.Location = new System.Drawing.Point(3, 25);
+            this.lblActividad.Name = "lblActividad";
+            this.lblActividad.Size = new System.Drawing.Size(119, 60);
+            this.lblActividad.TabIndex = 4;
+            this.lblActividad.Click += new System.EventHandler(this.frmControlCalendario_Click);
             // 
             // FrmControlCalendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.rtxActividad);
+            this.Controls.Add(this.lblActividad);
             this.Controls.Add(this.lbl_idsActividades);
             this.Controls.Add(this.lbl_dia);
             this.Name = "FrmControlCalendario";
@@ -80,6 +81,6 @@
 
         private System.Windows.Forms.Label lbl_dia;
         private System.Windows.Forms.Label lbl_idsActividades;
-        private System.Windows.Forms.RichTextBox rtxActividad;
+        private System.Windows.Forms.Label lblActividad;
     }
 }

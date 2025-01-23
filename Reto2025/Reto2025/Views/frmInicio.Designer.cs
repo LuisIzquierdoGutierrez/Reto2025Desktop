@@ -294,9 +294,9 @@
             // 
             // activityContainer
             // 
-            this.activityContainer.Location = new System.Drawing.Point(974, 96);
+            this.activityContainer.Location = new System.Drawing.Point(954, 96);
             this.activityContainer.Name = "activityContainer";
-            this.activityContainer.Size = new System.Drawing.Size(200, 481);
+            this.activityContainer.Size = new System.Drawing.Size(220, 481);
             this.activityContainer.TabIndex = 12;
             // 
             // label1

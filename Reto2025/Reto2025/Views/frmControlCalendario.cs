@@ -32,19 +32,19 @@ namespace Reto2025.Views
         {
             if (actividad != null)
             {
-                rtxActividad.Text += actividad.titulo.ToString()+"\n";
+                lblActividad.Text += actividad.titulo.ToString() + "\n";
                 lbl_idsActividades.Text = actividad.id.ToString() + ",";
-                ActividadesDelDia.Add(actividad); 
+                ActividadesDelDia.Add(actividad);
             }
             else
             {
-                rtxActividad.Text = "";
+                lblActividad.Text = "";
             }
         }
 
         private void frmControlCalendario_Click(object sender, EventArgs e)
         {
-       
+
 
             FrmControlCalendario diaActual = this;
             if (diaActual != null && diaActual.ActividadesDelDia.Count > 0)
@@ -52,7 +52,16 @@ namespace Reto2025.Views
 
                 if (controlCalendario != null)
                 {
-                    controlCalendario.BackColor = Color.White;
+                    if (controlCalendario.lbl_dia.Text == DateTime.Now.Day.ToString())
+                    {
+                        controlCalendario.BackColor = Color.LightGray;
+                    }
+                    else
+                    {
+                        controlCalendario.BackColor = Color.White;
+                    }
+                    
+
                 }
                 controlCalendario = diaActual;
                 controlCalendario.BackColor = Color.LightCoral;
@@ -79,9 +88,6 @@ namespace Reto2025.Views
             }
         }
 
-        private void frmControlCalendario_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
+

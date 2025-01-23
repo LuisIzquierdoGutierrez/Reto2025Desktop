@@ -20,8 +20,17 @@ namespace Reto2025.Views
         public void setDatos(Actividad actividad)
         {
             lbl_titulo.Text = actividad.titulo;
-            lbl_fechainicio.Text += actividad.fini + " " + actividad.hini;
-            lbl_fechafin.Text += actividad.ffin + " " + actividad.hfin;
+            lblHoraInicio.Text = "Hora inicio: " + actividad.hini.Substring(0, 5);
+            if (actividad.fini == actividad.ffin)
+            {
+                lblFechaFin.Text = "Hora fin " + actividad.hfin.Substring(0, 5);
+
+            }
+            else
+            {
+                lblFechaFin.Text += DateTime.Parse(actividad.ffin).ToString("dd/MM/yy") + " " + actividad.hfin.Substring(0, 5);
+
+            }
         }
 
 

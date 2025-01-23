@@ -29,46 +29,48 @@
         private void InitializeComponent()
         {
             this.lbl_titulo = new System.Windows.Forms.Label();
-            this.lbl_fechainicio = new System.Windows.Forms.Label();
-            this.lbl_fechafin = new System.Windows.Forms.Label();
+            this.lblHoraInicio = new System.Windows.Forms.Label();
+            this.lblFechaFin = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_titulo
             // 
-            this.lbl_titulo.AutoSize = true;
-            this.lbl_titulo.Location = new System.Drawing.Point(52, 4);
+            this.lbl_titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_titulo.Location = new System.Drawing.Point(3, 10);
             this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(33, 13);
+            this.lbl_titulo.Size = new System.Drawing.Size(194, 53);
             this.lbl_titulo.TabIndex = 0;
             this.lbl_titulo.Text = "Titulo";
             // 
             // lbl_fechainicio
             // 
-            this.lbl_fechainicio.AutoSize = true;
-            this.lbl_fechainicio.Location = new System.Drawing.Point(4, 35);
-            this.lbl_fechainicio.Name = "lbl_fechainicio";
-            this.lbl_fechainicio.Size = new System.Drawing.Size(68, 13);
-            this.lbl_fechainicio.TabIndex = 1;
-            this.lbl_fechainicio.Text = "Fecha Inicio:";
+            this.lblHoraInicio.AutoSize = true;
+            this.lblHoraInicio.Location = new System.Drawing.Point(3, 63);
+            this.lblHoraInicio.Name = "lbl_fechainicio";
+            this.lblHoraInicio.Size = new System.Drawing.Size(68, 13);
+            this.lblHoraInicio.TabIndex = 1;
+            this.lblHoraInicio.Text = "Fecha Inicio:";
             // 
             // lbl_fechafin
             // 
-            this.lbl_fechafin.AutoSize = true;
-            this.lbl_fechafin.Location = new System.Drawing.Point(7, 70);
-            this.lbl_fechafin.Name = "lbl_fechafin";
-            this.lbl_fechafin.Size = new System.Drawing.Size(57, 13);
-            this.lbl_fechafin.TabIndex = 2;
-            this.lbl_fechafin.Text = "Fecha Fin:";
+            this.lblFechaFin.AutoSize = true;
+            this.lblFechaFin.Location = new System.Drawing.Point(4, 81);
+            this.lblFechaFin.Name = "lbl_fechafin";
+            this.lblFechaFin.Size = new System.Drawing.Size(57, 13);
+            this.lblFechaFin.TabIndex = 2;
+            this.lblFechaFin.Text = "Fecha Fin:";
             // 
             // FrmControlActividades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lbl_fechafin);
-            this.Controls.Add(this.lbl_fechainicio);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(154)))), ((int)(((byte)(205)))), ((int)(((byte)(60)))));
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.lblFechaFin);
+            this.Controls.Add(this.lblHoraInicio);
             this.Controls.Add(this.lbl_titulo);
             this.Name = "FrmControlActividades";
-            this.Size = new System.Drawing.Size(200, 103);
+            this.Size = new System.Drawing.Size(198, 101);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FrmControlActividades_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -78,7 +80,7 @@
         #endregion
 
         private System.Windows.Forms.Label lbl_titulo;
-        private System.Windows.Forms.Label lbl_fechainicio;
-        private System.Windows.Forms.Label lbl_fechafin;
+        private System.Windows.Forms.Label lblHoraInicio;
+        private System.Windows.Forms.Label lblFechaFin;
     }
 }
