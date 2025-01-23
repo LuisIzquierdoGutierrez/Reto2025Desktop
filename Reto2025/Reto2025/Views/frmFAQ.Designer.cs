@@ -190,13 +190,14 @@
             this.btn4.UseVisualStyleBackColor = true;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
-            // frmFAQ
+            // FrmFAQ
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(220)))), ((int)(((byte)(124)))));
             this.ClientSize = new System.Drawing.Size(818, 477);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "frmFAQ";
+            this.Name = "FrmFAQ";
             this.Text = "Frequently Ask Questions";
             this.splitContainer1.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

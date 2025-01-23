@@ -36,8 +36,7 @@ namespace Reto2025.Views
         private FrmContratoActividad frmContratoActividad;
 
         public FrmInicio(Profesor profesor)
-        {
-            this.BackColor = Color.FromArgb(0xFF, 0x9F, 0xD3, 0x56);
+        {       
             InitializeComponent();
             user = profesor;
             inicioMES = new DateTime(inicioMES.Year, inicioMES.Month, 1);

@@ -21,7 +21,7 @@ namespace Reto2025.Views
         private ControlCursos controlCursos = new ControlCursos();
         
         public FrmCursos()
-        {
+        {     
             InitializeComponent();
             if(cursos == null)
             {
