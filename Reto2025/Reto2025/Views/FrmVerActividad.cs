@@ -16,17 +16,18 @@ namespace Reto2025.Views
     {
         private List<Grupo> grupos;
         private List<Profesor> profesores;
+        private Actividad actividad;
         public FrmVerActividad(Actividad actividad)
         {
             InitializeComponent();
             CargarTablas();
-
+            this.actividad = actividad;
             lblAlojamiento.Enabled = actividad.alojamientoReq;
             lblTransporte.Enabled = actividad.transporteReq;
             rtxAlojamiento.Enabled = actividad.alojamientoReq;
             rtxTransporte.Enabled = actividad.transporteReq;
 
-            RellenarActividad(actividad);
+            RellenarActividad();
         }
 
         private async void CargarTablas()
@@ -35,7 +36,7 @@ namespace Reto2025.Views
             profesores = await new ControlProfesores().GetAllProfesores();
         }
 
-        private void RellenarActividad(Actividad actividad)
+        private void RellenarActividad()
         {
             lblTitulo.Text = actividad.titulo;
             if (actividad.previstaIni)
@@ -52,6 +53,8 @@ namespace Reto2025.Views
             rtxDescripcion.Text = actividad.descripcion;
             rtxComentarios.Text = actividad.comentarios;
             rtxIncidencias.Text = actividad.incidencias;
+
+            lblImporte.Text += actividad.importePorAlumno;
 
             lblEstado.Text = "Estado: " + actividad.estado.ToString().ToLower();
             rtxEstado.Text = actividad.comentEstado;
@@ -104,6 +107,31 @@ namespace Reto2025.Views
 
             lvwGeneral.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             MessageBox.Show("falta hacer que solo meta los profesores que participan y que salga si son responsables o no");
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            //metodo para iniciar el buscador por defecto con la pagina web señalada
+
+            string target = $"http://localhost:8080/acex/actividades/excel?actividad={actividad.id}";
+            try
+            {
+                System.Diagnostics.Process.Start(target);
+            }
+            catch (System.ComponentModel.Win32Exception noBrowser)
+            {
+                if (noBrowser.ErrorCode == -2147467259)
+                    MessageBox.Show(noBrowser.Message);
+            }
+            catch (System.Exception other)
+            {
+                MessageBox.Show(other.Message);
+            }
+        }
+
+        private void btnFotos_Click(object sender, EventArgs e)
+        {
+            new FrmFotosActividad(actividad).ShowDialog();
         }
     }
 }

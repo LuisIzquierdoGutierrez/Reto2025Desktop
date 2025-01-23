@@ -41,24 +41,27 @@
             this.lbl_titulo.Size = new System.Drawing.Size(194, 53);
             this.lbl_titulo.TabIndex = 0;
             this.lbl_titulo.Text = "Titulo";
+            this.lbl_titulo.Click += new System.EventHandler(this.FrmControlActividades_Click);
             // 
-            // lbl_fechainicio
+            // lblHoraInicio
             // 
             this.lblHoraInicio.AutoSize = true;
             this.lblHoraInicio.Location = new System.Drawing.Point(3, 63);
-            this.lblHoraInicio.Name = "lbl_fechainicio";
+            this.lblHoraInicio.Name = "lblHoraInicio";
             this.lblHoraInicio.Size = new System.Drawing.Size(68, 13);
             this.lblHoraInicio.TabIndex = 1;
             this.lblHoraInicio.Text = "Fecha Inicio:";
+            this.lblHoraInicio.Click += new System.EventHandler(this.FrmControlActividades_Click);
             // 
-            // lbl_fechafin
+            // lblFechaFin
             // 
             this.lblFechaFin.AutoSize = true;
             this.lblFechaFin.Location = new System.Drawing.Point(4, 81);
-            this.lblFechaFin.Name = "lbl_fechafin";
+            this.lblFechaFin.Name = "lblFechaFin";
             this.lblFechaFin.Size = new System.Drawing.Size(57, 13);
             this.lblFechaFin.TabIndex = 2;
             this.lblFechaFin.Text = "Fecha Fin:";
+            this.lblFechaFin.Click += new System.EventHandler(this.FrmControlActividades_Click);
             // 
             // FrmControlActividades
             // 
@@ -71,7 +74,7 @@
             this.Controls.Add(this.lbl_titulo);
             this.Name = "FrmControlActividades";
             this.Size = new System.Drawing.Size(198, 101);
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.FrmControlActividades_Click);
+            this.Click += new System.EventHandler(this.FrmControlActividades_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 

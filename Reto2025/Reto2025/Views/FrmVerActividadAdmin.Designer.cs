@@ -57,9 +57,11 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.nudImporte = new System.Windows.Forms.NumericUpDown();
             this.lblImporte = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.rtxIncidencias = new System.Windows.Forms.RichTextBox();
             this.lblIncidencias = new System.Windows.Forms.Label();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.btnFotos = new System.Windows.Forms.Button();
+            this.btnContratos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudImporte)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,7 +90,7 @@
             // lvwGeneral
             // 
             this.lvwGeneral.HideSelection = false;
-            this.lvwGeneral.Location = new System.Drawing.Point(584, 149);
+            this.lvwGeneral.Location = new System.Drawing.Point(584, 164);
             this.lvwGeneral.Name = "lvwGeneral";
             this.lvwGeneral.Size = new System.Drawing.Size(300, 140);
             this.lvwGeneral.TabIndex = 35;
@@ -353,7 +355,7 @@
             // btnActualizar
             // 
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnActualizar.Location = new System.Drawing.Point(305, 772);
+            this.btnActualizar.Location = new System.Drawing.Point(418, 771);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(86, 30);
             this.btnActualizar.TabIndex = 51;
@@ -380,16 +382,6 @@
             this.lblImporte.TabIndex = 52;
             this.lblImporte.Text = "Importe por alumno";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(266, 209);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 30);
-            this.button1.TabIndex = 57;
-            this.button1.Text = "Grupos";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // rtxIncidencias
             // 
             this.rtxIncidencias.BackColor = System.Drawing.SystemColors.Control;
@@ -412,14 +404,48 @@
             this.lblIncidencias.TabIndex = 58;
             this.lblIncidencias.Text = "Incidencias";
             // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnImprimir.Location = new System.Drawing.Point(727, 718);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(157, 30);
+            this.btnImprimir.TabIndex = 60;
+            this.btnImprimir.Text = "Imprimir Autorizacion";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // btnFotos
+            // 
+            this.btnFotos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnFotos.Location = new System.Drawing.Point(778, 672);
+            this.btnFotos.Name = "btnFotos";
+            this.btnFotos.Size = new System.Drawing.Size(62, 30);
+            this.btnFotos.TabIndex = 63;
+            this.btnFotos.Text = "Fotos";
+            this.btnFotos.UseVisualStyleBackColor = true;
+            this.btnFotos.Click += new System.EventHandler(this.btnFotos_Click);
+            // 
+            // btnContratos
+            // 
+            this.btnContratos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnContratos.Location = new System.Drawing.Point(755, 636);
+            this.btnContratos.Name = "btnContratos";
+            this.btnContratos.Size = new System.Drawing.Size(85, 30);
+            this.btnContratos.TabIndex = 64;
+            this.btnContratos.Text = "Contratos";
+            this.btnContratos.UseVisualStyleBackColor = true;
+            // 
             // FrmVerActividadAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(899, 761);
+            this.ClientSize = new System.Drawing.Size(899, 813);
+            this.Controls.Add(this.btnContratos);
+            this.Controls.Add(this.btnFotos);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.rtxIncidencias);
             this.Controls.Add(this.lblIncidencias);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.nudImporte);
             this.Controls.Add(this.lblImporte);
             this.Controls.Add(this.btnActualizar);
@@ -488,8 +514,10 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.NumericUpDown nudImporte;
         private System.Windows.Forms.Label lblImporte;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox rtxIncidencias;
         private System.Windows.Forms.Label lblIncidencias;
+        private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Button btnFotos;
+        private System.Windows.Forms.Button btnContratos;
     }
 }

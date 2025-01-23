@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 
 namespace Reto2025.Controls
 {
@@ -67,7 +68,47 @@ namespace Reto2025.Controls
 
             }
         }
+        public async Task<List<Foto>> GetAllFotosActividad(Actividad actividad)
 
+        {
+            try
+            {
+                //Hacemos una instancia de Personajes
+                List<Foto> fotos = new List<Foto>();
+
+                //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
+                //que se quiere consultar
+                HttpResponseMessage response = await client.GetAsync($"http://localhost:8080/acex/fotos/actividad/{actividad.id}");
+
+                //Verifica que la respuesta tenga un estado de éxito
+                //Si no es exitosa, lanza una excepción
+                response.EnsureSuccessStatusCode();
+
+                //String con las respuesta que es el JSON con toda la información
+                //que habíamos visto previamente
+                string responseJson = await response.Content.ReadAsStringAsync();
+
+
+                //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
+                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //biblioteca Newtonsoft.Json
+                fotos = JsonConvert.DeserializeObject<List<Foto>>(responseJson);
+
+                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                return fotos;
+
+            }
+
+            catch (Exception e)
+            {
+
+                //Si ocurre algún error (como problemos de conexión o un JSON no válido),
+                //captura la excepción y devuelve "null" como valor de error
+                MessageBox.Show(e.Message);
+                return null;
+
+            }
+        }
 
         public async Task<Foto> GetFotoId(int id)
 
@@ -146,6 +187,12 @@ namespace Reto2025.Controls
                 MessageBox.Show($"Error: {e.Message}");
                 return false;
             }
+        }
+
+        public String GetFotoUrl(Foto foto)
+
+        {
+            return $"http://localhost:8080/acex/fotos/{foto.actividad.id}/foto?id={foto.id}";
         }
 
     }

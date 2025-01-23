@@ -52,6 +52,7 @@ namespace Reto2025
 
         private async void button1_ClickAsync(object sender, EventArgs e)
         {
+
             Profesor profesor = await controlProfesores.GetLogin("alicia.fernandez@educantabria.es", "1234");
             if (profesor != null)
             {
@@ -86,24 +87,6 @@ namespace Reto2025
 
 
 
-
-
-            ////metodo para iniciar el buscador por defecto con la pagina web señalada
-
-            //string target = "http://localhost:8080/acex/actividades/excel?actividad=11";
-            //try
-            //{
-            //    System.Diagnostics.Process.Start(target);
-            //}
-            //catch (System.ComponentModel.Win32Exception noBrowser)
-            //{
-            //    if (noBrowser.ErrorCode == -2147467259)
-            //        MessageBox.Show(noBrowser.Message);
-            //}
-            //catch (System.Exception other)
-            //{
-            //    MessageBox.Show(other.Message);
-            //}
 
 
 

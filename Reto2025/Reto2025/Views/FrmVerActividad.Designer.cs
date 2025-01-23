@@ -50,9 +50,9 @@
             this.rtxTransporte = new System.Windows.Forms.RichTextBox();
             this.lblIncidencias = new System.Windows.Forms.Label();
             this.rtxIncidencias = new System.Windows.Forms.RichTextBox();
-            this.nudImporte = new System.Windows.Forms.NumericUpDown();
             this.lblImporte = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.nudImporte)).BeginInit();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.btnFotos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -289,31 +289,45 @@
             this.rtxIncidencias.TabIndex = 23;
             this.rtxIncidencias.Text = "Incidencias";
             // 
-            // nudImporte
-            // 
-            this.nudImporte.DecimalPlaces = 2;
-            this.nudImporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.nudImporte.Location = new System.Drawing.Point(190, 705);
-            this.nudImporte.Name = "nudImporte";
-            this.nudImporte.Size = new System.Drawing.Size(71, 23);
-            this.nudImporte.TabIndex = 55;
-            // 
             // lblImporte
             // 
             this.lblImporte.AutoSize = true;
             this.lblImporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblImporte.Location = new System.Drawing.Point(27, 707);
             this.lblImporte.Name = "lblImporte";
-            this.lblImporte.Size = new System.Drawing.Size(130, 17);
+            this.lblImporte.Size = new System.Drawing.Size(138, 17);
             this.lblImporte.TabIndex = 54;
-            this.lblImporte.Text = "Importe por alumno";
+            this.lblImporte.Text = "Importe por alumno: ";
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnImprimir.Location = new System.Drawing.Point(726, 694);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(157, 30);
+            this.btnImprimir.TabIndex = 61;
+            this.btnImprimir.Text = "Imprimir Autorizacion";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // btnFotos
+            // 
+            this.btnFotos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnFotos.Location = new System.Drawing.Point(776, 657);
+            this.btnFotos.Name = "btnFotos";
+            this.btnFotos.Size = new System.Drawing.Size(62, 30);
+            this.btnFotos.TabIndex = 62;
+            this.btnFotos.Text = "Fotos";
+            this.btnFotos.UseVisualStyleBackColor = true;
+            this.btnFotos.Click += new System.EventHandler(this.btnFotos_Click);
             // 
             // FrmVerActividad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 761);
-            this.Controls.Add(this.nudImporte);
+            this.Controls.Add(this.btnFotos);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.lblImporte);
             this.Controls.Add(this.rtxIncidencias);
             this.Controls.Add(this.lblIncidencias);
@@ -339,7 +353,6 @@
             this.Controls.Add(this.lblTitulo);
             this.Name = "FrmVerActividad";
             this.Text = "Actividad";
-            ((System.ComponentModel.ISupportInitialize)(this.nudImporte)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,7 +382,8 @@
         private System.Windows.Forms.RichTextBox rtxTransporte;
         private System.Windows.Forms.Label lblIncidencias;
         private System.Windows.Forms.RichTextBox rtxIncidencias;
-        private System.Windows.Forms.NumericUpDown nudImporte;
         private System.Windows.Forms.Label lblImporte;
+        private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Button btnFotos;
     }
 }

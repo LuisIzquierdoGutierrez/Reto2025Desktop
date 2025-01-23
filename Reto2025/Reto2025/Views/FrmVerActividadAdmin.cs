@@ -53,7 +53,7 @@ namespace Reto2025.Views
             cmbEstado.Text = actividad.estado.ToString().ToLower();
             rtxEstado.Text = actividad.comentEstado;
             rtxIncidencias.Text = actividad.incidencias;
-
+            nudImporte.Value = (decimal)actividad.importePorAlumno;
 
             dtpFini.Value = DateTime.Parse(actividad.fini);
             dtpFfin.Value = DateTime.Parse(actividad.ffin);
@@ -154,15 +154,33 @@ namespace Reto2025.Views
 
 
             bool completada = await new ControlActividades().ActualizarActividad(actividad);
-            if (completada)
-            {
-                MessageBox.Show("actividad creada con exito");
-            }
-            else
-            {
-                MessageBox.Show("No se a podido crear la actividad \n Si este fallo contina por favor contacte al administrador");
-            }
 
+
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            //metodo para iniciar el buscador por defecto con la pagina web señalada
+
+            string target = $"http://localhost:8080/acex/actividades/excel?actividad={actividad.id}";
+            try
+            {
+                System.Diagnostics.Process.Start(target);
+            }
+            catch (System.ComponentModel.Win32Exception noBrowser)
+            {
+                if (noBrowser.ErrorCode == -2147467259)
+                    MessageBox.Show(noBrowser.Message);
+            }
+            catch (System.Exception other)
+            {
+                MessageBox.Show(other.Message);
+            }
+        }
+
+        private void btnFotos_Click(object sender, EventArgs e)
+        {
+            new FrmFotosActividad(actividad).Show();
         }
     }
 }

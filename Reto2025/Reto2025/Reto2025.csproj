@@ -164,11 +164,23 @@
     <Compile Include="Views\FrmControlActividades.Designer.cs">
       <DependentUpon>FrmControlActividades.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FrmControlFoto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\FrmControlFoto.Designer.cs">
+      <DependentUpon>FrmControlFoto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmFAQ.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\FrmFAQ.Designer.cs">
       <DependentUpon>FrmFAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmFotosActividad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmFotosActividad.Designer.cs">
+      <DependentUpon>FrmFotosActividad.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmNormativa.cs">
       <SubType>Form</SubType>
@@ -218,11 +230,11 @@
     <Compile Include="Views\FrmEmpresasTransporte.Designer.cs">
       <DependentUpon>FrmEmpresasTransporte.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmFotoActividades.cs">
+    <Compile Include="Views\FrmFoto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmFotoActividades.Designer.cs">
-      <DependentUpon>FrmFotoActividades.cs</DependentUpon>
+    <Compile Include="Views\FrmFoto.Designer.cs">
+      <DependentUpon>FrmFoto.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmGruposParticipantes.cs">
       <SubType>Form</SubType>
@@ -327,6 +339,9 @@
     <EmbeddedResource Include="Views\FAQ\FrmFAQ9.resx">
       <DependentUpon>FrmFAQ9.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmControlFoto.resx">
+      <DependentUpon>FrmControlFoto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmCrearActividad.resx">
       <DependentUpon>FrmCrearActividad.cs</DependentUpon>
     </EmbeddedResource>
@@ -357,8 +372,11 @@
     <EmbeddedResource Include="Views\FrmFAQ.resx">
       <DependentUpon>FrmFAQ.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmFotoActividades.resx">
-      <DependentUpon>FrmFotoActividades.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmFoto.resx">
+      <DependentUpon>FrmFoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmFotosActividad.resx">
+      <DependentUpon>FrmFotosActividad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmGrupos.resx">
       <DependentUpon>FrmGrupos.cs</DependentUpon>
