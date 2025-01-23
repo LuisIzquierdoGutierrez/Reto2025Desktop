@@ -32,6 +32,7 @@ namespace Reto2025.Views
         private FrmDepartamentos frmDepartamentos;
         private FrmEmpresasTransporte frmEmpresasTransporte;
         private FrmPerfil frmPerfil;
+        private FrmAgregarEmpresas frmAgregarEmpresas;
 
         public FrmInicio(Profesor profesor)
         {
@@ -245,7 +246,15 @@ namespace Reto2025.Views
             frmVerActividades.Show();
         }
 
-
+        private void añadirEmpresasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmAgregarEmpresas != null)
+            {
+                frmAgregarEmpresas.Close();
+            }
+            frmAgregarEmpresas = new FrmAgregarEmpresas(user);
+            frmAgregarEmpresas.Show();
+        }
     }
 }
 
