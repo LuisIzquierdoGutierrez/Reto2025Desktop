@@ -59,6 +59,8 @@
             this.activityContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_actividadesdia = new System.Windows.Forms.Label();
+
+            this.contratoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +74,8 @@
             this.departamentosToolStripMenuItem,
             this.empresasDeTransporteToolStripMenuItem,
             this.tsmi_perfil,
-            this.normativaYFAQToolStripMenuItem});
+            this.normativaYFAQToolStripMenuItem,
+            this.contratoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
@@ -167,7 +170,8 @@
             // añadirEmpresasToolStripMenuItem
             // 
             this.añadirEmpresasToolStripMenuItem.Name = "añadirEmpresasToolStripMenuItem";
-            this.añadirEmpresasToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+
+            this.añadirEmpresasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.añadirEmpresasToolStripMenuItem.Text = "Añadir Empresas";
             this.añadirEmpresasToolStripMenuItem.Click += new System.EventHandler(this.añadirEmpresasToolStripMenuItem_Click);
             // 
@@ -325,6 +329,14 @@
             this.lbl_actividadesdia.TabIndex = 14;
             this.lbl_actividadesdia.Text = "Actividades del dia";
             // 
+
+            // contratoToolStripMenuItem
+            // 
+            this.contratoToolStripMenuItem.Name = "contratoToolStripMenuItem";
+            this.contratoToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.contratoToolStripMenuItem.Text = "Contrato";
+            this.contratoToolStripMenuItem.Click += new System.EventHandler(this.contratoToolStripMenuItem_Click);
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -392,5 +404,6 @@
         private System.Windows.Forms.Label lbl_actividadesdia;
         private System.Windows.Forms.ToolStripMenuItem verActividadesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem añadirEmpresasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contratoToolStripMenuItem;
     }
 }

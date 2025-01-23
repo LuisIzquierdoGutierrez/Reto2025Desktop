@@ -190,6 +190,7 @@
             this.Controls.Add(this.lblNombreEmpresa);
             this.Name = "FrmAgregarEmpresas";
             this.Text = "FrmCrearEmpresa";
+            this.Load += new System.EventHandler(this.FrmAgregarEmpresas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

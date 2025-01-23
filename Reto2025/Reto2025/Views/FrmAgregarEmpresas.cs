@@ -28,6 +28,7 @@ namespace Reto2025.Views
             string patronmail = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
             string patrontelefono = "^(\\d{7,10}|\\d{10,10})$";
             EmpTransporte empTransporte = new EmpTransporte();
+            empTransporte.id = null;
             empTransporte.nombre = txtNombreEmp.Text;
             empTransporte.cif = txtCif.Text;
             empTransporte.direccion = txtDireccion.Text;
@@ -81,9 +82,9 @@ namespace Reto2025.Views
             } 
         }
 
+        private void FrmAgregarEmpresas_Load(object sender, EventArgs e)
+        {
 
-
-
-
+        }
     }
 }
