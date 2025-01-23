@@ -14,9 +14,8 @@ namespace Reto2025.Views
     public partial class FrmFAQ : Form
     {
         public FrmFAQ()
-        {
-            InitializeComponent();
-            MessageBox.Show("patata");
+        {      
+            InitializeComponent();         
         }
 
         private void btn1_Click(object sender, EventArgs e)
