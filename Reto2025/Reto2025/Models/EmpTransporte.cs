@@ -8,7 +8,7 @@ namespace Reto2025.Models
 {
     public class EmpTransporte
     {
-        public int id;
+        public Nullable<int> id;
         public string nombre;
         public string cif;
         public string direccion;

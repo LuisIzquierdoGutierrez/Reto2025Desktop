@@ -167,7 +167,7 @@
             this.btnCrear.UseVisualStyleBackColor = true;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
-            // FrmCrearEmpresa
+            // FrmAgregarEmpresas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,8 +187,9 @@
             this.Controls.Add(this.lblDireccion);
             this.Controls.Add(this.lblCIF);
             this.Controls.Add(this.lblNombreEmpresa);
-            this.Name = "FrmCrearEmpresa";
+            this.Name = "FrmAgregarEmpresas";
             this.Text = "FrmCrearEmpresa";
+            this.Load += new System.EventHandler(this.FrmAgregarEmpresas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
