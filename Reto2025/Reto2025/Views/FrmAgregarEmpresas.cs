@@ -68,9 +68,9 @@ namespace Reto2025.Views
                     return;
                 }
 
-               
+              */ 
 
-            if (await controlEmpTransporte.(empTransporte))
+            if (await controlEmpTransporte.GuardarEmpresa(empTransporte))
             {
                 MessageBox.Show("furrula coño",
                 "", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -79,7 +79,7 @@ namespace Reto2025.Views
             {
                 MessageBox.Show("pta bihda tete",
                 "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } */
+            } 
         }
 
 
