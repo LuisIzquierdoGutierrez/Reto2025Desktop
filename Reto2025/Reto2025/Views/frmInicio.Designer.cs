@@ -40,6 +40,7 @@
             this.tsmi_verDepartamentos = new System.Windows.Forms.ToolStripMenuItem();
             this.empresasDeTransporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_verEmpresas = new System.Windows.Forms.ToolStripMenuItem();
+            this.añadirEmpresasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmi_perfil = new System.Windows.Forms.ToolStripMenuItem();
             this.normativaYFAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.normativaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,7 +59,6 @@
             this.activityContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_actividadesdia = new System.Windows.Forms.Label();
-            this.añadirEmpresasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,9 +160,16 @@
             // tsmi_verEmpresas
             // 
             this.tsmi_verEmpresas.Name = "tsmi_verEmpresas";
-            this.tsmi_verEmpresas.Size = new System.Drawing.Size(180, 22);
+            this.tsmi_verEmpresas.Size = new System.Drawing.Size(162, 22);
             this.tsmi_verEmpresas.Text = "Ver Empresas";
             this.tsmi_verEmpresas.Click += new System.EventHandler(this.tsmi_verEmpresas_Click);
+            // 
+            // añadirEmpresasToolStripMenuItem
+            // 
+            this.añadirEmpresasToolStripMenuItem.Name = "añadirEmpresasToolStripMenuItem";
+            this.añadirEmpresasToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.añadirEmpresasToolStripMenuItem.Text = "Añadir Empresas";
+            this.añadirEmpresasToolStripMenuItem.Click += new System.EventHandler(this.añadirEmpresasToolStripMenuItem_Click);
             // 
             // tsmi_perfil
             // 
@@ -318,17 +325,11 @@
             this.lbl_actividadesdia.TabIndex = 14;
             this.lbl_actividadesdia.Text = "Actividades del dia";
             // 
-            // añadirEmpresasToolStripMenuItem
-            // 
-            this.añadirEmpresasToolStripMenuItem.Name = "añadirEmpresasToolStripMenuItem";
-            this.añadirEmpresasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.añadirEmpresasToolStripMenuItem.Text = "Añadir Empresas";
-            this.añadirEmpresasToolStripMenuItem.Click += new System.EventHandler(this.añadirEmpresasToolStripMenuItem_Click);
-            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(220)))), ((int)(((byte)(124)))));
             this.ClientSize = new System.Drawing.Size(1184, 711);
             this.Controls.Add(this.lbl_actividadesdia);
             this.Controls.Add(this.label1);
