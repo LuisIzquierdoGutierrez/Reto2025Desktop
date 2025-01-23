@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
@@ -194,14 +195,33 @@ namespace Reto2025.Controls
 
         public async void SubirFoto(Actividad actividad, string f)
         {
+
+
+            // Convert image to Base64
+            string base64Image = Convert.ToBase64String(System.IO.File.ReadAllBytes(f));
+
+            // Prepare the JSON payload
+            string jsonPayload = $"{{\"fichero\": \"{base64Image}\"}}";
+
+
+
+
             try
             {
 
+               
+                var formData = new MultipartFormDataContent();
 
+                var fileContent = new ByteArrayContent(System.IO.File.ReadAllBytes(f));
+                
 
+               formData.Add(fileContent, "fichero", Path.GetFileName(f)); 
+
+  
+                string descripcion = actividad.descripcion; 
 
                 // Realizar la solicitud POST a la API
-                HttpResponseMessage response = await client.PostAsync($"http://localhost:8080/acex/fotos/{actividad.id}/foto?descripcion={"descripcion"}", formContent);
+                HttpResponseMessage response = await client.PostAsync($"http://localhost:8080/acex/fotos/{actividad.id}/foto?descripcion={descripcion}", formData);
 
                 // Verificar si la respuesta fue exitosa
                 if (response.IsSuccessStatusCode)
@@ -220,7 +240,7 @@ namespace Reto2025.Controls
             {
                 // Captura cualquier excepción y muestra un mensaje de error
                 MessageBox.Show($"Error: {e.Message}");
-  
+
             }
         }
 

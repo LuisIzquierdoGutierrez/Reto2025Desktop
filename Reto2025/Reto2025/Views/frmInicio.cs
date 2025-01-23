@@ -33,14 +33,15 @@ namespace Reto2025.Views
         private FrmEmpresasTransporte frmEmpresasTransporte;
         private FrmPerfil frmPerfil;
         private FrmAgregarEmpresas frmAgregarEmpresas;
-        private FrmContratoActividad frmContratoActividad;
+        // private FrmContratoActividad frmContratoActividad;
 
         public FrmInicio(Profesor profesor)
-        {       
+        {
+            this.BackColor = Color.FromArgb(0xFF, 0x9F, 0xD3, 0x56);
             InitializeComponent();
             user = profesor;
             inicioMES = new DateTime(inicioMES.Year, inicioMES.Month, 1);
-            
+
 
         }
         private async void frmInicio_Load(object sender, EventArgs e)
@@ -67,8 +68,8 @@ namespace Reto2025.Views
 
         private void tsmi_verCursos_Click(object sender, EventArgs e)
         {
-            
-            if(frmCursos != null)
+
+            if (frmCursos != null)
             {
                 frmCursos.Close();
             }
@@ -78,8 +79,8 @@ namespace Reto2025.Views
 
         private void tsmi_verProfesores_Click(object sender, EventArgs e)
         {
-            
-            if(frmProfesores != null)
+
+            if (frmProfesores != null)
             {
                 frmProfesores.Close();
             }
@@ -89,8 +90,8 @@ namespace Reto2025.Views
 
         private void tsmi_verDepartamentos_Click(object sender, EventArgs e)
         {
-            
-            if( frmDepartamentos != null)
+
+            if (frmDepartamentos != null)
             {
                 frmDepartamentos.Close();
             }
@@ -100,8 +101,8 @@ namespace Reto2025.Views
 
         private void tsmi_verEmpresas_Click(object sender, EventArgs e)
         {
-            
-            if(frmEmpresasTransporte != null)
+
+            if (frmEmpresasTransporte != null)
             {
                 frmEmpresasTransporte.Close();
             }
@@ -116,7 +117,7 @@ namespace Reto2025.Views
                 frmPerfil.Close();
             }
             frmPerfil = new FrmPerfil();
-          frmPerfil.Show();
+            frmPerfil.Show();
         }
 
         private void dias_de_mierda(int? opMes, List<Actividad> actividades)
@@ -140,14 +141,17 @@ namespace Reto2025.Views
             lbl_mes.Text = mesletras + "    " + inicioMES.Year;
 
             List<Actividad> actividades_mes = new List<Actividad>();
-
-            foreach (Actividad actividad in actividades)
+            if (actividades != null)
             {
-                if (DateTime.Parse(actividad.fini).Month == inicioMES.Month)
+                foreach (Actividad actividad in actividades)
                 {
-                    actividades_mes.Add(actividad);
+                    if (DateTime.Parse(actividad.fini).Month == inicioMES.Month)
+                    {
+                        actividades_mes.Add(actividad);
+                    }
                 }
             }
+
 
             int dias = DateTime.DaysInMonth(inicioMES.Year, inicioMES.Month);
             int dias_semana = Convert.ToInt32(inicioMES.DayOfWeek.ToString("d"));
@@ -173,7 +177,7 @@ namespace Reto2025.Views
 
                 controlCalendario.FormularioPadre = this;
 
-               if (i == DateTime.Today.Day && inicioMES.Month == DateTime.Today.Month && inicioMES.Year == DateTime.Today.Year)
+                if (i == DateTime.Today.Day && inicioMES.Month == DateTime.Today.Month && inicioMES.Year == DateTime.Today.Year)
                 {
                     controlCalendario.ResaltarDiaActual(true);
                 }
@@ -186,7 +190,7 @@ namespace Reto2025.Views
                 foreach (Actividad actividadMes in actividades_mes)
                 {
                     if (i == DateTime.Parse(actividadMes.fini).Day)
-                    {                       
+                    {
                         controlCalendario.setNombreActividades(actividadMes);
                     }
                 }
@@ -258,12 +262,12 @@ namespace Reto2025.Views
 
         private void contratoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (frmContratoActividad != null)
-            {
-                frmContratoActividad.Close();
-            }
-            frmContratoActividad = new FrmContratoActividad();
-            frmContratoActividad.Show();
+            //if (frmContratoActividad != null)
+            //{
+            //    frmContratoActividad.Close();
+            //}
+            //frmContratoActividad = new FrmContratoActividad();
+            //frmContratoActividad.Show();
         }
     }
 }
