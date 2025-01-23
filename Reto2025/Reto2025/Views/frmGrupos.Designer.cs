@@ -107,11 +107,10 @@
             this.cmb_prof1.Size = new System.Drawing.Size(121, 21);
             this.cmb_prof1.TabIndex = 7;
             // 
-            // FrmGrupos
+            // Grupos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(220)))), ((int)(((byte)(124)))));
             this.ClientSize = new System.Drawing.Size(409, 340);
             this.Controls.Add(this.cmb_prof1);
             this.Controls.Add(this.textBox1);
@@ -121,7 +120,7 @@
             this.Controls.Add(this.lbl_profesor);
             this.Controls.Add(this.lbl_numAlumnos);
             this.Controls.Add(this.lbl_curso);
-            this.Name = "FrmGrupos";
+            this.Name = "Grupos";
             this.Text = "Grupos";
             this.ResumeLayout(false);
             this.PerformLayout();

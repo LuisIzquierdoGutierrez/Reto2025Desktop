@@ -16,8 +16,9 @@ namespace Reto2025.Views
         public FrmContrato_transporte()
         {
             InitializeComponent();
-            
         }
+
+
 
         private void btn_crear_Click(object sender, EventArgs e)
         {

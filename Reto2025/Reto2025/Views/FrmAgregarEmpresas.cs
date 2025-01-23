@@ -20,7 +20,8 @@ namespace Reto2025.Views
         {
             controlEmpTransporte = new ControlEmpTransporte();
             InitializeComponent();
-            this.user = user;         
+            this.user = user;
+
         }
         private async void btnCrear_Click(object sender, EventArgs e)
         {
