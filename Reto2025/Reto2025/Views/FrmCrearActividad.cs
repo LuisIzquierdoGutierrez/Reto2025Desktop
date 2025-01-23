@@ -20,7 +20,7 @@ namespace Reto2025.Views
         public FrmCrearActividad()
         {
             InitializeComponent();
-            controlActividades = new ControlActividades();
+            controlActividades = new ControlActividades();     
         }
 
 
