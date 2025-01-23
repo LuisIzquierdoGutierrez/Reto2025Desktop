@@ -18,6 +18,7 @@ namespace Reto2025.Views
         private ControlFotos controlFotos;
         private List<Foto> fotos;
         public static List<String> urls;
+
         public FrmFotosActividad(Actividad actividad)
         {
             InitializeComponent();
@@ -35,12 +36,28 @@ namespace Reto2025.Views
             String url;
             foreach (Foto foto in fotos)
             {
-                // url = controlFotos.GetFotoUrl(foto);
-                url = "https://cdn-images.dzcdn.net/images/cover/c6774b1a84273d54cdc7ee2031503bfd/0x1900-000000-80-0-0.jpg";
-
+                url = controlFotos.GetFotoUrl(foto);
+                //url = "https://cdn-images.dzcdn.net/images/cover/c6774b1a84273d54cdc7ee2031503bfd/0x1900-000000-80-0-0.jpg";
                 urls.Add(url);
                 frmFoto = new FrmControlFoto(url);
                 flpFotosNube.Controls.Add(frmFoto);
+            }
+        }
+
+        private void btnAgregarImagen_Click(object sender, EventArgs e)
+        {
+            string[] path;
+            OpenFileDialog file = new OpenFileDialog();
+            file.Multiselect = true;
+            if (file.ShowDialog() == DialogResult.OK)
+            {
+                path = file.FileNames;
+                foreach (string f in path)
+                {
+                    controlFotos.SubirFoto(actividad, f);
+                    
+                }
+                
             }
         }
     }

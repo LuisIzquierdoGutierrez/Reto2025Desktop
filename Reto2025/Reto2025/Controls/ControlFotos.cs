@@ -2,8 +2,10 @@
 using Reto2025.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -186,6 +188,39 @@ namespace Reto2025.Controls
                 // Captura cualquier excepción y muestra un mensaje de error
                 MessageBox.Show($"Error: {e.Message}");
                 return false;
+            }
+        }
+
+
+        public async void SubirFoto(Actividad actividad, string f)
+        {
+            try
+            {
+
+
+
+
+                // Realizar la solicitud POST a la API
+                HttpResponseMessage response = await client.PostAsync($"http://localhost:8080/acex/fotos/{actividad.id}/foto?descripcion={"descripcion"}", formContent);
+
+                // Verificar si la respuesta fue exitosa
+                if (response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("Foto guardada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // La calificación fue guardada con éxito
+                }
+                else
+                {
+                    MessageBox.Show(response.RequestMessage.ToString());
+                    // Hubo un error
+                }
+            }
+            catch (Exception e)
+            {
+                // Captura cualquier excepción y muestra un mensaje de error
+                MessageBox.Show($"Error: {e.Message}");
+  
             }
         }
 
