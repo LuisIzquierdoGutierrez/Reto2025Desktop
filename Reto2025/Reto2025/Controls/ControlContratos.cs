@@ -144,6 +144,38 @@ namespace Reto2025.Controls
                 return false;
             }
         }
+        public async Task<bool> GuardarContrato(Contrato contrato)
+        {
+            try
+            {
+                // Convertir el objeto Realizada a JSON
+                string json = JsonConvert.SerializeObject(contrato);
+
+                // Crear el contenido de la solicitud (POST)
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                // Realizar la solicitud POST a la API
+                HttpResponseMessage response = await client.PostAsync($"http://localhost:8080/acex/contratos", content);
+
+                // Verificar si la respuesta fue exitosa
+                if (response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("Contrato guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    return true; // La calificación fue guardada con éxito
+                }
+                else
+                {
+                    MessageBox.Show(response.RequestMessage.ToString());
+                    return false; // Hubo un error
+                }
+            }
+            catch (Exception e)
+            {
+                // Captura cualquier excepción y muestra un mensaje de error
+                MessageBox.Show($"Error: {e.Message}");
+                return false;
+            }
+        }
 
     }
 }
