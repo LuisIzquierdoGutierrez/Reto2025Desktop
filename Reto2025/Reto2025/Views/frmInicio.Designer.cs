@@ -58,6 +58,7 @@
             this.activityContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_actividadesdia = new System.Windows.Forms.Label();
+            this.añadirEmpresasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -150,7 +151,8 @@
             // empresasDeTransporteToolStripMenuItem
             // 
             this.empresasDeTransporteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmi_verEmpresas});
+            this.tsmi_verEmpresas,
+            this.añadirEmpresasToolStripMenuItem});
             this.empresasDeTransporteToolStripMenuItem.Name = "empresasDeTransporteToolStripMenuItem";
             this.empresasDeTransporteToolStripMenuItem.Size = new System.Drawing.Size(142, 20);
             this.empresasDeTransporteToolStripMenuItem.Text = "Empresas de transporte";
@@ -158,7 +160,7 @@
             // tsmi_verEmpresas
             // 
             this.tsmi_verEmpresas.Name = "tsmi_verEmpresas";
-            this.tsmi_verEmpresas.Size = new System.Drawing.Size(143, 22);
+            this.tsmi_verEmpresas.Size = new System.Drawing.Size(180, 22);
             this.tsmi_verEmpresas.Text = "Ver Empresas";
             this.tsmi_verEmpresas.Click += new System.EventHandler(this.tsmi_verEmpresas_Click);
             // 
@@ -316,6 +318,13 @@
             this.lbl_actividadesdia.TabIndex = 14;
             this.lbl_actividadesdia.Text = "Actividades del dia";
             // 
+            // añadirEmpresasToolStripMenuItem
+            // 
+            this.añadirEmpresasToolStripMenuItem.Name = "añadirEmpresasToolStripMenuItem";
+            this.añadirEmpresasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.añadirEmpresasToolStripMenuItem.Text = "Añadir Empresas";
+            this.añadirEmpresasToolStripMenuItem.Click += new System.EventHandler(this.añadirEmpresasToolStripMenuItem_Click);
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,5 +390,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_actividadesdia;
         private System.Windows.Forms.ToolStripMenuItem verActividadesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem añadirEmpresasToolStripMenuItem;
     }
 }
