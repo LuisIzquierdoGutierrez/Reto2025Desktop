@@ -15,7 +15,7 @@ namespace Reto2025.Views
     public partial class FrmPerfil : Form
     {
         public FrmPerfil()
-        {         
+        {
             InitializeComponent();
             CargarDatos(FrmInicio.user);
         }

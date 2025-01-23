@@ -15,7 +15,6 @@ namespace Reto2025.Views
     {
         public Grupos_Participantes()
         {
-            this.BackColor = Color.FromArgb(0xFF, 0xB2, 0xDF, 0x7A);
             InitializeComponent();
         }
 

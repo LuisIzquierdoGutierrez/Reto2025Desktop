@@ -339,9 +339,6 @@
     <EmbeddedResource Include="Views\FAQ\FrmFAQ9.resx">
       <DependentUpon>FrmFAQ9.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmAgregarEmpresas.resx">
-      <DependentUpon>FrmAgregarEmpresas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmControlFoto.resx">
       <DependentUpon>FrmControlFoto.cs</DependentUpon>
     </EmbeddedResource>

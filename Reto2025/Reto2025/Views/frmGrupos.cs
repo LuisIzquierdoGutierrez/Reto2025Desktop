@@ -15,7 +15,7 @@ namespace Reto2025.Views
     {
         public FrmGrupos()
         {
-            InitializeComponent();        
+            InitializeComponent();
         }
 
         private void btn_volver_Click(object sender, EventArgs e)
