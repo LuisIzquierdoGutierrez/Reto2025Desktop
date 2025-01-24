@@ -31,12 +31,13 @@
             this.lbl_actividad = new System.Windows.Forms.Label();
             this.lbl_importe = new System.Windows.Forms.Label();
             this.lbl_empresa = new System.Windows.Forms.Label();
-            this.lnklbl_presupuesto = new System.Windows.Forms.LinkLabel();
-            this.lnklbl_factura = new System.Windows.Forms.LinkLabel();
             this.btn_crear = new System.Windows.Forms.Button();
             this.cmbActividad = new System.Windows.Forms.ComboBox();
             this.cmbEmpresa = new System.Windows.Forms.ComboBox();
             this.mudImporte = new System.Windows.Forms.NumericUpDown();
+            this.ofdFactura = new System.Windows.Forms.OpenFileDialog();
+            this.btnFactura = new System.Windows.Forms.Button();
+            this.btnPresupuesto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mudImporte)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,26 +68,6 @@
             this.lbl_empresa.TabIndex = 15;
             this.lbl_empresa.Text = "Empresa";
             // 
-            // lnklbl_presupuesto
-            // 
-            this.lnklbl_presupuesto.AutoSize = true;
-            this.lnklbl_presupuesto.Location = new System.Drawing.Point(380, 65);
-            this.lnklbl_presupuesto.Name = "lnklbl_presupuesto";
-            this.lnklbl_presupuesto.Size = new System.Drawing.Size(85, 13);
-            this.lnklbl_presupuesto.TabIndex = 17;
-            this.lnklbl_presupuesto.TabStop = true;
-            this.lnklbl_presupuesto.Text = "Ver Presupuesto";
-            // 
-            // lnklbl_factura
-            // 
-            this.lnklbl_factura.AutoSize = true;
-            this.lnklbl_factura.Location = new System.Drawing.Point(380, 115);
-            this.lnklbl_factura.Name = "lnklbl_factura";
-            this.lnklbl_factura.Size = new System.Drawing.Size(62, 13);
-            this.lnklbl_factura.TabIndex = 18;
-            this.lnklbl_factura.TabStop = true;
-            this.lnklbl_factura.Text = "Ver Factura";
-            // 
             // btn_crear
             // 
             this.btn_crear.Location = new System.Drawing.Point(383, 218);
@@ -102,7 +83,7 @@
             this.cmbActividad.FormattingEnabled = true;
             this.cmbActividad.Location = new System.Drawing.Point(100, 43);
             this.cmbActividad.Name = "cmbActividad";
-            this.cmbActividad.Size = new System.Drawing.Size(121, 21);
+            this.cmbActividad.Size = new System.Drawing.Size(229, 21);
             this.cmbActividad.TabIndex = 21;
             // 
             // cmbEmpresa
@@ -110,7 +91,7 @@
             this.cmbEmpresa.FormattingEnabled = true;
             this.cmbEmpresa.Location = new System.Drawing.Point(100, 86);
             this.cmbEmpresa.Name = "cmbEmpresa";
-            this.cmbEmpresa.Size = new System.Drawing.Size(121, 21);
+            this.cmbEmpresa.Size = new System.Drawing.Size(229, 21);
             this.cmbEmpresa.TabIndex = 22;
             // 
             // mudImporte
@@ -121,17 +102,41 @@
             this.mudImporte.Size = new System.Drawing.Size(120, 20);
             this.mudImporte.TabIndex = 23;
             // 
+            // ofdFactura
+            // 
+            this.ofdFactura.FileName = "ofdFactura";
+            // 
+            // btnFactura
+            // 
+            this.btnFactura.Location = new System.Drawing.Point(46, 218);
+            this.btnFactura.Name = "btnFactura";
+            this.btnFactura.Size = new System.Drawing.Size(90, 23);
+            this.btnFactura.TabIndex = 24;
+            this.btnFactura.Text = "Subir Factura";
+            this.btnFactura.UseVisualStyleBackColor = true;
+            this.btnFactura.Click += new System.EventHandler(this.btnFactura_Click);
+            // 
+            // btnPresupuesto
+            // 
+            this.btnPresupuesto.Location = new System.Drawing.Point(188, 218);
+            this.btnPresupuesto.Name = "btnPresupuesto";
+            this.btnPresupuesto.Size = new System.Drawing.Size(107, 23);
+            this.btnPresupuesto.TabIndex = 25;
+            this.btnPresupuesto.Text = "Subir Presupuesto";
+            this.btnPresupuesto.UseVisualStyleBackColor = true;
+            this.btnPresupuesto.Click += new System.EventHandler(this.btnPresupuesto_Click);
+            // 
             // FrmContrato_transporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(540, 266);
+            this.Controls.Add(this.btnPresupuesto);
+            this.Controls.Add(this.btnFactura);
             this.Controls.Add(this.mudImporte);
             this.Controls.Add(this.cmbEmpresa);
             this.Controls.Add(this.cmbActividad);
             this.Controls.Add(this.btn_crear);
-            this.Controls.Add(this.lnklbl_factura);
-            this.Controls.Add(this.lnklbl_presupuesto);
             this.Controls.Add(this.lbl_empresa);
             this.Controls.Add(this.lbl_importe);
             this.Controls.Add(this.lbl_actividad);
@@ -148,11 +153,12 @@
         private System.Windows.Forms.Label lbl_actividad;
         private System.Windows.Forms.Label lbl_importe;
         private System.Windows.Forms.Label lbl_empresa;
-        private System.Windows.Forms.LinkLabel lnklbl_presupuesto;
-        private System.Windows.Forms.LinkLabel lnklbl_factura;
         private System.Windows.Forms.Button btn_crear;
         private System.Windows.Forms.ComboBox cmbActividad;
         private System.Windows.Forms.ComboBox cmbEmpresa;
         private System.Windows.Forms.NumericUpDown mudImporte;
+        private System.Windows.Forms.OpenFileDialog ofdFactura;
+        private System.Windows.Forms.Button btnFactura;
+        private System.Windows.Forms.Button btnPresupuesto;
     }
 }
