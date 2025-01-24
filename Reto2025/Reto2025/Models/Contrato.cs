@@ -8,9 +8,9 @@ namespace Reto2025.Models
 {
     public class Contrato
     {
-        public int id;
+        public Nullable<int> id;
         public Actividad actividad;
-        public EmpTransporte emp_transporte;
+        public EmpTransporte empTransporte;
         public bool contratada;
         public double importe;
         public string urlPresupuesto;
