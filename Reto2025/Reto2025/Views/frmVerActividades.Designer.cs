@@ -92,6 +92,7 @@
             this.lwActividades.TabIndex = 5;
             this.lwActividades.UseCompatibleStateImageBehavior = false;
             this.lwActividades.View = System.Windows.Forms.View.Details;
+            this.lwActividades.DoubleClick += new System.EventHandler(this.lwActividades_DoubleClick);
             // 
             // Titulo_Actividad
             // 

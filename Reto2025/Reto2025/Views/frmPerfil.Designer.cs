@@ -34,8 +34,8 @@
             this.lblDepartamento = new System.Windows.Forms.Label();
             this.lbl_foto = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picFoto = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
             this.SuspendLayout();
             // 
             // lblApellidos
@@ -92,13 +92,14 @@
             this.lblNombre.TabIndex = 9;
             this.lblNombre.Text = "Nombre: ";
             // 
-            // pictureBox1
+            // picFoto
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(60, 51);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(189, 150);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
+            this.picFoto.Location = new System.Drawing.Point(12, 42);
+            this.picFoto.Name = "picFoto";
+            this.picFoto.Size = new System.Drawing.Size(276, 268);
+            this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFoto.TabIndex = 15;
+            this.picFoto.TabStop = false;
             // 
             // FrmPerfil
             // 
@@ -106,7 +107,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(220)))), ((int)(((byte)(124)))));
             this.ClientSize = new System.Drawing.Size(609, 322);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picFoto);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lbl_foto);
             this.Controls.Add(this.lblDepartamento);
@@ -115,7 +116,7 @@
             this.Controls.Add(this.lblApellidos);
             this.Name = "FrmPerfil";
             this.Text = "Perfil";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,6 +129,6 @@
         private System.Windows.Forms.Label lblDepartamento;
         private System.Windows.Forms.Label lbl_foto;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picFoto;
     }
 }

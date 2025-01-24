@@ -23,34 +23,28 @@ namespace Reto2025.Views
             picFoto.Load(url);
         }
 
-        private void btn_volver_Click(object sender, EventArgs e)
-        {
-            if(posicion> 0)
-            {
-                posicion--;
-            }
-            else
-            {
-                posicion= fotos.Count-1;
-            }
-            picFoto.Load(fotos[posicion]);
-
-        }
-
-        private void picFoto_SizeChanged(object sender, EventArgs e)
-        {
-      
-        }
-
         private void btn_siguiente_Click(object sender, EventArgs e)
         {
-            if (posicion < fotos.Count-1)
+            if (posicion < fotos.Count - 1)
             {
                 posicion++;
             }
             else
             {
                 posicion = 0;
+            }
+            picFoto.Load(fotos[posicion]);
+        }
+
+        private void btn_anterior_Click(object sender, EventArgs e)
+        {
+            if (posicion > 0)
+            {
+                posicion--;
+            }
+            else
+            {
+                posicion = fotos.Count - 1;
             }
             picFoto.Load(fotos[posicion]);
         }

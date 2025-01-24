@@ -34,14 +34,18 @@
             // 
             // flpFotosNube
             // 
+            this.flpFotosNube.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flpFotosNube.AutoScroll = true;
             this.flpFotosNube.Location = new System.Drawing.Point(2, 8);
             this.flpFotosNube.Name = "flpFotosNube";
-            this.flpFotosNube.Size = new System.Drawing.Size(805, 157);
+            this.flpFotosNube.Size = new System.Drawing.Size(805, 394);
             this.flpFotosNube.TabIndex = 0;
             // 
             // btnAgregarImagen
             // 
+            this.btnAgregarImagen.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnAgregarImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnAgregarImagen.Location = new System.Drawing.Point(325, 408);
             this.btnAgregarImagen.Name = "btnAgregarImagen";
@@ -60,7 +64,7 @@
             this.Controls.Add(this.btnAgregarImagen);
             this.Controls.Add(this.flpFotosNube);
             this.Name = "FrmFotosActividad";
-            this.Text = "FrmFotosActividad";
+            this.Text = "Fotos";
             this.ResumeLayout(false);
 
         }

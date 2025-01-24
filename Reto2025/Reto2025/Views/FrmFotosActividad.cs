@@ -31,6 +31,7 @@ namespace Reto2025.Views
 
         private async void CargarFotos()
         {
+            flpFotosNube.Controls.Clear();
             List<Foto> fotos = await controlFotos.GetAllFotosActividad(actividad);
             FrmControlFoto frmFoto;
             String url;
@@ -48,7 +49,7 @@ namespace Reto2025.Views
            
         }
 
-        private void btnAgregarImagen_Click(object sender, EventArgs e)
+        private async void btnAgregarImagen_Click(object sender, EventArgs e)
         {
             string[] path;
             OpenFileDialog file = new OpenFileDialog();
@@ -58,10 +59,11 @@ namespace Reto2025.Views
                 path = file.FileNames;
                 foreach (string f in path)
                 {
-                    controlFotos.SubirFoto(actividad, f);
+                    await controlFotos.SubirFoto(actividad, f);
                     
                 }
-                
+
+                CargarFotos();
             }
         }
     }
