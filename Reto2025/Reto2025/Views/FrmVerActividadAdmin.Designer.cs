@@ -30,9 +30,6 @@
         {
             this.rtxAlojamiento = new System.Windows.Forms.RichTextBox();
             this.rtxTransporte = new System.Windows.Forms.RichTextBox();
-            this.lvwGeneral = new System.Windows.Forms.ListView();
-            this.btnProfesores = new System.Windows.Forms.Button();
-            this.btnGrupos = new System.Windows.Forms.Button();
             this.lblSolicitante = new System.Windows.Forms.Label();
             this.rtxEstado = new System.Windows.Forms.RichTextBox();
             this.lblEstado = new System.Windows.Forms.Label();
@@ -62,6 +59,13 @@
             this.btnImprimir = new System.Windows.Forms.Button();
             this.btnFotos = new System.Windows.Forms.Button();
             this.btnContratos = new System.Windows.Forms.Button();
+            this.lvwgrupos = new System.Windows.Forms.ListView();
+            this.lvwProfesores = new System.Windows.Forms.ListView();
+            this.lblProfesores = new System.Windows.Forms.Label();
+            this.lblGrupos = new System.Windows.Forms.Label();
+            this.btnAñadirGrupo = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cmbProfesores = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudImporte)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,37 +90,6 @@
             this.rtxTransporte.Size = new System.Drawing.Size(230, 140);
             this.rtxTransporte.TabIndex = 36;
             this.rtxTransporte.Text = "";
-            // 
-            // lvwGeneral
-            // 
-            this.lvwGeneral.HideSelection = false;
-            this.lvwGeneral.Location = new System.Drawing.Point(584, 164);
-            this.lvwGeneral.Name = "lvwGeneral";
-            this.lvwGeneral.Size = new System.Drawing.Size(300, 140);
-            this.lvwGeneral.TabIndex = 35;
-            this.lvwGeneral.UseCompatibleStateImageBehavior = false;
-            this.lvwGeneral.View = System.Windows.Forms.View.Details;
-            // 
-            // btnProfesores
-            // 
-            this.btnProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnProfesores.Location = new System.Drawing.Point(778, 321);
-            this.btnProfesores.Name = "btnProfesores";
-            this.btnProfesores.Size = new System.Drawing.Size(86, 30);
-            this.btnProfesores.TabIndex = 34;
-            this.btnProfesores.Text = "Profesores";
-            this.btnProfesores.UseVisualStyleBackColor = true;
-            // 
-            // btnGrupos
-            // 
-            this.btnGrupos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnGrupos.Location = new System.Drawing.Point(584, 321);
-            this.btnGrupos.Name = "btnGrupos";
-            this.btnGrupos.Size = new System.Drawing.Size(86, 30);
-            this.btnGrupos.TabIndex = 33;
-            this.btnGrupos.Text = "Grupos";
-            this.btnGrupos.UseVisualStyleBackColor = true;
-            this.btnGrupos.Click += new System.EventHandler(this.btnGrupos_Click);
             // 
             // lblSolicitante
             // 
@@ -436,11 +409,88 @@
             this.btnContratos.Text = "Contratos";
             this.btnContratos.UseVisualStyleBackColor = true;
             // 
+            // lvwgrupos
+            // 
+            this.lvwgrupos.HideSelection = false;
+            this.lvwgrupos.Location = new System.Drawing.Point(584, 164);
+            this.lvwgrupos.Name = "lvwgrupos";
+            this.lvwgrupos.Size = new System.Drawing.Size(300, 140);
+            this.lvwgrupos.TabIndex = 65;
+            this.lvwgrupos.UseCompatibleStateImageBehavior = false;
+            this.lvwgrupos.View = System.Windows.Forms.View.Details;
+            // 
+            // lvwProfesores
+            // 
+            this.lvwProfesores.HideSelection = false;
+            this.lvwProfesores.Location = new System.Drawing.Point(584, 416);
+            this.lvwProfesores.Name = "lvwProfesores";
+            this.lvwProfesores.Size = new System.Drawing.Size(300, 140);
+            this.lvwProfesores.TabIndex = 66;
+            this.lvwProfesores.UseCompatibleStateImageBehavior = false;
+            this.lvwProfesores.View = System.Windows.Forms.View.Details;
+            // 
+            // lblProfesores
+            // 
+            this.lblProfesores.AutoSize = true;
+            this.lblProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblProfesores.Location = new System.Drawing.Point(581, 393);
+            this.lblProfesores.Name = "lblProfesores";
+            this.lblProfesores.Size = new System.Drawing.Size(163, 17);
+            this.lblProfesores.TabIndex = 67;
+            this.lblProfesores.Text = "Profesores Participantes";
+            // 
+            // lblGrupos
+            // 
+            this.lblGrupos.AutoSize = true;
+            this.lblGrupos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblGrupos.Location = new System.Drawing.Point(581, 140);
+            this.lblGrupos.Name = "lblGrupos";
+            this.lblGrupos.Size = new System.Drawing.Size(141, 17);
+            this.lblGrupos.TabIndex = 68;
+            this.lblGrupos.Text = "Grupos Participantes";
+            // 
+            // btnAñadirGrupo
+            // 
+            this.btnAñadirGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnAñadirGrupo.Location = new System.Drawing.Point(778, 310);
+            this.btnAñadirGrupo.Name = "btnAñadirGrupo";
+            this.btnAñadirGrupo.Size = new System.Drawing.Size(106, 30);
+            this.btnAñadirGrupo.TabIndex = 69;
+            this.btnAñadirGrupo.Text = "Añadir Grupo";
+            this.btnAñadirGrupo.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button1.Location = new System.Drawing.Point(798, 562);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 30);
+            this.button1.TabIndex = 70;
+            this.button1.Text = "Añadir";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // cmbProfesores
+            // 
+            this.cmbProfesores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmbProfesores.FormattingEnabled = true;
+            this.cmbProfesores.Location = new System.Drawing.Point(584, 566);
+            this.cmbProfesores.Name = "cmbProfesores";
+            this.cmbProfesores.Size = new System.Drawing.Size(208, 24);
+            this.cmbProfesores.TabIndex = 71;
+            // 
             // FrmVerActividadAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 813);
+            this.Controls.Add(this.cmbProfesores);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAñadirGrupo);
+            this.Controls.Add(this.lblGrupos);
+            this.Controls.Add(this.lblProfesores);
+            this.Controls.Add(this.lvwProfesores);
+            this.Controls.Add(this.lvwgrupos);
             this.Controls.Add(this.btnContratos);
             this.Controls.Add(this.btnFotos);
             this.Controls.Add(this.btnImprimir);
@@ -462,9 +512,6 @@
             this.Controls.Add(this.chkTransporte);
             this.Controls.Add(this.rtxAlojamiento);
             this.Controls.Add(this.rtxTransporte);
-            this.Controls.Add(this.lvwGeneral);
-            this.Controls.Add(this.btnProfesores);
-            this.Controls.Add(this.btnGrupos);
             this.Controls.Add(this.lblSolicitante);
             this.Controls.Add(this.rtxEstado);
             this.Controls.Add(this.lblEstado);
@@ -487,9 +534,6 @@
 
         private System.Windows.Forms.RichTextBox rtxAlojamiento;
         private System.Windows.Forms.RichTextBox rtxTransporte;
-        private System.Windows.Forms.ListView lvwGeneral;
-        private System.Windows.Forms.Button btnProfesores;
-        private System.Windows.Forms.Button btnGrupos;
         private System.Windows.Forms.Label lblSolicitante;
         private System.Windows.Forms.RichTextBox rtxEstado;
         private System.Windows.Forms.Label lblEstado;
@@ -519,5 +563,12 @@
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Button btnFotos;
         private System.Windows.Forms.Button btnContratos;
+        private System.Windows.Forms.ListView lvwgrupos;
+        private System.Windows.Forms.ListView lvwProfesores;
+        private System.Windows.Forms.Label lblProfesores;
+        private System.Windows.Forms.Label lblGrupos;
+        private System.Windows.Forms.Button btnAñadirGrupo;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmbProfesores;
     }
 }

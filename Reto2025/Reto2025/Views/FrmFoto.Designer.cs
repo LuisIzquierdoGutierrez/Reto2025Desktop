@@ -45,7 +45,7 @@
             this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picFoto.TabIndex = 0;
             this.picFoto.TabStop = false;
-            this.picFoto.SizeChanged += new System.EventHandler(this.picFoto_SizeChanged);
+
             // 
             // btn_anterior
             // 
@@ -56,6 +56,7 @@
             this.btn_anterior.TabIndex = 1;
             this.btn_anterior.Text = "Anterior";
             this.btn_anterior.UseVisualStyleBackColor = true;
+            this.btn_anterior.Click += new System.EventHandler(this.btn_anterior_Click);
             // 
             // btn_siguiente
             // 

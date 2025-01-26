@@ -193,19 +193,14 @@ namespace Reto2025.Controls
         }
 
 
-        public async void SubirFoto(Actividad actividad, string f)
+        public async Task<bool> SubirFoto(Actividad actividad, string f)
         {
-
-
             // Convert image to Base64
-            string base64Image = Convert.ToBase64String(System.IO.File.ReadAllBytes(f));
-
+            string image = Convert.ToString(System.IO.File.ReadAllBytes(f));
+            int a = image.Length;
+            MessageBox.Show(a.ToString());
             // Prepare the JSON payload
-            string jsonPayload = $"{{\"fichero\": \"{base64Image}\"}}";
-
-
-
-
+            string jsonPayload = $"{{\"fichero\": \"{image}\"}}";
             try
             {
 
@@ -213,9 +208,10 @@ namespace Reto2025.Controls
                 var formData = new MultipartFormDataContent();
 
                 var fileContent = new ByteArrayContent(System.IO.File.ReadAllBytes(f));
-                
 
-               formData.Add(fileContent, "fichero", Path.GetFileName(f)); 
+
+
+                formData.Add(fileContent, "fichero", "patata.png"); 
 
   
                 string descripcion = actividad.descripcion; 
@@ -242,12 +238,18 @@ namespace Reto2025.Controls
                 MessageBox.Show($"Error: {e.Message}");
 
             }
+            return true;
         }
 
         public String GetFotoUrl(Foto foto)
 
         {
             return $"http://localhost:8080/acex/fotos/{foto.actividad.id}/foto?id={foto.id}";
+        }
+        public String GetFotoUrl(Profesor profesor)
+
+        {
+            return $"http://localhost:8080/acex/profesores/{profesor.correo}/foto";
         }
 
     }

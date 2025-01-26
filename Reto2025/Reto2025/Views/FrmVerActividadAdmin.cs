@@ -15,26 +15,47 @@ namespace Reto2025.Views
 {
     public partial class FrmVerActividadAdmin : Form
     {
-        private List<Grupo> grupos;
-        private List<Profesor> profesores;
+        private List<GrupoParticipante> grupos;
+        private List<ProfParticipante> profesores;
         private Actividad actividad;
         public FrmVerActividadAdmin(Actividad actividad)
         {
             InitializeComponent();
-            CargarTablas();
+            this.actividad = actividad;
 
+            CargarTablas();
+            CargarProfesores();
             chkAlojamiento.Checked = actividad.alojamientoReq;
             chkTransporte.Checked = actividad.transporteReq;
             rtxAlojamientoFalso.Visible = !actividad.alojamientoReq;
             rtxTransporteFalso.Visible = !actividad.transporteReq;
-            this.actividad = actividad;
+            
             RellenarActividad();
+        }
+
+        private async void CargarProfesores()
+        {
+            List<Profesor> todos = await new ControlProfesores().GetAllProfesores();
+            
+            foreach (Profesor prof in todos)
+            {
+                cmbProfesores.Items.Add(prof.nombre+" "+prof.apellidos);
+            }
+            cmbProfesores.SelectedIndex = 0;
         }
 
         private async void CargarTablas()
         {
-            grupos = await new ControlGrupos().GetAllGrupos();
-            profesores = await new ControlProfesores().GetAllProfesores();
+            grupos = await new ControlGruposParticipantes().GetGruposActividad(actividad);
+            profesores = await new ControlProfParticipantes().GetProfParticipanteActividad(actividad);
+            if (profesores != null)
+            {
+                IniciarTablaProfesores();
+            }
+            if (grupos != null)
+            {
+                IniciarTablaGrupos();
+            }
         }
 
         private void RellenarActividad()
@@ -61,45 +82,44 @@ namespace Reto2025.Views
             dtpHfin.Text = actividad.hfin.Substring(0, 5);
         }
 
-        private void btnGrupos_Click(object sender, EventArgs e)
+        private void IniciarTablaGrupos()
         {
-            lvwGeneral.Clear();
-            lvwGeneral.Columns.Add("Nombre");
-            lvwGeneral.Columns.Add("Numero alumnos");
+            lvwgrupos.Clear();
+            lvwgrupos.Columns.Add("Nombre");
+            lvwgrupos.Columns.Add("Numero alumnos");
             ListViewItem item;
-            foreach (Grupo grupo in grupos)
+            foreach (GrupoParticipante grupo in grupos)
             {
                 item = new ListViewItem();
-                string[] row = { grupo.codGrupo, grupo.numAlumnos.ToString() };
+                string[] row = { grupo.grupo.codGrupo, grupo.grupo.numAlumnos.ToString() };
                 item = new ListViewItem(row);
-                lvwGeneral.Items.Add(item);
+                lvwgrupos.Items.Add(item);
 
             }
-            lvwGeneral.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            lvwgrupos.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
 
-            MessageBox.Show("falta hacer que solo meta los grupos que participan");
         }
 
-        private void btnProfesores_Click(object sender, EventArgs e)
+        private void IniciarTablaProfesores()
         {
-            lvwGeneral.Clear();
-            lvwGeneral.Columns.Add("Nombre completo");
-            lvwGeneral.Columns.Add("Departamento");
+            lvwProfesores.Clear();
+            lvwProfesores.Columns.Add("Nombre completo");
+            lvwProfesores.Columns.Add("Departamento");
             ListViewItem item;
-            foreach (Profesor profesor in profesores)
+            foreach (ProfParticipante profesor in profesores)
             {
                 item = new ListViewItem();
-                string[] row = { profesor.nombre + " " + profesor.apellidos, profesor.depart.codigo };
+                string[] row = { profesor.profesor.nombre + " " + profesor.profesor.apellidos, profesor.profesor.depart.codigo };
                 item = new ListViewItem(row);
-                lvwGeneral.Items.Add(item);
+                lvwProfesores.Items.Add(item);
 
             }
 
 
 
-            lvwGeneral.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-            MessageBox.Show("falta hacer que solo meta los profesores que participan y que salga si son responsables o no");
+            lvwProfesores.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+
         }
 
         private void chkTransporte_CheckedChanged(object sender, EventArgs e)

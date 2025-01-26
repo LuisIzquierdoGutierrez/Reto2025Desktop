@@ -9,6 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Reto2025.Controls;
+using Reto2025.Enums;
 using Reto2025.Models;
 
 namespace Reto2025.Views
@@ -52,6 +53,7 @@ namespace Reto2025.Views
                 item = new ListViewItem();
                 string[] row = { actividad.titulo, actividad.tipo.ToString(), actividad.descripcion, actividad.fini.ToString(), actividad.ffin.ToString(), actividad.hini.ToString(), actividad.hfin.ToString(), actividad.previstaIni.ToString(), actividad.transporteReq.ToString(), actividad.comentTransporte, actividad.alojamientoReq.ToString(), actividad.comentAlojamiento, actividad.comentarios, actividad.estado.ToString(), actividad.comentEstado, actividad.incidencias, actividad.urlFolleto, actividad.solicitante.uuid.ToString(), actividad.importePorAlumno.ToString() };
                 item = new ListViewItem(row);
+                item.Tag = actividad;
                 lwActividades.Items.Add(item);
             }
             lwActividades.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
@@ -182,6 +184,27 @@ namespace Reto2025.Views
             putActividades(actividadesTmp);
             
             
+        }
+
+        private void lwActividades_DoubleClick(object sender, EventArgs e)
+        {
+            
+            if (lwActividades.SelectedItems[0] != null)
+            {
+                
+                Actividad actividad = (Actividad)lwActividades.SelectedItems[0].Tag;
+
+                if (FrmInicio.user.rol.Equals(RolProfesor.PROF))
+                {
+                    new FrmVerActividad(actividad).ShowDialog();
+                }
+                else
+                {
+                    new FrmVerActividadAdmin(actividad).ShowDialog();
+                }
+
+
+            }
         }
     }
 }
