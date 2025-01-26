@@ -33,7 +33,7 @@ namespace Reto2025.Views
         private FrmEmpresasTransporte frmEmpresasTransporte;
         private FrmPerfil frmPerfil;
         private FrmAgregarEmpresas frmAgregarEmpresas;
-        private FrmContratoActividad frmContratoActividad;
+       // private FrmContratoActividad frmContratoActividad;
 
         public FrmInicio(Profesor profesor)
         {       
@@ -258,12 +258,12 @@ namespace Reto2025.Views
 
         private void contratoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (frmContratoActividad != null)
-            {
-                frmContratoActividad.Close();
-            }
-            frmContratoActividad = new FrmContratoActividad();
-            frmContratoActividad.Show();
+            //if (frmContratoActividad != null)
+            //{
+            //    frmContratoActividad.Close();
+            //}
+            //frmContratoActividad = new FrmContratoActividad();
+            //frmContratoActividad.Show();
         }
     }
 }

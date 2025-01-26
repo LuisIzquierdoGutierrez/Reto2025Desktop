@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Reto2025"
+    "\\Reto2025",
+    "\\Reto2025\\Reto2025",
+    "\\Reto2025\\Reto2025\\Views"
   ],
-  "SelectedNode": "\\Reto2025\\Reto2025.sln",
+  "SelectedNode": "\\Reto2025\\Reto2025\\Views\\frmControlCalendario.cs",
   "PreviewInSolutionExplorer": false
 }
