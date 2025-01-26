@@ -20,6 +20,8 @@ namespace Reto2025.Views
         private ControlContratos controlContratos;
         private List<Actividad> actividades;
         private List<EmpTransporte> empresas;
+        private string urlfactura = "";
+        private string urlpresupuesto = "";
         public FrmContrato_transporte()
         {
             controlActividades = new ControlActividades();
@@ -92,15 +94,40 @@ namespace Reto2025.Views
 
             
             contrato.contratada = false;
-            contrato.importe =0;
-            contrato.urlFactura = null;
-            contrato.urlPresupuesto =null;
+            contrato.importe = Convert.ToDouble(mudImporte.Value);
+            contrato.urlFactura = urlfactura;
+            contrato.urlPresupuesto =urlpresupuesto;
 
 
             bool completada = await controlContratos.GuardarContrato(contrato);
 
 
             this.Close();
+        }
+
+
+
+        private void btnFactura_Click(object sender, EventArgs e)
+        {
+    
+            OpenFileDialog ofdFactura = new OpenFileDialog();
+            if (ofdFactura.ShowDialog() == DialogResult.OK)
+            {
+                urlfactura = ofdFactura.FileName;
+            }
+
+
+
+        }
+
+        private void btnPresupuesto_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofdFactura = new OpenFileDialog();
+            if (ofdFactura.ShowDialog() == DialogResult.OK)
+            {
+                urlpresupuesto = ofdFactura.FileName;
+            }
+
         }
     }
 }
