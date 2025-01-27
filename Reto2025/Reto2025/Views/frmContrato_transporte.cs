@@ -5,11 +5,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Reto2025.Views
 {
@@ -109,11 +111,11 @@ namespace Reto2025.Views
 
         private void btnFactura_Click(object sender, EventArgs e)
         {
-    
+
             OpenFileDialog ofdFactura = new OpenFileDialog();
             if (ofdFactura.ShowDialog() == DialogResult.OK)
             {
-                urlfactura = ofdFactura.FileName;
+                urlfactura = Path.GetFileName(ofdFactura.FileName);
             }
 
 
@@ -125,7 +127,7 @@ namespace Reto2025.Views
             OpenFileDialog ofdFactura = new OpenFileDialog();
             if (ofdFactura.ShowDialog() == DialogResult.OK)
             {
-                urlpresupuesto = ofdFactura.FileName;
+                urlpresupuesto = Path.GetFileName(ofdFactura.FileName);
             }
 
         }
