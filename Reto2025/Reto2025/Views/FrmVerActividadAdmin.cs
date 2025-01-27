@@ -284,5 +284,10 @@ namespace Reto2025.Views
 
             await AgregarTablaGrupos();
         }
+
+        private void btnContratos_Click(object sender, EventArgs e)
+        {
+            new FrmContratosActividad(actividad).ShowDialog();
+        }
     }
 }

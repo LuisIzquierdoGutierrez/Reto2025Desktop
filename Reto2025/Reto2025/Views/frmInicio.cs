@@ -33,7 +33,7 @@ namespace Reto2025.Views
         private FrmEmpresasTransporte frmEmpresasTransporte;
         private FrmPerfil frmPerfil;
         private FrmAgregarEmpresas frmAgregarEmpresas;
-         private FrmContrato_transporte frmContratotransporte;
+         private FrmContratoTransporte frmContratotransporte;
 
         public FrmInicio(Profesor profesor)
         {
@@ -138,7 +138,7 @@ namespace Reto2025.Views
             }
 
             String mesletras = DateTimeFormatInfo.CurrentInfo.GetMonthName(inicioMES.Month);
-            lbl_mes.Text = mesletras + "    " + inicioMES.Year;
+            lblMes.Text = mesletras.ToUpper() + "    " + inicioMES.Year;
 
             List<Actividad> actividades_mes = new List<Actividad>();
             if (actividades != null)
@@ -262,12 +262,12 @@ namespace Reto2025.Views
 
         private void contratoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (frmContratotransporte != null)
-            {
-                frmContratotransporte.Close();
-            }
-            frmContratotransporte = new FrmContrato_transporte();
-            frmContratotransporte.Show();
+            //if (frmContratotransporte != null)
+            //{
+            //    frmContratotransporte.Close();
+            //}
+            //frmContratotransporte = new FrmContratoTransporte();
+            //frmContratotransporte.Show();
         }
     }
 }

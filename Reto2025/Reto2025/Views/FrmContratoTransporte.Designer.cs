@@ -1,6 +1,6 @@
 ﻿namespace Reto2025.Views
 {
-    partial class FrmContrato_transporte
+    partial class FrmContratoTransporte
     {
         /// <summary>
         /// Required designer variable.
@@ -44,33 +44,38 @@
             // lbl_actividad
             // 
             this.lbl_actividad.AutoSize = true;
-            this.lbl_actividad.Location = new System.Drawing.Point(43, 46);
+            this.lbl_actividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_actividad.Location = new System.Drawing.Point(12, 18);
             this.lbl_actividad.Name = "lbl_actividad";
-            this.lbl_actividad.Size = new System.Drawing.Size(51, 13);
+            this.lbl_actividad.Size = new System.Drawing.Size(65, 17);
             this.lbl_actividad.TabIndex = 1;
             this.lbl_actividad.Text = "Actividad";
+            this.lbl_actividad.Visible = false;
             // 
             // lbl_importe
             // 
             this.lbl_importe.AutoSize = true;
-            this.lbl_importe.Location = new System.Drawing.Point(43, 131);
+            this.lbl_importe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_importe.Location = new System.Drawing.Point(12, 85);
             this.lbl_importe.Name = "lbl_importe";
-            this.lbl_importe.Size = new System.Drawing.Size(42, 13);
+            this.lbl_importe.Size = new System.Drawing.Size(55, 17);
             this.lbl_importe.TabIndex = 13;
             this.lbl_importe.Text = "Importe";
             // 
             // lbl_empresa
             // 
             this.lbl_empresa.AutoSize = true;
-            this.lbl_empresa.Location = new System.Drawing.Point(43, 89);
+            this.lbl_empresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_empresa.Location = new System.Drawing.Point(12, 54);
             this.lbl_empresa.Name = "lbl_empresa";
-            this.lbl_empresa.Size = new System.Drawing.Size(48, 13);
+            this.lbl_empresa.Size = new System.Drawing.Size(64, 17);
             this.lbl_empresa.TabIndex = 15;
             this.lbl_empresa.Text = "Empresa";
             // 
             // btn_crear
             // 
-            this.btn_crear.Location = new System.Drawing.Point(383, 218);
+            this.btn_crear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btn_crear.Location = new System.Drawing.Point(129, 166);
             this.btn_crear.Name = "btn_crear";
             this.btn_crear.Size = new System.Drawing.Size(75, 23);
             this.btn_crear.TabIndex = 20;
@@ -80,26 +85,35 @@
             // 
             // cmbActividad
             // 
+            this.cmbActividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbActividad.FormattingEnabled = true;
-            this.cmbActividad.Location = new System.Drawing.Point(100, 43);
+            this.cmbActividad.Location = new System.Drawing.Point(83, 15);
             this.cmbActividad.Name = "cmbActividad";
-            this.cmbActividad.Size = new System.Drawing.Size(229, 21);
+            this.cmbActividad.Size = new System.Drawing.Size(229, 24);
             this.cmbActividad.TabIndex = 21;
+            this.cmbActividad.Visible = false;
             // 
             // cmbEmpresa
             // 
+            this.cmbEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbEmpresa.FormattingEnabled = true;
-            this.cmbEmpresa.Location = new System.Drawing.Point(100, 86);
+            this.cmbEmpresa.Location = new System.Drawing.Point(83, 51);
             this.cmbEmpresa.Name = "cmbEmpresa";
-            this.cmbEmpresa.Size = new System.Drawing.Size(229, 21);
+            this.cmbEmpresa.Size = new System.Drawing.Size(229, 24);
             this.cmbEmpresa.TabIndex = 22;
             // 
             // mudImporte
             // 
             this.mudImporte.DecimalPlaces = 2;
-            this.mudImporte.Location = new System.Drawing.Point(100, 129);
+            this.mudImporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.mudImporte.Location = new System.Drawing.Point(83, 83);
+            this.mudImporte.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.mudImporte.Name = "mudImporte";
-            this.mudImporte.Size = new System.Drawing.Size(120, 20);
+            this.mudImporte.Size = new System.Drawing.Size(121, 23);
             this.mudImporte.TabIndex = 23;
             // 
             // ofdFactura
@@ -108,9 +122,10 @@
             // 
             // btnFactura
             // 
-            this.btnFactura.Location = new System.Drawing.Point(46, 218);
+            this.btnFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnFactura.Location = new System.Drawing.Point(15, 123);
             this.btnFactura.Name = "btnFactura";
-            this.btnFactura.Size = new System.Drawing.Size(90, 23);
+            this.btnFactura.Size = new System.Drawing.Size(135, 23);
             this.btnFactura.TabIndex = 24;
             this.btnFactura.Text = "Subir Factura";
             this.btnFactura.UseVisualStyleBackColor = true;
@@ -118,19 +133,20 @@
             // 
             // btnPresupuesto
             // 
-            this.btnPresupuesto.Location = new System.Drawing.Point(188, 218);
+            this.btnPresupuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnPresupuesto.Location = new System.Drawing.Point(178, 123);
             this.btnPresupuesto.Name = "btnPresupuesto";
-            this.btnPresupuesto.Size = new System.Drawing.Size(107, 23);
+            this.btnPresupuesto.Size = new System.Drawing.Size(134, 23);
             this.btnPresupuesto.TabIndex = 25;
             this.btnPresupuesto.Text = "Subir Presupuesto";
             this.btnPresupuesto.UseVisualStyleBackColor = true;
             this.btnPresupuesto.Click += new System.EventHandler(this.btnPresupuesto_Click);
             // 
-            // FrmContrato_transporte
+            // FrmContratoTransporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 266);
+            this.ClientSize = new System.Drawing.Size(324, 201);
             this.Controls.Add(this.btnPresupuesto);
             this.Controls.Add(this.btnFactura);
             this.Controls.Add(this.mudImporte);
@@ -140,8 +156,8 @@
             this.Controls.Add(this.lbl_empresa);
             this.Controls.Add(this.lbl_importe);
             this.Controls.Add(this.lbl_actividad);
-            this.Name = "FrmContrato_transporte";
-            this.Text = "Contrato_transporte";
+            this.Name = "FrmContratoTransporte";
+            this.Text = "Contrato Transporte";
             ((System.ComponentModel.ISupportInitialize)(this.mudImporte)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

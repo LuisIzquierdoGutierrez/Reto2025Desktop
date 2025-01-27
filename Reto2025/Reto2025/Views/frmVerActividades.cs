@@ -27,24 +27,35 @@ namespace Reto2025.Views
         {
             InitializeComponent();
             this.user = user;
+            IniciarCmbs();
             if (actividades == null)
             {
-                loadActividades();
+                LoadActividades();
             }
             else
             {
-                putActividades(actividades);
+               PutActividades(actividades);
             }
+            
         }
-        private async void loadActividades()
+
+        private void IniciarCmbs()
+        {
+            cmbEstado.Text = "Cualquiera";
+            cmbCurso.Text = "Cualquiera";
+            cmbParticipacion.Text = "Cualquiera";
+            cmbTipo.Text = "Cualquiera";
+        }
+
+        private async void LoadActividades()
         {
             actividades = FrmInicio.actividades;
             grupoParticipantes = await new ControlGruposParticipantes().GetAllGruposParticipantes();
             profParticipantes = await new ControlProfParticipantes().GetAllProfParticipantes();
             profResponsables = await new ControlProfResponsables().GetAllProfResponsables();
-            putActividades(actividades);
+            PutActividades(actividades);
         }
-        private void putActividades(List<Actividad> actividadesTmp)
+        private void PutActividades(List<Actividad> actividadesTmp)
         {
             lwActividades.Items.Clear();
             ListViewItem item;
@@ -57,10 +68,15 @@ namespace Reto2025.Views
                 lwActividades.Items.Add(item);
             }
             lwActividades.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            
         }
 
         private void filtrado(object sender, EventArgs e)
         {
+            if (actividades!= null)
+            {
+                
+       
             List<Actividad> actividadesTmp = actividades;
             List<Actividad> tmp = new List<Actividad>();
             List<Actividad> grupoParticipantesTmp = new List<Actividad>();
@@ -109,7 +125,7 @@ namespace Reto2025.Views
 
                 actividadesTmp = tmp.ToList();
                 tmp.Clear();
-                putActividades(actividadesTmp);
+                PutActividades(actividadesTmp);
             }
 
 
@@ -120,7 +136,7 @@ namespace Reto2025.Views
                 foreach (Actividad actividad in actividadesTmp)
                 {
 
-                    if (actividad.tipo.ToString().Equals(cmbTipo.Text.ToLower()))
+                    if (actividad.tipo.ToString().Equals(cmbTipo.Text.ToUpper()))
                     {
 
                         tmp.Add(actividad);
@@ -129,7 +145,7 @@ namespace Reto2025.Views
 
                 actividadesTmp = tmp.ToList();
                 tmp.Clear();
-                putActividades(actividadesTmp);
+                PutActividades(actividadesTmp);
             }
 
             if (filtroParticipacion)
@@ -181,9 +197,9 @@ namespace Reto2025.Views
 
 
 
-            putActividades(actividadesTmp);
-            
-            
+            PutActividades(actividadesTmp);
+
+            }
         }
 
         private void lwActividades_DoubleClick(object sender, EventArgs e)

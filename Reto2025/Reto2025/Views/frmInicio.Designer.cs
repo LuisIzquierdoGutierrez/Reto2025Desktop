@@ -45,6 +45,7 @@
             this.normativaYFAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.normativaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contratoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_mesSiguiente = new System.Windows.Forms.Button();
             this.btn_mesAnterior = new System.Windows.Forms.Button();
@@ -55,17 +56,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.lbl_mes = new System.Windows.Forms.Label();
+            this.lblMes = new System.Windows.Forms.Label();
             this.activityContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_actividadesdia = new System.Windows.Forms.Label();
-
-            this.contratoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.actividadesToolStripMenuItem,
@@ -170,8 +170,7 @@
             // añadirEmpresasToolStripMenuItem
             // 
             this.añadirEmpresasToolStripMenuItem.Name = "añadirEmpresasToolStripMenuItem";
-
-            this.añadirEmpresasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.añadirEmpresasToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.añadirEmpresasToolStripMenuItem.Text = "Añadir Empresas";
             this.añadirEmpresasToolStripMenuItem.Click += new System.EventHandler(this.añadirEmpresasToolStripMenuItem_Click);
             // 
@@ -205,8 +204,16 @@
             this.fAQToolStripMenuItem.Text = "F.A.Q";
             this.fAQToolStripMenuItem.Click += new System.EventHandler(this.fAQToolStripMenuItem_Click);
             // 
+            // contratoToolStripMenuItem
+            // 
+            this.contratoToolStripMenuItem.Name = "contratoToolStripMenuItem";
+            this.contratoToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.contratoToolStripMenuItem.Text = "Contrato";
+            this.contratoToolStripMenuItem.Click += new System.EventHandler(this.contratoToolStripMenuItem_Click);
+            // 
             // daycontainer
             // 
+            this.daycontainer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.daycontainer.Location = new System.Drawing.Point(5, 96);
             this.daycontainer.Name = "daycontainer";
             this.daycontainer.Size = new System.Drawing.Size(943, 575);
@@ -214,9 +221,10 @@
             // 
             // btn_mesSiguiente
             // 
+            this.btn_mesSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btn_mesSiguiente.Location = new System.Drawing.Point(806, 676);
             this.btn_mesSiguiente.Name = "btn_mesSiguiente";
-            this.btn_mesSiguiente.Size = new System.Drawing.Size(75, 23);
+            this.btn_mesSiguiente.Size = new System.Drawing.Size(80, 30);
             this.btn_mesSiguiente.TabIndex = 2;
             this.btn_mesSiguiente.Text = "Siguiente";
             this.btn_mesSiguiente.UseVisualStyleBackColor = true;
@@ -224,9 +232,10 @@
             // 
             // btn_mesAnterior
             // 
-            this.btn_mesAnterior.Location = new System.Drawing.Point(662, 676);
+            this.btn_mesAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btn_mesAnterior.Location = new System.Drawing.Point(661, 676);
             this.btn_mesAnterior.Name = "btn_mesAnterior";
-            this.btn_mesAnterior.Size = new System.Drawing.Size(75, 23);
+            this.btn_mesAnterior.Size = new System.Drawing.Size(76, 30);
             this.btn_mesAnterior.TabIndex = 3;
             this.btn_mesAnterior.Text = "Anterior";
             this.btn_mesAnterior.UseVisualStyleBackColor = true;
@@ -235,78 +244,87 @@
             // lbl_lunes
             // 
             this.lbl_lunes.AutoSize = true;
-            this.lbl_lunes.Location = new System.Drawing.Point(5, 77);
+            this.lbl_lunes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_lunes.Location = new System.Drawing.Point(37, 76);
             this.lbl_lunes.Name = "lbl_lunes";
-            this.lbl_lunes.Size = new System.Drawing.Size(36, 13);
+            this.lbl_lunes.Size = new System.Drawing.Size(47, 17);
             this.lbl_lunes.TabIndex = 4;
             this.lbl_lunes.Text = "Lunes";
             // 
             // lbl_martes
             // 
             this.lbl_martes.AutoSize = true;
-            this.lbl_martes.Location = new System.Drawing.Point(138, 77);
+            this.lbl_martes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_martes.Location = new System.Drawing.Point(170, 76);
             this.lbl_martes.Name = "lbl_martes";
-            this.lbl_martes.Size = new System.Drawing.Size(39, 13);
+            this.lbl_martes.Size = new System.Drawing.Size(51, 17);
             this.lbl_martes.TabIndex = 5;
             this.lbl_martes.Text = "Martes";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(271, 77);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label2.Location = new System.Drawing.Point(303, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(68, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Miercoles";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(404, 77);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label3.Location = new System.Drawing.Point(436, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(53, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "Jueves";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(537, 77);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label4.Location = new System.Drawing.Point(567, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.Size = new System.Drawing.Size(56, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "Viernes";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(670, 77);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label5.Location = new System.Drawing.Point(697, 76);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.Size = new System.Drawing.Size(57, 17);
             this.label5.TabIndex = 9;
             this.label5.Text = "Sabado";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(803, 77);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label6.Location = new System.Drawing.Point(829, 76);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 13);
+            this.label6.Size = new System.Drawing.Size(64, 17);
             this.label6.TabIndex = 10;
             this.label6.Text = "Domingo";
             // 
-            // lbl_mes
+            // lblMes
             // 
-            this.lbl_mes.AutoSize = true;
-            this.lbl_mes.Location = new System.Drawing.Point(420, 38);
-            this.lbl_mes.Name = "lbl_mes";
-            this.lbl_mes.Size = new System.Drawing.Size(59, 13);
-            this.lbl_mes.TabIndex = 11;
-            this.lbl_mes.Text = "Mes actual";
-            this.lbl_mes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblMes.AutoSize = true;
+            this.lblMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblMes.Location = new System.Drawing.Point(420, 38);
+            this.lblMes.Name = "lblMes";
+            this.lblMes.Size = new System.Drawing.Size(86, 20);
+            this.lblMes.TabIndex = 11;
+            this.lblMes.Text = "Mes actual";
+            this.lblMes.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // activityContainer
             // 
+            this.activityContainer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.activityContainer.Location = new System.Drawing.Point(954, 96);
             this.activityContainer.Name = "activityContainer";
             this.activityContainer.Size = new System.Drawing.Size(220, 481);
@@ -323,19 +341,12 @@
             // lbl_actividadesdia
             // 
             this.lbl_actividadesdia.AutoSize = true;
-            this.lbl_actividadesdia.Location = new System.Drawing.Point(971, 76);
+            this.lbl_actividadesdia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_actividadesdia.Location = new System.Drawing.Point(1003, 76);
             this.lbl_actividadesdia.Name = "lbl_actividadesdia";
-            this.lbl_actividadesdia.Size = new System.Drawing.Size(96, 13);
+            this.lbl_actividadesdia.Size = new System.Drawing.Size(126, 17);
             this.lbl_actividadesdia.TabIndex = 14;
             this.lbl_actividadesdia.Text = "Actividades del dia";
-            // 
-
-            // contratoToolStripMenuItem
-            // 
-            this.contratoToolStripMenuItem.Name = "contratoToolStripMenuItem";
-            this.contratoToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.contratoToolStripMenuItem.Text = "Contrato";
-            this.contratoToolStripMenuItem.Click += new System.EventHandler(this.contratoToolStripMenuItem_Click);
             // 
             // FrmInicio
             // 
@@ -346,7 +357,7 @@
             this.Controls.Add(this.lbl_actividadesdia);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.activityContainer);
-            this.Controls.Add(this.lbl_mes);
+            this.Controls.Add(this.lblMes);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -395,7 +406,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lbl_mes;
+        private System.Windows.Forms.Label lblMes;
         private System.Windows.Forms.ToolStripMenuItem normativaYFAQToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem normativaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fAQToolStripMenuItem;

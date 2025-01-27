@@ -47,11 +47,12 @@
             this.EsJefeDepartamento,
             this.Departamento});
             this.lwProfesores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lwProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lwProfesores.HideSelection = false;
             this.lwProfesores.Location = new System.Drawing.Point(0, 0);
             this.lwProfesores.Margin = new System.Windows.Forms.Padding(2);
             this.lwProfesores.Name = "lwProfesores";
-            this.lwProfesores.Size = new System.Drawing.Size(800, 450);
+            this.lwProfesores.Size = new System.Drawing.Size(864, 401);
             this.lwProfesores.TabIndex = 2;
             this.lwProfesores.UseCompatibleStateImageBehavior = false;
             this.lwProfesores.View = System.Windows.Forms.View.Details;
@@ -84,7 +85,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(864, 401);
             this.Controls.Add(this.lwProfesores);
             this.Name = "FrmProfesores";
             this.Text = "Profesores";

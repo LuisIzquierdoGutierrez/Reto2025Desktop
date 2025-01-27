@@ -47,10 +47,11 @@
             this.CP,
             this.CIF});
             this.lwEmpTransporte.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lwEmpTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lwEmpTransporte.HideSelection = false;
             this.lwEmpTransporte.Location = new System.Drawing.Point(0, 0);
             this.lwEmpTransporte.Name = "lwEmpTransporte";
-            this.lwEmpTransporte.Size = new System.Drawing.Size(800, 450);
+            this.lwEmpTransporte.Size = new System.Drawing.Size(864, 401);
             this.lwEmpTransporte.TabIndex = 2;
             this.lwEmpTransporte.UseCompatibleStateImageBehavior = false;
             this.lwEmpTransporte.View = System.Windows.Forms.View.Details;
@@ -83,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(864, 401);
             this.Controls.Add(this.lwEmpTransporte);
             this.Name = "FrmEmpresasTransporte";
             this.Text = "Empresas de transporte";

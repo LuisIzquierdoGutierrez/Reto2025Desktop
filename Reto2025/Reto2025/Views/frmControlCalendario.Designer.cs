@@ -36,18 +36,20 @@
             // lbl_dia
             // 
             this.lbl_dia.AutoSize = true;
+            this.lbl_dia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lbl_dia.Location = new System.Drawing.Point(3, 9);
             this.lbl_dia.Name = "lbl_dia";
-            this.lbl_dia.Size = new System.Drawing.Size(19, 13);
+            this.lbl_dia.Size = new System.Drawing.Size(24, 17);
             this.lbl_dia.TabIndex = 0;
             this.lbl_dia.Text = "00";
             // 
             // lbl_idsActividades
             // 
             this.lbl_idsActividades.AutoSize = true;
+            this.lbl_idsActividades.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lbl_idsActividades.Location = new System.Drawing.Point(70, 9);
             this.lbl_idsActividades.Name = "lbl_idsActividades";
-            this.lbl_idsActividades.Size = new System.Drawing.Size(35, 13);
+            this.lbl_idsActividades.Size = new System.Drawing.Size(46, 17);
             this.lbl_idsActividades.TabIndex = 2;
             this.lbl_idsActividades.Text = "label1";
             this.lbl_idsActividades.Visible = false;

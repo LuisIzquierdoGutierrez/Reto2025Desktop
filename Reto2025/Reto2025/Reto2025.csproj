@@ -152,17 +152,11 @@
     <Compile Include="Views\FrmAgregarEmpresas.Designer.cs">
       <DependentUpon>FrmAgregarEmpresas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmAgregarGrupoActividad.cs">
+    <Compile Include="Views\FrmContratosActividad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmAgregarGrupoActividad.Designer.cs">
-      <DependentUpon>FrmAgregarGrupoActividad.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\FrmAutorizacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FrmAutorizacion.Designer.cs">
-      <DependentUpon>FrmAutorizacion.cs</DependentUpon>
+    <Compile Include="Views\FrmContratosActividad.Designer.cs">
+      <DependentUpon>FrmContratosActividad.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmControlActividades.cs">
       <SubType>UserControl</SubType>
@@ -200,11 +194,11 @@
     <Compile Include="Views\FrmCrearActividad.Designer.cs">
       <DependentUpon>FrmCrearActividad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FrmContrato_transporte.cs">
+    <Compile Include="Views\FrmContratoTransporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmContrato_transporte.Designer.cs">
-      <DependentUpon>FrmContrato_transporte.cs</DependentUpon>
+    <Compile Include="Views\FrmContratoTransporte.Designer.cs">
+      <DependentUpon>FrmContratoTransporte.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmControlCalendario.cs">
       <SubType>UserControl</SubType>
@@ -241,18 +235,6 @@
     </Compile>
     <Compile Include="Views\FrmFoto.Designer.cs">
       <DependentUpon>FrmFoto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\FrmGruposParticipantes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FrmGruposParticipantes.Designer.cs">
-      <DependentUpon>FrmGruposParticipantes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\FrmGrupos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FrmGrupos.Designer.cs">
-      <DependentUpon>FrmGrupos.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmInicio.cs">
       <SubType>Form</SubType>
@@ -348,8 +330,8 @@
     <EmbeddedResource Include="Views\FrmAgregarEmpresas.resx">
       <DependentUpon>FrmAgregarEmpresas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmAgregarGrupoActividad.resx">
-      <DependentUpon>FrmAgregarGrupoActividad.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmContratosActividad.resx">
+      <DependentUpon>FrmContratosActividad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmControlFoto.resx">
       <DependentUpon>FrmControlFoto.cs</DependentUpon>
@@ -357,11 +339,8 @@
     <EmbeddedResource Include="Views\FrmCrearActividad.resx">
       <DependentUpon>FrmCrearActividad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmAutorizacion.resx">
-      <DependentUpon>FrmAutorizacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmContrato_transporte.resx">
-      <DependentUpon>FrmContrato_transporte.cs</DependentUpon>
+    <EmbeddedResource Include="Views\FrmContratoTransporte.resx">
+      <DependentUpon>FrmContratoTransporte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmControlActividades.resx">
       <DependentUpon>FrmControlActividades.cs</DependentUpon>
@@ -389,12 +368,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmFotosActividad.resx">
       <DependentUpon>FrmFotosActividad.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmGrupos.resx">
-      <DependentUpon>FrmGrupos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmGruposParticipantes.resx">
-      <DependentUpon>FrmGruposParticipantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>

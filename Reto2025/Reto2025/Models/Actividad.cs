@@ -30,6 +30,8 @@ namespace Reto2025.Models
         public string urlFolleto;
         public Profesor solicitante;
         public float importePorAlumno;
+        public string longitud;
+        public string latitud;
 
 
 
