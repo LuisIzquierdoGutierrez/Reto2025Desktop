@@ -60,9 +60,9 @@ namespace Reto2025.Controls
             catch (Exception e)
             {
 
-                //Si ocurre algún error (como problemos de conexión o un JSON no válido),
-                //captura la excepción y devuelve "null" como valor de error
-                MessageBox.Show(e.Message);
+                ////Si ocurre algún error (como problemos de conexión o un JSON no válido),
+                ////captura la excepción y devuelve "null" como valor de error
+                //MessageBox.Show(e.Message);
                 return null;
 
             }

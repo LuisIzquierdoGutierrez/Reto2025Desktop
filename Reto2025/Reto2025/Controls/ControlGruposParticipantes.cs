@@ -58,9 +58,9 @@ namespace Reto2025.Controls
             catch (Exception e)
             {
 
-                //Si ocurre algún error (como problemos de conexión o un JSON no válido),
-                //captura la excepción y devuelve "null" como valor de error
-                MessageBox.Show(e.Message);
+                ////Si ocurre algún error (como problemos de conexión o un JSON no válido),
+                ////captura la excepción y devuelve "null" como valor de error
+                //MessageBox.Show(e.Message);
                 return null;
 
             }
@@ -110,7 +110,7 @@ namespace Reto2025.Controls
             }
         }
 
-        public async Task<bool> ActualizarGruposParticipantes(GrupoParticipante grupoParticipante)
+        public async Task<bool> ActualizarGrupoParticipante(GrupoParticipante grupoParticipante)
         {
             try
             {
@@ -126,7 +126,7 @@ namespace Reto2025.Controls
                 // Verificar si la respuesta fue exitosa
                 if (response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Grupo participante guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("Grupo participante guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     return true; // La calificación fue guardada con éxito
                 }
@@ -177,12 +177,84 @@ namespace Reto2025.Controls
             catch (Exception e)
             {
 
-                //Si ocurre algún error (como problemos de conexión o un JSON no válido),
-                //captura la excepción y devuelve "null" como valor de error
-                MessageBox.Show(e.Message);
+                ////Si ocurre algún error (como problemos de conexión o un JSON no válido),
+                ////captura la excepción y devuelve "null" como valor de error
+                //MessageBox.Show(e.Message);
                 return null;
 
             }
         }
+
+        public async Task<bool> GuardarGrupoParticipante(GrupoParticipante grupoParticipante)
+        {
+            try
+            {
+                // Convertir el objeto Realizada a JSON
+                string json = JsonConvert.SerializeObject(grupoParticipante);
+
+                // Crear el contenido de la solicitud (POST)
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                // Realizar la solicitud POST a la API
+                HttpResponseMessage response = await client.PostAsync($"http://localhost:8080/acex/gruposParticipantes", content);
+
+                // Verificar si la respuesta fue exitosa
+                if (response.IsSuccessStatusCode)
+                {
+                  //  MessageBox.Show("Grupo participante guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    return true; // La calificación fue guardada con éxito
+                }
+                else
+                {
+                   // MessageBox.Show(response.RequestMessage.ToString());
+                    return false; // Hubo un error
+                }
+            }
+            catch (Exception e)
+            {
+                // Captura cualquier excepción y muestra un mensaje de error
+               // MessageBox.Show($"Error: {e.Message}");
+                return false;
+            }
+        }
+
+        public async Task<bool> QuitarGrupoParticipante(int id)
+
+        {
+            try
+            {
+
+
+                //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
+                //que se quiere consultar
+                HttpResponseMessage response = await client.DeleteAsync($"http://localhost:8080/acex/gruposParticipantes/{id}");
+
+                //Verifica que la respuesta tenga un estado de éxito
+                //Si no es exitosa, lanza una excepción
+                response.EnsureSuccessStatusCode();
+
+                //String con las respuesta que es el JSON con toda la información
+                //que habíamos visto previamente
+                string responseJson = await response.Content.ReadAsStringAsync();
+
+
+
+                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                return true;
+
+            }
+
+            catch (Exception e)
+            {
+
+                ////Si ocurre algún error (como problemos de conexión o un JSON no válido),
+                ////captura la excepción y devuelve "null" como valor de error
+                //MessageBox.Show(e.Message);
+                return false;
+
+            }
+        }
+
     }
 }

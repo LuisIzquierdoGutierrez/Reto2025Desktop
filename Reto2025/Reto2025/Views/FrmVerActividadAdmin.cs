@@ -15,16 +15,22 @@ namespace Reto2025.Views
 {
     public partial class FrmVerActividadAdmin : Form
     {
-        private List<GrupoParticipante> grupos;
-        private List<ProfParticipante> profesores;
+        private List<GrupoParticipante> gruposParticipantes;
+        private List<ProfParticipante> profParticipantes;
         private Actividad actividad;
+        private ControlProfParticipantes controlProfParticipantes;
+        private ControlGruposParticipantes controlGruposParticipantes;
+        private List<Profesor> profesores;
+        private List<Grupo> grupos;
         public FrmVerActividadAdmin(Actividad actividad)
         {
             InitializeComponent();
             this.actividad = actividad;
-
+            controlProfParticipantes =  new ControlProfParticipantes();
+            controlGruposParticipantes = new ControlGruposParticipantes();
             CargarTablas();
             CargarProfesores();
+            CargarGrupos();
             chkAlojamiento.Checked = actividad.alojamientoReq;
             chkTransporte.Checked = actividad.transporteReq;
             rtxAlojamientoFalso.Visible = !actividad.alojamientoReq;
@@ -33,11 +39,21 @@ namespace Reto2025.Views
             RellenarActividad();
         }
 
+        private async void CargarGrupos()
+        {
+            grupos = await new ControlGrupos().GetAllGrupos();
+
+            foreach (Grupo grupo in grupos)
+            {
+                cmbGrupos.Items.Add(grupo.codGrupo);
+            }
+            cmbGrupos.SelectedIndex = 0;
+        }
         private async void CargarProfesores()
         {
-            List<Profesor> todos = await new ControlProfesores().GetAllProfesores();
-            
-            foreach (Profesor prof in todos)
+            profesores = await new ControlProfesores().GetAllProfesores();
+
+            foreach (Profesor prof in profesores)
             {
                 cmbProfesores.Items.Add(prof.nombre+" "+prof.apellidos);
             }
@@ -46,15 +62,36 @@ namespace Reto2025.Views
 
         private async void CargarTablas()
         {
-            grupos = await new ControlGruposParticipantes().GetGruposActividad(actividad);
-            profesores = await new ControlProfParticipantes().GetProfParticipanteActividad(actividad);
-            if (profesores != null)
+            await AgregarTablaGrupos();
+            await AgregarTablaProfesores();
+        }
+
+        private async Task AgregarTablaGrupos()
+        {
+            gruposParticipantes = await controlGruposParticipantes.GetGruposActividad(actividad);
+
+            if (gruposParticipantes != null)
+            {
+                IniciarTablaGrupos();
+            }
+            else
+            {
+                gruposParticipantes = new List<GrupoParticipante>();
+                IniciarTablaGrupos();
+            }
+        }
+
+        private async Task AgregarTablaProfesores()
+        {
+            profParticipantes = await controlProfParticipantes.GetProfParticipanteActividad(actividad);
+            if (profParticipantes != null)
             {
                 IniciarTablaProfesores();
             }
-            if (grupos != null)
+            else
             {
-                IniciarTablaGrupos();
+                profParticipantes = new List<ProfParticipante>();
+                IniciarTablaProfesores();
             }
         }
 
@@ -86,12 +123,12 @@ namespace Reto2025.Views
         {
             lvwgrupos.Clear();
             lvwgrupos.Columns.Add("Nombre");
-            lvwgrupos.Columns.Add("Numero alumnos");
+            lvwgrupos.Columns.Add("Numero participantes");
             ListViewItem item;
-            foreach (GrupoParticipante grupo in grupos)
+            foreach (GrupoParticipante grupo in gruposParticipantes)
             {
                 item = new ListViewItem();
-                string[] row = { grupo.grupo.codGrupo, grupo.grupo.numAlumnos.ToString() };
+                string[] row = { grupo.grupo.codGrupo, grupo.numParticipantes.ToString() };
                 item = new ListViewItem(row);
                 lvwgrupos.Items.Add(item);
 
@@ -107,7 +144,7 @@ namespace Reto2025.Views
             lvwProfesores.Columns.Add("Nombre completo");
             lvwProfesores.Columns.Add("Departamento");
             ListViewItem item;
-            foreach (ProfParticipante profesor in profesores)
+            foreach (ProfParticipante profesor in profParticipantes)
             {
                 item = new ListViewItem();
                 string[] row = { profesor.profesor.nombre + " " + profesor.profesor.apellidos, profesor.profesor.depart.codigo };
@@ -201,6 +238,51 @@ namespace Reto2025.Views
         private void btnFotos_Click(object sender, EventArgs e)
         {
             new FrmFotosActividad(actividad).Show();
+        }
+
+        private async void btnAddProfesor_Click(object sender, EventArgs e)
+        {
+
+            ProfParticipante prof = new ProfParticipante(actividad, profesores[cmbProfesores.SelectedIndex]);
+
+            if (profParticipantes.Contains(prof)) { 
+            
+                await controlProfParticipantes.QuitarProfParticipante((int)profParticipantes[profParticipantes.IndexOf(prof)].id);
+            }
+            else
+            {
+                await controlProfParticipantes.GuardarProfParticipante(prof);
+            }
+           
+
+            await AgregarTablaProfesores();
+        }
+
+        private async void btnAddGrupo_Click(object sender, EventArgs e)
+        {
+            int numAlumnos = (int)nudAlumnos.Value;
+            GrupoParticipante grupo = new GrupoParticipante(actividad, grupos[cmbGrupos.SelectedIndex], numAlumnos);
+            
+            if (gruposParticipantes.Contains(grupo))
+            {
+                grupo = gruposParticipantes[gruposParticipantes.IndexOf(grupo)];
+                if (numAlumnos > 0)
+                {
+                    
+                    grupo.numParticipantes = numAlumnos;
+                    await controlGruposParticipantes.ActualizarGrupoParticipante(grupo);
+                }
+                else
+                {
+                    await controlGruposParticipantes.QuitarGrupoParticipante((int)grupo.id);
+                }
+            }
+            else if(numAlumnos > 0)
+            {
+                await controlGruposParticipantes.GuardarGrupoParticipante(grupo);
+            }
+
+            await AgregarTablaGrupos();
         }
     }
 }
