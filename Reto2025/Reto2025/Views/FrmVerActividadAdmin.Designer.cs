@@ -63,10 +63,14 @@
             this.lvwProfesores = new System.Windows.Forms.ListView();
             this.lblProfesores = new System.Windows.Forms.Label();
             this.lblGrupos = new System.Windows.Forms.Label();
-            this.btnAñadirGrupo = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddGrupo = new System.Windows.Forms.Button();
+            this.btnAddProfesor = new System.Windows.Forms.Button();
             this.cmbProfesores = new System.Windows.Forms.ComboBox();
+            this.lblNumALumnos = new System.Windows.Forms.Label();
+            this.nudAlumnos = new System.Windows.Forms.NumericUpDown();
+            this.cmbGrupos = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudImporte)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAlumnos)).BeginInit();
             this.SuspendLayout();
             // 
             // rtxAlojamiento
@@ -362,7 +366,6 @@
             this.rtxIncidencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxIncidencias.Location = new System.Drawing.Point(307, 363);
             this.rtxIncidencias.Name = "rtxIncidencias";
-            this.rtxIncidencias.ReadOnly = true;
             this.rtxIncidencias.Size = new System.Drawing.Size(230, 140);
             this.rtxIncidencias.TabIndex = 59;
             this.rtxIncidencias.Text = "Incidencias";
@@ -449,25 +452,27 @@
             this.lblGrupos.TabIndex = 68;
             this.lblGrupos.Text = "Grupos Participantes";
             // 
-            // btnAñadirGrupo
+            // btnAddGrupo
             // 
-            this.btnAñadirGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnAñadirGrupo.Location = new System.Drawing.Point(778, 310);
-            this.btnAñadirGrupo.Name = "btnAñadirGrupo";
-            this.btnAñadirGrupo.Size = new System.Drawing.Size(106, 30);
-            this.btnAñadirGrupo.TabIndex = 69;
-            this.btnAñadirGrupo.Text = "Añadir Grupo";
-            this.btnAñadirGrupo.UseVisualStyleBackColor = true;
+            this.btnAddGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnAddGrupo.Location = new System.Drawing.Point(755, 343);
+            this.btnAddGrupo.Name = "btnAddGrupo";
+            this.btnAddGrupo.Size = new System.Drawing.Size(129, 42);
+            this.btnAddGrupo.TabIndex = 69;
+            this.btnAddGrupo.Text = "Añadir/Modificar/ Quitar";
+            this.btnAddGrupo.UseVisualStyleBackColor = true;
+            this.btnAddGrupo.Click += new System.EventHandler(this.btnAddGrupo_Click);
             // 
-            // button1
+            // btnAddProfesor
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.button1.Location = new System.Drawing.Point(798, 562);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 30);
-            this.button1.TabIndex = 70;
-            this.button1.Text = "Añadir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAddProfesor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnAddProfesor.Location = new System.Drawing.Point(781, 562);
+            this.btnAddProfesor.Name = "btnAddProfesor";
+            this.btnAddProfesor.Size = new System.Drawing.Size(103, 35);
+            this.btnAddProfesor.TabIndex = 70;
+            this.btnAddProfesor.Text = "Añadir/Quitar";
+            this.btnAddProfesor.UseVisualStyleBackColor = true;
+            this.btnAddProfesor.Click += new System.EventHandler(this.btnAddProfesor_Click);
             // 
             // cmbProfesores
             // 
@@ -476,17 +481,48 @@
             this.cmbProfesores.FormattingEnabled = true;
             this.cmbProfesores.Location = new System.Drawing.Point(584, 566);
             this.cmbProfesores.Name = "cmbProfesores";
-            this.cmbProfesores.Size = new System.Drawing.Size(208, 24);
+            this.cmbProfesores.Size = new System.Drawing.Size(191, 24);
             this.cmbProfesores.TabIndex = 71;
+            // 
+            // lblNumALumnos
+            // 
+            this.lblNumALumnos.AutoSize = true;
+            this.lblNumALumnos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblNumALumnos.Location = new System.Drawing.Point(581, 350);
+            this.lblNumALumnos.Name = "lblNumALumnos";
+            this.lblNumALumnos.Size = new System.Drawing.Size(120, 17);
+            this.lblNumALumnos.TabIndex = 72;
+            this.lblNumALumnos.Text = "Numero Alumnos:";
+            // 
+            // nudAlumnos
+            // 
+            this.nudAlumnos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.nudAlumnos.Location = new System.Drawing.Point(699, 348);
+            this.nudAlumnos.Name = "nudAlumnos";
+            this.nudAlumnos.Size = new System.Drawing.Size(45, 23);
+            this.nudAlumnos.TabIndex = 73;
+            // 
+            // cmbGrupos
+            // 
+            this.cmbGrupos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGrupos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmbGrupos.FormattingEnabled = true;
+            this.cmbGrupos.Location = new System.Drawing.Point(584, 313);
+            this.cmbGrupos.Name = "cmbGrupos";
+            this.cmbGrupos.Size = new System.Drawing.Size(208, 24);
+            this.cmbGrupos.TabIndex = 74;
             // 
             // FrmVerActividadAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 813);
+            this.Controls.Add(this.cmbGrupos);
+            this.Controls.Add(this.nudAlumnos);
+            this.Controls.Add(this.lblNumALumnos);
             this.Controls.Add(this.cmbProfesores);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnAñadirGrupo);
+            this.Controls.Add(this.btnAddProfesor);
+            this.Controls.Add(this.btnAddGrupo);
             this.Controls.Add(this.lblGrupos);
             this.Controls.Add(this.lblProfesores);
             this.Controls.Add(this.lvwProfesores);
@@ -525,6 +561,7 @@
             this.Name = "FrmVerActividadAdmin";
             this.Text = "FrmVerActividadAdmin";
             ((System.ComponentModel.ISupportInitialize)(this.nudImporte)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAlumnos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -567,8 +604,11 @@
         private System.Windows.Forms.ListView lvwProfesores;
         private System.Windows.Forms.Label lblProfesores;
         private System.Windows.Forms.Label lblGrupos;
-        private System.Windows.Forms.Button btnAñadirGrupo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddGrupo;
+        private System.Windows.Forms.Button btnAddProfesor;
         private System.Windows.Forms.ComboBox cmbProfesores;
+        private System.Windows.Forms.Label lblNumALumnos;
+        private System.Windows.Forms.NumericUpDown nudAlumnos;
+        private System.Windows.Forms.ComboBox cmbGrupos;
     }
 }
