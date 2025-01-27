@@ -15,7 +15,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Reto2025.Views
 {
-    public partial class FrmContrato_transporte : Form
+    public partial class FrmContratoTransporte : Form
     {
         private ControlActividades controlActividades;
         private ControlEmpTransporte controlEmpresa;
@@ -24,14 +24,18 @@ namespace Reto2025.Views
         private List<EmpTransporte> empresas;
         private string urlfactura = "";
         private string urlpresupuesto = "";
-        public FrmContrato_transporte()
+        private Actividad actividad;
+        public FrmContratoTransporte(Actividad actividad)
         {
-            controlActividades = new ControlActividades();
+            InitializeComponent();
+            this.actividad = actividad;
+            //controlActividades = new ControlActividades();
             controlEmpresa = new ControlEmpTransporte();
             controlContratos = new ControlContratos();
-            cargarListaActividades();
+           // cargarListaActividades();
             cargarListaContratos();
-            InitializeComponent();
+            
+            
             
         }
 
@@ -56,55 +60,43 @@ namespace Reto2025.Views
 
         private async void btn_crear_Click(object sender, EventArgs e)
         {
-            Actividad idactividad =null;
-            EmpTransporte idempresa =null;
+           // Actividad actividad =null;
+            EmpTransporte empTransporte =null;
 
 
 
-                foreach (var actividad in actividades)
-                {
-                    if (actividad.titulo==cmbActividad.SelectedItem.ToString())
-                    {
-                        
-                        idactividad = actividad;
-                    }
-                }
 
                 foreach (var empresa in empresas)
                 {
-                    if (empresa.nombre == cmbEmpresa.SelectedItem.ToString())
+                    if (empresa.nombre == cmbEmpresa.Text)
                     {
                     
                     
-                    idempresa = empresa;
+                    empTransporte = empresa;
 
                     
                 }
                 }
-            if (idactividad == null) {
 
-                MessageBox.Show("actividad vacia");
-            }
-            if (idempresa == null) {
+            if (empTransporte == null) {
                 MessageBox.Show("empresa vacia");
             }
+            else
+            {
+                Contrato contrato = new Contrato(actividad, empTransporte);
 
-            Contrato contrato = new Contrato();
-            contrato.id = null;
-            contrato.actividad = idactividad;
-            contrato.empTransporte = idempresa;
-
-            
-            contrato.contratada = false;
-            contrato.importe = Convert.ToDouble(mudImporte.Value);
-            contrato.urlFactura = urlfactura;
-            contrato.urlPresupuesto =urlpresupuesto;
+                contrato.importe = Convert.ToDouble(mudImporte.Value);
+                contrato.urlFactura = urlfactura;
+                contrato.urlPresupuesto = urlpresupuesto;
 
 
-            bool completada = await controlContratos.GuardarContrato(contrato);
+                bool completada = await controlContratos.GuardarContrato(contrato);
 
 
-            this.Close();
+                this.Close();
+            }
+
+
         }
 
 

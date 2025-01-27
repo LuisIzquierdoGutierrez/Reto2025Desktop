@@ -15,5 +15,17 @@ namespace Reto2025.Models
         public double importe;
         public string urlPresupuesto;
         public string urlFactura;
+
+        public Contrato(Actividad actividad, EmpTransporte empTransporte)
+        {
+            this.id = null;
+            this.actividad = actividad;
+            this.empTransporte = empTransporte;
+            this.contratada = false;
+        }
+
+        public Contrato()
+        {
+        }
     }
 }

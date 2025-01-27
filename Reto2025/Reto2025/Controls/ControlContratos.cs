@@ -72,7 +72,6 @@ namespace Reto2025.Controls
         {
             try
             {
-                MessageBox.Show("patata");
                 //Hacemos una instancia de Personajes
                 Contrato contrato = new Contrato();
 
@@ -127,13 +126,13 @@ namespace Reto2025.Controls
                 // Verificar si la respuesta fue exitosa
                 if (response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Contrato guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  //  MessageBox.Show("Contrato guardado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     return true; // La calificación fue guardada con éxito
                 }
                 else
                 {
-                    MessageBox.Show(response.RequestMessage.ToString());
+                  //  MessageBox.Show(response.RequestMessage.ToString());
                     return false; // Hubo un error
                 }
             }
@@ -154,7 +153,7 @@ namespace Reto2025.Controls
                 // Crear el contenido de la solicitud (POST)
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
                 // Realizar la solicitud POST a la API
-                HttpResponseMessage response = await client.PostAsync($"http://localhost:8080/acex/contratos", content);
+                HttpResponseMessage response = await client.PostAsync("http://localhost:8080/acex/contratos", content);
 
                 // Verificar si la respuesta fue exitosa
                 if (response.IsSuccessStatusCode)
@@ -177,5 +176,49 @@ namespace Reto2025.Controls
             }
         }
 
+
+        public async Task<List<Contrato>> GetContratosActividad(Actividad actividad)
+
+        {
+            try
+            {
+
+                //Hacemos una instancia de Personajes
+                List<Contrato> contratos = new List<Contrato>();
+                int id = (int)actividad.id;
+                //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
+                //que se quiere consultar
+                HttpResponseMessage response = await client.GetAsync($"http://localhost:8080/acex/contratos/actividad/{id}");
+
+                //Verifica que la respuesta tenga un estado de éxito
+                //Si no es exitosa, lanza una excepción
+                response.EnsureSuccessStatusCode();
+
+                //String con las respuesta que es el JSON con toda la información
+                //que habíamos visto previamente
+                string responseJson = await response.Content.ReadAsStringAsync();
+
+
+                //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
+                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //biblioteca Newtonsoft.Json
+
+                contratos = JsonConvert.DeserializeObject<List<Contrato>>(responseJson);
+
+                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                return contratos;
+
+            }
+
+            catch (Exception e)
+            {
+
+                ////Si ocurre algún error (como problemos de conexión o un JSON no válido),
+                ////captura la excepción y devuelve "null" como valor de error
+                //MessageBox.Show(e.Message);
+                return null;
+
+            }
+        }
     }
 }

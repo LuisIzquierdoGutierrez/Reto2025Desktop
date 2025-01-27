@@ -107,7 +107,7 @@ namespace Reto2025.Controls
 
                 //Si ocurre algún error (como problemos de conexión o un JSON no válido),
                 //captura la excepción y devuelve "null" como valor de error
-                MessageBox.Show(e.Message);
+               // MessageBox.Show(e.Message);
                 return null;
 
             }
@@ -198,7 +198,6 @@ namespace Reto2025.Controls
             // Convert image to Base64
             string image = Convert.ToString(System.IO.File.ReadAllBytes(f));
             int a = image.Length;
-            MessageBox.Show(a.ToString());
             // Prepare the JSON payload
             string jsonPayload = $"{{\"fichero\": \"{image}\"}}";
             try
@@ -211,7 +210,7 @@ namespace Reto2025.Controls
 
 
 
-                formData.Add(fileContent, "fichero", "patata.png"); 
+                formData.Add(fileContent, "fichero", Path.GetFileName(f)); 
 
   
                 string descripcion = actividad.descripcion; 
@@ -222,20 +221,20 @@ namespace Reto2025.Controls
                 // Verificar si la respuesta fue exitosa
                 if (response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Foto guardada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   // MessageBox.Show("Foto guardada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // La calificación fue guardada con éxito
                 }
                 else
                 {
-                    MessageBox.Show(response.RequestMessage.ToString());
+                 //   MessageBox.Show(response.RequestMessage.ToString());
                     // Hubo un error
                 }
             }
             catch (Exception e)
             {
                 // Captura cualquier excepción y muestra un mensaje de error
-                MessageBox.Show($"Error: {e.Message}");
+               // MessageBox.Show($"Error: {e.Message}");
 
             }
             return true;

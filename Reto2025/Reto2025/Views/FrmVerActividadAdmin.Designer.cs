@@ -394,7 +394,7 @@
             // btnFotos
             // 
             this.btnFotos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnFotos.Location = new System.Drawing.Point(778, 672);
+            this.btnFotos.Location = new System.Drawing.Point(810, 635);
             this.btnFotos.Name = "btnFotos";
             this.btnFotos.Size = new System.Drawing.Size(62, 30);
             this.btnFotos.TabIndex = 63;
@@ -405,12 +405,13 @@
             // btnContratos
             // 
             this.btnContratos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnContratos.Location = new System.Drawing.Point(755, 636);
+            this.btnContratos.Location = new System.Drawing.Point(659, 635);
             this.btnContratos.Name = "btnContratos";
             this.btnContratos.Size = new System.Drawing.Size(85, 30);
             this.btnContratos.TabIndex = 64;
             this.btnContratos.Text = "Contratos";
             this.btnContratos.UseVisualStyleBackColor = true;
+            this.btnContratos.Click += new System.EventHandler(this.btnContratos_Click);
             // 
             // lvwgrupos
             // 

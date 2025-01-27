@@ -84,11 +84,12 @@
             this.Url_Folleto,
             this.Id_Solicitante,
             this.Importe_Por_Alumno});
+            this.lwActividades.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lwActividades.HideSelection = false;
-            this.lwActividades.Location = new System.Drawing.Point(232, 2);
+            this.lwActividades.Location = new System.Drawing.Point(173, 2);
             this.lwActividades.Margin = new System.Windows.Forms.Padding(2);
             this.lwActividades.Name = "lwActividades";
-            this.lwActividades.Size = new System.Drawing.Size(512, 442);
+            this.lwActividades.Size = new System.Drawing.Size(571, 442);
             this.lwActividades.TabIndex = 5;
             this.lwActividades.UseCompatibleStateImageBehavior = false;
             this.lwActividades.View = System.Windows.Forms.View.Details;
@@ -173,42 +174,47 @@
             // lblFiltros
             // 
             this.lblFiltros.AutoSize = true;
-            this.lblFiltros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblFiltros.Location = new System.Drawing.Point(55, 33);
+            this.lblFiltros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblFiltros.Location = new System.Drawing.Point(25, 32);
             this.lblFiltros.Name = "lblFiltros";
-            this.lblFiltros.Size = new System.Drawing.Size(46, 17);
+            this.lblFiltros.Size = new System.Drawing.Size(56, 20);
             this.lblFiltros.TabIndex = 6;
-            this.lblFiltros.Text = "Filtros";
+            this.lblFiltros.Text = "Filtros:";
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblEstado.Location = new System.Drawing.Point(26, 82);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(43, 13);
+            this.lblEstado.Size = new System.Drawing.Size(56, 17);
             this.lblEstado.TabIndex = 7;
             this.lblEstado.Text = "Estado:";
             // 
             // lblParticipacion
             // 
             this.lblParticipacion.AutoSize = true;
+            this.lblParticipacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblParticipacion.Location = new System.Drawing.Point(26, 152);
             this.lblParticipacion.Name = "lblParticipacion";
-            this.lblParticipacion.Size = new System.Drawing.Size(71, 13);
+            this.lblParticipacion.Size = new System.Drawing.Size(93, 17);
             this.lblParticipacion.TabIndex = 8;
             this.lblParticipacion.Text = "Participacion:";
             // 
             // lblCurso
             // 
             this.lblCurso.AutoSize = true;
+            this.lblCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblCurso.Location = new System.Drawing.Point(26, 224);
             this.lblCurso.Name = "lblCurso";
-            this.lblCurso.Size = new System.Drawing.Size(37, 13);
+            this.lblCurso.Size = new System.Drawing.Size(49, 17);
             this.lblCurso.TabIndex = 9;
             this.lblCurso.Text = "Curso:";
             // 
             // cmbEstado
             // 
+            this.cmbEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbEstado.FormattingEnabled = true;
             this.cmbEstado.Items.AddRange(new object[] {
             "Cualquiera",
@@ -218,29 +224,31 @@
             "Realizada",
             "Realizandose",
             "Cancelada"});
-            this.cmbEstado.Location = new System.Drawing.Point(29, 98);
+            this.cmbEstado.Location = new System.Drawing.Point(29, 102);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(121, 21);
+            this.cmbEstado.Size = new System.Drawing.Size(121, 24);
             this.cmbEstado.TabIndex = 10;
-            this.cmbEstado.Text = "Cualquiera";
             this.cmbEstado.SelectedIndexChanged += new System.EventHandler(this.filtrado);
             // 
             // cmbParticipacion
             // 
+            this.cmbParticipacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbParticipacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbParticipacion.FormattingEnabled = true;
             this.cmbParticipacion.Items.AddRange(new object[] {
             "Cualquiera",
             "Participante",
             "Responsable"});
-            this.cmbParticipacion.Location = new System.Drawing.Point(29, 168);
+            this.cmbParticipacion.Location = new System.Drawing.Point(29, 172);
             this.cmbParticipacion.Name = "cmbParticipacion";
-            this.cmbParticipacion.Size = new System.Drawing.Size(121, 21);
+            this.cmbParticipacion.Size = new System.Drawing.Size(121, 24);
             this.cmbParticipacion.TabIndex = 11;
-            this.cmbParticipacion.Text = "Cualquiera";
             this.cmbParticipacion.SelectedIndexChanged += new System.EventHandler(this.filtrado);
             // 
             // cmbCurso
             // 
+            this.cmbCurso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbCurso.FormattingEnabled = true;
             this.cmbCurso.Items.AddRange(new object[] {
             "Cualquiera",
@@ -272,34 +280,35 @@
             "DAW2",
             "ASIR1",
             "ASIR2"});
-            this.cmbCurso.Location = new System.Drawing.Point(29, 240);
+            this.cmbCurso.Location = new System.Drawing.Point(29, 244);
             this.cmbCurso.Name = "cmbCurso";
-            this.cmbCurso.Size = new System.Drawing.Size(121, 21);
+            this.cmbCurso.Size = new System.Drawing.Size(121, 24);
             this.cmbCurso.TabIndex = 12;
-            this.cmbCurso.Text = "Cualquiera";
             this.cmbCurso.SelectedIndexChanged += new System.EventHandler(this.filtrado);
             // 
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
+            this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblTipo.Location = new System.Drawing.Point(26, 300);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(31, 13);
+            this.lblTipo.Size = new System.Drawing.Size(40, 17);
             this.lblTipo.TabIndex = 13;
             this.lblTipo.Text = "Tipo:";
             // 
             // cmbTipo
             // 
+            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cmbTipo.FormattingEnabled = true;
             this.cmbTipo.Items.AddRange(new object[] {
             "Cualquiera",
             "Complementaria",
             "Extraescolar"});
-            this.cmbTipo.Location = new System.Drawing.Point(29, 316);
+            this.cmbTipo.Location = new System.Drawing.Point(29, 320);
             this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipo.Size = new System.Drawing.Size(121, 24);
             this.cmbTipo.TabIndex = 14;
-            this.cmbTipo.Text = "Cualquiera";
             this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.filtrado);
             // 
             // FrmVerActividades

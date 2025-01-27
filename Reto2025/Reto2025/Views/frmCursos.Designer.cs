@@ -41,6 +41,7 @@
             this.Titulo,
             this.Etapa});
             this.lwCursos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lwCursos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lwCursos.HideSelection = false;
             this.lwCursos.Location = new System.Drawing.Point(0, 0);
             this.lwCursos.Name = "lwCursos";

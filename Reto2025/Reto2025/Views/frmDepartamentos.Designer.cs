@@ -39,10 +39,11 @@
             this.codigo,
             this.Nombre});
             this.lwDepartamentos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lwDepartamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lwDepartamentos.HideSelection = false;
             this.lwDepartamentos.Location = new System.Drawing.Point(0, 0);
             this.lwDepartamentos.Name = "lwDepartamentos";
-            this.lwDepartamentos.Size = new System.Drawing.Size(184, 211);
+            this.lwDepartamentos.Size = new System.Drawing.Size(234, 261);
             this.lwDepartamentos.TabIndex = 2;
             this.lwDepartamentos.UseCompatibleStateImageBehavior = false;
             this.lwDepartamentos.View = System.Windows.Forms.View.Details;
@@ -59,13 +60,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(184, 211);
+            this.ClientSize = new System.Drawing.Size(234, 261);
             this.Controls.Add(this.lwDepartamentos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(200, 250);
+            this.MaximumSize = new System.Drawing.Size(250, 300);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(200, 250);
+            this.MinimumSize = new System.Drawing.Size(250, 250);
             this.Name = "FrmDepartamentos";
             this.Text = "Departamentos";
             this.ResumeLayout(false);
