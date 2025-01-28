@@ -35,9 +35,24 @@ Reto2025
     ├── Models          # Clases de modelo y enums (Incluye las entidades que representan tablas de la base de datos)
          └── Enums      # Guarda los enums utilizados por los modelos
     ├── Resources       # Guarda ciertas imagenes utilizadas por la interfaz grafica de la aplicacion
-    ├── Views           # Clases Form las cuales compenen la aplicacion
+    └── Views           # Clases Form las cuales compenen la aplicacion
 ```
 
+## Modelos (Entities)
+
+Los modelos representan las entidades en la base de datos. Utilizando los Controls convertimos los datos en formato Json que nos da la api en estas entidades
+
+### Principales entidades del proyecto
+
+1. **Actividad**: Representa una actividad registrada en el sistema.
+2. **Contrato**: Guarda la actividad, tranposrte e información basica del contrato.
+3. **Curso**: Representa los cursos de los que se disponen en el instituto.
+4. **EmpTransporte**: Representa las empresas transporte que se han contratado para realizar alguna actividad.
+5. **Foto**: Guarda la informacion necesaria para acceder a las fotos y a que actividad pertenecen.
+6. **Grupo**: Representa el grupo, guardando el curso al que pertenecen, su tutor y si aun existe.
+7. **Profesores**: Representa un profesor y toda su informacion relevante como email, nombre, apellidos, contraseña(encriptada), dni, etc...
+
+Además, se utilizan los **Enums** para valores constantes de etapa, rol, estado y tipo
 
 
 El proyecto está organizado en varias carpetas, siguiendo una arquitectura modular. A continuación, se describen las principales carpetas y sus propósitos:
