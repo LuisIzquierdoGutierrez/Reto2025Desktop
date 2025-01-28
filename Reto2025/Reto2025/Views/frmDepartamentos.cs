@@ -40,12 +40,15 @@ namespace Reto2025.Views
         private void putDepartamentos()
         {
             ListViewItem item;
+            bool par = false;
             foreach (Departamento departamento in departamentos)
             {
                 item = new ListViewItem();
                 string[] row = { departamento.codigo, departamento.nombre };
                 item = new ListViewItem(row);
                 lwDepartamentos.Items.Add(item);
+                item.BackColor = par ? Color.DarkGray : Color.LightGray;
+                par = !par;
             }
             lwDepartamentos.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }

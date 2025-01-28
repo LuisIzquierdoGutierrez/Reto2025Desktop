@@ -64,6 +64,7 @@
             this.lwActividades.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.lwActividades.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lwActividades.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Titulo_Actividad,
             this.Tipo,
@@ -175,6 +176,7 @@
             // 
             this.lblFiltros.AutoSize = true;
             this.lblFiltros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblFiltros.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblFiltros.Location = new System.Drawing.Point(25, 32);
             this.lblFiltros.Name = "lblFiltros";
             this.lblFiltros.Size = new System.Drawing.Size(56, 20);
@@ -185,6 +187,7 @@
             // 
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblEstado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblEstado.Location = new System.Drawing.Point(26, 82);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(56, 17);
@@ -195,6 +198,7 @@
             // 
             this.lblParticipacion.AutoSize = true;
             this.lblParticipacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblParticipacion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblParticipacion.Location = new System.Drawing.Point(26, 152);
             this.lblParticipacion.Name = "lblParticipacion";
             this.lblParticipacion.Size = new System.Drawing.Size(93, 17);
@@ -205,6 +209,7 @@
             // 
             this.lblCurso.AutoSize = true;
             this.lblCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblCurso.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblCurso.Location = new System.Drawing.Point(26, 224);
             this.lblCurso.Name = "lblCurso";
             this.lblCurso.Size = new System.Drawing.Size(49, 17);
@@ -290,6 +295,7 @@
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblTipo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblTipo.Location = new System.Drawing.Point(26, 300);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(40, 17);
@@ -315,6 +321,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(746, 442);
             this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.lblTipo);

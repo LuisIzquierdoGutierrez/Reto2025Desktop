@@ -43,6 +43,7 @@
             // 
             this.lbl_Correo.AutoSize = true;
             this.lbl_Correo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_Correo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_Correo.Location = new System.Drawing.Point(17, 174);
             this.lbl_Correo.Name = "lbl_Correo";
             this.lbl_Correo.Size = new System.Drawing.Size(125, 17);
@@ -53,6 +54,7 @@
             // 
             this.lbl_pass.AutoSize = true;
             this.lbl_pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_pass.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_pass.Location = new System.Drawing.Point(17, 210);
             this.lbl_pass.Name = "lbl_pass";
             this.lbl_pass.Size = new System.Drawing.Size(81, 17);
@@ -81,7 +83,7 @@
             this.btn_inicio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_inicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btn_inicio.Location = new System.Drawing.Point(117, 247);
+            this.btn_inicio.Location = new System.Drawing.Point(117, 260);
             this.btn_inicio.Name = "btn_inicio";
             this.btn_inicio.Size = new System.Drawing.Size(131, 30);
             this.btn_inicio.TabIndex = 5;
@@ -98,6 +100,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_ClickAsync);
             // 
             // pictureBox1
@@ -114,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(220)))), ((int)(((byte)(124)))));
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(364, 326);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_inicio);
@@ -123,9 +126,13 @@
             this.Controls.Add(this.lbl_pass);
             this.Controls.Add(this.lbl_Correo);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(380, 365);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(380, 365);
             this.Name = "FrmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

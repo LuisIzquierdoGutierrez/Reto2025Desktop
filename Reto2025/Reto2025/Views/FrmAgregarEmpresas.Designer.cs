@@ -49,6 +49,7 @@
             // 
             this.lblNombreEmpresa.AutoSize = true;
             this.lblNombreEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblNombreEmpresa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblNombreEmpresa.Location = new System.Drawing.Point(21, 23);
             this.lblNombreEmpresa.Name = "lblNombreEmpresa";
             this.lblNombreEmpresa.Size = new System.Drawing.Size(153, 17);
@@ -59,6 +60,7 @@
             // 
             this.lblCIF.AutoSize = true;
             this.lblCIF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblCIF.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblCIF.Location = new System.Drawing.Point(21, 68);
             this.lblCIF.Name = "lblCIF";
             this.lblCIF.Size = new System.Drawing.Size(28, 17);
@@ -69,6 +71,7 @@
             // 
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblDireccion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblDireccion.Location = new System.Drawing.Point(21, 113);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(67, 17);
@@ -79,6 +82,7 @@
             // 
             this.lblCp.AutoSize = true;
             this.lblCp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblCp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblCp.Location = new System.Drawing.Point(21, 158);
             this.lblCp.Name = "lblCp";
             this.lblCp.Size = new System.Drawing.Size(26, 17);
@@ -89,6 +93,7 @@
             // 
             this.lblLocalidad.AutoSize = true;
             this.lblLocalidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblLocalidad.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblLocalidad.Location = new System.Drawing.Point(21, 203);
             this.lblLocalidad.Name = "lblLocalidad";
             this.lblLocalidad.Size = new System.Drawing.Size(69, 17);
@@ -99,6 +104,7 @@
             // 
             this.LblTlfContacto.AutoSize = true;
             this.LblTlfContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LblTlfContacto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.LblTlfContacto.Location = new System.Drawing.Point(21, 248);
             this.LblTlfContacto.Name = "LblTlfContacto";
             this.LblTlfContacto.Size = new System.Drawing.Size(138, 17);
@@ -165,6 +171,7 @@
             // 
             this.lblMailContacto.AutoSize = true;
             this.lblMailContacto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblMailContacto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblMailContacto.Location = new System.Drawing.Point(21, 293);
             this.lblMailContacto.Name = "lblMailContacto";
             this.lblMailContacto.Size = new System.Drawing.Size(122, 17);
@@ -186,7 +193,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(220)))), ((int)(((byte)(124)))));
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(304, 405);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.lblMailContacto);
@@ -203,10 +210,12 @@
             this.Controls.Add(this.lblDireccion);
             this.Controls.Add(this.lblCIF);
             this.Controls.Add(this.lblNombreEmpresa);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(320, 444);
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(320, 444);
             this.Name = "FrmAgregarEmpresas";
-            this.Text = "FrmCrearEmpresa";
+            this.Text = "Crear Empresa";
             this.Load += new System.EventHandler(this.FrmAgregarEmpresas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

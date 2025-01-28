@@ -30,11 +30,12 @@
         {
             this.SuspendLayout();
             // 
-            // ControlCalendarioBlanco
+            // FrmControlCalendarioBlanco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "ControlCalendarioBlanco";
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Name = "FrmControlCalendarioBlanco";
             this.Size = new System.Drawing.Size(125, 88);
             this.ResumeLayout(false);
 

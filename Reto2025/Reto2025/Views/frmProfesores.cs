@@ -37,14 +37,18 @@ namespace Reto2025.Views
         private void putProfesores()
         {
             ListViewItem item;
+            bool par = false;
             foreach (Profesor profesor in profesores)
             {
+
                 if (profesor.activo)
                 {
                     item = new ListViewItem();
                     string[] row = { profesor.nombre, profesor.apellidos, profesor.correo, profesor.rol.ToString(), profesor.esJefeDep ? "si" : "no", profesor.depart.nombre };
                     item = new ListViewItem(row);
                     lwProfesores.Items.Add(item);
+                    item.BackColor = par ? Color.DarkGray : Color.LightGray;
+                    par = !par;
                 }
 
             }

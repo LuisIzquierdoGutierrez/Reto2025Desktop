@@ -39,6 +39,7 @@
             // 
             // lwProfesores
             // 
+            this.lwProfesores.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lwProfesores.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Nombre,
             this.Apellidos,

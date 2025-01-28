@@ -82,9 +82,6 @@ namespace Reto2025
             //frmVerActividad.ShowDialog();
         }
 
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-            this.BackColor = Color.FromArgb(0xFF, 0xB2, 0xDF, 0x7A);
-        }
+
     }
 }

@@ -39,6 +39,7 @@
             // 
             // lwEmpTransporte
             // 
+            this.lwEmpTransporte.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lwEmpTransporte.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Nombre,
             this.Contacto,

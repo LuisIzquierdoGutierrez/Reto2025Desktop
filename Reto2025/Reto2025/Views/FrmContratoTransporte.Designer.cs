@@ -44,7 +44,9 @@
             // lbl_actividad
             // 
             this.lbl_actividad.AutoSize = true;
+            this.lbl_actividad.BackColor = System.Drawing.Color.Transparent;
             this.lbl_actividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_actividad.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_actividad.Location = new System.Drawing.Point(12, 18);
             this.lbl_actividad.Name = "lbl_actividad";
             this.lbl_actividad.Size = new System.Drawing.Size(65, 17);
@@ -55,7 +57,9 @@
             // lbl_importe
             // 
             this.lbl_importe.AutoSize = true;
+            this.lbl_importe.BackColor = System.Drawing.Color.Transparent;
             this.lbl_importe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_importe.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_importe.Location = new System.Drawing.Point(12, 85);
             this.lbl_importe.Name = "lbl_importe";
             this.lbl_importe.Size = new System.Drawing.Size(55, 17);
@@ -65,7 +69,9 @@
             // lbl_empresa
             // 
             this.lbl_empresa.AutoSize = true;
+            this.lbl_empresa.BackColor = System.Drawing.Color.Transparent;
             this.lbl_empresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbl_empresa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_empresa.Location = new System.Drawing.Point(12, 54);
             this.lbl_empresa.Name = "lbl_empresa";
             this.lbl_empresa.Size = new System.Drawing.Size(64, 17);
@@ -77,7 +83,7 @@
             this.btn_crear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btn_crear.Location = new System.Drawing.Point(129, 166);
             this.btn_crear.Name = "btn_crear";
-            this.btn_crear.Size = new System.Drawing.Size(75, 23);
+            this.btn_crear.Size = new System.Drawing.Size(75, 25);
             this.btn_crear.TabIndex = 20;
             this.btn_crear.Text = "Crear";
             this.btn_crear.UseVisualStyleBackColor = true;
@@ -125,7 +131,7 @@
             this.btnFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnFactura.Location = new System.Drawing.Point(15, 123);
             this.btnFactura.Name = "btnFactura";
-            this.btnFactura.Size = new System.Drawing.Size(135, 23);
+            this.btnFactura.Size = new System.Drawing.Size(135, 25);
             this.btnFactura.TabIndex = 24;
             this.btnFactura.Text = "Subir Factura";
             this.btnFactura.UseVisualStyleBackColor = true;
@@ -136,7 +142,7 @@
             this.btnPresupuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnPresupuesto.Location = new System.Drawing.Point(178, 123);
             this.btnPresupuesto.Name = "btnPresupuesto";
-            this.btnPresupuesto.Size = new System.Drawing.Size(134, 23);
+            this.btnPresupuesto.Size = new System.Drawing.Size(134, 25);
             this.btnPresupuesto.TabIndex = 25;
             this.btnPresupuesto.Text = "Subir Presupuesto";
             this.btnPresupuesto.UseVisualStyleBackColor = true;
@@ -146,6 +152,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(324, 201);
             this.Controls.Add(this.btnPresupuesto);
             this.Controls.Add(this.btnFactura);

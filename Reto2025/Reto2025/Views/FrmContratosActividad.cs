@@ -44,29 +44,44 @@ namespace Reto2025.Views
                 }
                 lvwContratos.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             }
-      
+
 
 
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-             new FrmContratoTransporte(actividad).ShowDialog();
+            new FrmContratoTransporte(actividad).ShowDialog();
             CargarTabla();
         }
 
         private async void lvwContratos_DoubleClickAsync(object sender, EventArgs e)
         {
-            
-            if(lvwContratos.SelectedItems[0] != null)
+
+            if (lvwContratos.SelectedItems[0] != null)
             {
                 Contrato contrato;
 
-                contrato =(Contrato)lvwContratos.SelectedItems[0].Tag;
+                contrato = (Contrato)lvwContratos.SelectedItems[0].Tag;
 
                 contrato.contratada = !contrato.contratada;
 
                 await controlContratos.ActualizarContrato(contrato);
+                CargarTabla();
+            }
+        }
+
+        private async void btnQuitarContrato_ClickAsync(object sender, EventArgs e)
+        {
+            if (lvwContratos.SelectedItems[0] != null)
+            {
+                Contrato contrato;
+
+                contrato = (Contrato)lvwContratos.SelectedItems[0].Tag;
+
+
+
+                await controlContratos.QuitarContratoActividad((int)contrato.id);
                 CargarTabla();
             }
         }

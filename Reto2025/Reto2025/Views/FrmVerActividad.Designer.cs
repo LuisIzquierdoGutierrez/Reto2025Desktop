@@ -59,26 +59,28 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblTitulo.Location = new System.Drawing.Point(26, 19);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(47, 20);
+            this.lblTitulo.Size = new System.Drawing.Size(56, 24);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Titulo";
             // 
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
-            this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblTipo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblTipo.Location = new System.Drawing.Point(27, 58);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(97, 17);
+            this.lblTipo.Size = new System.Drawing.Size(99, 18);
             this.lblTipo.TabIndex = 1;
             this.lblTipo.Text = "Actividad Tipo";
             // 
             // rtxDescripcion
             // 
-            this.rtxDescripcion.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxDescripcion.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxDescripcion.Location = new System.Drawing.Point(30, 149);
@@ -91,10 +93,11 @@
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblDescripcion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblDescripcion.Location = new System.Drawing.Point(27, 129);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(82, 17);
+            this.lblDescripcion.Size = new System.Drawing.Size(87, 18);
             this.lblDescripcion.TabIndex = 3;
             this.lblDescripcion.Text = "Descripcion";
             // 
@@ -102,6 +105,7 @@
             // 
             this.lblFini.AutoSize = true;
             this.lblFini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblFini.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblFini.Location = new System.Drawing.Point(736, 18);
             this.lblFini.Name = "lblFini";
             this.lblFini.Size = new System.Drawing.Size(147, 17);
@@ -112,6 +116,7 @@
             // 
             this.lblFfni.AutoSize = true;
             this.lblFfni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblFfni.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblFfni.Location = new System.Drawing.Point(749, 78);
             this.lblFfni.Name = "lblFfni";
             this.lblFfni.Size = new System.Drawing.Size(134, 17);
@@ -122,6 +127,7 @@
             // 
             this.lblHini.AutoSize = true;
             this.lblHini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblHini.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblHini.Location = new System.Drawing.Point(839, 38);
             this.lblHini.Name = "lblHini";
             this.lblHini.Size = new System.Drawing.Size(44, 17);
@@ -132,6 +138,7 @@
             // 
             this.lblHfni.AutoSize = true;
             this.lblHfni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblHfni.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblHfni.Location = new System.Drawing.Point(839, 98);
             this.lblHfni.Name = "lblHfni";
             this.lblHfni.Size = new System.Drawing.Size(44, 17);
@@ -141,16 +148,17 @@
             // lblComentarios
             // 
             this.lblComentarios.AutoSize = true;
-            this.lblComentarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblComentarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblComentarios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblComentarios.Location = new System.Drawing.Point(27, 328);
             this.lblComentarios.Name = "lblComentarios";
-            this.lblComentarios.Size = new System.Drawing.Size(87, 17);
+            this.lblComentarios.Size = new System.Drawing.Size(94, 18);
             this.lblComentarios.TabIndex = 9;
             this.lblComentarios.Text = "Comentarios";
             // 
             // rtxComentarios
             // 
-            this.rtxComentarios.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxComentarios.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxComentarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxComentarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxComentarios.Location = new System.Drawing.Point(30, 348);
@@ -163,16 +171,17 @@
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblEstado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblEstado.Location = new System.Drawing.Point(304, 129);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(52, 17);
+            this.lblEstado.Size = new System.Drawing.Size(55, 18);
             this.lblEstado.TabIndex = 10;
             this.lblEstado.Text = "Estado";
             // 
             // rtxEstado
             // 
-            this.rtxEstado.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxEstado.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxEstado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxEstado.Location = new System.Drawing.Point(307, 149);
@@ -185,15 +194,18 @@
             // lblSolicitante
             // 
             this.lblSolicitante.AutoSize = true;
-            this.lblSolicitante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblSolicitante.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblSolicitante.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblSolicitante.Location = new System.Drawing.Point(27, 85);
             this.lblSolicitante.Name = "lblSolicitante";
-            this.lblSolicitante.Size = new System.Drawing.Size(73, 17);
+            this.lblSolicitante.Size = new System.Drawing.Size(76, 18);
             this.lblSolicitante.TabIndex = 12;
             this.lblSolicitante.Text = "Solicitante";
             // 
             // lvwgrupos
             // 
+            this.lvwgrupos.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lvwgrupos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lvwgrupos.HideSelection = false;
             this.lvwgrupos.Location = new System.Drawing.Point(584, 149);
             this.lvwgrupos.Name = "lvwgrupos";
@@ -204,7 +216,7 @@
             // 
             // rtxAlojamiento
             // 
-            this.rtxAlojamiento.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxAlojamiento.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxAlojamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxAlojamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxAlojamiento.Location = new System.Drawing.Point(307, 547);
@@ -217,26 +229,28 @@
             // lblAlojamiento
             // 
             this.lblAlojamiento.AutoSize = true;
-            this.lblAlojamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblAlojamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblAlojamiento.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblAlojamiento.Location = new System.Drawing.Point(304, 527);
             this.lblAlojamiento.Name = "lblAlojamiento";
-            this.lblAlojamiento.Size = new System.Drawing.Size(81, 17);
+            this.lblAlojamiento.Size = new System.Drawing.Size(85, 18);
             this.lblAlojamiento.TabIndex = 18;
             this.lblAlojamiento.Text = "Alojamiento";
             // 
             // lblTransporte
             // 
             this.lblTransporte.AutoSize = true;
-            this.lblTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblTransporte.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblTransporte.Location = new System.Drawing.Point(27, 527);
             this.lblTransporte.Name = "lblTransporte";
-            this.lblTransporte.Size = new System.Drawing.Size(78, 17);
+            this.lblTransporte.Size = new System.Drawing.Size(80, 18);
             this.lblTransporte.TabIndex = 17;
             this.lblTransporte.Text = "Transporte";
             // 
             // rtxTransporte
             // 
-            this.rtxTransporte.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxTransporte.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxTransporte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxTransporte.Location = new System.Drawing.Point(30, 547);
@@ -249,16 +263,17 @@
             // lblIncidencias
             // 
             this.lblIncidencias.AutoSize = true;
-            this.lblIncidencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblIncidencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblIncidencias.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblIncidencias.Location = new System.Drawing.Point(304, 328);
             this.lblIncidencias.Name = "lblIncidencias";
-            this.lblIncidencias.Size = new System.Drawing.Size(78, 17);
+            this.lblIncidencias.Size = new System.Drawing.Size(81, 18);
             this.lblIncidencias.TabIndex = 21;
             this.lblIncidencias.Text = "Incidencias";
             // 
             // rtxIncidencias
             // 
-            this.rtxIncidencias.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxIncidencias.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxIncidencias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxIncidencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxIncidencias.Location = new System.Drawing.Point(307, 348);
@@ -272,6 +287,7 @@
             // 
             this.lblImporte.AutoSize = true;
             this.lblImporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblImporte.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblImporte.Location = new System.Drawing.Point(27, 707);
             this.lblImporte.Name = "lblImporte";
             this.lblImporte.Size = new System.Drawing.Size(138, 17);
@@ -302,6 +318,8 @@
             // 
             // lvwProfesores
             // 
+            this.lvwProfesores.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.lvwProfesores.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lvwProfesores.HideSelection = false;
             this.lvwProfesores.Location = new System.Drawing.Point(583, 404);
             this.lvwProfesores.Name = "lvwProfesores";
@@ -313,20 +331,22 @@
             // lblGrupos
             // 
             this.lblGrupos.AutoSize = true;
-            this.lblGrupos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblGrupos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblGrupos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblGrupos.Location = new System.Drawing.Point(580, 129);
             this.lblGrupos.Name = "lblGrupos";
-            this.lblGrupos.Size = new System.Drawing.Size(141, 17);
+            this.lblGrupos.Size = new System.Drawing.Size(147, 18);
             this.lblGrupos.TabIndex = 70;
             this.lblGrupos.Text = "Grupos Participantes";
             // 
             // lblProfesores
             // 
             this.lblProfesores.AutoSize = true;
-            this.lblProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblProfesores.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblProfesores.Location = new System.Drawing.Point(580, 382);
             this.lblProfesores.Name = "lblProfesores";
-            this.lblProfesores.Size = new System.Drawing.Size(163, 17);
+            this.lblProfesores.Size = new System.Drawing.Size(171, 18);
             this.lblProfesores.TabIndex = 69;
             this.lblProfesores.Text = "Profesores Participantes";
             // 
@@ -334,6 +354,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(899, 761);
             this.Controls.Add(this.lblGrupos);
             this.Controls.Add(this.lblProfesores);
