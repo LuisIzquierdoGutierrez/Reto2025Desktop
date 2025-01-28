@@ -46,11 +46,12 @@ Los modelos representan las entidades en la base de datos. Utilizando los Contro
 
 1. **Actividad**: Representa una actividad registrada en el sistema.
 2. **Contrato**: Guarda la actividad, tranposrte e información basica del contrato.
-3. **Curso**: Representa los cursos de los que se disponen en el instituto.
-4. **EmpTransporte**: Representa las empresas transporte que se han contratado para realizar alguna actividad.
-5. **Foto**: Guarda la informacion necesaria para acceder a las fotos y a que actividad pertenecen.
-6. **Grupo**: Representa el grupo, guardando el curso al que pertenecen, su tutor y si aun existe.
-7. **Profesores**: Representa un profesor y toda su informacion relevante como email, nombre, apellidos, contraseña(encriptada), dni, etc...
+3. **Curso**: Representa los cursos del instituto.
+4. **Departamento** Representa los departamentos del instituto
+5. **EmpTransporte**: Representa las empresas transporte que se han contratado para realizar alguna actividad.
+6. **Foto**: Guarda la informacion necesaria para acceder a las fotos y a que actividad pertenecen.
+7. **Grupo**: Representa el grupo, guardando el curso al que pertenecen, su tutor y si aun existe.
+8. **Profesores**: Representa un profesor y toda su informacion relevante como email, nombre, apellidos, contraseña(encriptada), dni, etc...
 
 Además, se utilizan los **Enums** para valores constantes de etapa, rol, estado y tipo
 
@@ -61,9 +62,13 @@ Las clases que se encuentran en la clase modelos son:
 ### Controladores
 
 1. **ControlActividades**: Permite interactuar con la API para gestionar **Actividad**
-2. **ControlContrato**: Permite interactuar con la API para gestionar **Actividad**
-3. **ControlCurso**: Permite interactuar con la API para gestionar **Actividad**
-4. **ControlEmpTransporte** Permite interactuar con la API para gestionar **Actividad**
+2. **ControlContratos**: Permite interactuar con la API para gestionar **Contrato**
+3. **ControlCursos**: Permite interactuar con la API para gestionar **Curso**
+4. **ControlDepartamentos**: Permite interactuar con la API para gestionar **Departamento**
+5. **ControlEmpTransporte** Permite interactuar con la API para gestionar **EmpTransporte**
+6. **ControlFotos** Permite interactuar con la API para gestionar **Foto**
+7. **ControlGrupos** Permite interactuar con la API para gestionar **Grupo**
+8. **ControlProfesores** Permite interactuar con la API para gestionar **Profesor**
 
 # Conclusión
 
