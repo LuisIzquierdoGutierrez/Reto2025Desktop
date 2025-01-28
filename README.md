@@ -21,12 +21,25 @@
 7. [Conclusión](#conclusión)
 
 ## Introducción
-Esta aplicación permite gestionar cursos, actividades y usuarios mediante la comunicación con una API externa. Está desarrollada en .NET y sigue una estructura modular para facilitar su mantenimiento y ampliación.
+Esta aplicación permite la gestion con todo lo relacionado con las actividades extraescolares y complementarias mediante la comunicación con una API externa. Está desarrollada en .NET y sigue una estructura modular para facilitar su mantenimiento y ampliación.
 
 ## API
+La api con la cual nos comunicamos se puede encontrar en este github justo con su documentacion
 [https://github.com/PauDiSan/ProyectoIntermodularEquipoA2/tree/main](https://github.com/PauDiSan/ProyectoIntermodularEquipoA2/tree/main)
 
 ## Estructura
+
+```plaintext
+Reto2025
+    ├── Controls        # Controladores (Contiene los controladores que interactuan con la API)
+    ├── Models          # Clases de modelo y enums (Incluye las entidades que representan tablas de la base de datos)
+         └── Enums      # Guarda los enums utilizados por los modelos
+    ├── Resources       # Guarda ciertas imagenes utilizadas por la interfaz grafica de la aplicacion
+    ├── Views           # Clases Form las cuales compenen la aplicacion
+```
+
+
+
 El proyecto está organizado en varias carpetas, siguiendo una arquitectura modular. A continuación, se describen las principales carpetas y sus propósitos:
 - La carpeta *"Controls"* contiene las clases de los controladores, responsables de la comunicación entre la aplicación y la API externa. Estas clases envían datos en formato JSON, reciben respuestas, deserializan los datos y manejan posibles errores o excepciones.
 
