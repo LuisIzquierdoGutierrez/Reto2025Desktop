@@ -30,7 +30,7 @@ namespace Reto2025.Controls
         {
             try
             {
-                //Hacemos una instancia de Personajes
+                
                 List<Departamento> departamentos = new List<Departamento>();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
@@ -47,11 +47,11 @@ namespace Reto2025.Controls
 
 
                 //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
-                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //el JSON recibido en un objeto utilizando la
                 //biblioteca Newtonsoft.Json
                 departamentos = JsonConvert.DeserializeObject<List<Departamento>>(responseJson);
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                //Devuelve el objeto con los datos obtenidos de la API
                 return departamentos;
 
             }
@@ -73,7 +73,7 @@ namespace Reto2025.Controls
             try
             {
 
-                //Hacemos una instancia de Personajes
+                
                 Departamento departamento = new Departamento();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
@@ -90,12 +90,12 @@ namespace Reto2025.Controls
 
 
                 //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
-                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //el JSON recibido en un objeto utilizando la
                 //biblioteca Newtonsoft.Json
 
                 departamento = JsonConvert.DeserializeObject<Departamento>(responseJson);
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                //Devuelve el objeto con los datos obtenidos de la API
                 return departamento;
 
             }

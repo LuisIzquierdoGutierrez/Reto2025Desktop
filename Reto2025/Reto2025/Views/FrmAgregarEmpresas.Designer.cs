@@ -117,7 +117,7 @@
             this.txtCif.Location = new System.Drawing.Point(180, 65);
             this.txtCif.Name = "txtCif";
             this.txtCif.Size = new System.Drawing.Size(100, 23);
-            this.txtCif.TabIndex = 6;
+            this.txtCif.TabIndex = 8;
             // 
             // txtNombreEmp
             // 
@@ -133,7 +133,7 @@
             this.txtDireccion.Location = new System.Drawing.Point(180, 110);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(100, 23);
-            this.txtDireccion.TabIndex = 8;
+            this.txtDireccion.TabIndex = 9;
             // 
             // txtCp
             // 
@@ -141,7 +141,7 @@
             this.txtCp.Location = new System.Drawing.Point(180, 155);
             this.txtCp.Name = "txtCp";
             this.txtCp.Size = new System.Drawing.Size(100, 23);
-            this.txtCp.TabIndex = 9;
+            this.txtCp.TabIndex = 10;
             // 
             // txtLocalidad
             // 
@@ -149,7 +149,7 @@
             this.txtLocalidad.Location = new System.Drawing.Point(180, 200);
             this.txtLocalidad.Name = "txtLocalidad";
             this.txtLocalidad.Size = new System.Drawing.Size(100, 23);
-            this.txtLocalidad.TabIndex = 10;
+            this.txtLocalidad.TabIndex = 11;
             // 
             // txtNumContacto
             // 
@@ -157,7 +157,7 @@
             this.txtNumContacto.Location = new System.Drawing.Point(180, 245);
             this.txtNumContacto.Name = "txtNumContacto";
             this.txtNumContacto.Size = new System.Drawing.Size(100, 23);
-            this.txtNumContacto.TabIndex = 11;
+            this.txtNumContacto.TabIndex = 12;
             // 
             // txtMailContacto
             // 
@@ -165,7 +165,7 @@
             this.txtMailContacto.Location = new System.Drawing.Point(180, 290);
             this.txtMailContacto.Name = "txtMailContacto";
             this.txtMailContacto.Size = new System.Drawing.Size(100, 23);
-            this.txtMailContacto.TabIndex = 12;
+            this.txtMailContacto.TabIndex = 13;
             // 
             // lblMailContacto
             // 

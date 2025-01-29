@@ -29,7 +29,7 @@ namespace Reto2025.Controls
         {
             try
             {
-                //Hacemos una instancia de Personajes
+                
                 List<GrupoParticipante> gruposParticipantes = new List<GrupoParticipante>();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
@@ -46,11 +46,10 @@ namespace Reto2025.Controls
 
 
                 //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
-                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //el JSON recibido en un objeto utilizando la
                 //biblioteca Newtonsoft.Json
                 gruposParticipantes = JsonConvert.DeserializeObject<List<GrupoParticipante>>(responseJson);
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
                 return gruposParticipantes;
 
             }
@@ -72,7 +71,7 @@ namespace Reto2025.Controls
             try
             {
 
-                //Hacemos una instancia de Personajes
+                
                 GrupoParticipante grupoParticipante = new GrupoParticipante();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
@@ -89,12 +88,11 @@ namespace Reto2025.Controls
 
 
                 //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
-                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //el JSON recibido en un objeto utilizando la
                 //biblioteca Newtonsoft.Json
 
                 grupoParticipante = JsonConvert.DeserializeObject<GrupoParticipante>(responseJson);
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
                 return grupoParticipante;
 
             }
@@ -148,7 +146,7 @@ namespace Reto2025.Controls
         {
             try
             {
-                //Hacemos una instancia de Personajes
+                
                 List<GrupoParticipante> grupos = new List<GrupoParticipante>();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
@@ -165,11 +163,10 @@ namespace Reto2025.Controls
 
 
                 //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
-                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //el JSON recibido en un objeto utilizando la
                 //biblioteca Newtonsoft.Json
                 grupos = JsonConvert.DeserializeObject<List<GrupoParticipante>>(responseJson);
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
                 return grupos;
 
             }
@@ -240,7 +237,7 @@ namespace Reto2025.Controls
 
 
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                //Devuelve el objeto con los datos obtenidos de la API
                 return true;
 
             }

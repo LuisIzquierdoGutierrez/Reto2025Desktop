@@ -30,7 +30,7 @@ namespace Reto2025.Controls
         {
             try
             {
-                //Hacemos una instancia de Personajes
+                
                 List<EmpTransporte> empTransporte = new List<EmpTransporte>();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
@@ -47,11 +47,11 @@ namespace Reto2025.Controls
 
 
                 //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
-                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //el JSON recibido en un objeto utilizando la
                 //biblioteca Newtonsoft.Json
                 empTransporte = JsonConvert.DeserializeObject<List<EmpTransporte>>(responseJson);
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                //Devuelve el objeto con los datos obtenidos de la API
                 return empTransporte;
 
             }
@@ -73,7 +73,7 @@ namespace Reto2025.Controls
             try
             {
 
-                //Hacemos una instancia de Personajes
+                
                 EmpTransporte empTransporte = new EmpTransporte();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
@@ -90,12 +90,12 @@ namespace Reto2025.Controls
 
 
                 //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
-                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //el JSON recibido en un objeto utilizando la
                 //biblioteca Newtonsoft.Json
 
                 empTransporte = JsonConvert.DeserializeObject<EmpTransporte>(responseJson);
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                //Devuelve el objeto con los datos obtenidos de la API
                 return empTransporte;
 
             }
@@ -127,13 +127,11 @@ namespace Reto2025.Controls
                 // Verificar si la respuesta fue exitosa
                 if (response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Empresa de transporte guardada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     return true; // La calificación fue guardada con éxito
                 }
                 else
                 {
-                    MessageBox.Show(response.RequestMessage.ToString());
                     return false; // Hubo un error
                 }
             }
@@ -159,13 +157,13 @@ namespace Reto2025.Controls
                 // Verificar si la respuesta fue exitosa
                 if (response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Empresa guardada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   // MessageBox.Show("Empresa guardada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     return true; // La calificación fue guardada con éxito
                 }
                 else
                 {
-                    MessageBox.Show(response.RequestMessage.ToString());
+                   // MessageBox.Show(response.RequestMessage.ToString());
                     return false; // Hubo un error
                 }
             }

@@ -30,7 +30,7 @@ namespace Reto2025.Controls
         {
             try
             {
-                //Hacemos una instancia de Personajes
+                
                 List<Profesor> profesores = new List<Profesor>();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
@@ -47,11 +47,10 @@ namespace Reto2025.Controls
 
 
                 //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
-                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //el JSON recibido en un objeto utilizando la
                 //biblioteca Newtonsoft.Json
                 profesores = JsonConvert.DeserializeObject<List<Profesor>>(responseJson);
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
                 return profesores;
 
             }
@@ -73,7 +72,7 @@ namespace Reto2025.Controls
             try
             {
 
-                //Hacemos una instancia de Personajes
+                
                 Profesor profesor = new Profesor();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
@@ -90,12 +89,11 @@ namespace Reto2025.Controls
 
 
                 //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
-                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //el JSON recibido en un objeto utilizando la
                 //biblioteca Newtonsoft.Json
 
                 profesor = JsonConvert.DeserializeObject<Profesor>(responseJson);
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
                 return profesor;
 
             }
@@ -152,9 +150,6 @@ namespace Reto2025.Controls
         {
             try
             {
-               // mail = "alicia.fernandez@educantabria.es";
-               // password = "12345";
-                //Hacemos una instancia de Personajes
                 Profesor profesor = new Profesor();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
@@ -171,12 +166,12 @@ namespace Reto2025.Controls
 
 
                 //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
-                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //el JSON recibido en un objeto utilizando la
                 //biblioteca Newtonsoft.Json
 
                 profesor = JsonConvert.DeserializeObject<Profesor>(responseJson);
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                //Devuelve el objeto con los datos obtenidos de la API
                 return profesor;
 
             }

@@ -30,7 +30,7 @@ namespace Reto2025.Controls
         {
             try
             {
-                //Hacemos una instancia de Personajes
+                
                 List<Actividad> actividades = new List<Actividad>();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
@@ -47,11 +47,11 @@ namespace Reto2025.Controls
 
 
                 //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
-                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //el JSON recibido en un objeto utilizando la
                 //biblioteca Newtonsoft.Json
                 actividades = JsonConvert.DeserializeObject<List<Actividad>>(responseJson);
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                //Devuelve el objeto con los datos obtenidos de la API
                 return actividades;
 
             }
@@ -72,7 +72,7 @@ namespace Reto2025.Controls
         {
             try
             {
-                //Hacemos una instancia de Personajes
+                
                 Actividad actividad = new Actividad();
 
                 //Creamos un objeto de tipo HttpResponseMessage, en el que le pasamos la URL
@@ -89,12 +89,12 @@ namespace Reto2025.Controls
 
 
                 //Enviamos esta respuesta a nuestra modelo, convierte (deserializa)
-                //el JSON recibido en un objeto de tipo "Personajes" utilizando la
+                //el JSON recibido en un objeto utilizando la
                 //biblioteca Newtonsoft.Json
 
                 actividad = JsonConvert.DeserializeObject<Actividad>(responseJson);
 
-                //Devuelve el objeto "personajes" con los datos obtenidos de la API
+                //Devuelve el objeto con los datos obtenidos de la API
                 return actividad;
 
             }
@@ -160,20 +160,20 @@ namespace Reto2025.Controls
                 // Verificar si la respuesta fue exitosa
                 if (response.IsSuccessStatusCode)
                 {
-                    MessageBox.Show("Actividad guardada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                  //  MessageBox.Show("Actividad guardada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     return true; // La calificación fue guardada con éxito
                 }
                 else
                 {
-                    MessageBox.Show(response.RequestMessage.ToString());
+                //    MessageBox.Show(response.RequestMessage.ToString());
                     return false; // Hubo un error
                 }
             }
             catch (Exception e)
             {
                 // Captura cualquier excepción y muestra un mensaje de error
-                MessageBox.Show($"Error: {e.Message}");
+              //  MessageBox.Show($"Error: {e.Message}");
                 return false;
             }
         }

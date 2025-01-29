@@ -106,7 +106,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(534, 231);
+            this.ClientSize = new System.Drawing.Size(684, 231);
             this.Controls.Add(this.picFoto);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblDepartamento);
@@ -114,7 +114,10 @@
             this.Controls.Add(this.lblCorreo);
             this.Controls.Add(this.lblApellidos);
             this.Location = new System.Drawing.Point(550, 270);
-            this.MinimumSize = new System.Drawing.Size(550, 270);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(700, 270);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(700, 270);
             this.Name = "FrmPerfil";
             this.Text = "Perfil";
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();

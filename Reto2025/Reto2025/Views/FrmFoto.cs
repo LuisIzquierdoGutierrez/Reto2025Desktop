@@ -20,7 +20,13 @@ namespace Reto2025.Views
             fotos = urls;
             posicion = fotos.IndexOf(url);
             InitializeComponent();
-            picFoto.Load(url);
+            try
+            {
+                picFoto.Load(url);
+            }
+            catch { }
+
+
         }
 
         private void btn_siguiente_Click(object sender, EventArgs e)
@@ -46,7 +52,12 @@ namespace Reto2025.Views
             {
                 posicion = fotos.Count - 1;
             }
-            picFoto.Load(fotos[posicion]);
+            try
+            {
+                picFoto.Load(fotos[posicion]);
+            }
+            catch { }
+
         }
     }
 }

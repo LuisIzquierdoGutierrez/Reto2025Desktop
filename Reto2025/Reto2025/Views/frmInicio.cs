@@ -40,16 +40,15 @@ namespace Reto2025.Views
             InitializeComponent();
             user = profesor;
             inicioMES = new DateTime(inicioMES.Year, inicioMES.Month, 1);
-
+            CargarTodo();
 
         }
-        private async void frmInicio_Load(object sender, EventArgs e)
-        {
 
+        private async void CargarTodo()
+        {
             actividades = await controlAct.GetAllActividades();
 
-            dias_de_mierda(null, actividades);
-
+            CargarDias(null, actividades);
         }
 
 
@@ -61,6 +60,7 @@ namespace Reto2025.Views
             }
 
             frmActividades = new FrmCrearActividad();
+            frmActividades.Closed += (s, args) => this.CargarTodo();
             frmActividades.Show();
 
         }
@@ -119,7 +119,7 @@ namespace Reto2025.Views
             frmPerfil.Show();
         }
 
-        private void dias_de_mierda(int? opMes, List<Actividad> actividades)
+        private void CargarDias(int? opMes, List<Actividad> actividades)
         {
 
             switch (opMes)
@@ -206,13 +206,13 @@ namespace Reto2025.Views
         private void btn_mesAnterior_Click(object sender, EventArgs e)
         {
             daycontainer.Controls.Clear();
-            dias_de_mierda(1, actividades);
+            CargarDias(1, actividades);
         }
 
         private void btn_mesSiguiente_Click(object sender, EventArgs e)
         {
             daycontainer.Controls.Clear();
-            dias_de_mierda(2, actividades);
+            CargarDias(2, actividades);
         }
 
         private void normativaToolStripMenuItem_Click(object sender, EventArgs e)

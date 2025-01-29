@@ -48,7 +48,6 @@ namespace Reto2025.Views
 
                 Enum.TryParse(cmbTipo.Text.ToUpper(), true, out TipoActividad result);
                 actividad.tipo = result;
-                MessageBox.Show(actividad.tipo.ToString());
                 actividad.previstaIni = chkInicioPrevisto.Checked;
                 
                 actividad.fini = dtpFini.Value.ToString("yyyy-MM-dd");
@@ -85,6 +84,7 @@ namespace Reto2025.Views
                 if (completada)
                 {
                     MessageBox.Show("actividad creada con exito");
+                    this.Close();
                 }
                 else
                 {
@@ -95,14 +95,6 @@ namespace Reto2025.Views
             {
                 MessageBox.Show("La actividad necesita un titulo");
             }
-
-
-
-            //Actividad actividad = await controlActividades.GetActividadId(11);
-
-            //MessageBox.Show(actividad.titulo);
-            //MessageBox.Show(actividad.tipo.ToString());
-            //controlActividades.GuardarActividad(actividad);
 
         }
     }

@@ -24,9 +24,6 @@ namespace Reto2025.Views
         }
         private async void btnCrear_Click(object sender, EventArgs e)
         {
-
-            string patronmail = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
-            string patrontelefono = "^(\\d{7,10}|\\d{10,10})$";
             EmpTransporte empTransporte = new EmpTransporte();
             empTransporte.id = null;
             empTransporte.nombre = txtNombreEmp.Text;
@@ -35,50 +32,16 @@ namespace Reto2025.Views
             empTransporte.cp = txtCp.Text;
             empTransporte.localidad = txtLocalidad.Text;
             empTransporte.contacto = "tlf: " + txtNumContacto.Text + " mail: " + txtMailContacto.Text;
-            /*
-                if (string.IsNullOrEmpty(txtNombreEmp.Text))
-                {
-                    MessageBox.Show("El nombre de la empresa esta vacio", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                if (string.IsNullOrEmpty(txtDireccion.Text))
-                {
-                    MessageBox.Show("El campo direccion esta vacio", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                if (string.IsNullOrEmpty(txtLocalidad.Text))
-                {
-                    MessageBox.Show("El campo localidad esta vacio", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-
-                if (txtCp.Text.Length != 5)
-                {
-                    MessageBox.Show("Formato del codigo postal incorrecto", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                }
-                if (!Regex.IsMatch(txtNumContacto.Text, patrontelefono))
-                {
-                    MessageBox.Show("El formato del cif es incorrecto.",
-                    "Formato Incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-
-                }
-                if (!Regex.IsMatch(txtMailContacto.Text, patronmail))
-                {
-                    MessageBox.Show("El correo es incorrecto.",
-                                    "Formato Incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-              */ 
+ 
 
             if (await controlEmpTransporte.GuardarEmpresa(empTransporte))
             {
-                MessageBox.Show("furrula coño",
-                "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Empresa agregada correctamente");
+                this.Close();
             }
             else
             {
-                MessageBox.Show("pta bihda tete",
-                "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error al agregar empresa, porfavor compruebe los datos");
             } 
         }
 
