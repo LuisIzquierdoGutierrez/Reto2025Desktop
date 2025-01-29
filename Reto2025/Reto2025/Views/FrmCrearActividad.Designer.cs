@@ -61,6 +61,7 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblTitulo.Location = new System.Drawing.Point(44, 23);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(153, 20);
@@ -71,6 +72,7 @@
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblTipo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblTipo.Location = new System.Drawing.Point(45, 96);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(131, 17);
@@ -81,6 +83,7 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblDescripcion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblDescripcion.Location = new System.Drawing.Point(45, 424);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(142, 17);
@@ -91,6 +94,7 @@
             // 
             this.lblFechaIni.AutoSize = true;
             this.lblFechaIni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblFechaIni.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblFechaIni.Location = new System.Drawing.Point(45, 151);
             this.lblFechaIni.Name = "lblFechaIni";
             this.lblFechaIni.Size = new System.Drawing.Size(83, 17);
@@ -101,6 +105,7 @@
             // 
             this.lblFechaFin.AutoSize = true;
             this.lblFechaFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblFechaFin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblFechaFin.Location = new System.Drawing.Point(45, 180);
             this.lblFechaFin.Name = "lblFechaFin";
             this.lblFechaFin.Size = new System.Drawing.Size(66, 17);
@@ -111,6 +116,7 @@
             // 
             this.lblHoraIni.AutoSize = true;
             this.lblHoraIni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblHoraIni.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblHoraIni.Location = new System.Drawing.Point(45, 209);
             this.lblHoraIni.Name = "lblHoraIni";
             this.lblHoraIni.Size = new System.Drawing.Size(75, 17);
@@ -121,6 +127,7 @@
             // 
             this.lblHoraFin.AutoSize = true;
             this.lblHoraFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblHoraFin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblHoraFin.Location = new System.Drawing.Point(45, 238);
             this.lblHoraFin.Name = "lblHoraFin";
             this.lblHoraFin.Size = new System.Drawing.Size(58, 17);
@@ -130,29 +137,32 @@
             // lblComentTransp
             // 
             this.lblComentTransp.AutoSize = true;
-            this.lblComentTransp.Enabled = false;
             this.lblComentTransp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblComentTransp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblComentTransp.Location = new System.Drawing.Point(465, 259);
             this.lblComentTransp.Name = "lblComentTransp";
             this.lblComentTransp.Size = new System.Drawing.Size(177, 17);
             this.lblComentTransp.TabIndex = 9;
             this.lblComentTransp.Text = "Comentario del Transporte";
+            this.lblComentTransp.Visible = false;
             // 
             // lblComentAloj
             // 
             this.lblComentAloj.AutoSize = true;
-            this.lblComentAloj.Enabled = false;
             this.lblComentAloj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblComentAloj.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblComentAloj.Location = new System.Drawing.Point(465, 424);
             this.lblComentAloj.Name = "lblComentAloj";
             this.lblComentAloj.Size = new System.Drawing.Size(179, 17);
             this.lblComentAloj.TabIndex = 11;
             this.lblComentAloj.Text = "Comentario del alojamiento";
+            this.lblComentAloj.Visible = false;
             // 
             // lblComentGen
             // 
             this.lblComentGen.AutoSize = true;
             this.lblComentGen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblComentGen.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblComentGen.Location = new System.Drawing.Point(465, 96);
             this.lblComentGen.Name = "lblComentGen";
             this.lblComentGen.Size = new System.Drawing.Size(157, 17);
@@ -163,6 +173,7 @@
             // 
             this.lblImporte.AutoSize = true;
             this.lblImporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblImporte.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblImporte.Location = new System.Drawing.Point(45, 377);
             this.lblImporte.Name = "lblImporte";
             this.lblImporte.Size = new System.Drawing.Size(130, 17);
@@ -171,6 +182,7 @@
             // 
             // txtTitulo
             // 
+            this.txtTitulo.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtTitulo.Location = new System.Drawing.Point(213, 20);
             this.txtTitulo.Name = "txtTitulo";
@@ -179,6 +191,7 @@
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtDescripcion.Location = new System.Drawing.Point(34, 452);
             this.txtDescripcion.Multiline = true;
@@ -188,6 +201,7 @@
             // 
             // txtCometariosGenerales
             // 
+            this.txtCometariosGenerales.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtCometariosGenerales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtCometariosGenerales.Location = new System.Drawing.Point(453, 116);
             this.txtCometariosGenerales.Multiline = true;
@@ -197,23 +211,25 @@
             // 
             // txtComentTransp
             // 
-            this.txtComentTransp.Enabled = false;
+            this.txtComentTransp.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtComentTransp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtComentTransp.Location = new System.Drawing.Point(453, 282);
             this.txtComentTransp.Multiline = true;
             this.txtComentTransp.Name = "txtComentTransp";
             this.txtComentTransp.Size = new System.Drawing.Size(330, 130);
             this.txtComentTransp.TabIndex = 18;
+            this.txtComentTransp.Visible = false;
             // 
             // txtComentAloj
             // 
-            this.txtComentAloj.Enabled = false;
+            this.txtComentAloj.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtComentAloj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.txtComentAloj.Location = new System.Drawing.Point(453, 452);
             this.txtComentAloj.Multiline = true;
             this.txtComentAloj.Name = "txtComentAloj";
             this.txtComentAloj.Size = new System.Drawing.Size(330, 130);
             this.txtComentAloj.TabIndex = 20;
+            this.txtComentAloj.Visible = false;
             // 
             // cmbTipo
             // 
@@ -230,6 +246,7 @@
             // 
             // dtpFini
             // 
+            this.dtpFini.CalendarMonthBackground = System.Drawing.SystemColors.ControlDarkDark;
             this.dtpFini.CustomFormat = "dd-mm-yyyy";
             this.dtpFini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtpFini.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -240,6 +257,7 @@
             // 
             // dtpFfin
             // 
+            this.dtpFfin.CalendarMonthBackground = System.Drawing.SystemColors.ControlDarkDark;
             this.dtpFfin.CustomFormat = "dd-mm-yyyy";
             this.dtpFfin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtpFfin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -252,6 +270,7 @@
             // 
             this.chkTransporte.AutoSize = true;
             this.chkTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.chkTransporte.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.chkTransporte.Location = new System.Drawing.Point(48, 300);
             this.chkTransporte.Name = "chkTransporte";
             this.chkTransporte.Size = new System.Drawing.Size(159, 21);
@@ -264,6 +283,7 @@
             // 
             this.chkAlojamiento.AutoSize = true;
             this.chkAlojamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.chkAlojamiento.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.chkAlojamiento.Location = new System.Drawing.Point(48, 333);
             this.chkAlojamiento.Name = "chkAlojamiento";
             this.chkAlojamiento.Size = new System.Drawing.Size(162, 21);
@@ -274,6 +294,7 @@
             // 
             // dtpHini
             // 
+            this.dtpHini.CalendarMonthBackground = System.Drawing.SystemColors.ControlDarkDark;
             this.dtpHini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtpHini.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpHini.Location = new System.Drawing.Point(171, 204);
@@ -284,6 +305,7 @@
             // 
             // dtpHfin
             // 
+            this.dtpHfin.CalendarMonthBackground = System.Drawing.SystemColors.ControlDarkDark;
             this.dtpHfin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtpHfin.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpHfin.Location = new System.Drawing.Point(171, 233);
@@ -305,6 +327,7 @@
             // 
             this.chkInicioPrevisto.AutoSize = true;
             this.chkInicioPrevisto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.chkInicioPrevisto.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.chkInicioPrevisto.Location = new System.Drawing.Point(48, 268);
             this.chkInicioPrevisto.Name = "chkInicioPrevisto";
             this.chkInicioPrevisto.Size = new System.Drawing.Size(204, 21);
@@ -317,7 +340,7 @@
             this.btnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnCrear.Location = new System.Drawing.Point(372, 604);
             this.btnCrear.Name = "btnCrear";
-            this.btnCrear.Size = new System.Drawing.Size(115, 23);
+            this.btnCrear.Size = new System.Drawing.Size(115, 25);
             this.btnCrear.TabIndex = 42;
             this.btnCrear.Text = "Crear Actividad";
             this.btnCrear.UseVisualStyleBackColor = true;
@@ -327,7 +350,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 639);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClientSize = new System.Drawing.Size(834, 636);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.chkInicioPrevisto);
             this.Controls.Add(this.nudImporte);
@@ -354,6 +378,8 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblTitulo);
+            this.MaximumSize = new System.Drawing.Size(850, 675);
+            this.MinimumSize = new System.Drawing.Size(850, 675);
             this.Name = "FrmCrearActividad";
             this.Text = "Creacion Actividades";
             ((System.ComponentModel.ISupportInitialize)(this.nudImporte)).EndInit();

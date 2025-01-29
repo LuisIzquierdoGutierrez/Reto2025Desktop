@@ -34,12 +34,15 @@ namespace Reto2025.Views
         private void putEmpTransportes()
         {
             ListViewItem item;
+            bool par = false;
             foreach (EmpTransporte empTransporte in empTransportes)
             {
                 item = new ListViewItem();
                 string[] row = { empTransporte.nombre,empTransporte.contacto,empTransporte.localidad, empTransporte.direccion, empTransporte.cp, empTransporte.cif };
                 item = new ListViewItem(row);
                 lwEmpTransporte.Items.Add(item);
+                item.BackColor = par ? Color.DarkGray : Color.LightGray;
+                par = !par;
             }
             lwEmpTransporte.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }

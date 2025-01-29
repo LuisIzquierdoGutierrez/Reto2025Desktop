@@ -26,14 +26,14 @@ namespace Reto2025.Views
 
         private void chck_transporte_CheckedChanged(object sender, EventArgs e)
         {
-            lblComentTransp.Enabled = chkTransporte.Checked;
-            txtComentTransp.Enabled= chkTransporte.Checked;
+            lblComentTransp.Visible = chkTransporte.Checked;
+            txtComentTransp.Visible= chkTransporte.Checked;
         }
 
         private void chkAlojamiento_CheckedChanged(object sender, EventArgs e)
         {
-            lblComentAloj.Enabled = chkAlojamiento.Checked;
-            txtComentAloj.Enabled = chkAlojamiento.Checked;
+            lblComentAloj.Visible = chkAlojamiento.Checked;
+            txtComentAloj.Visible = chkAlojamiento.Checked;
         }
 
         private async void btnCrear_ClickAsync(object sender, EventArgs e)

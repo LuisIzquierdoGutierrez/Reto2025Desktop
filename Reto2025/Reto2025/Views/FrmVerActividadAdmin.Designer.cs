@@ -75,7 +75,7 @@
             // 
             // rtxAlojamiento
             // 
-            this.rtxAlojamiento.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxAlojamiento.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxAlojamiento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxAlojamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxAlojamiento.Location = new System.Drawing.Point(307, 562);
@@ -86,7 +86,7 @@
             // 
             // rtxTransporte
             // 
-            this.rtxTransporte.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxTransporte.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxTransporte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxTransporte.Location = new System.Drawing.Point(30, 562);
@@ -99,6 +99,7 @@
             // 
             this.lblSolicitante.AutoSize = true;
             this.lblSolicitante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblSolicitante.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblSolicitante.Location = new System.Drawing.Point(27, 109);
             this.lblSolicitante.Name = "lblSolicitante";
             this.lblSolicitante.Size = new System.Drawing.Size(73, 17);
@@ -107,7 +108,7 @@
             // 
             // rtxEstado
             // 
-            this.rtxEstado.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxEstado.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxEstado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxEstado.Location = new System.Drawing.Point(307, 164);
@@ -130,6 +131,7 @@
             // 
             this.lblComentarios.AutoSize = true;
             this.lblComentarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblComentarios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblComentarios.Location = new System.Drawing.Point(27, 343);
             this.lblComentarios.Name = "lblComentarios";
             this.lblComentarios.Size = new System.Drawing.Size(87, 17);
@@ -138,7 +140,7 @@
             // 
             // rtxComentarios
             // 
-            this.rtxComentarios.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxComentarios.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxComentarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxComentarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxComentarios.Location = new System.Drawing.Point(30, 363);
@@ -151,6 +153,7 @@
             // 
             this.lblFfni.AutoSize = true;
             this.lblFfni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblFfni.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblFfni.Location = new System.Drawing.Point(730, 82);
             this.lblFfni.Name = "lblFfni";
             this.lblFfni.Size = new System.Drawing.Size(74, 17);
@@ -161,6 +164,7 @@
             // 
             this.lblFini.AutoSize = true;
             this.lblFini.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblFini.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblFini.Location = new System.Drawing.Point(717, 20);
             this.lblFini.Name = "lblFini";
             this.lblFini.Size = new System.Drawing.Size(87, 17);
@@ -171,6 +175,7 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblDescripcion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblDescripcion.Location = new System.Drawing.Point(27, 144);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(82, 17);
@@ -179,7 +184,7 @@
             // 
             // rtxDescripcion
             // 
-            this.rtxDescripcion.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxDescripcion.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxDescripcion.Location = new System.Drawing.Point(30, 164);
@@ -192,6 +197,7 @@
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblTipo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblTipo.Location = new System.Drawing.Point(27, 74);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(69, 17);
@@ -202,6 +208,7 @@
             // 
             this.chkTransporte.AutoSize = true;
             this.chkTransporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.chkTransporte.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.chkTransporte.Location = new System.Drawing.Point(30, 535);
             this.chkTransporte.Name = "chkTransporte";
             this.chkTransporte.Size = new System.Drawing.Size(97, 21);
@@ -214,6 +221,7 @@
             // 
             this.chkAlojamiento.AutoSize = true;
             this.chkAlojamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.chkAlojamiento.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.chkAlojamiento.Location = new System.Drawing.Point(307, 535);
             this.chkAlojamiento.Name = "chkAlojamiento";
             this.chkAlojamiento.Size = new System.Drawing.Size(100, 21);
@@ -224,6 +232,7 @@
             // 
             // txtTitulo
             // 
+            this.txtTitulo.BackColor = System.Drawing.SystemColors.ControlDark;
             this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtTitulo.Location = new System.Drawing.Point(30, 19);
             this.txtTitulo.Name = "txtTitulo";
@@ -233,7 +242,7 @@
             // 
             // rtxTransporteFalso
             // 
-            this.rtxTransporteFalso.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxTransporteFalso.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxTransporteFalso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxTransporteFalso.Enabled = false;
             this.rtxTransporteFalso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -246,7 +255,7 @@
             // 
             // rtxAlojamientoFalso
             // 
-            this.rtxAlojamientoFalso.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxAlojamientoFalso.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxAlojamientoFalso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxAlojamientoFalso.Enabled = false;
             this.rtxAlojamientoFalso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -353,6 +362,7 @@
             // 
             this.lblImporte.AutoSize = true;
             this.lblImporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblImporte.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblImporte.Location = new System.Drawing.Point(27, 727);
             this.lblImporte.Name = "lblImporte";
             this.lblImporte.Size = new System.Drawing.Size(130, 17);
@@ -361,7 +371,7 @@
             // 
             // rtxIncidencias
             // 
-            this.rtxIncidencias.BackColor = System.Drawing.SystemColors.Control;
+            this.rtxIncidencias.BackColor = System.Drawing.SystemColors.ControlDark;
             this.rtxIncidencias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtxIncidencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.rtxIncidencias.Location = new System.Drawing.Point(307, 363);
@@ -374,6 +384,7 @@
             // 
             this.lblIncidencias.AutoSize = true;
             this.lblIncidencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblIncidencias.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblIncidencias.Location = new System.Drawing.Point(304, 343);
             this.lblIncidencias.Name = "lblIncidencias";
             this.lblIncidencias.Size = new System.Drawing.Size(78, 17);
@@ -415,6 +426,7 @@
             // 
             // lvwgrupos
             // 
+            this.lvwgrupos.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lvwgrupos.HideSelection = false;
             this.lvwgrupos.Location = new System.Drawing.Point(584, 164);
             this.lvwgrupos.Name = "lvwgrupos";
@@ -425,6 +437,7 @@
             // 
             // lvwProfesores
             // 
+            this.lvwProfesores.BackColor = System.Drawing.SystemColors.ControlDark;
             this.lvwProfesores.HideSelection = false;
             this.lvwProfesores.Location = new System.Drawing.Point(584, 416);
             this.lvwProfesores.Name = "lvwProfesores";
@@ -437,6 +450,7 @@
             // 
             this.lblProfesores.AutoSize = true;
             this.lblProfesores.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblProfesores.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblProfesores.Location = new System.Drawing.Point(581, 393);
             this.lblProfesores.Name = "lblProfesores";
             this.lblProfesores.Size = new System.Drawing.Size(163, 17);
@@ -447,6 +461,7 @@
             // 
             this.lblGrupos.AutoSize = true;
             this.lblGrupos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblGrupos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblGrupos.Location = new System.Drawing.Point(581, 140);
             this.lblGrupos.Name = "lblGrupos";
             this.lblGrupos.Size = new System.Drawing.Size(141, 17);
@@ -489,6 +504,7 @@
             // 
             this.lblNumALumnos.AutoSize = true;
             this.lblNumALumnos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblNumALumnos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblNumALumnos.Location = new System.Drawing.Point(581, 350);
             this.lblNumALumnos.Name = "lblNumALumnos";
             this.lblNumALumnos.Size = new System.Drawing.Size(120, 17);
@@ -517,6 +533,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(899, 813);
             this.Controls.Add(this.cmbGrupos);
             this.Controls.Add(this.nudAlumnos);
@@ -560,7 +577,7 @@
             this.Controls.Add(this.rtxDescripcion);
             this.Controls.Add(this.lblTipo);
             this.Name = "FrmVerActividadAdmin";
-            this.Text = "FrmVerActividadAdmin";
+            this.Text = "Actividad";
             ((System.ComponentModel.ISupportInitialize)(this.nudImporte)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudAlumnos)).EndInit();
             this.ResumeLayout(false);

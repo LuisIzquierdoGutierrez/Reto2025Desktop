@@ -59,13 +59,16 @@ namespace Reto2025.Views
         {
             lwActividades.Items.Clear();
             ListViewItem item;
+            bool par = false;
             foreach (Actividad actividad in actividadesTmp)
             {
                 item = new ListViewItem();
                 string[] row = { actividad.titulo, actividad.tipo.ToString(), actividad.descripcion, actividad.fini.ToString(), actividad.ffin.ToString(), actividad.hini.ToString(), actividad.hfin.ToString(), actividad.previstaIni.ToString(), actividad.transporteReq.ToString(), actividad.comentTransporte, actividad.alojamientoReq.ToString(), actividad.comentAlojamiento, actividad.comentarios, actividad.estado.ToString(), actividad.comentEstado, actividad.incidencias, actividad.urlFolleto, actividad.solicitante.uuid.ToString(), actividad.importePorAlumno.ToString() };
                 item = new ListViewItem(row);
                 item.Tag = actividad;
+                item.BackColor = par? Color.DarkGray:Color.LightGray;
                 lwActividades.Items.Add(item);
+                par = !par;
             }
             lwActividades.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
             

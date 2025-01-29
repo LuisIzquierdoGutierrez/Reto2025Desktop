@@ -18,7 +18,13 @@ namespace Reto2025.Views
         {
             this.url = url;
             InitializeComponent();
-            picFoto.Load(url);
+            try
+            {
+                picFoto.Load(url);
+            }
+            catch (Exception ex)
+            {
+            }
         }
 
         private void picFoto_DoubleClick(object sender, EventArgs e)

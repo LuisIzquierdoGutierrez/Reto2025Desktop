@@ -25,7 +25,7 @@ namespace Reto2025.Views
 
         public void diaSemana(int dias)
         {
-            lbl_dia.Text = dias.ToString();
+            lblDia.Text = dias.ToString();
         }
 
         public void setNombreActividades(Actividad actividad)
@@ -33,7 +33,7 @@ namespace Reto2025.Views
             if (actividad != null)
             {
                 lblActividad.Text += actividad.titulo.ToString() + "\n";
-                lbl_idsActividades.Text = actividad.id.ToString() + ",";
+               
                 ActividadesDelDia.Add(actividad);
             }
             else
@@ -52,13 +52,13 @@ namespace Reto2025.Views
 
                 if (controlCalendario != null)
                 {
-                    if (controlCalendario.lbl_dia.Text == DateTime.Now.Day.ToString())
+                    if (controlCalendario.lblDia.Text == DateTime.Now.Day.ToString())
                     {
-                        controlCalendario.BackColor = Color.LightGray;
+                        controlCalendario.BackColor = Color.FromArgb(0xFF, 0xB2, 0xDF, 0x7A);
                     }
                     else
                     {
-                        controlCalendario.BackColor = Color.White;
+                        controlCalendario.BackColor = Color.LightGray;
                     }
                     
 
@@ -76,15 +76,15 @@ namespace Reto2025.Views
         {
             if (esHoy)
             {
-                this.BackColor = Color.LightGray;
-                lbl_dia.ForeColor = Color.White;
-                lbl_dia.Font = new Font(lbl_dia.Font, FontStyle.Bold);
+                this.BackColor = Color.FromArgb(0xFF, 0xB2, 0xDF, 0x7A); ;
+                lblDia.ForeColor = Color.Black;
+                lblDia.Font = new Font(lblDia.Font, FontStyle.Bold);
             }
             else
             {
-                this.BackColor = Color.White;
-                lbl_dia.ForeColor = Color.Black;
-                lbl_dia.Font = new Font(lbl_dia.Font, FontStyle.Regular);
+                this.BackColor = Color.LightGray;
+                lblDia.ForeColor = Color.Black;
+                lblDia.Font = new Font(lblDia.Font, FontStyle.Regular);
             }
         }
 

@@ -125,13 +125,15 @@ namespace Reto2025.Views
             lvwgrupos.Columns.Add("Nombre");
             lvwgrupos.Columns.Add("Numero participantes");
             ListViewItem item;
+            bool par = false;
             foreach (GrupoParticipante grupo in gruposParticipantes)
             {
                 item = new ListViewItem();
                 string[] row = { grupo.grupo.codGrupo, grupo.numParticipantes.ToString() };
                 item = new ListViewItem(row);
                 lvwgrupos.Items.Add(item);
-
+                item.BackColor = par ? Color.DarkGray : Color.LightGray;
+                par = !par;
             }
             lvwgrupos.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
@@ -144,13 +146,15 @@ namespace Reto2025.Views
             lvwProfesores.Columns.Add("Nombre completo");
             lvwProfesores.Columns.Add("Departamento");
             ListViewItem item;
+            bool par = false;
             foreach (ProfParticipante profesor in profParticipantes)
             {
                 item = new ListViewItem();
                 string[] row = { profesor.profesor.nombre + " " + profesor.profesor.apellidos, profesor.profesor.depart.codigo };
                 item = new ListViewItem(row);
                 lvwProfesores.Items.Add(item);
-
+                item.BackColor = par ? Color.DarkGray : Color.LightGray;
+                par = !par;
             }
 
 

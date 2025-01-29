@@ -36,6 +36,7 @@
             // 
             // lwCursos
             // 
+            this.lwCursos.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lwCursos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Codigo_curso,
             this.Titulo,

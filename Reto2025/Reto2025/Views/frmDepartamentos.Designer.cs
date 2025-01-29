@@ -35,6 +35,7 @@
             // 
             // lwDepartamentos
             // 
+            this.lwDepartamentos.BackColor = System.Drawing.SystemColors.ControlLight;
             this.lwDepartamentos.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.codigo,
             this.Nombre});

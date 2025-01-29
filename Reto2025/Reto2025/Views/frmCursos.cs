@@ -43,12 +43,15 @@ namespace Reto2025.Views
         private void putCursos()
         {
             ListViewItem item;
+            bool par = false;
             foreach (Curso curso in cursos)
             {
                 item  = new ListViewItem();
                 string[] row = { curso.codCurso.ToString(), curso.titulo, curso.etapa.ToString(), curso.nivel.ToString() };
                 item = new ListViewItem(row);
                 lwCursos.Items.Add(item);
+                item.BackColor = par ? Color.DarkGray : Color.LightGray;
+                par = !par;
             }
             lwCursos.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }

@@ -28,34 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_dia = new System.Windows.Forms.Label();
-            this.lbl_idsActividades = new System.Windows.Forms.Label();
+            this.lblDia = new System.Windows.Forms.Label();
             this.lblActividad = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lbl_dia
+            // lblDia
             // 
-            this.lbl_dia.AutoSize = true;
-            this.lbl_dia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbl_dia.Location = new System.Drawing.Point(3, 9);
-            this.lbl_dia.Name = "lbl_dia";
-            this.lbl_dia.Size = new System.Drawing.Size(24, 17);
-            this.lbl_dia.TabIndex = 0;
-            this.lbl_dia.Text = "00";
-            // 
-            // lbl_idsActividades
-            // 
-            this.lbl_idsActividades.AutoSize = true;
-            this.lbl_idsActividades.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbl_idsActividades.Location = new System.Drawing.Point(70, 9);
-            this.lbl_idsActividades.Name = "lbl_idsActividades";
-            this.lbl_idsActividades.Size = new System.Drawing.Size(46, 17);
-            this.lbl_idsActividades.TabIndex = 2;
-            this.lbl_idsActividades.Text = "label1";
-            this.lbl_idsActividades.Visible = false;
+            this.lblDia.AutoSize = true;
+            this.lblDia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblDia.Location = new System.Drawing.Point(3, 9);
+            this.lblDia.Name = "lblDia";
+            this.lblDia.Size = new System.Drawing.Size(24, 17);
+            this.lblDia.TabIndex = 0;
+            this.lblDia.Text = "00";
             // 
             // lblActividad
             // 
+            this.lblActividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblActividad.Location = new System.Drawing.Point(3, 25);
             this.lblActividad.Name = "lblActividad";
             this.lblActividad.Size = new System.Drawing.Size(119, 60);
@@ -66,11 +55,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.lblActividad);
-            this.Controls.Add(this.lbl_idsActividades);
-            this.Controls.Add(this.lbl_dia);
+            this.Controls.Add(this.lblDia);
             this.Name = "FrmControlCalendario";
             this.Size = new System.Drawing.Size(125, 88);
             this.Click += new System.EventHandler(this.frmControlCalendario_Click);
@@ -81,8 +69,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbl_dia;
-        private System.Windows.Forms.Label lbl_idsActividades;
+        private System.Windows.Forms.Label lblDia;
         private System.Windows.Forms.Label lblActividad;
     }
 }

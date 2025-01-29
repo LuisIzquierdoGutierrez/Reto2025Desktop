@@ -41,6 +41,7 @@
             // 
             this.lblApellidos.AutoSize = true;
             this.lblApellidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblApellidos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblApellidos.Location = new System.Drawing.Point(275, 38);
             this.lblApellidos.Name = "lblApellidos";
             this.lblApellidos.Size = new System.Drawing.Size(73, 17);
@@ -51,6 +52,7 @@
             // 
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblCorreo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblCorreo.Location = new System.Drawing.Point(275, 117);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(59, 17);
@@ -61,6 +63,7 @@
             // 
             this.lblRol.AutoSize = true;
             this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblRol.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblRol.Location = new System.Drawing.Point(275, 91);
             this.lblRol.Name = "lblRol";
             this.lblRol.Size = new System.Drawing.Size(37, 17);
@@ -71,6 +74,7 @@
             // 
             this.lblDepartamento.AutoSize = true;
             this.lblDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblDepartamento.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblDepartamento.Location = new System.Drawing.Point(275, 65);
             this.lblDepartamento.Name = "lblDepartamento";
             this.lblDepartamento.Size = new System.Drawing.Size(106, 17);
@@ -81,6 +85,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblNombre.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblNombre.Location = new System.Drawing.Point(275, 12);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(66, 17);
@@ -100,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(220)))), ((int)(((byte)(124)))));
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(534, 231);
             this.Controls.Add(this.picFoto);
             this.Controls.Add(this.lblNombre);
