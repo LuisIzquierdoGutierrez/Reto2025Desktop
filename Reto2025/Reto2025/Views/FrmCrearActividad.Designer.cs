@@ -378,7 +378,9 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblTitulo);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(850, 675);
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(850, 675);
             this.Name = "FrmCrearActividad";
             this.Text = "Creacion Actividades";
